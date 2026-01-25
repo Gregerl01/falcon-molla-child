@@ -1,0 +1,90 @@
+// ============================================================================
+// GLOBAL STYLES
+// ============================================================================
+// Base styles that apply site-wide
+
+// Custom Bootstrap containers
+.custom-container {
+  @include make-container();
+}
+
+.custom-row {
+  @include make-row();
+}
+
+// Utility classes
+.max-w-1500 {
+  max-width: $max-width-1500;
+}
+
+// Section base styles
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: $section-padding 0;
+  scroll-margin-top: $section-scroll-margin;
+  overflow: clip;
+}
+
+// Section titles
+.section-title {
+  text-align: center;
+  position: relative;
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  h2:before,
+  h2:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: var(--accent-color);
+    display: inline-block;
+  }
+
+  h2:before {
+    margin: 0 15px 10px 0;
+  }
+
+  h2:after {
+    margin: 0 0 10px 15px;
+  }
+
+  @media (max-width: 768px) {
+    h2:before,
+    h2:after {
+      display: none;
+    }
+  }
+}
+
+// Section content
+.section-content {
+  p {
+    margin-bottom: 0;
+    font-size: 1.75rem;
+  }
+}
+
+// Section intro
+.section-intro {
+  p.eyebrow {
+    font-size: 26px;
+    color: var(--contrast-color);
+  }
+  
+  p {
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+}
+
+// Scroll to top button
+#scroll-top {
+  background: color-mix(in srgb, var(--color-primary), transparent 70%) !important;
+  border: 1px solid color-mix(in srgb, var(--color-primary), transparent 20%) !important;
+}

@@ -1,0 +1,53 @@
+// ============================================================================
+// CALL TO ACTION COMPONENT
+// ============================================================================
+
+// .call-to-action {
+  
+//   .cta-actions {
+    
+//     // Override global button styles for this specific component
+//     .btn-primary,
+//     .btn-secondary {
+//       display: block;
+//       width: 100%;
+//       text-align: center;
+//       font-family: var(--heading-font);
+//       font-weight: 600;
+//       font-size: 15px;
+//       padding: 14px 32px;
+//       border-radius: 6px;
+//       transition: all 0.3s ease-in-out;
+//       text-decoration: none;
+//       transform: none; // Override global hover transform
+//     }
+    
+//     .btn-primary {
+//       background-color: var(--accent-color);
+//       color: var(--contrast-color);
+//       border: 2px solid var(--accent-color);
+//       margin-bottom: 12px;
+      
+//       &:hover,
+//       &:focus {
+//         background-color: color-mix(in srgb, var(--accent-color), black 10%);
+//         border-color: color-mix(in srgb, var(--accent-color), black 10%);
+//         transform: none; // Don't lift on hover in CTAs
+//       }
+//     }
+    
+//     .btn-secondary {
+//       background-color: var(--background-color);
+//       color: var(--accent-color);
+//       border: 2px solid var(--accent-color);
+//       margin-bottom: 24px;
+      
+//       &:hover,
+//       &:focus {
+//         background-color: var(--accent-color);
+//         color: var(--contrast-color);
+//         transform: none;
+//       }
+//     }
+//   }
+// }

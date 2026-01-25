@@ -1,0 +1,51 @@
+/* _parallax.scss */
+// $parallax-height: 180% !default;
+
+// .parallax {
+//   position: relative;
+//   overflow: hidden;
+
+//   .parallax-background {
+//     position: absolute;
+//     inset: 0 0 auto 0;
+//     width: 100%;
+//     height: var(--parallax-height, #{$parallax-height});
+//     background-size: cover;
+//     background-position: 50% center;
+//     will-change: transform;
+//     pointer-events: none;
+//   }
+// }
+
+// @media (prefers-reduced-motion: reduce) {
+//   .parallax .parallax-background { transform: none !important; }
+// }
+
+
+/* _parallax.scss */
+/* _parallax.scss */
+// $parallax-height: 180% !default;
+
+.parallax {
+  position: relative !important;
+  overflow: hidden;
+
+  .parallax-background {
+    position: absolute;
+    inset: 0 0 auto 50%;
+    // width: var(--parallax-width, 100vw);
+    margin-left: calc(var(--parallax-width, 100vw) / -2);
+    // height: var(--parallax-height, #{$parallax-height}); // now defined
+    background-size: cover;
+    // background-position: var(--parallax-position, 50% center);
+    background-repeat: no-repeat;
+    will-change: transform;
+    pointer-events: none;
+
+    top: -280px;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0px, -101.429px, 0px);
+    background-position-x: center center;
+  }
+}

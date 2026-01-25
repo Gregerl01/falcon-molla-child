@@ -1,0 +1,168 @@
+// ============================================================================
+// MOLLA CHILD THEME - MAIN SCSS FILE
+// ============================================================================
+// This is the main entry point. All partials are imported here.
+// Compile this file to: /assets/css/custom.css
+
+// 1. BOOTSTRAP & VENDORS
+// ============================================================================
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Bootstrap components (only what we need)
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/containers";
+
+// Vendor libraries
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/swiper/swiper";
+
+// 2. CUSTOM BASE
+// ============================================================================
+// @import "base/variables";
+@import "./base/variables";
+@import "./base/colors";
+@import "./base/typography";
+@import "./base/mixins";
+@import "./base/global";
+
+// 2.5 MOLLA THEME OVERRIDES
+// ============================================================================
+// Import AFTER base (so we have color variables) but BEFORE layout/components
+@import "./base/molla-overrides";
+
+// 3. LAYOUT
+// ============================================================================
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/footer";
+
+// 4. COMPONENTS
+// ============================================================================
+@import "./components/sections";
+@import "./components/cards";
+@import "./components/call-to-action"; 
+@import "./components/faq";
+@import "./components/hero-banner";
+@import "./components/featured-cards";
+@import "./components/category-cards";
+@import "./components/feature-split";
+@import "./components/benefits";
+@import "./components/testimonials";
+@import "./components/images";
+@import "./components/parallax";
+@import "./components/buttons";
+@import "./components/category-sections";
+// 5. PAGES
+// ============================================================================
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/contact";
+// @import "./pages/categories";
+@import "./pages/product";
+@import "./pages/page-templates";
+@import "./pages/contractor-bodies";
+@import "./pages/service-bodies";
+@import "./pages/mechanics-bodies";
+@import "./pages/enclosed-bodies";
+@import "./pages/saw-trucks";
+@import "./pages/hauler-bodies";
+@import "./pages/landscape-bodies";
+@import "./pages/chipper-bodies";
+@import "./pages/welder-bodies";
+@import "./pages/box-trucks";
+
+// 6. WOOCOMMERCE
+// ============================================================================
+@import "./woocommerce/product-lists";
+@import "./woocommerce/product-single";
+@import "./woocommerce/tabs";
+@import "./woocommerce/gallery";
+
+// 7. BLOG
+// ============================================================================
+@import "./blog/blog";
+
+// 8. UTILITIES
+// ============================================================================
+@import "./utilities/helpers";
+
+
+
+
+// // Footer overrides - make text readable on dark background
+// footer,
+// .footer,
+// .site-footer {
+//   background-color: var(--section-black) !important;
+//   color: var(--contrast-color) !important;
+  
+//   // All text elements
+//   p, span, div, li, a {
+//     color: rgba(255, 255, 255, 0.8) !important;
+//   }
+  
+//   // Headings
+//   h1, h2, h3, h4, h5, h6 {
+//     color: var(--contrast-color) !important;
+//   }
+  
+//   // Links
+//   a {
+//     color: rgba(255, 255, 255, 0.8) !important;
+    
+//     &:hover {
+//       color: var(--contrast-color) !important;
+//     }
+//   }
+  
+//   // Footer titles
+//   .footer-title,
+//   .widget-title {
+//     color: var(--contrast-color) !important;
+//   }
+// }
+
+// // Top bar (if you have one)
+// .top-bar {
+//   background-color: var(--section-black) !important;
+  
+//   p, span, a {
+//     color: rgba(255, 255, 255, 0.9) !important;
+//   }
+// }
+
+// // Override body text (but keep Molla's other styles)
+// body {
+//   color: var(--default-color) !important;
+// }
+
+// // Sections
+// .section {
+//   &:not([class*="section-"]) {
+//     color: var(--default-color) !important;
+//   }
+// }
+
+// // Dark sections
+// .section-dark,
+// .section-black,
+// [class*="dark-background"] {
+//   color: var(--contrast-color) !important;
+  
+//   * {
+//     color: inherit;
+//   }
+  
+//   h1, h2, h3, h4, h5, h6 {
+//     color: var(--contrast-color) !important;
+//   }
+// }

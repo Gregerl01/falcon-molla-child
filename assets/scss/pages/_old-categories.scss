@@ -1,0 +1,295 @@
+
+/* -------------------------------------------------
+   MECHANICS BODIES HERO
+------------------------------------------------- */
+.mechanics-hero {
+  padding: 6rem 0;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/mechanics-bodies-hero.webp') center/cover no-repeat;
+  color: var(--contrast-color);
+
+  h1 {
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    color:#FFF !important;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    color: color-mix(in srgb, white, transparent 25%) !important;
+  }
+}
+
+.mechanics-hero .container .row {
+  justify-content: right;
+}
+
+/* -------------------------------------------------
+   SERVICE BODIES HERO
+------------------------------------------------- */
+.sb-hero {
+  padding: 6rem 0;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/service-bodies-herov3.webp') center/cover no-repeat;
+  color: var(--contrast-color);
+
+  h1 {
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    color:#FFF !important;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    color: color-mix(in srgb, white, transparent 25%) !important;
+  }
+}
+
+.sb-hero .container .row {
+  justify-content: right;
+}
+/* =================================================
+   STANDARD FEATURES – SAFE DROP-IN
+   ================================================= */
+
+/* -----------------------------
+   IMAGE COLUMN
+----------------------------- */
+.sb-features .feature-image-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.sb-features .feature-image-wrap img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* -----------------------------
+   FEATURES GRID
+----------------------------- */
+.sb-features .features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* -----------------------------
+   FEATURE CARD
+----------------------------- */
+.sb-features .feature-item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 1rem;
+
+  padding: 1.75rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sb-features .feature-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.sb-features .feature-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  opacity: 0.85;
+  line-height: 1;
+}
+
+.sb-features .feature-content h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1.5rem;
+  color: var(--heading-color);
+}
+
+.sb-features .feature-content p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--default-color);
+}
+
+/* =================================================
+   RESPONSIVE BEHAVIOR (KEY FIX)
+   ================================================= */
+
+/* <= 1400px — prevent overlap */
+@media (max-width: 1399px) {
+  .sb-features .feature-image-wrap img {
+    max-width: 100%;
+  }
+}
+
+/* <= 992px — STACK IMAGE, KEEP FEATURES 2-COL */
+@media (max-width: 991px) {
+  .sb-features .row {
+    row-gap: 3rem;
+  }
+
+  .sb-features h2 {
+    max-width: 100%;
+  }
+
+  .sb-features .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* <= 576px — FULL SINGLE COLUMN */
+@media (max-width: 575px) {
+  .sb-features .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------------------
+   OPTIONS
+------------------------------------------------- */
+.sb-options {
+  // padding: 6rem 0;
+  background: var(--surface-color);
+
+  h5 {
+    color: var(--accent-color);
+  }
+
+  .option-card {
+    height: 100%;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    // background: color-mix(in srgb, var(--surface-color), transparent 35%);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    .option-type {
+      // font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      margin-bottom: 0.75rem;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+/* -------------------------------------------------
+   ACCESSORIES
+------------------------------------------------- */
+.sb-accessories {
+  // padding: 6rem 0;
+  // background: var(--background-color);
+
+  h5 {
+    color: var(--accent-color);
+  }
+
+  .accessory-item {
+    margin-bottom: 1.75rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-color);
+
+    h4 {
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+  }
+
+  img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+}
+
+/* -------------------------------------------------
+   PRODUCT LIST
+------------------------------------------------- */
+.sb-products {
+  // padding: 6rem 0 0;
+  padding-bottom: 0;
+
+  .product-list-item {
+
+    &.bg-dark-section {
+      background: var(--surface-1) !important;
+      // color: var(--contrast-color);
+    }
+
+    &.bg-light {
+      background: var(--section-primary) !important;
+    }
+
+    h2 a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+
+    .product-description p {
+      font-size: 1.45rem;
+      line-height: 1.75;
+    }
+
+    .product-description {
+      li {
+        margin-bottom: 0.5rem;
+        font-size: 1.45rem !important;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------
+   CTA
+------------------------------------------------- */
+.sb-cta {
+  padding-bottom:40px;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    color: var(--default-color);
+  }
+}
+
+.sb-cta-wrapper {
+  padding: 4rem 3rem;
+  border: 1px solid var(--border-color);
+}

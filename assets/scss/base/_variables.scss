@@ -1,0 +1,31 @@
+// ============================================================================
+// VARIABLES
+// ============================================================================
+// CSS Custom Properties and SCSS variables
+
+// Container max-widths
+$max-width-1500: 1500px;
+
+// Section padding
+$section-padding: 80px;
+$section-scroll-margin: 92px;
+
+$section-padding-md: 60px;      // Tablet (768px - 991px)
+$section-padding-sm: 40px;      // Mobile (< 768px)
+$section-scroll-margin: 92px;
+
+// Header heights
+$header-offset: 100px;
+
+// Border radius
+$border-radius-pill: 50px;
+$border-radius-none: 0;
+
+// Transitions
+$transition-default: 0.3s ease;
+$transition-smooth: 0.25s ease-out;
+
+// Z-index scale
+$z-index-header: 100;
+$z-index-overlay: 50;
+$z-index-modal: 200;

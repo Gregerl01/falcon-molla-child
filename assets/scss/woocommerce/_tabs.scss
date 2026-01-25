@@ -1,0 +1,229 @@
+// ============================================================================
+// PRODUCT TABS
+// ============================================================================
+
+// .product {
+//   .tab-content {
+//     @include accent-border(85%);
+//     @include accent-background(95%);
+//     border-top: 3px solid var(--accent-color) !important;
+    
+//     p,
+//     li {
+//       color: color-mix(in srgb, var(--background-color), var(--contrast-color) 80%) !important;
+//     }
+    
+//     img {
+//       @include accent-border(85%);
+//     }
+    
+//     table {
+//       tr th {
+//         font-weight: 600;
+//       }
+      
+//       tr th,
+//       td {
+//         border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%) !important;
+//         color: color-mix(in srgb, var(--default-color), transparent 20%) !important;
+//       }
+//     }
+    
+//     .btn.btn-primary {
+//       background: var(--color-primary) !important;
+//       border-radius: 50px;
+//       color: white !important;
+//       border-bottom: var(--color-primary) !important;
+//       padding: 1rem 2rem !important;
+      
+//       br {
+//         display: none;
+//       }
+      
+//       &:hover {
+//         @include button-primary-hover;
+//         color: white !important;
+//       }
+//     }
+//   }
+// }
+
+// // WooCommerce tabs panel
+// .woocommerce-Tabs-panel > h2 {
+//   display: none;
+// }
+
+// Tabs navigation
+// .woocommerce div.product .woocommerce-tabs ul.tabs {
+//   li {
+//     &.active a {
+//       background-color: var(--accent-color) !important;
+//       border-radius: 0;
+//       color: var(--contrast-color);
+      
+//       &:hover {
+//         background-color: color-mix(in srgb, var(--accent-color), transparent 10%) !important;
+//       }
+//     }
+    
+//     a {
+//       border-radius: 0;
+//       color: var(--contrast-color) !important;
+//       @include accent-border(85%);
+//       @include accent-background(95%);
+      
+//       &:hover {
+//         background-color: color-mix(in srgb, var(--accent-color), transparent 65%) !important;
+//       }
+//     }
+    
+//     + li {
+//       margin-left: 0.35rem !important;
+//     }
+//   }
+// }
+
+
+
+// .woocommerce-Tabs-panel>h2 {
+//   display: none;
+// }
+
+
+
+// .product .tab-content p,
+// .product .tab-content li {
+//   // color: var(--contrast-color) !important;
+//   color: color-mix(in srgb, var(--background-color), var(--contrast-color) 80%) !important;
+// }
+
+.product .tab-content {
+      border: 4px solid var(--border-color) !important;
+}
+.product .tab-content img {
+   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%) !important;
+}
+
+.product .tab-content table tr th {
+  font-weight: 600;
+  background-color: var(--section-primary) !important;
+}
+.product .tab-content table tr th,
+.product .tab-content table td{
+   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%) !important;
+   color: color-mix(in srgb, var(--default-color), transparent 20%) !important; 
+}
+
+
+ .woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+  background-color: var(--accent-color)  !important;
+  border-radius: 0;
+  color:#fff !important;
+ }
+
+  .woocommerce div.product .woocommerce-tabs ul.tabs li.active a:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 10%) !important;
+  }
+
+ .woocommerce div.product .woocommerce-tabs ul.tabs li a {
+  // background-color: color-mix(in srgb, var(--background-color), var(--contrast-color) 10%) !important;
+  border-radius: 0;
+  // color: var(--text-secondary) !important;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%) !important;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%) !important;
+ }
+
+ .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 65%) !important;
+ }
+
+ .woocommerce div.product .woocommerce-tabs ul.tabs li+li {
+  margin-left: .35rem !important;
+ }
+
+
+
+.woocommerce-product-gallery a:before {
+  border-color:color-mix(in srgb, var(--default-color), transparent 80%) !important;
+ }
+
+ .summary .product_meta,
+ .star-rating {
+  display: none !important;
+ }
+
+ .product-intro .product_title.entry-title {
+  margin-bottom: 0 !important;
+ }
+
+ .woocommerce-product-details__short-description h2 {
+  display: none;
+ }
+
+ .woocommerce-product-details__short-description p,
+  .woocommerce-product-details__short-description li {
+  color: var(--contrast-color) !important;
+ }
+
+.related.products {
+  display: none;
+}
+
+ .summary .price {
+  display:none;
+ }
+
+
+ .woocommerce-product-details__short-description p br{
+  display: none;
+ }
+
+
+ .tab-content .btn.btn-primary {
+  background: var(--color-primary) !important;
+  border-radius: 50px;
+  color: white !important;
+  border-bottom:  var(--color-primary) !important;
+  padding: 1rem 2rem !important;
+}
+
+ .tab-content .btn.btn-primary br {
+  display: none;
+ }
+
+.tab-content .btn.btn-primary:hover {
+  background: color-mix(in srgb, var(--color-primary), transparent 70%) !important;
+  border: 1px solid color-mix(in srgb, var(--color-primary), transparent 20%) !important;
+  // color: color-mix(in srgb, var(--contrast-color), transparent 30%) !important;
+  color: white !important;
+}
+
+.woocommerce-Tabs-panel--description h2:nth-of-type(2) {
+  display: none;
+}
+
+
+.product .tab-content .woocommerce-Tabs-panel {
+  // background-color: var(--surface-color) !important;
+  // border-top: 3px solid var(--primary-color) !important;
+
+   h2, h3, h4 {
+      color: var(--heading-color) !important;
+    }
+    h2 {
+      font-size: 3rem !important;
+    }
+
+    p {
+      color: var(--text-primary) !important;
+    }
+    li {
+      color: var(--text-secondary) !important;
+    }
+
+    .table-striped tr:nth-of-type(odd) {
+       background-color: var(--surface) !important;
+    }
+
+
+}

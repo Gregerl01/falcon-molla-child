@@ -1,0 +1,25 @@
+/* ============================================================================
+   CARD / SURFACE COMPONENTS
+   ========================================================================== */
+
+.card,
+.card-surface
+{
+  background-color: var(--surface-card, var(--bg-card));
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  transition:
+    background-color var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+  }
+
+  p, li {
+    color: var(--text-secondary);
+  }
+}

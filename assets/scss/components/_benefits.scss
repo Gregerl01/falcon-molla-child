@@ -1,0 +1,83 @@
+// ============================================================================
+// BENEFIT ITEMS - Theme Support
+// ============================================================================
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.benefit-item .benefit-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 4px;
+    flex-shrink: 0;
+    background: transparent;
+    border: 1px solid var(--border-color);
+
+    i {
+        font-size: 24px;
+        color: var(--accent-color);
+    }
+}
+
+.benefit-item .benefit-content {
+    h4 {
+        margin-bottom: 0.5rem;
+        font-size: 18px;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+}
+
+// // Dark mode - Invert to dark icons
+// [data-theme="dark"] {
+//   .benefit-item {
+//     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+//   }
+
+//   .benefit-item .benefit-icon {
+//     // border-color: #{map-get($colors, 'gray-700')} !important;
+
+//     i {
+//       // color: #{map-get($colors, 'gray-700')} !important;
+//     }
+//   }
+// }
+
+// Responsive
+@media (max-width: 992px) {
+    .benefit-item {
+        justify-content: center;
+        text-align: left;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefit-item {
+        justify-content: left;
+        text-align: left;
+        max-width: 100%;
+        padding: 0 20px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

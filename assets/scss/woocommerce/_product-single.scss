@@ -1,0 +1,71 @@
+// ============================================================================
+// SINGLE PRODUCT PAGE
+// ============================================================================
+
+.product-template-default {
+  background-color: var(--background-color);
+}
+
+.wp-singular.product-template-default .page-wrapper {
+  background-color: var(--background-color) !important;
+}
+
+// Product gallery
+.woocommerce-product-gallery {
+  a:before {
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important;
+  }
+}
+
+// Product meta & ratings
+.summary {
+  .product_meta,
+  .star-rating {
+    display: none !important;
+  }
+  
+  .price {
+    display: none;
+  }
+}
+
+.product-intro .product_title.entry-title {
+  margin-bottom: 0 !important;
+}
+
+// Product description
+
+.product-intro .summary.entry-summary {
+
+    h2 {
+      color: var(--heading-color) !important;
+    }
+
+    p {
+      color: var(--text-primary) !important;
+    }
+    li {
+      color: var(--text-secondary) !important;
+    }
+}
+
+
+.woocommerce-product-details__short-description {
+  h2 {
+    display: none;
+  }
+  
+  p,
+  li {
+    color: var(--contrast-color) !important;
+  }
+  
+  p br {
+    display: none;
+  }
+}
+
+// Related products
+.related.products {
+  display: none;
+}

@@ -1,0 +1,308 @@
+html,
+body {
+  background-color: var(--bg-page);
+}
+
+main,
+.site,
+.site-content,
+.page-wrapper,
+.content-area {
+  background-color: transparent;
+}
+// ============================================================================
+// BASE COLOR PALETTE
+// assets/scss/_colors.scss
+// ============================================================================
+
+$colors: (
+  'primary': #208bf4,
+  'primary-dark': darken(#208bf4, 10%),
+  'primary-light': lighten(#208bf4, 10%),
+
+  'white': #ffffff,
+  'black': #060606,
+
+  'gray-100': #f4f7f6,
+  'gray-200': #e9ecef,
+  'gray-300': #dee2e6,
+  'gray-400': #ced4da,
+  'gray-500': #adb5bd,
+  'gray-600': #777777,
+  'gray-700': #52565e,
+  'gray-800': #343a40,
+  'gray-900': #252525,
+
+  'success': #28a745,
+  'warning': #ffc107,
+  'danger': #dc3545,
+  'info': #17a2b8
+);
+// ============================================================================
+// DESIGN TOKENS – LIGHT MODE (DEFAULT)
+// ============================================================================
+
+:root {
+  /* Brand */
+  --color-primary: #{map-get($colors, 'primary')};
+  --accent-color: var(--color-primary);
+
+  --color-primary-rgb:
+    #{red(map-get($colors, 'primary'))},
+    #{green(map-get($colors, 'primary'))},
+    #{blue(map-get($colors, 'primary'))};
+
+  /* Page + Sections */
+  --bg-page: #{map-get($colors, 'gray-100')};
+  --section-primary: #{map-get($colors, 'white')};
+  --section-secondary: #{map-get($colors, 'gray-100')};
+
+  // /* Surfaces */
+  // --bg-card: #{map-get($colors, 'white')};
+  // --bg-card-subtle: #{map-get($colors, 'gray-100')};
+
+  /* Text */
+  --text-primary: #{map-get($colors, 'gray-900')};
+  --text-secondary: #{map-get($colors, 'gray-600')};
+  --text-muted: #{map-get($colors, 'gray-500')};
+
+  /* Headings */
+  --heading-color: var(--text-primary);
+
+  /* Borders + Shadows */
+  --border-color: #{map-get($colors, 'gray-300')};
+  --shadow-card: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+  /* Image overlays */
+  --overlay-image: rgba(0, 0, 0, 0.55);
+  --text-on-image: #{map-get($colors, 'white')};
+
+  /* Header & Footer — LOCKED DARK */
+  --header-bg: #111111;
+  --header-text: #ffffff;
+  --header-border: rgba(255, 255, 255, 0.08);
+
+  --footer-bg: #111111;
+  --footer-top-bg: #{map-get($colors, 'gray-900')};
+  --footer-bottom-bg: #111111;
+  --footer-text: #ffffff;
+  --footer-border: rgba(255, 255, 255, 0.08);
+
+  /* Navigation */
+  --nav-color: rgba(255, 255, 255, 1);
+  --nav-hover-color: #{map-get($colors, 'white')};
+  --nav-mobile-background-color: #{map-get($colors, 'white')};
+  --nav-dropdown-background-color: #{map-get($colors, 'white')};
+  --nav-dropdown-color: #{map-get($colors, 'gray-900')};
+  --nav-dropdown-hover-color: #{map-get($colors, 'primary')};
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* Transitions */
+  --transition-base: all 0.3s ease;
+  --transition-fast: all 0.15s ease;
+  --transition-slow: all 0.5s ease;
+}
+
+// ============================================================================
+// DESIGN TOKENS – DARK MODE OVERRIDES
+// ============================================================================
+
+[data-theme="dark"] {
+  /* Page + Sections */
+  --bg-page: #{map-get($colors, 'black')};
+  --section-primary: #{map-get($colors, 'black')};
+  --section-secondary: #{map-get($colors, 'gray-800')};
+
+  /* Surfaces */
+  --bg-card: #{map-get($colors, 'gray-800')};
+  --bg-card-subtle: #{map-get($colors, 'gray-700')};
+
+  /* Text */
+  --text-primary: #{map-get($colors, 'white')};
+  --text-secondary: #{map-get($colors, 'gray-300')};
+  --text-muted: #{map-get($colors, 'gray-500')};
+
+  /* Headings */
+  --heading-color: var(--text-primary);
+
+  /* Borders + Shadows */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.6);
+
+  /* Image overlays */
+  --overlay-image: rgba(0, 0, 0, 0.65);
+}
+
+// ============================================================================
+// SECTIONS
+// ============================================================================
+
+.section {
+  position: relative;
+  padding: 60px 0;
+  background: var(--section-primary);
+  color: var(--text-secondary);
+  transition: background-color var(--transition-base),
+              color var(--transition-base);
+
+  @media (min-width: 768px) {
+    padding: 80px 0;
+  }
+
+  @media (min-width: 992px) {
+    padding: 100px 0;
+  }
+}
+
+.section--alt {
+  background: var(--section-secondary);
+}
+
+.section--image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: var(--text-on-image);
+}
+
+.section--image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--overlay-image);
+  z-index: 1;
+}
+
+.section--image > * {
+  position: relative;
+  z-index: 2;
+}
+
+// ============================================================================
+// CARD Surface
+// ============================================================================
+
+/* Base (light mode) */
+:root {
+  --surface: #f1f1f1;
+  --surface-1: #e3e3e3;
+  --surface-2: #e4e4e4; /* subtle lift */
+  --surface-hover: #eef1f5;
+
+  --surface-border: rgba(0, 0, 0, 0.06);
+  /* Existing tokens */
+  --bg-card: var(--surface-1);
+  --bg-card-subtle: var(--surface-2);
+
+}
+[data-theme="dark"] {
+
+  /* ===============================
+     Surfaces (Dark Mode)
+     =============================== */
+  --surface: #151616;
+  --surface-1: #111315;
+  --surface-2: #1d1e1f;
+  --surface-hover: #22262a;
+
+  --surface-border: rgba(255, 255, 255, 0.08);
+}
+
+.surface {
+  background-color: var(--surface) !important;
+  // border: 1px solid var(--surface-border);
+  transition: background-color 0.25s ease;
+}
+
+// .surface:hover {
+//   background-color: var(--surface-hover);
+// }
+
+.surface--subtle {
+  background-color: var(--surface-2) !important;
+}
+
+// .surface--subtle:hover {
+//   background-color: var(--surface-hover);
+// }
+
+.surface--hoverable:hover {
+  background: color-mix(
+    in srgb,
+    var(--bg-card),
+    var(--contrast-color) 3%
+  );
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+// ============================================================================
+// TEXT DEFAULTS
+// ============================================================================
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+p, li, span {
+  color: var(--text-secondary);
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+// ============================================================================
+// UTILITIES (UNCHANGED)
+// ============================================================================
+
+@each $name, $color in $colors {
+  .bg-#{$name} { background-color: $color !important; }
+  .text-#{$name} { color: $color !important; }
+  .border-#{$name} { border-color: $color !important; }
+}
+
+@for $i from 1 through 9 {
+  .opacity-#{$i * 10} {
+    opacity: #{$i * 0.1};
+  }
+}
+
+// ============================================================================
+// MIXINS & FUNCTIONS
+// ============================================================================
+
+@mixin theme-colors {
+  background-color: var(--bg-page);
+  color: var(--text-secondary);
+}
+
+@function color-contrast($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+  @return if($yiq >= 128, map-get($colors, 'black'), map-get($colors, 'white'));
+}
+
+// ============================================================================
+// ULTILITIES
+// ============================================================================
+
+.gradient-divider {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  background: radial-gradient(
+    circle at center,
+    var(--accent-color) 0%,
+    transparent 70%
+  );
+}

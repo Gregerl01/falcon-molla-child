@@ -1,0 +1,233 @@
+// ============================================================================
+// FEATURED CARDS – Clean surface panels
+// ============================================================================
+
+.swiper-wrapper {
+    padding-bottom: 4rem;
+}
+.featured-card {
+  position: relative;
+  height: 100%;
+  border-radius: 0;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 40px;  
+  background-color: var(--surface);
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    background-color: var(--surface-hover);
+   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  }
+}
+
+
+// ---------------------------------------------------------------------------
+// ICON BOX
+// ---------------------------------------------------------------------------
+
+.featured-card .icon-box {
+  position: absolute;
+  top:0;
+  left:5%;
+  height: 70px;
+  width: 70px;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+
+  i {
+    font-size: 22px;
+    color: var(--section-primary);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// ARROW LINK
+// ---------------------------------------------------------------------------
+
+.featured-card .arrow-link {
+  position: absolute;
+  top: -48px;
+  right: -48px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+
+  i {
+    color: var(--text-primary);
+    font-size: 16px;
+  }
+}
+
+.featured-card:hover .arrow-link {
+  top: 20px;
+  right: 20px;
+}
+
+.featured-card .arrow-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  color: var(--accent-color);
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  transition: all 0.4s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+// ---------------------------------------------------------------------------
+// IMAGE
+// ---------------------------------------------------------------------------
+
+.featured-card .image {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  background-color: white;
+
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// CONTENT
+// ---------------------------------------------------------------------------
+
+.featured-card .content {
+  h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+
+    a {
+      color: var(--contrast-color);
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.85;
+    min-height: 75px;
+  }
+}
+.service-number {
+    position: relative;
+    padding-left: 76px;
+    color: var(--accent-color);
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+.service-number:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    height: 1px;
+    width: 70px;
+    background-color: var(--accent-color);
+    transition: all 0.4s;
+}
+
+
+.featured-card:hover .icon-box {
+background-color: white;
+}
+
+.featured-card:hover .icon-box i {
+color: var(--accent-color);
+}
+
+.featured-card:hover .arrow-link {
+top: 16px;
+right: 16px;
+background-color: var(--surface);
+}
+
+
+.featured-card:hover .content .service-number {
+color: var(--text-primary);
+padding-left: 0;
+}
+
+.featured-card:hover .content .service-number::after {
+background-color: var(--text-primary);
+left: 30px;
+}
+
+// ---------------------------------------------------------------------------
+// SWIPER
+// ---------------------------------------------------------------------------
+
+.services-slider .swiper-wrapper {
+  height: auto !important;
+}
+
+.swiper-navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.swiper-navigation button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0;
+  height: 30px;
+  width: 30px;
+  background-color: var(--accent-color);
+  color: var(--text-primary);
+  font-size: 20px;
+  transition: all 0.4s;
+  margin-right: 10px;
+}
+
+.swiper-navigation button:last-child {
+  margin-right: 0;
+}
+
+.swiper-navigation button:hover {
+  background-color: color-mix(in srgb, var(--accent-color), #000 15%);
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+

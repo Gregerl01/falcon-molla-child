@@ -1,0 +1,34 @@
+/* =========================================================
+   Falcon Product – Dimension Diagram (Theme-Aware)
+   ========================================================= */
+
+.product-diagram {
+  svg.falcon-diagram {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    /* Inherit from global theme system */
+    --diagram-stroke: var(--text-secondary);
+    --diagram-text: var(--text-secondary);
+    --diagram-bg: transparent;
+  }
+
+  /* Subtle default state */
+  .dimension-line {
+    opacity: 0.6;
+    transition: opacity 0.15s ease;
+  }
+
+  /* Active / highlighted state */
+  &.is-active .dimension-line {
+    opacity: 1;
+  }
+}
+
+/* ---------------------------------------------------------
+   Smooth SVG transitions (safe)
+   --------------------------------------------------------- */
+.product-diagram svg {
+  transition: stroke 0.15s ease, fill 0.15s ease;
+}

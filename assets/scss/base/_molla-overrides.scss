@@ -1,0 +1,306 @@
+/**
+ * MOLLA THEME OVERRIDES (CLEANED)
+ * ============================================================================
+ * Purpose:
+ * - Override Molla hardcoded colors (gold, dark text, etc)
+ * - Respect token-based light/dark system
+ * - Keep header & footer permanently dark
+ * - Avoid inversion-based logic
+ */
+
+/* ============================================================================
+   BASE TYPOGRAPHY
+   ========================================================================== */
+
+body {
+  background-color: var(--bg-page) !important;
+  color: var(--text-secondary) !important;
+  font-family: "Inter", sans-serif;
+}
+
+/* ============================================================================
+   OVERRIDE MOLLA DYNAMIC TEXT COLORS
+   ========================================================================== */
+
+/* ============================================
+   FORCE Molla text colors to use tokens
+============================================ */
+
+.section,
+.section * {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color) !important;
+  }
+
+  p, li, span {
+    color: var(--text-secondary) !important;
+  }
+}
+
+
+/* ============================================================================
+   LINKS (REMOVE MOLLA GOLD)
+   ========================================================================== */
+
+a {
+  color: inherit !important;
+
+  &:hover,
+  &:focus {
+    opacity: 0.85;
+  }
+}
+
+/* ============================================================================
+   MOLLA COLOR CLASS OVERRIDES
+   ========================================================================== */
+
+.text-primary,
+.has-primary-color {
+  color: var(--accent-color) !important;
+}
+
+.bg-primary,
+.has-primary-background-color {
+  background-color: var(--accent-color) !important;
+}
+
+::selection {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* ============================================================================
+   HEADER (LOCKED DARK — NEVER THEMED)
+   ========================================================================== */
+
+.header,
+.site-header {
+  background-color: var(--header-bg) !important;
+  color: var(--header-text) !important;
+
+  a {
+    color: var(--header-text) !important;
+
+    &:hover,
+    &:focus {
+      opacity: 0.85;
+    }
+  }
+}
+
+/* Main navigation */
+.menu,
+.main-nav {
+  li > a {
+    color: var(--header-text) !important;
+  }
+}
+
+/* Mobile menu */
+.mobile-menu {
+  background-color: var(--bg-page);
+
+  li a {
+    color: var(--text-secondary);
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+/* ============================================================================
+   FOOTER (LOCKED DARK — NEVER THEMED)
+   ========================================================================== */
+
+footer,
+.footer,
+.site-footer,
+.footer-main,
+.footer-bottom {
+  background-color: var(--footer-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.75);
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+.footer-title,
+.widget-title {
+  color: var(--footer-text) !important;
+  font-weight: 700;
+}
+
+
+/* ============================================================================
+   WOOCOMMERCE
+   ========================================================================== */
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.product-title {
+  a {
+    color: var(--heading-color);
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.price {
+  color: var(--heading-color);
+}
+
+/* Buttons */
+.woocommerce a.button,
+.woocommerce button.button,
+.add_to_cart_button,
+.single_add_to_cart_button,
+.btn-cart {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: #ffffff !important;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* ============================================================================
+   FORMS
+   ========================================================================== */
+
+input,
+textarea,
+select,
+.form-control {
+  color: var(--text-primary);
+  border-color: var(--border-color);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+/* ============================================================================
+   ICONS & UI
+   ========================================================================== */
+
+.icon-box-icon i,
+.feature-box i,
+.social-icon:hover {
+  color: var(--accent-color);
+}
+
+/* ============================================================================
+   PAGINATION
+   ========================================================================== */
+
+.page-numbers,
+.pagination {
+  a,
+  span {
+    color: var(--text-secondary);
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  .current {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
+}
+
+/* ============================================================================
+   CAROUSELS
+   ========================================================================== */
+
+.owl-carousel {
+  .owl-nav [class*='owl-'] {
+    color: var(--text-secondary);
+    border-color: var(--border-color);
+
+    &:hover {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
+
+  .owl-dots .owl-dot span {
+    background-color: var(--border-color);
+  }
+
+  .owl-dots .owl-dot.active span {
+    background-color: var(--accent-color);
+  }
+}
+
+/* ============================================================================
+   FORCE REMOVE MOLLA GOLD (#fcb941)
+   ========================================================================== */
+
+[class*="text-primary"],
+[class*="color-primary"],
+[style*="#fcb941"] {
+  color: var(--accent-color) !important;
+}
+
+[class*="bg-primary"],
+[class*="background-primary"],
+[style*="background-color: #fcb941"],
+[style*="background:#fcb941"] {
+  background-color: var(--accent-color) !important;
+}
+
+/* ============================================================================
+   MISC FIXES
+   ========================================================================== */
+
+.header-search .search-wrapper .icon-search {
+  display: none;
+}
+
+.shop-icons {
+  margin-left: 0 !important;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.woocommerce-breadcrumb.divider-active {
+  margin-bottom: 0 !important;
+  background: var(--section-primary) !important;
+
+  .full-divider {
+    border-color: var(--border-color) !important;
+  }
+
+}
+
+.breadcrumb-wrap.full-divider {
+  background: var(--section-primary) !important;
+}
+
+.archive .page-wrapper {
+  background: var(--section-primary) !important;
+}
+
+.wp-singular .page-content {
+  background: var(--section-primary) !important;
+  // padding-top: 80px;
+}
+

@@ -1,0 +1,26 @@
+// ============================================================================
+// MIXINS
+// ============================================================================
+// Reusable SCSS mixins for common patterns
+
+// Accent border mixin (used throughout)
+@mixin accent-border($opacity: 85%) {
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent $opacity);
+}
+
+// Accent background mixin
+@mixin accent-background($opacity: 95%) {
+  background-color: color-mix(in srgb, var(--accent-color), transparent $opacity);
+}
+
+// Primary button hover state
+@mixin button-primary-hover {
+  background: color-mix(in srgb, var(--color-primary), transparent 70%) !important;
+  border: 1px solid color-mix(in srgb, var(--color-primary), transparent 20%) !important;
+  color: white;
+}
+
+// Transition mixin
+@mixin smooth-transition($property: all, $duration: 0.3s) {
+  transition: $property $duration ease;
+}

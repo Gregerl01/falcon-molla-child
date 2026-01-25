@@ -1,0 +1,116 @@
+// ============================================================================
+// BUTTONS - Global defaults
+// ============================================================================
+
+// Base button
+.btn {
+  display: inline-block !important;
+  padding: 1.2rem 3rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none !important;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+    transform: translateY(-2px);
+  }
+}
+
+// Primary button (always blue)
+.btn.btn-primary,
+a.btn.btn-primary {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: white !important;
+
+  &:hover,
+  &:focus {
+    background-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
+    border-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
+    box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.3);
+  }
+}
+/* Outline button – default (light sections) */
+.btn.btn-outline,
+a.btn.btn-outline {
+  background-color: transparent !important;
+  border: 2px solid var(--text-primary) !important;
+  color: var(--text-primary) !important;
+
+  &:hover,
+  &:focus {
+    background-color: var(--text-primary) !important;
+    border-color: var(--text-primary) !important;
+    color: var(--bg-page) !important;
+  }
+}
+
+// /* Outline button on dark sections only */
+// .section-dark,
+// .section-black,
+// .dark-background {
+//   .btn.btn-outline,
+//   a.btn.btn-outline {
+//     border-color: var(--contrast-color) !important;
+//     color: var(--contrast-color) !important;
+
+//     &:hover,
+//     &:focus {
+//       background-color: var(--contrast-color) !important;
+//       border-color: var(--contrast-color) !important;
+//       color: var(--dk-background-color) !important;
+//     }
+//   }
+// }
+
+
+// Secondary button (outlined blue)
+.btn.btn-secondary,
+a.btn.btn-secondary {
+  background-color: transparent !important;
+  border: 2px solid var(--accent-color) !important;
+  color: var(--accent-color) !important;
+  
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: var(--contrast-color) !important;
+  }
+}
+
+// Button shape variants
+.btn-pill {
+  border-radius: 999px !important;
+}
+
+.btn-rounded {
+  border-radius: 8px !important;
+}
+
+.btn-square {
+  border-radius: 0 !important;
+}
+
+// Button sizes
+.btn-sm {
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+}
+
+.btn-lg {
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+}
+
+// Block button (full width)
+.btn-block {
+  display: block;
+  width: 100%;
+}

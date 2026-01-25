@@ -1,0 +1,23 @@
+
+// ============================================================================
+// SECTIONS & FEATURES
+// ============================================================================
+
+.section {
+  padding: 80px 0;
+  background-color: var(--section-primary);
+}
+
+.section--alt {
+  background-color: var(--section-secondary);
+}
+
+.section--tight {
+  padding: 60px 0;
+}
+
+.section--wide {
+  padding: 120px 0;
+}
+
+

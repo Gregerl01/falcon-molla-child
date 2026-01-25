@@ -1,0 +1,160 @@
+// Convert to SCSS for better functionality
+// assets/scss/_colors.scss
+
+// Base Color Palette
+$colors: (
+  // Primary colors
+  // 'primary': #7B29C7,
+  // 'primary-dark': darken(#7B29C7, 10%),
+  // 'primary-light': lighten(#7B29C7, 10%),
+
+    // Primary colors
+  'primary': #208bf4,
+  'primary-dark': darken(#208bf4, 10%),
+  'primary-light': lighten(#208bf4, 10%),
+  
+  
+  // Neutral colors
+  'white': #ffffff,
+  'black': #060606,
+  'gray-100': #f4f7f6,
+  'gray-200': #e9ecef,
+  'gray-300': #dee2e6,
+  'gray-400': #ced4da,
+  'gray-500': #adb5bd,
+  'gray-600': #777777,
+  'gray-700': #52565e,
+  'gray-800': #343a40,
+  'gray-900': #252525,
+  
+  // Semantic colors
+  'success': #28a745,
+  'warning': #ffc107,
+  'danger': #dc3545,
+  'info': #17a2b8
+);
+
+// CSS Variables for runtime access
+:root {
+  // Core colors
+  --color-primary: #{map-get($colors, 'primary')};
+  --color-primary-rgb: #{red(map-get($colors, 'primary'))}, #{green(map-get($colors, 'primary'))}, #{blue(map-get($colors, 'primary'))};
+  
+  // Semantic assignments
+  --background-color: #{map-get($colors, 'white')};
+  --dk-background-color: #{map-get($colors, 'black')};
+  --default-color: #{map-get($colors, 'gray-600')};
+  --heading-color: #{map-get($colors, 'gray-700')};
+  --accent-color: #{map-get($colors, 'primary')};
+  --surface-color: #{map-get($colors, 'white')};
+  --contrast-color: #{map-get($colors, 'white')};
+  
+  // Additional useful variables
+  --border-color: #{map-get($colors, 'gray-300')};
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --overlay-color: rgba(0, 0, 0, 0.5);
+  
+  // Spacing (bonus)
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  // Transitions
+  --transition-base: all 0.3s ease;
+  --transition-fast: all 0.15s ease;
+  --transition-slow: all 0.5s ease;
+}
+
+// Navigation specific
+:root {
+  --nav-color: rgba(255, 255, 255, 1);
+  --nav-hover-color: #{map-get($colors, 'white')};
+  --nav-mobile-background-color: #{map-get($colors, 'white')};
+  --nav-dropdown-background-color: #{map-get($colors, 'white')};
+  --nav-dropdown-color: #{map-get($colors, 'gray-900')};
+  --nav-dropdown-hover-color: #{map-get($colors, 'primary')};
+}
+
+// Color schemes / themes
+[data-theme="light"],
+.light-background {
+  --background-color: #{map-get($colors, 'gray-100')};
+  --surface-color: #{map-get($colors, 'white')};
+  --default-color: #{map-get($colors, 'gray-600')};
+  --heading-color: #{map-get($colors, 'gray-700')};
+}
+
+[data-theme="dark"],
+.dark-background {
+  --background-color: #{map-get($colors, 'black')};
+  --default-color: #{map-get($colors, 'gray-300')};
+  --heading-color: #{map-get($colors, 'white')};
+  --surface-color: #{map-get($colors, 'gray-900')};
+  --contrast-color: #{map-get($colors, 'white')};
+}
+
+// Utility classes using SCSS functions
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+  
+  .text-#{$name} {
+    color: $color !important;
+  }
+  
+  .border-#{$name} {
+    border-color: $color !important;
+  }
+}
+
+// Opacity variants
+@for $i from 1 through 9 {
+  .opacity-#{$i * 10} {
+    opacity: #{$i * 0.1};
+  }
+}
+
+// Accessibility improvements
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background-color: #{map-get($colors, 'black')};
+    --default-color: #{map-get($colors, 'gray-300')};
+    --heading-color: #{map-get($colors, 'white')};
+    --surface-color: #{map-get($colors, 'gray-900')};
+  }
+}
+
+// SCSS Mixins for easy use
+@mixin theme-colors($theme: 'light') {
+  @if $theme == 'dark' {
+    background-color: var(--dk-background-color);
+    color: var(--contrast-color);
+  } @else {
+    background-color: var(--background-color);
+    color: var(--default-color);
+  }
+}
+
+// Color contrast function
+@function color-contrast($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+  @return if($yiq >= 128, map-get($colors, 'black'), map-get($colors, 'white'));
+}
+
+// Usage example
+.button-primary {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  // Fixed version
+&:hover {
+  background-color: #{map-get($colors, 'primary-dark')};
+  // Or use a CSS variable you've defined
+}
+}

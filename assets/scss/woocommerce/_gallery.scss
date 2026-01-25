@@ -1,0 +1,20 @@
+// ============================================================================
+// PRODUCT GALLERY
+// ============================================================================
+
+/* Fix GT3 Gallery thumbnail visibility */
+.gt3-photo-gallery-container img,
+.gt3pg-gallery-container img,
+.gt3-photo-gallery img {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  max-width: 100%;
+  height: auto;
+}
+
+.gt3-photo-gallery-container .gt3pg-item,
+.gt3pg-gallery-container .gt3pg-item {
+  opacity: 1 !important;
+  visibility: visible !important;
+}

@@ -1,0 +1,91 @@
+
+/*--------------------------------------------------------------
+# Category Cards Grid
+--------------------------------------------------------------*/
+
+// Category Cards 
+.category-card {
+  height: 450px;
+  cursor: pointer;
+  border-radius: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+
+    img {
+      transform: scale(1.05);
+    }
+
+    .overlay-gradient {
+      opacity: 0.4;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; // Aligns to top
+    transition: transform 0.5s ease;
+  }
+
+  // Dark gradient overlay
+  .overlay-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.8) 100%);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+}
+
+.category-content {
+  z-index: 2;
+  display: flex;
+  align-items: center; // Aligns to bottom
+  justify-content: flex-end;
+  flex-direction: column; // Aligns to left
+  width: 100%;
+  height: 100%; // Take full height
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+
+  h4 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: normal;
+  }
+  
+  p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+
+/* ================================
+   Font Colors – LOCKED STYLES
+================================ */
+
+.category-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a {
+    color: #ffffff !important;
+  }
+}

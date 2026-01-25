@@ -1,0 +1,64 @@
+// ============================================================================
+// FOOTER
+// ============================================================================
+
+footer {
+
+  border-top: none !important;
+  h3.widget-title {
+    color: var(--footer-text) !important;
+  }
+  .footer-top {
+    background-color: var(--footer-top-bg) !important;
+    color: var(--footer-text);
+    // border-top: 1px solid var(--footer-border);
+  }
+
+  .footer-main {
+    background-color: var(--footer-bg) !important;
+    
+    border-top: 1px solid var(--footer-border);
+  
+    .textwidget {
+      ul,li,p,span,i,a {
+        color: var(--footer-text) !important;
+      }
+      
+    }
+
+    .circle-type .social-icon {
+      color: var(--footer-text) !important;
+    }
+  
+  
+  
+  }
+
+  .footer-bottom {
+    background-color: var(--footer-bg) !important;
+    color: var(--footer-text);
+    border-top: 1px solid var(--footer-border);
+  }
+
+}
+
+
+
+.footer-top {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+}
+
+.footer.divider-active .inner-wrap {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 85%) !important;
+}
+
+
+#gutenberg-block-5 .icon-box-icon .icon-box-content {
+  h3.icon-box-title {
+    color: var(--footer-text) !important;
+  }
+}
+
+#gutenberg-block-5 p.icon-box-desc {
+  color: var(--footer-text) !important;
+}
