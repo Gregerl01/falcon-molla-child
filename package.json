@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass assets/scss/custom.scss assets/css/custom.css",
-    "watch": "sass --watch assets/scss/custom.scss:assets/css/custom.css --load-path=assets/scss"
-  },
+  "sass": "sass assets/scss/custom.scss assets/css/custom.css",
+  "watch": "sass --watch assets/scss/custom.scss:assets/css/custom.css --load-path=assets/scss",
+  "dev": "browser-sync start --proxy \"http://falconlocaldev2026v2.local\" --files \"**/*.php,assets/css/*.css,assets/js/*.js\""
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "browser-sync": "^3.0.4",
     "nodemon": "^3.1.10",
     "sass": "^1.93.2"
   },
