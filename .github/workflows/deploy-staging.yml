@@ -13,13 +13,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy theme to Hostinger (staging)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
         with:
-          server: 92.112.191.78
-          username: u772682663
-          port: 65002
-          protocol: sftp
           ssh-private-key: ${{ secrets.SSH_KEY }}
-          local-dir: ./
-          server-dir: /domains/stg.falconbodies.com/public_html/wp-content/themes/molla-child/
+
+      - name: Deploy theme to Hostinger (staging)
+        run: |
+          rsync -avz --delete \
+            --exclude=".git*" \
+            ./ \
+            u772682663@92.112.191.78:/domains/stg.falconbodies.com/public_html/wp-content/themes/molla-child/
