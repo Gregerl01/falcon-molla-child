@@ -6042,6 +6042,46 @@ a.btn.btn-secondary:focus {
   width: auto;
 }
 
+/* ==========================================================================
+   DEALER LOCATOR – FULL PAGE OVERRIDE
+   Falcon Truck Bodies
+   ========================================================================== */
+.dealer-section {
+  padding-bottom: 0;
+}
+
+#wpsl-wrap {
+  background: var(--surface) !important;
+  padding: 15px !important;
+  border: 1px solid var(--border-color);
+}
+#wpsl-wrap .gm-style .gm-style-iw-c,
+#wpsl-wrap .gm-style .wpsl-info-window * {
+  color: #111111 !important;
+}
+#wpsl-wrap #wpsl-result-list #wpsl-stores ul {
+  padding: 10px !important;
+}
+#wpsl-wrap #wpsl-result-list #wpsl-stores li {
+  background: var(--surface-2) !important;
+  border: 1px solid var(--border-color) !important;
+}
+#wpsl-wrap #wpsl-search-wrap .wpsl-select-wrap span,
+#wpsl-wrap #wpsl-search-wrap .wpsl-select-wrap input#wpsl-search-input {
+  color: var(--header-bg) !important;
+}
+#wpsl-wrap input, #wpsl-wrap #wpsl-search-btn {
+  border: 1px solid var(--border-color) !important;
+  border-radius: 0 !important;
+  color: var(#000) !important;
+}
+#wpsl-wrap .wpsl-search {
+  background: var(--surface-2) !important;
+}
+#wpsl-wrap #wpsl-result-list {
+  padding: 15px !important;
+}
+
 /* =========================================================
    Falcon Product – Dimension Diagram (Theme-Aware)
    ========================================================= */

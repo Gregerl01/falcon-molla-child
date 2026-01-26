@@ -1,0 +1,51 @@
+/* ==========================================================================
+   DEALER LOCATOR – FULL PAGE OVERRIDE
+   Falcon Truck Bodies
+   ========================================================================== */
+.dealer-section {
+    padding-bottom: 0;
+}
+#wpsl-wrap {
+    // margin-bottom: 20px !important;
+    background: var(--surface) !important;
+    padding:15px !important;
+    border: 1px solid var(--border-color);
+
+    .gm-style .gm-style-iw-c,
+    .gm-style .wpsl-info-window *{
+        color:#111111 !important;
+    }
+
+     #wpsl-result-list #wpsl-stores ul {
+        padding:10px !important;
+        // background-color: var(--bg-page) !important;
+     }
+
+    #wpsl-result-list #wpsl-stores li {
+        background: var(--surface-2) !important;
+        border:1px solid var(--border-color) !important;
+        
+    }
+
+    #wpsl-search-wrap .wpsl-select-wrap span,
+    #wpsl-search-wrap .wpsl-select-wrap input#wpsl-search-input{
+    color: var(--header-bg) !important;
+    }
+
+    input, #wpsl-search-btn {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0 !important;
+    color: var($black) !important;
+    }   
+
+    .wpsl-search {
+        background: var(--surface-2) !important;
+        // border:1px solid var(--border-color) !important;
+    }
+
+    #wpsl-result-list {
+        padding:15px !important;
+    }
+}
+
+   
