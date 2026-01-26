@@ -29,4 +29,4 @@ jobs:
             --exclude=".git*" \
             -e "ssh -p 65002" \
             ./ \
-            u772682663@92.112.191.78:/domains/stg.falconbodies.com/public_html/wp-content/themes/molla-child/
+            u772682663@92.112.191.78:/home/u772682663/domains/stg.falconbodies.com/public_html/wp-content/themes/molla-child/
