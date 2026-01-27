@@ -80,8 +80,8 @@ These are **not** deployed via Git.
 ## 🔁 Deployment Strategy
 
 ### Git Branching
-- `dev` → auto-deploys to **staging**
-- `main` → auto-deploys to **production**
+- `main` → auto-deploys to **product - not wired yet**
+- `staging` → auto-deploys to **staging**
 
 ### Deployment Method
 - GitHub Actions
@@ -171,7 +171,7 @@ Media moves via:
 ## 🧪 Release Checklist (Staging → Production)
 
 Before production deploy:
-- [ ] Code merged into `main`
+- [ ] Code merged into `dev`
 - [ ] GitHub Action deploy succeeds
 - [ ] Cache cleared (LiteSpeed / theme cache)
 - [ ] Smoke test: Home, key category page(s), contact form, mobile navigation
