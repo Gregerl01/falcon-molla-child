@@ -3,7 +3,7 @@
   <div class="hero__glow"></div>
 
   <img
-    src="/wp-content/uploads/2025/11/hero-imagev2.webp"
+    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hero-image-v3.webp"
     alt="Falcon mechanics body truck in studio lighting"
     class="hero__bg"
   >
