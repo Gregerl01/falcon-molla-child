@@ -6470,25 +6470,6 @@ a.btn.btn-secondary:focus {
   background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/contractor-bodies-hero.webp") center/cover no-repeat;
   color: var(--text-on-image);
 }
-.cb-hero h1, .cb-hero .h1 {
-  font-weight: 800;
-  line-height: 1.05;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
-}
-.cb-hero .tagline {
-  font-size: 1.25rem;
-  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
-}
-
-.cb-hero .container .row {
-  justify-content: flex-end;
-}
-
-/* INTRO (if unique to Contractor Bodies) */
-.cb-intro img {
-  box-shadow: var(--shadow-card);
-}
 
 .sb-hero {
   padding: 6rem 0;
