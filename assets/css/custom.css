@@ -6482,6 +6482,10 @@ a.btn.btn-secondary:focus {
   color: color-mix(in srgb, white, transparent 25%);
 }
 
+.sb-hero .container .row {
+  justify-content: flex-end;
+}
+
 .mechanics-hero {
   padding: 6rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/mechanics-bodies-hero.webp") center/cover no-repeat;
@@ -6491,6 +6495,10 @@ a.btn.btn-secondary:focus {
 }
 .mechanics-hero .tagline {
   color: color-mix(in srgb, white, transparent 25%);
+}
+
+.mechanics-hero .container .row {
+  justify-content: flex-end;
 }
 
 /* =================================================
@@ -6507,6 +6515,10 @@ a.btn.btn-secondary:focus {
 }
 .eb-hero .tagline {
   color: color-mix(in srgb, white, transparent 25%);
+}
+
+.eb-hero .container .row {
+  justify-content: flex-end;
 }
 
 /* =================================================

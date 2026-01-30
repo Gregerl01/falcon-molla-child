@@ -17,3 +17,7 @@
     color: color-mix(in srgb, white, transparent 25%);
   }
 }
+
+.eb-hero .container .row {
+  justify-content: flex-end;
+}
