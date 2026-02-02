@@ -6769,6 +6769,40 @@ a.btn.btn-secondary:focus {
   background-color: var(--background-color) !important;
 }
 
+.single-product .woocommerce-product-details__short-description table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+.single-product .woocommerce-product-details__short-description th {
+  width: 240px;
+  max-width: 240px;
+  white-space: normal;
+  vertical-align: top;
+  font-weight: 600;
+}
+.single-product .woocommerce-product-details__short-description td {
+  width: auto;
+}
+
+.product .tab-content table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product .tab-content table tr th {
+  width: 220px;
+  max-width: 220px;
+  white-space: normal;
+  vertical-align: top;
+  font-weight: 600;
+}
+
+.product .tab-content table tr td {
+  width: auto;
+}
+
 .single-product .main .container,
 .single-product .main-content .container,
 .single-product .content-area .container,
@@ -6830,6 +6864,30 @@ a.btn.btn-secondary:focus {
 
 .related.products {
   display: none;
+}
+
+.tab-content .gradient-divider {
+  margin: 50px auto !important;
+}
+
+.falcon-product-specifications .featured-card {
+  padding: 5rem 15px 15px !important;
+}
+.falcon-product-specifications .featured-card .image {
+  background: transparent !important;
+  padding: 0 !important;
+  margin-top: 3rem !important;
+}
+.falcon-product-specifications .featured-card .image img {
+  height: auto !important;
+}
+.falcon-product-specifications .mini-spec-table tr {
+  border-bottom: 1px solid var(--border-color);
+}
+.falcon-product-specifications .mini-spec-table th {
+  width: 20% !important;
+  text-align: center;
+  margin-bottom: 3px !important;
 }
 
 .product .tab-content {
