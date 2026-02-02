@@ -68,7 +68,7 @@ function enqueue_bootstrap_icons() {
 add_action('wp_enqueue_scripts', 'enqueue_aos_library');
 function enqueue_aos_library() {
     // Only on pages that use AOS
-    if (is_page() || is_front_page()) {
+    if (is_page() || is_front_page() || is_product_category()) {
         wp_enqueue_style(
             'aos-css',
             'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css',
@@ -132,13 +132,6 @@ function disable_wpautop_conditionally() {
         remove_filter('the_excerpt', 'wpautop');
     }
 }
-
-/**
- * Disable WooCommerce product image lightbox
- */
-add_action('after_setup_theme', function() {
-    remove_theme_support('wc-product-gallery-lightbox');
-}, 100);
 
 // ============================================================================
 // WOOCOMMERCE CUSTOMIZATIONS

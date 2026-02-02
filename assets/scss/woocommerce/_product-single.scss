@@ -2,6 +2,29 @@
 // SINGLE PRODUCT PAGE
 // ============================================================================
 
+// Benefit items inside single product (override Woo defaults)
+.single-product {
+
+  .benefit-item {
+    border-bottom-color: var(--border-color);
+  }
+
+  .benefit-item .benefit-content {
+
+    h4 {
+      color: var(--heading-color);
+    }
+
+    p {
+      color: var(--text-secondary);
+    }
+  }
+
+  .benefit-item .benefit-icon i {
+    color: var(--accent-color);
+  }
+}
+
 .product-template-default {
   background-color: var(--background-color);
 }
@@ -10,10 +33,85 @@
   background-color: var(--background-color) !important;
 }
 
+// Product specification tables
+.single-product {
+
+  .woocommerce-product-details__short-description table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .woocommerce-product-details__short-description th {
+    width: 240px; // controls label column
+    max-width: 240px;
+    white-space: normal;
+    vertical-align: top;
+    font-weight: 600;
+  }
+
+  .woocommerce-product-details__short-description td {
+    width: auto;
+  }
+
+}
+
+// Product tab specification tables
+.product .tab-content table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product .tab-content table tr th {
+  width: 220px;          // controls label column
+  max-width: 220px;
+  white-space: normal;   // allow wrapping
+  vertical-align: top;
+  font-weight: 600;
+}
+
+.product .tab-content table tr td {
+  width: auto;
+}
+
+
+// Widen SINGLE PRODUCT main wrapper (Molla/Woo)
+.single-product {
+
+  // 1) Most themes: main Woo wrapper container
+  .main .container,
+  .main-content .container,
+  .content-area .container,
+  .site-content .container {
+    max-width: 1500px !important;
+    width: 100%;
+  }
+
+  // 2) If Molla sidebar wrapper uses a container class from molla_sidebar_wrap_classes()
+  .container.molla-sidebar,
+  .container.sidebar-wrapper,
+  .container.shop-sidebar,
+  .container.shop-content {
+    max-width: 1500px !important;
+    width: 100%;
+  }
+
+  // Comfortable gutters at wide widths
+  .main .container,
+  .main-content .container,
+  .content-area .container,
+  .site-content .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+
 // Product gallery
 .woocommerce-product-gallery {
   a:before {
-    border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important;
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important; 
   }
 }
 
@@ -68,4 +166,38 @@
 // Related products
 .related.products {
   display: none;
+}
+
+.tab-content {
+  .gradient-divider {
+    margin:50px auto !important;
+  }
+}
+
+.falcon-product-specifications {
+
+  .featured-card {
+    padding: 5rem 15px 15px !important;
+  }
+
+  .featured-card .image {
+    background: transparent !important;
+    padding: 0 !important;
+    margin-top: 3rem !important;
+  }
+
+  .featured-card .image img{
+    height: auto !important;
+  }
+
+
+  .mini-spec-table tr {
+    border-bottom: 1px solid var(--border-color);
+  } 
+  .mini-spec-table th {
+    width: 20% !important;          // controls label column
+    text-align: center;
+    margin-bottom: 3px !important;
+  }
+
 }

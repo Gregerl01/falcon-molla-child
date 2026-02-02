@@ -11,3 +11,7 @@
     color: color-mix(in srgb, white, transparent 25%);
   }
 }
+
+.mechanics-hero .container .row {
+  justify-content: flex-end;
+}
