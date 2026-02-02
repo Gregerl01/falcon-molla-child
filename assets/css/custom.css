@@ -4501,6 +4501,21 @@ footer .footer-bottom {
   transform: scale(1.02);
 }
 
+.sp-actions-wrapper a.sp-action.btn-product-gallery {
+  background-color: #fff;
+  border-radius: 50%;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+.sp-actions-wrapper a.sp-action.btn-product-gallery i.icon-arrows {
+  color: var(--accent-color);
+}
+.sp-actions-wrapper a.sp-action.btn-product-gallery:hover, .sp-actions-wrapper a.sp-action.btn-product-gallery:focus {
+  opacity: 0.85;
+}
+[data-theme=dark] .sp-actions-wrapper a.sp-action.btn-product-gallery {
+  background-color: #000;
+}
+
 .btn {
   display: inline-block !important;
   padding: 1.2rem 3rem;
@@ -6527,7 +6542,7 @@ a.btn.btn-secondary:focus {
 /* HERO */
 .st-hero {
   padding: 6rem 0;
-  background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/saw-trucks-hero.webp") center/cover no-repeat;
+  background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/saw-bodies-hero.webp") center/cover no-repeat;
   color: var(--text-on-image);
 }
 .st-hero h1, .st-hero .h1 {
@@ -6733,12 +6748,47 @@ a.btn.btn-secondary:focus {
   padding-top: 0;
 }
 
+.single-product .benefit-item {
+  border-bottom-color: var(--border-color);
+}
+.single-product .benefit-item .benefit-content h4, .single-product .benefit-item .benefit-content .h4 {
+  color: var(--heading-color);
+}
+.single-product .benefit-item .benefit-content p {
+  color: var(--text-secondary);
+}
+.single-product .benefit-item .benefit-icon i {
+  color: var(--accent-color);
+}
+
 .product-template-default {
   background-color: var(--background-color);
 }
 
 .wp-singular.product-template-default .page-wrapper {
   background-color: var(--background-color) !important;
+}
+
+.single-product .main .container,
+.single-product .main-content .container,
+.single-product .content-area .container,
+.single-product .site-content .container {
+  max-width: 1500px !important;
+  width: 100%;
+}
+.single-product .container.molla-sidebar,
+.single-product .container.sidebar-wrapper,
+.single-product .container.shop-sidebar,
+.single-product .container.shop-content {
+  max-width: 1500px !important;
+  width: 100%;
+}
+.single-product .main .container,
+.single-product .main-content .container,
+.single-product .content-area .container,
+.single-product .site-content .container {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .woocommerce-product-gallery a:before {

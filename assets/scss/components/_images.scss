@@ -4,20 +4,43 @@
 
 .image-section {
   position: relative;
-  
+
   .main-image {
     border-radius: 0;
     overflow: hidden;
     box-shadow: 0 20px 60px color-mix(in srgb, var(--dk-background-color), transparent 85%);
-    
+
     img {
       width: 100%;
       height: auto;
       transition: transform $transition-default;
     }
-    
+
     &:hover img {
       transform: scale(1.02);
     }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Molla Product Gallery Trigger
+// ----------------------------------------------------------------------------
+
+.sp-actions-wrapper a.sp-action.btn-product-gallery {
+  background-color: #fff;
+  border-radius: 50%;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+
+  i.icon-arrows {
+    color: var(--accent-color);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.85;
+  }
+
+  [data-theme="dark"] & {
+    background-color: #000;
   }
 }
