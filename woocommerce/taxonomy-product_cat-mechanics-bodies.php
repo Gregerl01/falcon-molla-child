@@ -26,9 +26,22 @@ get_header(); ?>
             <div class="col-lg-6">
                 <h2 class="h3 fw-bold mb-4">Built to Perform. Anywhere the Job Takes You.</h2>
                 <p class="lead">
-                    When the work demands strength, precision, and endurance, Falcon Pro-Series Mechanics Bodies deliver.
-                    Engineered for heavy lifting and hard days, these bodies are more than service equipment — they’re a
-                    dependable mobile workstation built to perform on every road, every site, every time.
+                  When the work demands more than standard service equipment, Falcon Pro-Series Mechanics Bodies deliver.
+                  Engineered for heavy lifting, organized storage, and relentless daily use, these crane bodies are built
+                  for professionals who rely on their truck as a true mobile workstation.
+                </p>
+
+                <p>
+                  From compact field service applications to extreme-duty industrial work, Falcon mechanics bodies are
+                  designed around one principle: <strong>perform without compromise</strong>. Reinforced steel construction,
+                  integrated crane platforms, and intelligently designed compartments work together to support safer lifts,
+                  faster workflows, and long-term durability in the harshest environments.
+                </p>
+
+                <p>
+                  Whether you’re servicing heavy equipment, maintaining utility infrastructure, supporting fleet operations,
+                  or responding in the field, Falcon mechanics bodies are built to handle the weight — physically and operationally.
+                  Every weld, every panel, and every configuration is purpose-engineered to keep you productive wherever the job takes you.
                 </p>
             </div>
             <div class="col-lg-6">
@@ -97,6 +110,39 @@ get_header(); ?>
                                 <p>Configure your body with accessories and layouts tailored to your workflow.</p>
                             </div>
                         </div>
+                        <!-- NEW MECHANICS-SPECIFIC FEATURES -->
+
+                        <div class="feature-item">
+                            <span class="feature-number">05</span>
+                            <div class="feature-content">
+                                <h4>Integrated Task Lighting</h4>
+                                <p>High-performance lighting systems deliver clear visibility for precision work in any conditions.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <span class="feature-number">06</span>
+                            <div class="feature-content">
+                                <h4>Reinforced Crane Support</h4>
+                                <p>Engineered substructures distribute lifting forces evenly for stability and long-term durability.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <span class="feature-number">07</span>
+                            <div class="feature-content">
+                                <h4>Optimized Crane Body Design</h4>
+                                <p>Purpose-built layouts balance lifting performance, storage efficiency, and chassis compatibility.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <span class="feature-number">08</span>
+                            <div class="feature-content">
+                                <h4>Field-Ready Durability</h4>
+                                <p>Heavy-gauge steel construction built to withstand daily use in demanding jobsite environments.</p>
+                            </div>
+                        </div>
 
                     </div><!-- /.features-grid -->
 
@@ -116,7 +162,7 @@ get_header(); ?>
 
             <!-- IMAGE -->
             <div class="col-lg-6 order-lg-2">
-                <div class="capabilities-image" data-aos="fade-left">
+                <div class="capabilities-image" data-aos="fade-right">
                     <img
                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-sub-frame.webp"
                         alt="Inside the Falcon production facility"
@@ -128,7 +174,7 @@ get_header(); ?>
 
             <!-- TEXT -->
             <div class="col-lg-6 order-lg-1">
-                <div class="capabilities-content" data-aos="fade-right">
+                <div class="capabilities-content" data-aos="fade-left">
                     <h2>Body Understructure</h2>
                     <p class="capabilities-intro">
                         Built for heavy-duty performance from the ground up, Falcon mechanics bodies feature an understructure engineered
@@ -138,7 +184,7 @@ get_header(); ?>
 
                     <div class="capability-list">
 
-                        <article class="capability-item" data-aos="fade-right" data-aos-delay="100">
+                        <article class="capability-item" data-aos="fade-left" data-aos-delay="100">
                             <div class="capability-header">
                                 <i class="bi bi-check-circle-fill"></i>
                                 <h4>Reinforced Crane Foundation</h4>
@@ -149,7 +195,7 @@ get_header(); ?>
                             </p>
                         </article>
 
-                        <article class="capability-item" data-aos="fade-right" data-aos-delay="150">
+                        <article class="capability-item" data-aos="fade-left" data-aos-delay="150">
                             <div class="capability-header">
                                 <i class="bi bi-check-circle-fill"></i>
                                 <h4>Heavy-Gauge Steel Construction</h4>
@@ -160,7 +206,7 @@ get_header(); ?>
                             </p>
                         </article>
 
-                        <article class="capability-item" data-aos="fade-right" data-aos-delay="200">
+                        <article class="capability-item" data-aos="fade-left" data-aos-delay="200">
                             <div class="capability-header">
                                 <i class="bi bi-check-circle-fill"></i>
                                 <h4>Grade 50 Subframe Support</h4>
