@@ -233,6 +233,25 @@ add_shortcode('gsl_parallax', function ($atts, $content = null) {
     return $html;
 });
 
+/**
+ * Gallery image lightbox modal (Bootstrap 4)
+ */
+add_action('wp_footer', 'falcon_gallery_lightbox_modal');
+function falcon_gallery_lightbox_modal() {
+    ?>
+    <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content bg-transparent border-0">
+          <button type="button" class="close position-absolute" style="top:15px; right:20px; z-index:1051;" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img id="galleryModalImage" src="" class="img-fluid mx-auto d-block" alt="">
+        </div>
+      </div>
+    </div>
+    <?php
+}
+
 add_action('wp_footer', function () {
   $base_url = content_url('/uploads/diagrams/');
   ?>

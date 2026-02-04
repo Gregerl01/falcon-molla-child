@@ -198,4 +198,15 @@ function initThemeToggle() {
         });
     }
     
+    // ========================================================================
+    // GALLERY LIGHTBOX MODAL (Bootstrap 4)
+    // ========================================================================
+
+    $('[data-toggle="modal"][data-img]').on('click', function (e) {
+        e.preventDefault();
+        var imageSrc = $(this).data('img');
+        $('#galleryModalImage').attr('src', imageSrc);
+        $('#galleryModal').modal('show');
+    });
+
 })(jQuery);
