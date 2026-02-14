@@ -1,14 +1,11 @@
 .sb-hero {
   padding: 6rem 0;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  background: linear-gradient(var(--overlay-image), var(--overlay-image)),
               url('../images/service-bodies-herov3.webp') center/cover no-repeat;
-
-  h1 {
-    color: #fff !important;
-  }
+  color: var(--text-on-image);
 
   .tagline {
-    color: color-mix(in srgb, white, transparent 25%);
+    color: color-mix(in srgb, var(--text-on-image), transparent 25%);
   }
 }
 

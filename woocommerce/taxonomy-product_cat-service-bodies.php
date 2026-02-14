@@ -235,7 +235,7 @@ get_header(); ?>
  <div class="gradient-divider"></div>
 <!-- Product List -->
 <section id="product-line" class="sb-products section">
-    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
 		<div class="row justify-content-center text-center">
 			<div class="col-lg-8">
 				<h2 class="mb-3">Service Body Line Up</h2>

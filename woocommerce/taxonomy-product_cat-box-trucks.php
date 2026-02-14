@@ -237,7 +237,7 @@ get_header(); ?>
 
 <!-- Product List -->
 <section id="product-line" class="bt-products section">
-    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <h2 class="mb-3">Box Truck Line Up</h2>
