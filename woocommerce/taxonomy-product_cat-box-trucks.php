@@ -237,7 +237,7 @@ get_header(); ?>
 
 <!-- Product List -->
 <section id="product-line" class="bt-products section">
-    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <h2 class="mb-3">Box Truck Line Up</h2>
@@ -260,22 +260,25 @@ get_header(); ?>
             $bg_class = $is_even ? 'bg-dark-section' : 'bg-light';
     ?>
 
-    <div class="product-list-item section <?php echo $bg_class; ?>">
-        <div class="container">
-            <div class="row align-items-center">
+        <div class="product-list-item section <?php echo esc_attr($bg_class); ?>">
+            <div class="row g-0 align-items-stretch overflow-hidden max-w-1500 mx-auto">
+
                 <!-- Product Image -->
-                <div class="col-lg-6 <?php echo $image_order; ?> mb-4 mb-lg-0">
-                    <a href="<?php the_permalink(); ?>">
-                        <?php if ( has_post_thumbnail() ) : ?>
-                            <?php the_post_thumbnail('large', ['class' => 'img-fluid rounded']); ?>
-                        <?php else : ?>
-                            <img src="<?php echo wc_placeholder_img_src('large'); ?>" alt="<?php the_title(); ?>" class="img-fluid rounded">
-                        <?php endif; ?>
-                    </a>
+                <div class="col-lg-6 p-0 d-flex <?php echo esc_attr($image_order); ?>" data-aos-delay="200" data-aos="fade-right">
+                    <div class="image-frame w-100">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <?php the_post_thumbnail('full', ['class' => 'img-fluid w-100']); ?>
+                            <?php else : ?>
+                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php the_title(); ?>" class="img-fluid w-100">
+                            <?php endif; ?>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Product Content -->
-                <div class="col-lg-6 <?php echo $content_order; ?>">
+                <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
+                    <div class="feature-content-wrap">
                     <h2 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
@@ -314,10 +317,12 @@ get_header(); ?>
                     <?php endif; ?>
 
                     <a href="<?php the_permalink(); ?>" class="btn btn-primary">Learn More</a>
+
+                    </div>
                 </div>
+
             </div>
         </div>
-    </div>
 
     <?php
         endwhile;

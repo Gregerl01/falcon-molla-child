@@ -3748,11 +3748,6 @@ footer {
   border-color: var(--color-primary);
   transform: scale(1.05);
 }
-.theme-toggle-btn i {
-  font-size: 18px;
-  color: #666;
-  transition: all 0.3s ease;
-}
 .theme-toggle-btn:focus {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
@@ -3765,9 +3760,6 @@ footer {
     width: 34px;
     height: 34px;
   }
-  .theme-toggle-btn i {
-    font-size: 16px;
-  }
 }
 
 [data-theme=dark] .theme-toggle-btn {
@@ -3776,9 +3768,6 @@ footer {
 [data-theme=dark] .theme-toggle-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--color-primary);
-}
-[data-theme=dark] .theme-toggle-btn i {
-  color: var(--contrast-color);
 }
 [data-theme=dark] .shop-icon i {
   color: #999;
@@ -6782,13 +6771,11 @@ a.btn.btn-secondary:focus {
 
 .sb-hero {
   padding: 6rem 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/service-bodies-herov3.webp") center/cover no-repeat;
-}
-.sb-hero h1, .sb-hero .h1 {
-  color: #fff !important;
+  background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/service-bodies-herov3.webp") center/cover no-repeat;
+  color: var(--text-on-image);
 }
 .sb-hero .tagline {
-  color: color-mix(in srgb, white, transparent 25%);
+  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
 }
 
 .sb-hero .container .row {
@@ -6797,13 +6784,11 @@ a.btn.btn-secondary:focus {
 
 .mechanics-hero {
   padding: 6rem 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/mechanics-bodies-hero.webp") center/cover no-repeat;
-}
-.mechanics-hero h1, .mechanics-hero .h1 {
-  color: #fff !important;
+  background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/mechanics-bodies-hero.webp") center/cover no-repeat;
+  color: var(--text-on-image);
 }
 .mechanics-hero .tagline {
-  color: color-mix(in srgb, white, transparent 25%);
+  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
 }
 
 .mechanics-hero .container .row {
