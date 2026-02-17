@@ -56,7 +56,7 @@ Stored in the **child theme repository** and deployed automatically:
 - SCSS / CSS
 - JavaScript
 - Theme assets (icons, SVGs, UI images)
-- Compiled build output (`dist/`)
+- Compiled build output (`assets/css/`)
 
 Git is the **source of truth** for all of the above.
 
@@ -80,8 +80,8 @@ These are **not** deployed via Git.
 ## 🔁 Deployment Strategy
 
 ### Git Branching
-- `main` → auto-deploys to **product - not wired yet**
-- `staging` → auto-deploys to **staging**
+- `main` → auto-deploys to **production — not yet wired**
+- `staging` → auto-deploys to **staging** (active)
 
 ### Deployment Method
 - GitHub Actions
@@ -96,9 +96,10 @@ These are **not** deployed via Git.
 - OS files (e.g. `.DS_Store`, `Thumbs.db`)
 
 ### Build Process
-- `npm run dev` → local development (watch)
-- `npm run build` → production-ready assets (minified/lean)
-- Built assets **are committed** and deployed (example: `assets/dist/` or your configured output folder)
+- `npm run sass` → compiles SCSS to CSS (`assets/scss/custom.scss` → `assets/css/custom.css`)
+- `npm run watch` → watch mode with `sass --watch` and `--load-path`
+- `npm run dev` → BrowserSync proxy to LocalWP for live reload
+- Built assets **are committed** and deployed (`assets/css/`)
 - Hostinger does **not** run NPM builds (server receives compiled output only)
 
 ---
@@ -172,6 +173,6 @@ Media moves via:
 
 Before production deploy:
 - [ ] Code merged into `dev`
-- [ ] GitHub Action deploy succeeds
+- [ ] Staging auto-deploy succeeds (production deploy is manual until GitHub Actions is wired for main)
 - [ ] Cache cleared (LiteSpeed / theme cache)
 - [ ] Smoke test: Home, key category page(s), contact form, mobile navigation
