@@ -84,7 +84,7 @@
 
 // Showcase page only — scoped styles
 .falcon-bodies-showcase .product-list-item.is-reversed .row {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse !important;
 }
 
 .falcon-bodies-showcase .product-list-item {
