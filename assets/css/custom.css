@@ -7219,7 +7219,7 @@ a.btn.btn-secondary:focus {
   padding-top: 0;
 }
 
-.falcon-bodies-showcase .row.flex-row-reverse {
+.falcon-bodies-showcase .product-list-item.is-reversed .row {
   flex-direction: row-reverse;
 }
 
