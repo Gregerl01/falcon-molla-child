@@ -7220,6 +7220,21 @@ a.btn.btn-secondary:focus {
   padding-top: 0;
 }
 
+.falcon-bodies-showcase .product-list-item .image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.falcon-bodies-showcase .product-list-item .feature-content-wrap {
+  padding: 3rem 2.5rem;
+}
+@media (max-width: 991.98px) {
+  .falcon-bodies-showcase .product-list-item .feature-content-wrap {
+    padding: 2rem 1.5rem;
+  }
+}
+
 .single-product .benefit-item {
   border-bottom-color: var(--border-color);
 }
