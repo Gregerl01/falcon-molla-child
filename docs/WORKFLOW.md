@@ -83,6 +83,8 @@ These are **not** deployed via Git.
 - `main` → auto-deploys to **production — not yet wired**
 - `staging` → auto-deploys to **staging** (active)
 
+> Note: The `staging` branch upstream was set with `git push --set-upstream origin staging`. This only needs to be done once per clone.
+
 ### Deployment Method
 - GitHub Actions
 - SSH + rsync

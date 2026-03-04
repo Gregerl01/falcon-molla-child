@@ -5472,6 +5472,199 @@ a.btn.btn-secondary:focus {
   border: 1px solid var(--border-color);
 }
 
+.about-video-section {
+  position: relative;
+  min-height: 55vh;
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+@media (max-width: 767.98px) {
+  .about-video-section {
+    min-height: 45vh;
+    max-height: 400px;
+  }
+}
+.about-video-section__bg {
+  position: absolute;
+  inset: -20% 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+  z-index: -2;
+}
+@media (max-width: 991.98px) {
+  .about-video-section__bg {
+    inset: 0;
+    will-change: auto;
+  }
+}
+.about-video-section__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.7));
+}
+[data-theme=dark] .about-video-section__overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.6));
+}
+.about-video-section__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 4rem 1.5rem;
+}
+.about-video-section__title {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+.about-video-section__subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin-bottom: 2.5rem;
+}
+.about-video-section__play-wrap {
+  display: inline-block;
+}
+.about-video-section__play-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0;
+}
+.about-video-section__play-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.25);
+}
+@media (max-width: 991.98px) {
+  .about-video-section__play-btn {
+    width: 72px;
+    height: 72px;
+  }
+}
+.about-video-section__play-icon {
+  margin-left: 4px;
+}
+.about-video-section__ripple {
+  position: absolute;
+  inset: -1px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  animation: falcon-ripple-pulse 2.4s cubic-bezier(0.21, 0.6, 0.35, 1) infinite;
+  pointer-events: none;
+}
+.about-video-section__ripple:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+@keyframes falcon-ripple-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+.about-video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.about-video-modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+.about-video-modal.is-active .about-video-modal__container {
+  transform: scale(1);
+}
+.about-video-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+}
+.about-video-modal__container {
+  position: relative;
+  width: 90vw;
+  max-width: 1100px;
+  aspect-ratio: 16/9;
+  transform: scale(0.92);
+  transition: transform 0.3s ease;
+}
+.about-video-modal__close {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  padding: 0;
+}
+.about-video-modal__close:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.about-video-modal__video-wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.about-video-modal__video-wrap iframe,
+.about-video-modal__video-wrap video {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-video-section__bg {
+    will-change: auto;
+  }
+  .about-video-section__ripple {
+    animation: none;
+  }
+  .about-video-section__play-btn {
+    transition: none;
+  }
+  .about-video-modal,
+  .about-video-modal__container {
+    transition: none;
+  }
+}
 .home .page-header {
   display: none;
 }
