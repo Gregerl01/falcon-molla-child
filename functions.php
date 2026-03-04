@@ -4,6 +4,8 @@
  * Final optimized version for Falcon Truck Bodies
  */
 
+require_once get_stylesheet_directory() . '/inc/sections/about-video-section.php';
+
 // ============================================================================
 // STYLES & SCRIPTS ENQUEUING
 // ============================================================================
