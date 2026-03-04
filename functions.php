@@ -53,15 +53,12 @@ function enqueue_google_fonts() {
  */
 add_action('wp_enqueue_scripts', 'enqueue_bootstrap_icons');
 function enqueue_bootstrap_icons() {
-    // Only load on pages that use them
-    if (is_page() || is_single() || is_front_page()) {
-        wp_enqueue_style(
-            'bootstrap-icons',
-            'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css',
-            array(),
-            '1.11.3'
-        );
-    }
+    wp_enqueue_style(
+        'bootstrap-icons',
+        'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css',
+        array(),
+        '1.11.3'
+    );
 }
 
 /**

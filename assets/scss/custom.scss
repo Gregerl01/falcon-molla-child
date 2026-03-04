@@ -23,7 +23,7 @@
 @import "../../node_modules/bootstrap/scss/modal";
 
 // Vendor libraries
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+// Bootstrap Icons loaded via CDN in functions.php (not compiled into CSS)
 @import "../../node_modules/swiper/swiper";
 
 // 2. CUSTOM BASE
