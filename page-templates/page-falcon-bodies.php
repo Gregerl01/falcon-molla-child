@@ -139,10 +139,8 @@ foreach ( $categories as $cat ) :
     $term = get_term_by( 'slug', $cat['slug'], 'product_cat' );
     if ( ! $term || is_wp_error( $term ) ) continue;
 
-    $counter++;
-    $is_reversed    = ( $counter % 2 === 0 );
-    $image_order    = $is_reversed ? 'order-lg-2' : '';
-    $content_order  = $is_reversed ? 'order-lg-1' : '';
+    $is_reversed    = ( $counter % 2 !== 0 );
+    $row_reverse    = $is_reversed ? 'flex-row-reverse' : '';
     $img_aos        = $is_reversed ? 'fade-left' : 'fade-right';
     $content_aos    = $is_reversed ? 'fade-right' : 'fade-left';
     $bg_class       = $is_reversed ? 'bg-dark-section' : 'bg-light';
@@ -151,10 +149,10 @@ foreach ( $categories as $cat ) :
 ?>
 
     <div class="product-list-item section <?php echo esc_attr( $bg_class ); ?>">
-        <div class="row g-0 align-items-stretch overflow-hidden max-w-1500 mx-auto">
+        <div class="row g-0 align-items-stretch overflow-hidden max-w-1500 mx-auto <?php echo esc_attr( $row_reverse ); ?>">
 
             <!-- Category Image -->
-            <div class="col-lg-6 p-0 d-flex <?php echo esc_attr( $image_order ); ?>" data-aos="<?php echo esc_attr( $img_aos ); ?>" data-aos-delay="200">
+            <div class="col-lg-6 p-0 d-flex" data-aos="<?php echo esc_attr( $img_aos ); ?>" data-aos-delay="200">
                 <div class="image-frame w-100">
                     <a href="<?php echo esc_url( $cat_link ); ?>">
                         <?php if ( $thumbnail_id ) : ?>
@@ -167,25 +165,32 @@ foreach ( $categories as $cat ) :
             </div>
 
             <!-- Category Content -->
-            <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr( $content_order ); ?>" data-aos="<?php echo esc_attr( $content_aos ); ?>" data-aos-delay="200">
+            <div class="col-lg-6 d-flex align-items-center" data-aos="<?php echo esc_attr( $content_aos ); ?>" data-aos-delay="200">
                 <div class="feature-content-wrap">
                     <h5 class="text-uppercase"><?php echo esc_html( $cat['series_label'] ); ?></h5>
-                    <h2 class="mb-3"><?php echo esc_html( $cat['headline'] ); ?></h2>
-                    <p class="product-description mb-4"><?php echo esc_html( $cat['description'] ); ?></p>
 
-                    <ul class="product-features list-unstyled mb-4">
-                        <?php foreach ( $cat['bullets'] as $bullet ) : ?>
-                            <li class="product-feature d-flex align-items-start mb-3">
-                                <svg class="flex-shrink-0 me-2 mt-1" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" style="color:var(--accent-color)">
-                                    <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"/>
-                                </svg>
-                                <div>
-                                    <strong><?php echo esc_html( $bullet['title'] ); ?></strong>
-                                    <span class="d-block"><?php echo esc_html( $bullet['desc'] ); ?></span>
+                    <div class="falcon-feature-block">
+                        <h2 class="falcon-headline"><?php echo esc_html( $cat['headline'] ); ?></h2>
+                        <p class="falcon-intro"><?php echo esc_html( $cat['description'] ); ?></p>
+
+                        <div class="falcon-benefits">
+                            <?php
+                            $delays = array( 250, 300, 350, 400 );
+                            foreach ( $cat['bullets'] as $i => $bullet ) :
+                                $delay = isset( $delays[ $i ] ) ? $delays[ $i ] : 400;
+                            ?>
+                                <div class="benefit-item" data-aos="<?php echo esc_attr( $content_aos ); ?>" data-aos-delay="<?php echo esc_attr( $delay ); ?>">
+                                    <div class="benefit-icon">
+                                        <i class="bi bi-lightning-fill"></i>
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h4><?php echo esc_html( $bullet['title'] ); ?></h4>
+                                        <p><?php echo esc_html( $bullet['desc'] ); ?></p>
+                                    </div>
                                 </div>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
 
                     <?php if ( $term->count > 0 ) : ?>
                         <a href="<?php echo esc_url( $cat_link ); ?>" class="btn btn-primary">View <?php echo esc_html( $term->name ); ?></a>
@@ -198,7 +203,10 @@ foreach ( $categories as $cat ) :
         </div>
     </div>
 
-<?php endforeach; ?>
+<?php
+    $counter++;
+endforeach;
+?>
 </div>
 
 <!-- CTA Section -->

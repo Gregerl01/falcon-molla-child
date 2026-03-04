@@ -82,7 +82,11 @@
   }
 }
 
-// Showcase page only — scoped image containment
+// Showcase page only — scoped styles
+.falcon-bodies-showcase .row.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .falcon-bodies-showcase .product-list-item {
   .image-frame img {
     width: 100%;
@@ -97,5 +101,13 @@
     @media (max-width: 991.98px) {
       padding: 2rem 1.5rem;
     }
+  }
+
+  &.bg-dark-section {
+    background: var(--surface-1) !important;
+  }
+
+  &.bg-light {
+    background: var(--section-primary) !important;
   }
 }

@@ -7219,6 +7219,10 @@ a.btn.btn-secondary:focus {
   padding-top: 0;
 }
 
+.falcon-bodies-showcase .row.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .falcon-bodies-showcase .product-list-item .image-frame img {
   width: 100%;
   height: 100%;
@@ -7232,6 +7236,12 @@ a.btn.btn-secondary:focus {
   .falcon-bodies-showcase .product-list-item .feature-content-wrap {
     padding: 2rem 1.5rem;
   }
+}
+.falcon-bodies-showcase .product-list-item.bg-dark-section {
+  background: var(--surface-1) !important;
+}
+.falcon-bodies-showcase .product-list-item.bg-light {
+  background: var(--section-primary) !important;
 }
 
 .single-product .benefit-item {
