@@ -140,7 +140,7 @@ foreach ( $categories as $cat ) :
     if ( ! $term || is_wp_error( $term ) ) continue;
 
     $is_reversed    = ( $counter % 2 !== 0 );
-    $row_reverse    = $is_reversed ? 'flex-row-reverse' : '';
+    $reversed_class = $is_reversed ? 'is-reversed' : '';
     $img_aos        = $is_reversed ? 'fade-left' : 'fade-right';
     $content_aos    = $is_reversed ? 'fade-right' : 'fade-left';
     $bg_class       = $is_reversed ? 'bg-dark-section' : 'bg-light';
@@ -148,8 +148,8 @@ foreach ( $categories as $cat ) :
     $thumbnail_id = get_term_meta( $term->term_id, 'thumbnail_id', true );
 ?>
 
-    <div class="product-list-item section <?php echo esc_attr( $bg_class ); ?>">
-        <div class="row g-0 align-items-stretch overflow-hidden max-w-1500 mx-auto <?php echo esc_attr( $row_reverse ); ?>">
+    <div class="product-list-item section <?php echo esc_attr( $bg_class ); ?> <?php echo esc_attr( $reversed_class ); ?>">
+        <div class="row g-0 align-items-stretch overflow-hidden max-w-1500 mx-auto">
 
             <!-- Category Image -->
             <div class="col-lg-6 p-0 d-flex" data-aos="<?php echo esc_attr( $img_aos ); ?>" data-aos-delay="200">
