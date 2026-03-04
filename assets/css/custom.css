@@ -7220,7 +7220,7 @@ a.btn.btn-secondary:focus {
 }
 
 .falcon-bodies-showcase .product-list-item.is-reversed .row {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse !important;
 }
 
 .falcon-bodies-showcase .product-list-item .image-frame img {
