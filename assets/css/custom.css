@@ -5664,6 +5664,145 @@ a.btn.btn-secondary:focus {
     transition: none;
   }
 }
+.falcon-configurations {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.falcon-configurations h2, .falcon-configurations .h2 {
+  margin-bottom: 0.25rem;
+  font-size: 1.4rem;
+}
+.falcon-configurations .config-subtitle {
+  color: #8b949e;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+.falcon-configurations .config-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.falcon-configurations .toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.falcon-configurations .toggle-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #8b949e;
+}
+.falcon-configurations .toggle-pills {
+  display: inline-flex;
+}
+.falcon-configurations .toggle-pill {
+  padding: 6px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: #8b949e;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.falcon-configurations .toggle-pill:first-child {
+  border-radius: 20px 0 0 20px;
+}
+.falcon-configurations .toggle-pill:last-child {
+  border-radius: 0 20px 20px 0;
+}
+.falcon-configurations .toggle-pill:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #c9d1d9;
+}
+.falcon-configurations .toggle-pill.active {
+  background: var(--accent-color);
+  color: #fff;
+  border-color: var(--accent-color);
+}
+.falcon-configurations .spec-section {
+  margin-bottom: 2rem;
+}
+.falcon-configurations .spec-section-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+.falcon-configurations .spec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.falcon-configurations .spec-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.9rem;
+}
+.falcon-configurations .spec-table td:first-child {
+  color: #8b949e;
+  width: 45%;
+}
+.falcon-configurations .spec-table td:last-child {
+  font-weight: 500;
+}
+.falcon-configurations .spec-table tr:last-child td {
+  border-bottom: none;
+}
+.falcon-configurations .compartment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+@media (max-width: 600px) {
+  .falcon-configurations .compartment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.falcon-configurations .compartment-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+.falcon-configurations .compartment-card h4, .falcon-configurations .compartment-card .h4 {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.falcon-configurations .comp-type {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6e7681;
+  margin-bottom: 0.75rem;
+}
+.falcon-configurations .comp-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 0.85rem;
+}
+.falcon-configurations .comp-row:last-child {
+  border-bottom: none;
+}
+.falcon-configurations .comp-label {
+  color: #8b949e;
+}
+.falcon-configurations .comp-val {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
 .home .page-header {
   display: none;
 }
