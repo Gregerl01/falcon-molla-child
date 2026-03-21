@@ -5667,15 +5667,16 @@ a.btn.btn-secondary:focus {
 .falcon-configurations {
   max-width: 900px;
   margin: 0 auto;
+  font-size: 16px;
 }
 .falcon-configurations h2, .falcon-configurations .h2 {
-  margin-bottom: 0.25rem;
-  font-size: 1.4rem;
+  margin-bottom: 0.25em;
+  font-size: 1.75em;
 }
 .falcon-configurations .config-subtitle {
-  color: #8b949e;
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  font-size: 1.05em;
+  margin-bottom: 1.5em;
 }
 .falcon-configurations .config-toggles {
   display: flex;
@@ -5684,7 +5685,7 @@ a.btn.btn-secondary:focus {
   align-items: center;
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid var(--border-color);
 }
 .falcon-configurations .toggle-group {
   display: flex;
@@ -5692,20 +5693,20 @@ a.btn.btn-secondary:focus {
   gap: 0.5rem;
 }
 .falcon-configurations .toggle-label {
-  font-size: 0.8rem;
+  font-size: 0.875em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #8b949e;
+  color: var(--text-secondary);
 }
 .falcon-configurations .toggle-pills {
   display: inline-flex;
 }
 .falcon-configurations .toggle-pill {
-  padding: 6px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 8px 22px;
+  border: 1px solid var(--border-color);
   background: transparent;
-  color: #8b949e;
-  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-size: 0.9375em;
   cursor: pointer;
   transition: all 0.2s;
   font-family: inherit;
@@ -5717,8 +5718,8 @@ a.btn.btn-secondary:focus {
   border-radius: 0 20px 20px 0;
 }
 .falcon-configurations .toggle-pill:hover {
-  border-color: rgba(255, 255, 255, 0.25);
-  color: #c9d1d9;
+  border-color: var(--text-secondary);
+  color: var(--text-primary, inherit);
 }
 .falcon-configurations .toggle-pill.active {
   background: var(--accent-color);
@@ -5729,7 +5730,7 @@ a.btn.btn-secondary:focus {
   margin-bottom: 2rem;
 }
 .falcon-configurations .spec-section-title {
-  font-size: 0.75rem;
+  font-size: 0.8125em;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: var(--accent-color);
@@ -5741,12 +5742,12 @@ a.btn.btn-secondary:focus {
   border-collapse: collapse;
 }
 .falcon-configurations .spec-table td {
-  padding: 10px 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  font-size: 0.9rem;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1em;
 }
 .falcon-configurations .spec-table td:first-child {
-  color: #8b949e;
+  color: var(--text-secondary);
   width: 45%;
 }
 .falcon-configurations .spec-table td:last-child {
@@ -5766,41 +5767,47 @@ a.btn.btn-secondary:focus {
   }
 }
 .falcon-configurations .compartment-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.25rem;
 }
+[data-theme=dark] .falcon-configurations .compartment-card {
+  background: rgba(255, 255, 255, 0.03);
+}
+[data-theme=light] .falcon-configurations .compartment-card {
+  background: rgba(0, 0, 0, 0.02);
+}
 .falcon-configurations .compartment-card h4, .falcon-configurations .compartment-card .h4 {
-  font-size: 0.85rem;
+  font-size: 0.9375em;
   color: var(--accent-color);
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 .falcon-configurations .comp-type {
-  font-size: 0.7rem;
+  font-size: 0.8125em;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #6e7681;
+  color: var(--text-muted);
   margin-bottom: 0.75rem;
 }
 .falcon-configurations .comp-row {
   display: flex;
   justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-  font-size: 0.85rem;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1em;
 }
 .falcon-configurations .comp-row:last-child {
   border-bottom: none;
 }
 .falcon-configurations .comp-label {
-  color: #8b949e;
+  color: var(--text-secondary);
+  font-size: 1em;
 }
 .falcon-configurations .comp-val {
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.9375em;
 }
 
 .home .page-header {
