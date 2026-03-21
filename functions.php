@@ -115,6 +115,17 @@ function molla_child_enqueue_assets() {
         '1.0.3',
         true
     );
+
+    // Configurations tab JS (single product pages only)
+    if (is_singular('product')) {
+        wp_enqueue_script(
+            'falcon-configurations',
+            get_stylesheet_directory_uri() . '/assets/js/configurations.js',
+            array(),
+            '1.0.0',
+            true
+        );
+    }
 }
 
 // ============================================================================
@@ -138,32 +149,181 @@ function disable_wpautop_conditionally() {
 
 /**
  * Enable shortcodes in Molla custom product tabs
+ * Molla tab keys: "description", "1st" (Configurations/Accessories), "2nd" (Gallery)
  */
 add_filter('woocommerce_product_tabs', 'enable_shortcodes_in_custom_tabs', 98);
 function enable_shortcodes_in_custom_tabs($tabs) {
     global $product;
-    
-    // Process Gallery tab (tab_content_2nd)
-    if (isset($tabs['tab-custom-2'])) {
-        $tab_content = get_post_meta($product->get_id(), 'tab_content_2nd', true);
+    $product_id = $product->get_id();
+
+    // Override Description tab if _falcon_tech_overview meta exists
+    $tech_overview = get_post_meta($product_id, '_falcon_tech_overview', true);
+    if ($tech_overview && isset($tabs['description'])) {
+        $tabs['description']['callback'] = function() use ($tech_overview) {
+            falcon_render_tech_overview($tech_overview);
+        };
+    }
+
+    // Override Configurations tab (Molla key: "1st") if _falcon_config_json meta exists
+    $config_json = get_post_meta($product_id, '_falcon_config_json', true);
+    if ($config_json && isset($tabs['1st'])) {
+        $tabs['1st']['callback'] = function() use ($config_json) {
+            falcon_render_configurations($config_json);
+        };
+    } elseif (isset($tabs['1st'])) {
+        // Fallback: process tab content from Molla meta
+        $tab_content = get_post_meta($product_id, 'tab_content_1st', true);
         if ($tab_content) {
-            $tabs['tab-custom-2']['callback'] = function() use ($tab_content) {
+            $tabs['1st']['callback'] = function() use ($tab_content) {
                 echo do_shortcode($tab_content);
             };
         }
     }
-    
-    // Process Accessories tab (tab_content_1st)
-    if (isset($tabs['tab-custom-1'])) {
-        $tab_content = get_post_meta($product->get_id(), 'tab_content_1st', true);
+
+    // Process Gallery tab (Molla key: "2nd")
+    if (isset($tabs['2nd'])) {
+        $tab_content = get_post_meta($product_id, 'tab_content_2nd', true);
         if ($tab_content) {
-            $tabs['tab-custom-1']['callback'] = function() use ($tab_content) {
+            $tabs['2nd']['callback'] = function() use ($tab_content) {
                 echo do_shortcode($tab_content);
             };
         }
     }
-    
+
     return $tabs;
+}
+
+/**
+ * Render Falcon Configurations tab from _falcon_config_json meta
+ */
+function falcon_render_configurations($raw_json) {
+    // Parse JSON — handle both string and pre-decoded array
+    if (is_string($raw_json)) {
+        $config = json_decode($raw_json, true);
+        if (!$config) {
+            echo '<!-- falcon_render_configurations: json_decode failed, error: ' . json_last_error_msg() . ' -->';
+            echo '<!-- raw length: ' . strlen($raw_json) . ', first 100: ' . esc_html(substr($raw_json, 0, 100)) . ' -->';
+            return;
+        }
+    } else {
+        $config = $raw_json;
+    }
+
+    if (!isset($config['prefix'])) {
+        echo '<!-- falcon_render_configurations: no prefix in config -->';
+        return;
+    }
+
+    $prefix = sanitize_key($config['prefix']);
+    $is_static = !empty($config['static']);
+
+    // Re-encode to clean JSON, esc_attr() converts " to &quot; for safe HTML attribute.
+    // Browser decodes &quot; back to " via getAttribute(), so JSON.parse() works.
+    $json_for_attr = wp_json_encode($config, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+    echo '<section class="falcon-configurations" data-config="' . esc_attr($json_for_attr) . '">' . "\n";
+
+    // Title
+    echo '<h2>' . esc_html(strtoupper($prefix)) . ' Configurations</h2>' . "\n";
+
+    // Subtitle
+    if (!empty($config['subtitle'])) {
+        echo '<p class="config-subtitle">' . esc_html($config['subtitle']) . '</p>' . "\n";
+    }
+
+    // Toggle buttons (multi-config products only)
+    if (!$is_static && !empty($config['toggles'])) {
+        echo '<div class="config-toggles">' . "\n";
+        foreach ($config['toggles'] as $toggle) {
+            $group_key = esc_attr($toggle['key']);
+            $default_val = isset($toggle['default']) ? $toggle['default'] : '';
+            echo '  <div class="toggle-group">' . "\n";
+            echo '    <span class="toggle-label">' . esc_html(ucfirst($toggle['key'])) . '</span>' . "\n";
+            echo '    <div class="toggle-pills" data-group="' . $group_key . '">' . "\n";
+            if (!empty($toggle['options'])) {
+                foreach ($toggle['options'] as $option) {
+                    $val = esc_attr($option['value']);
+                    $label = esc_html($option['label']);
+                    $active = ($option['value'] === $default_val) ? ' active' : '';
+                    echo '      <button class="toggle-pill' . $active . '" data-value="' . $val . '">' . $label . '</button>' . "\n";
+                }
+            }
+            echo '    </div>' . "\n";
+            echo '  </div>' . "\n";
+        }
+        echo '</div>' . "\n";
+    }
+
+    // Spec tables (populated by configurations.js)
+    $table_sections = [
+        'body-dims' => 'Body dimensions',
+        'side-ref'  => 'Reference points &mdash; side view',
+        'rear-ref'  => 'Reference points &mdash; rear view',
+    ];
+    foreach ($table_sections as $id_suffix => $title) {
+        echo '<div class="spec-section">' . "\n";
+        echo '  <div class="spec-section-title">' . $title . '</div>' . "\n";
+        echo '  <table class="spec-table" id="' . esc_attr($prefix . '-' . $id_suffix) . '"></table>' . "\n";
+        echo '</div>' . "\n";
+    }
+
+    // Compartment grid (static HTML from JSON)
+    if (!empty($config['compartments'])) {
+        echo '<div class="spec-section">' . "\n";
+        echo '  <div class="spec-section-title">Compartment dimensions</div>' . "\n";
+        echo '  <div class="compartment-grid">' . "\n";
+        foreach ($config['compartments'] as $compartment) {
+            $card_title = isset($compartment['title']) ? $compartment['title'] : (isset($compartment['side']) ? $compartment['side'] : '');
+            echo '    <div class="compartment-card">' . "\n";
+            echo '      <h4>' . esc_html($card_title) . '</h4>' . "\n";
+            if (!empty($compartment['type'])) {
+                echo '      <div class="comp-type">' . esc_html($compartment['type']) . '</div>' . "\n";
+            }
+            $rows = isset($compartment['rows']) ? $compartment['rows'] : [];
+            foreach ($rows as $row) {
+                echo '      <div class="comp-row"><span class="comp-label">' . esc_html($row[0]) . '</span><span class="comp-val">' . esc_html($row[1]) . '</span></div>' . "\n";
+            }
+            echo '    </div>' . "\n";
+        }
+        echo '  </div>' . "\n";
+        echo '</div>' . "\n";
+    }
+
+    echo '</section>' . "\n";
+}
+
+/**
+ * Render Falcon Tech Overview tab from _falcon_tech_overview meta
+ */
+function falcon_render_tech_overview($raw_json) {
+    $data = is_string($raw_json) ? json_decode($raw_json, true) : $raw_json;
+    if (!$data) {
+        return;
+    }
+
+    $sections = [
+        'construction' => 'Construction',
+        'dimensions'   => 'Dimensions',
+        'standard'     => 'Standard features',
+    ];
+
+    echo '<section class="falcon-configurations">' . "\n";
+
+    foreach ($sections as $key => $title) {
+        if (empty($data[$key])) {
+            continue;
+        }
+        echo '<div class="spec-section">' . "\n";
+        echo '  <div class="spec-section-title">' . esc_html($title) . '</div>' . "\n";
+        echo '  <table class="spec-table">' . "\n";
+        foreach ($data[$key] as $row) {
+            echo '    <tr><td>' . esc_html($row[0]) . '</td><td>' . esc_html($row[1]) . '</td></tr>' . "\n";
+        }
+        echo '  </table>' . "\n";
+        echo '</div>' . "\n";
+    }
+
+    echo '</section>' . "\n";
 }
 
 // ============================================================================
