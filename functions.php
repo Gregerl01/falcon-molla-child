@@ -164,6 +164,17 @@ function enable_shortcodes_in_custom_tabs($tabs) {
         };
     }
 
+    // Force description tab to appear when _falcon_tech_overview exists but post_content is empty
+    if (!isset($tabs['description']) && $tech_overview) {
+        $tabs['description'] = array(
+            'title'    => __('Description', 'woocommerce'),
+            'priority' => 10,
+            'callback' => function() use ($tech_overview) {
+                falcon_render_tech_overview($tech_overview);
+            },
+        );
+    }
+
     // Override Configurations tab (Molla key: "1st") if _falcon_config_json meta exists
     $config_json = get_post_meta($product_id, '_falcon_config_json', true);
     if ($config_json && isset($tabs['1st'])) {
