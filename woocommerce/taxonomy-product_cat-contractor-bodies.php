@@ -24,9 +24,9 @@ get_header(); ?>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Placeholder Headline for Contractor Body Introduction</h2>
-                <p class="lead">Placeholder description highlighting the primary benefits of Falcon Contractor Bodies. Emphasize heavy-duty hauling capacity, open bed design, and versatility for construction and landscaping applications.</p>
-                <p>Placeholder supporting paragraph describing chassis compatibility, industry applications, and overall value proposition. Mention durability, payload capacity, and professional-grade construction quality.</p>
+                <h2 class="h3 fw-bold mb-4">Built for the Jobsite, Not the Parking Lot</h2>
+                <p class="lead">Falcon Contractor Bodies are heavy-duty open-bed platforms engineered for construction crews, utility contractors, and municipal operations that move material, equipment, and tools across demanding jobsites every day.</p>
+                <p>Built on a galvanized 10-ga steel subframe with a 1/8″ treadplate deck and modular bolt-on storage, the FCB Series is available in 12FT (84CA) and 14FT (120CA) configurations. Integrated overhead racks, carbon steel hitch assemblies, and reinforced underbody boxes come standard.</p>
             </div>
             <div class="col-lg-6">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-intro.webp" alt="Falcon Contractor Body" class="img-fluid rounded">
@@ -60,7 +60,7 @@ get_header(); ?>
 
           <!-- Headings -->
           <h5>Falcon Standard Features</h5>
-          <h2>Placeholder Headline for Standard Features Section.</h2>
+          <h2>Every FCB ships ready to work.</h2>
 
           <!-- FEATURES GRID -->
           <div class="features-grid">
@@ -68,64 +68,64 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Placeholder Feature One</h4>
-                <p>Placeholder description for the first standard feature included with Contractor Bodies.</p>
+                <h4>1/8″ Treadplate Steel Deck</h4>
+                <p>Full-length treadplate floor over formed structural channel supports, engineered for distributed and point loads.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Two</h4>
-                <p>Placeholder description for the second standard feature highlighting durability or construction.</p>
+                <h4>Galvanized 10ga Subframe</h4>
+                <p>Structural steel subframe with engineered weld bead application and square tube crossmembers for torsional rigidity.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Three</h4>
-                <p>Placeholder description for the third standard feature related to bed or payload capacity.</p>
+                <h4>Modular Bolt-On Storage</h4>
+                <p>Heavy-gauge flip-top and underbody boxes with gas assist lids and reinforced drop-down doors. Configurable per fleet.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Four</h4>
-                <p>Placeholder description for the fourth standard feature such as tie-downs or stake pockets.</p>
+                <h4>Integrated Overhead Rack</h4>
+                <p>Bolt-on rack system for ladders, conduit, pipe, and jobsite materials. Built for daily loading and unloading.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Five</h4>
-                <p>Placeholder description for the fifth standard feature like finish or corrosion protection.</p>
+                <h4>Carbon Steel Hitch Assembly</h4>
+                <p>Integrated heavy-duty hitch with tow provisions, engineered for trailer and equipment hauling.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Six</h4>
-                <p>Placeholder description for the sixth standard feature covering lighting or electrical.</p>
+                <h4>Powder-Coat Finish</h4>
+                <p>Full body powder coat for corrosion resistance and long-term durability in exposed jobsite environments.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Seven</h4>
-                <p>Placeholder description for the seventh standard feature such as bumper or hitch options.</p>
+                <h4>LED Lighting Package</h4>
+                <p>Integrated LED tail, brake, and marker lights with sealed wiring harness for reliable visibility.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Eight</h4>
-                <p>Placeholder description for the eighth standard feature.</p>
+                <h4>Reinforced Crossmembers</h4>
+                <p>2″ × 1/8″ square steel tube crossmembers with 5th member shortened for tire clearance on 84CA configuration.</p>
               </div>
             </div>
 
@@ -144,38 +144,38 @@ get_header(); ?>
         <div class="row mb-5">
             <div class="col-lg-8">
                 <h5>Contractor Body Options</h5>
-                <h2>Placeholder Headline for Configuration Options</h2>
-                <p class="text-muted">Placeholder description explaining the available configurations, bed lengths, and optional upgrades for Contractor Bodies.</p>
+                <h2>Configure for Your Operation</h2>
+                <p class="text-muted">Available platform lengths and storage configurations to match your fleet requirements.</p>
             </div>
         </div>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option One</h4>
-                    <p class="text-muted mb-0">Placeholder description for the first configuration option available.</p>
+                    <p class="option-type">Platform Length</p>
+                    <h4>Contractor 12 (84CA)</h4>
+                    <p class="text-muted mb-0">144″ body length on 84CA chassis. Compact footprint with full contractor functionality.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Two</h4>
-                    <p class="text-muted mb-0">Placeholder description for the second configuration option available.</p>
+                    <p class="option-type">Platform Length</p>
+                    <h4>Contractor 14 (120CA)</h4>
+                    <p class="text-muted mb-0">168″ body length on 120CA chassis. Extended deck for larger material loads and equipment.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Three</h4>
-                    <p class="text-muted mb-0">Placeholder description for the third configuration option available.</p>
+                    <p class="option-type">Storage</p>
+                    <h4>Underbody Box Layout</h4>
+                    <p class="text-muted mb-0">Flip-top and drop-down underbody boxes configurable per side. Gas assist lids standard.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Four</h4>
-                    <p class="text-muted mb-0">Placeholder description for the fourth configuration option available.</p>
+                    <p class="option-type">Accessories</p>
+                    <h4>Rack & Hitch Packages</h4>
+                    <p class="text-muted mb-0">Overhead rack system and integrated hitch assembly included. Additional tie-down and stake pocket options available.</p>
                 </div>
             </div>
         </div>
@@ -188,27 +188,27 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h5>Placeholder Tagline for Accessories Section.</h5>
+                <h5>Customize Your Build</h5>
                 <h2>Contractor Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Accessory One</h4>
-                    <p>Placeholder description for the first accessory option such as side rails or ladder racks.</p>
+                    <h4>Stake Pockets & Tie-Down Rails</h4>
+                    <p>Standard stake pockets with optional continuous tie-down rail system for securing loads across the full deck.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Two</h4>
-                    <p>Placeholder description for the second accessory option such as toolboxes or storage solutions.</p>
+                    <h4>Additional Underbody Boxes</h4>
+                    <p>Expand storage capacity with additional flip-top or drop-down underbody box configurations.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Three</h4>
-                    <p>Placeholder description for the third accessory option such as tarp systems or bed liners.</p>
+                    <h4>Tarp System Integration</h4>
+                    <p>Manual or automatic tarp systems for weather protection during material transport.</p>
                 </div>
 
                  <div class="accessory-item">
-                    <h4>Accessory Four</h4>
-                    <p>Placeholder description for the fourth accessory option.</p>
+                    <h4>Custom Powder Coat Colors</h4>
+                    <p>Match your fleet branding with custom powder coat color options beyond standard white.</p>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -239,7 +239,7 @@ get_header(); ?>
 		<div class="row justify-content-center text-center">
 			<div class="col-lg-8">
 				<h2 class="mb-3">Contractor Body Line Up</h2>
-				<p class="mb-8">Placeholder description for the product lineup section highlighting available models.</p>
+				<p class="mb-8">Available in 12FT and 14FT configurations for 84CA and 120CA chassis platforms.</p>
 			</div>
 		</div>
 
@@ -342,8 +342,8 @@ get_header(); ?>
 <section class="cb-cta section">
     <div class="container">
         <div class="cb-cta-wrapper surface--subtle">
-            <h3>Placeholder CTA Headline for Contractor Bodies</h3>
-            <p class="mb-4">Placeholder call-to-action description encouraging visitors to request a quote or contact sales.</p>
+            <h3>Ready to spec your contractor bed?</h3>
+            <p class="mb-4">Contact our team for configuration options, fleet pricing, and lead times.</p>
             <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
 
