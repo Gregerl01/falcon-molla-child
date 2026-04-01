@@ -24,9 +24,9 @@ get_header(); ?>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Placeholder Headline for Enclosed Body Introduction</h2>
-                <p class="lead">Placeholder description highlighting the primary benefits of Falcon Enclosed Bodies. Emphasize secure storage, weather protection, and versatility for mobile service and delivery applications.</p>
-                <p>Placeholder supporting paragraph describing chassis compatibility, industry applications, and overall value proposition. Mention security features, cargo protection, and professional-grade construction quality.</p>
+                <h2 class="h3 fw-bold mb-4">Fully Enclosed. Fully Protected. Built for the Field.</h2>
+                <p class="lead">Falcon Enclosed Bodies provide weather-sealed cargo areas, organized side compartments, and configurable roof heights for service fleets that demand tool protection, interior workspace, and equipment security.</p>
+                <p>Available in four platform sizes from 56CA through 120CA, with SRW and DRW chassis options and Low, Mid, and High roof configurations. Each body is built from heavy-gauge galvanneal steel with powder-coat finish, flush-mounted compartment doors, and full-height rear access.</p>
             </div>
             <div class="col-lg-6">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/enclosed-body-intro.webp" alt="Falcon Enclosed Body" class="img-fluid rounded">
@@ -195,7 +195,7 @@ get_header(); ?>
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <h2 class="mb-3">Enclosed Body Line Up</h2>
-                <p class="mb-8">Placeholder description for the product lineup section highlighting available models.</p>
+                <p class="mb-8">Four platform sizes with configurable chassis and roof height options to match your fleet requirements.</p>
             </div>
         </div>
     </div>
