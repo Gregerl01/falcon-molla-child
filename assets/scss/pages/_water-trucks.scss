@@ -9,16 +9,17 @@
               url('../images/water-trucks-hero.webp') center/cover no-repeat;
   color: var(--text-on-image);
 
-  h1 {
+  h1, .h1 {
     font-weight: 800;
     line-height: 1.05;
     margin-bottom: 1.5rem;
     text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    color: #fff !important;
   }
 
   .tagline {
     font-size: 1.25rem;
-    color: color-mix(in srgb, var(--text-on-image), transparent 25%);
+    color: color-mix(in srgb, white, transparent 25%);
   }
 }
 

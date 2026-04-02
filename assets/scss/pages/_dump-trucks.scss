@@ -1,12 +1,12 @@
 /* =================================================
-   CONTRACTOR BODIES – PAGE ONLY
+   DUMP TRUCKS – PAGE ONLY
 ================================================= */
 
 /* HERO */
-.cb-hero {
+.dt-hero {
   padding: 6rem 0;
   background: linear-gradient(var(--overlay-image), var(--overlay-image)),
-              url('../images/contractor-bodies-hero.webp') center/cover no-repeat;
+              url('../images/dump-trucks-hero.webp') center/cover no-repeat;
   color: var(--text-on-image);
 
   h1, .h1 {
@@ -17,12 +17,3 @@
     color: color-mix(in srgb, white, transparent 25%);
   }
 }
-
-// .cb-hero .container .row {
-//   justify-content: flex-end;
-// }
-
-// /* INTRO (if unique to Contractor Bodies) */
-// .cb-intro img {
-//   box-shadow: var(--shadow-card);
-// }

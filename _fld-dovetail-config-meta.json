@@ -1,0 +1,65 @@
+{
+  "prefix": "fldt",
+  "static": true,
+  "subtitle": "Dovetail landscape body with integrated loading ramp and expanded metal deck.",
+  "toggles": [],
+  "compartments": [],
+  "data": {
+    "default": {
+      "body": [
+        [
+          "Overall length",
+          "226″"
+        ],
+        [
+          "Body width",
+          "96″"
+        ],
+        [
+          "Overall height",
+          "84.5″"
+        ],
+        [
+          "Deck",
+          "Expanded metal mesh with treadplate sections"
+        ],
+        [
+          "Structure",
+          "10-ga carbon steel main structure"
+        ],
+        [
+          "Side panels",
+          "Expanded metal mesh for debris drainage"
+        ],
+        [
+          "Loading ramp",
+          "Rear folding ramp integrated into dovetail section"
+        ]
+      ],
+      "side": [
+        [
+          "A",
+          "226″"
+        ],
+        [
+          "B",
+          "96″"
+        ],
+        [
+          "C",
+          "84.5″"
+        ]
+      ],
+      "rear": [
+        [
+          "A",
+          "96″"
+        ],
+        [
+          "B",
+          "84.5″"
+        ]
+      ]
+    }
+  }
+}

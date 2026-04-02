@@ -4099,6 +4099,12 @@ footer .footer-bottom {
   color-scheme: dark;
 }
 
+.hero picture {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 .hero__bg {
   position: absolute;
   inset: 0;
@@ -4901,7 +4907,9 @@ a.btn.btn-secondary:focus {
 .chb-features-split,
 .wb-features-split,
 .bt-features-split,
-.wt-features-split {
+.wt-features-split,
+.dt-features-split,
+.lineb-features-split {
   width: 100%;
   max-width: 1500px;
   margin-left: auto;
@@ -4921,7 +4929,9 @@ a.btn.btn-secondary:focus {
 .chb-features .feature-image-wrap,
 .wb-features .feature-image-wrap,
 .bt-features .feature-image-wrap,
-.wt-features .feature-image-wrap {
+.wt-features .feature-image-wrap,
+.dt-features .feature-image-wrap,
+.lineb-features .feature-image-wrap {
   position: relative;
   width: 100%;
 }
@@ -4935,7 +4945,9 @@ a.btn.btn-secondary:focus {
 .chb-features .feature-image-wrap img,
 .wb-features .feature-image-wrap img,
 .bt-features .feature-image-wrap img,
-.wt-features .feature-image-wrap img {
+.wt-features .feature-image-wrap img,
+.dt-features .feature-image-wrap img,
+.lineb-features .feature-image-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4951,7 +4963,9 @@ a.btn.btn-secondary:focus {
 .chb-features .features-grid,
 .wb-features .features-grid,
 .bt-features .features-grid,
-.wt-features .features-grid {
+.wt-features .features-grid,
+.dt-features .features-grid,
+.lineb-features .features-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
@@ -4966,7 +4980,9 @@ a.btn.btn-secondary:focus {
 .chb-features .feature-item,
 .wb-features .feature-item,
 .bt-features .feature-item,
-.wt-features .feature-item {
+.wt-features .feature-item,
+.dt-features .feature-item,
+.lineb-features .feature-item {
   display: grid;
   grid-template-columns: 32px 1fr;
   gap: 1rem;
@@ -4986,7 +5002,9 @@ a.btn.btn-secondary:focus {
 .chb-features .feature-item:hover,
 .wb-features .feature-item:hover,
 .bt-features .feature-item:hover,
-.wt-features .feature-item:hover {
+.wt-features .feature-item:hover,
+.dt-features .feature-item:hover,
+.lineb-features .feature-item:hover {
   transform: translateY(-3px);
 }
 .sb-features .feature-number,
@@ -4999,7 +5017,9 @@ a.btn.btn-secondary:focus {
 .chb-features .feature-number,
 .wb-features .feature-number,
 .bt-features .feature-number,
-.wt-features .feature-number {
+.wt-features .feature-number,
+.dt-features .feature-number,
+.lineb-features .feature-number {
   font-size: 2rem;
   font-weight: 700;
   color: var(--heading-color);
@@ -5026,7 +5046,11 @@ a.btn.btn-secondary:focus {
 .bt-features .feature-content h4,
 .bt-features .feature-content .h4,
 .wt-features .feature-content h4,
-.wt-features .feature-content .h4 {
+.wt-features .feature-content .h4,
+.dt-features .feature-content h4,
+.dt-features .feature-content .h4,
+.lineb-features .feature-content h4,
+.lineb-features .feature-content .h4 {
   margin: 0 0 0.4rem;
   font-size: 1.5rem;
   color: var(--heading-color);
@@ -5041,7 +5065,9 @@ a.btn.btn-secondary:focus {
 .chb-features .feature-content p,
 .wb-features .feature-content p,
 .bt-features .feature-content p,
-.wt-features .feature-content p {
+.wt-features .feature-content p,
+.dt-features .feature-content p,
+.lineb-features .feature-content p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -5057,7 +5083,9 @@ a.btn.btn-secondary:focus {
 .chb-features,
 .wb-features,
 .bt-features,
-.wt-features {
+.wt-features,
+.dt-features,
+.lineb-features {
   /* Responsive */
 }
 @media (max-width: 991px) {
@@ -5071,7 +5099,9 @@ a.btn.btn-secondary:focus {
   .chb-features .row,
   .wb-features .row,
   .bt-features .row,
-  .wt-features .row {
+  .wt-features .row,
+  .dt-features .row,
+  .lineb-features .row {
     row-gap: 3rem;
   }
 }
@@ -5086,7 +5116,9 @@ a.btn.btn-secondary:focus {
   .chb-features .features-grid,
   .wb-features .features-grid,
   .bt-features .features-grid,
-  .wt-features .features-grid {
+  .wt-features .features-grid,
+  .dt-features .features-grid,
+  .lineb-features .features-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -5104,7 +5136,9 @@ a.btn.btn-secondary:focus {
 .chb-options,
 .wb-options,
 .bt-options,
-.wt-options {
+.wt-options,
+.dt-options,
+.lineb-options {
   background: var(--surface);
 }
 .sb-options h5, .sb-options .h5,
@@ -5127,7 +5161,11 @@ a.btn.btn-secondary:focus {
 .bt-options h5,
 .bt-options .h5,
 .wt-options h5,
-.wt-options .h5 {
+.wt-options .h5,
+.dt-options h5,
+.dt-options .h5,
+.lineb-options h5,
+.lineb-options .h5 {
   color: var(--accent-color);
 }
 .sb-options .option-card,
@@ -5140,7 +5178,9 @@ a.btn.btn-secondary:focus {
 .chb-options .option-card,
 .wb-options .option-card,
 .bt-options .option-card,
-.wt-options .option-card {
+.wt-options .option-card,
+.dt-options .option-card,
+.lineb-options .option-card {
   height: 100%;
   padding: 2rem;
   border: 1px solid var(--border-color);
@@ -5156,7 +5196,9 @@ a.btn.btn-secondary:focus {
 .chb-options .option-card:hover,
 .wb-options .option-card:hover,
 .bt-options .option-card:hover,
-.wt-options .option-card:hover {
+.wt-options .option-card:hover,
+.dt-options .option-card:hover,
+.lineb-options .option-card:hover {
   transform: translateY(-4px);
 }
 .sb-options .option-card .option-type,
@@ -5169,7 +5211,9 @@ a.btn.btn-secondary:focus {
 .chb-options .option-card .option-type,
 .wb-options .option-card .option-type,
 .bt-options .option-card .option-type,
-.wt-options .option-card .option-type {
+.wt-options .option-card .option-type,
+.dt-options .option-card .option-type,
+.lineb-options .option-card .option-type {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--accent-color);
@@ -5195,7 +5239,11 @@ a.btn.btn-secondary:focus {
 .bt-options .option-card h4,
 .bt-options .option-card .h4,
 .wt-options .option-card h4,
-.wt-options .option-card .h4 {
+.wt-options .option-card .h4,
+.dt-options .option-card h4,
+.dt-options .option-card .h4,
+.lineb-options .option-card h4,
+.lineb-options .option-card .h4 {
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
 }
@@ -5209,7 +5257,9 @@ a.btn.btn-secondary:focus {
 .chb-options .option-card p,
 .wb-options .option-card p,
 .bt-options .option-card p,
-.wt-options .option-card p {
+.wt-options .option-card p,
+.dt-options .option-card p,
+.lineb-options .option-card p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -5239,7 +5289,11 @@ a.btn.btn-secondary:focus {
 .bt-accessories h5,
 .bt-accessories .h5,
 .wt-accessories h5,
-.wt-accessories .h5 {
+.wt-accessories .h5,
+.dt-accessories h5,
+.dt-accessories .h5,
+.lineb-accessories h5,
+.lineb-accessories .h5 {
   color: var(--accent-color);
 }
 .sb-accessories .accessory-item,
@@ -5252,7 +5306,9 @@ a.btn.btn-secondary:focus {
 .chb-accessories .accessory-item,
 .wb-accessories .accessory-item,
 .bt-accessories .accessory-item,
-.wt-accessories .accessory-item {
+.wt-accessories .accessory-item,
+.dt-accessories .accessory-item,
+.lineb-accessories .accessory-item {
   margin-bottom: 1.75rem;
   padding-left: 1rem;
   border-left: 3px solid var(--accent-color);
@@ -5277,7 +5333,11 @@ a.btn.btn-secondary:focus {
 .bt-accessories .accessory-item h4,
 .bt-accessories .accessory-item .h4,
 .wt-accessories .accessory-item h4,
-.wt-accessories .accessory-item .h4 {
+.wt-accessories .accessory-item .h4,
+.dt-accessories .accessory-item h4,
+.dt-accessories .accessory-item .h4,
+.lineb-accessories .accessory-item h4,
+.lineb-accessories .accessory-item .h4 {
   margin-bottom: 0.25rem;
 }
 .sb-accessories .accessory-item p,
@@ -5290,7 +5350,9 @@ a.btn.btn-secondary:focus {
 .chb-accessories .accessory-item p,
 .wb-accessories .accessory-item p,
 .bt-accessories .accessory-item p,
-.wt-accessories .accessory-item p {
+.wt-accessories .accessory-item p,
+.dt-accessories .accessory-item p,
+.lineb-accessories .accessory-item p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -5305,7 +5367,9 @@ a.btn.btn-secondary:focus {
 .chb-accessories img,
 .wb-accessories img,
 .bt-accessories img,
-.wt-accessories img {
+.wt-accessories img,
+.dt-accessories img,
+.lineb-accessories img {
   aspect-ratio: 4/3;
   object-fit: cover;
 }
@@ -5323,7 +5387,9 @@ a.btn.btn-secondary:focus {
 .chb-products,
 .wb-products,
 .bt-products,
-.wt-products {
+.wt-products,
+.dt-products,
+.lineb-products {
   padding-bottom: 0;
 }
 .sb-products .product-list-item.bg-dark-section,
@@ -5336,7 +5402,9 @@ a.btn.btn-secondary:focus {
 .chb-products .product-list-item.bg-dark-section,
 .wb-products .product-list-item.bg-dark-section,
 .bt-products .product-list-item.bg-dark-section,
-.wt-products .product-list-item.bg-dark-section {
+.wt-products .product-list-item.bg-dark-section,
+.dt-products .product-list-item.bg-dark-section,
+.lineb-products .product-list-item.bg-dark-section {
   background: var(--surface-1) !important;
 }
 .sb-products .product-list-item.bg-light,
@@ -5349,7 +5417,9 @@ a.btn.btn-secondary:focus {
 .chb-products .product-list-item.bg-light,
 .wb-products .product-list-item.bg-light,
 .bt-products .product-list-item.bg-light,
-.wt-products .product-list-item.bg-light {
+.wt-products .product-list-item.bg-light,
+.dt-products .product-list-item.bg-light,
+.lineb-products .product-list-item.bg-light {
   background: var(--section-primary) !important;
 }
 .sb-products .product-list-item h2 a, .sb-products .product-list-item .h2 a,
@@ -5372,7 +5442,11 @@ a.btn.btn-secondary:focus {
 .bt-products .product-list-item h2 a,
 .bt-products .product-list-item .h2 a,
 .wt-products .product-list-item h2 a,
-.wt-products .product-list-item .h2 a {
+.wt-products .product-list-item .h2 a,
+.dt-products .product-list-item h2 a,
+.dt-products .product-list-item .h2 a,
+.lineb-products .product-list-item h2 a,
+.lineb-products .product-list-item .h2 a {
   color: inherit;
   text-decoration: none;
 }
@@ -5396,7 +5470,11 @@ a.btn.btn-secondary:focus {
 .bt-products .product-list-item h2 a:hover,
 .bt-products .product-list-item .h2 a:hover,
 .wt-products .product-list-item h2 a:hover,
-.wt-products .product-list-item .h2 a:hover {
+.wt-products .product-list-item .h2 a:hover,
+.dt-products .product-list-item h2 a:hover,
+.dt-products .product-list-item .h2 a:hover,
+.lineb-products .product-list-item h2 a:hover,
+.lineb-products .product-list-item .h2 a:hover {
   color: var(--accent-color);
 }
 .sb-products .product-list-item .product-description p,
@@ -5420,7 +5498,11 @@ a.btn.btn-secondary:focus {
 .bt-products .product-list-item .product-description p,
 .bt-products .product-list-item .product-description li,
 .wt-products .product-list-item .product-description p,
-.wt-products .product-list-item .product-description li {
+.wt-products .product-list-item .product-description li,
+.dt-products .product-list-item .product-description p,
+.dt-products .product-list-item .product-description li,
+.lineb-products .product-list-item .product-description p,
+.lineb-products .product-list-item .product-description li {
   font-size: 1.45rem;
   line-height: 1.6;
 }
@@ -5438,7 +5520,9 @@ a.btn.btn-secondary:focus {
 .chb-cta,
 .wb-cta,
 .bt-cta,
-.wt-cta {
+.wt-cta,
+.dt-cta,
+.lineb-cta {
   padding-bottom: 40px;
   text-align: center;
 }
@@ -5452,7 +5536,9 @@ a.btn.btn-secondary:focus {
 .chb-cta p,
 .wb-cta p,
 .bt-cta p,
-.wt-cta p {
+.wt-cta p,
+.dt-cta p,
+.lineb-cta p {
   margin-bottom: 2rem;
 }
 
@@ -5466,7 +5552,9 @@ a.btn.btn-secondary:focus {
 .chb-cta-wrapper,
 .wb-cta-wrapper,
 .bt-cta-wrapper,
-.wt-cta-wrapper {
+.wt-cta-wrapper,
+.dt-cta-wrapper,
+.lineb-cta-wrapper {
   padding: 4rem 3rem;
   border: 1px solid var(--border-color);
 }
@@ -7106,14 +7194,23 @@ a.btn.btn-secondary:focus {
   background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/contractor-bodies-hero.webp") center/cover no-repeat;
   color: var(--text-on-image);
 }
+.cb-hero h1, .cb-hero .h1 {
+  color: #fff !important;
+}
+.cb-hero .tagline {
+  color: color-mix(in srgb, white, transparent 25%);
+}
 
 .sb-hero {
   padding: 6rem 0;
   background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/service-bodies-herov3.webp") center/cover no-repeat;
   color: var(--text-on-image);
 }
+.sb-hero h1, .sb-hero .h1 {
+  color: #fff !important;
+}
 .sb-hero .tagline {
-  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
+  color: color-mix(in srgb, white, transparent 25%);
 }
 
 .sb-hero .container .row {
@@ -7125,8 +7222,11 @@ a.btn.btn-secondary:focus {
   background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/mechanics-bodies-hero.webp") center/cover no-repeat;
   color: var(--text-on-image);
 }
+.mechanics-hero h1, .mechanics-hero .h1 {
+  color: #fff !important;
+}
 .mechanics-hero .tagline {
-  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
+  color: color-mix(in srgb, white, transparent 25%);
 }
 
 .mechanics-hero .container .row {
@@ -7167,10 +7267,11 @@ a.btn.btn-secondary:focus {
   line-height: 1.05;
   margin-bottom: 1.5rem;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  color: #fff !important;
 }
 .st-hero .tagline {
   font-size: 1.25rem;
-  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
+  color: color-mix(in srgb, white, transparent 25%);
 }
 
 .st-hero .container .row {
@@ -7191,10 +7292,11 @@ a.btn.btn-secondary:focus {
   line-height: 1.05;
   margin-bottom: 1.5rem;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  color: #fff !important;
 }
 .hb-hero .tagline {
   font-size: 1.25rem;
-  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
+  color: color-mix(in srgb, white, transparent 25%);
 }
 
 .hb-hero .container .row {
@@ -7215,10 +7317,11 @@ a.btn.btn-secondary:focus {
   line-height: 1.05;
   margin-bottom: 1.5rem;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  color: #fff !important;
 }
 .lb-hero .tagline {
   font-size: 1.25rem;
-  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
+  color: color-mix(in srgb, white, transparent 25%);
 }
 
 .lb-hero .container .row {
@@ -7239,10 +7342,11 @@ a.btn.btn-secondary:focus {
   line-height: 1.05;
   margin-bottom: 1.5rem;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  color: #fff !important;
 }
 .chb-hero .tagline {
   font-size: 1.25rem;
-  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
+  color: color-mix(in srgb, white, transparent 25%);
 }
 
 .chb-hero .container .row {
@@ -7263,10 +7367,11 @@ a.btn.btn-secondary:focus {
   line-height: 1.05;
   margin-bottom: 1.5rem;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  color: #fff !important;
 }
 .wb-hero .tagline {
   font-size: 1.25rem;
-  color: color-mix(in srgb, var(--text-on-image), transparent 25%);
+  color: color-mix(in srgb, white, transparent 25%);
 }
 
 .wb-hero .container .row {
@@ -7295,6 +7400,63 @@ a.btn.btn-secondary:focus {
 
 .bt-hero .container .row {
   justify-content: flex-end;
+}
+
+/* =================================================
+   DUMP TRUCKS – PAGE ONLY
+================================================= */
+/* HERO */
+.dt-hero {
+  padding: 6rem 0;
+  background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/dump-trucks-hero.webp") center/cover no-repeat;
+  color: var(--text-on-image);
+}
+.dt-hero h1, .dt-hero .h1 {
+  color: #fff !important;
+}
+.dt-hero .tagline {
+  color: color-mix(in srgb, white, transparent 25%);
+}
+
+/* =================================================
+   WATER TRUCKS – PAGE ONLY
+================================================= */
+/* HERO */
+.wt-hero {
+  padding: 6rem 0;
+  background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/water-trucks-hero.webp") center/cover no-repeat;
+  color: var(--text-on-image);
+}
+.wt-hero h1, .wt-hero .h1 {
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  color: #fff !important;
+}
+.wt-hero .tagline {
+  font-size: 1.25rem;
+  color: color-mix(in srgb, white, transparent 25%);
+}
+
+.wt-hero .container .row {
+  justify-content: flex-end;
+}
+
+/* =================================================
+   LINE BODIES – PAGE ONLY
+================================================= */
+/* HERO */
+.lineb-hero {
+  padding: 6rem 0;
+  background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/line-bodies-hero.webp") center/cover no-repeat;
+  color: var(--text-on-image);
+}
+.lineb-hero h1, .lineb-hero .h1 {
+  color: #fff !important;
+}
+.lineb-hero .tagline {
+  color: color-mix(in srgb, white, transparent 25%);
 }
 
 .product-list-item .product-description {
