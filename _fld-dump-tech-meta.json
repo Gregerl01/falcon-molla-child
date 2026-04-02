@@ -1,0 +1,60 @@
+{
+  "construction": [
+    [
+      "Floor",
+      "10-ga carbon steel for structural durability"
+    ],
+    [
+      "Panels",
+      "10-ga carbon steel front, rear, and side panels"
+    ],
+    [
+      "Tailgate",
+      "10-ga carbon steel with 2-point cam lock and lift-off hinges"
+    ],
+    [
+      "Understructure",
+      "Reinforced rectangular steel tubing"
+    ],
+    [
+      "Frame",
+      "4″ channel steel support"
+    ],
+    [
+      "Finish",
+      "Powder-coated interior and exterior for corrosion resistance"
+    ]
+  ],
+  "dimensions": [
+    [
+      "Body length",
+      "144″"
+    ],
+    [
+      "Body width",
+      "96″"
+    ],
+    [
+      "Side height",
+      "52″"
+    ],
+    [
+      "Configuration",
+      "Single dump body platform"
+    ]
+  ],
+  "standard": [
+    [
+      "Lighting",
+      "(2) amber LED marker lights, (7) red LED rear lights"
+    ],
+    [
+      "Tailgate",
+      "2-point cam lock system with lift-off hinge design"
+    ],
+    [
+      "Finish",
+      "Powder-coated interior and exterior"
+    ]
+  ]
+}

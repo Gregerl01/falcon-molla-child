@@ -1,18 +1,18 @@
 <?php
 /**
- * Custom template for Water Trucks category
+ * Custom template for Dump Trucks category
  * Falcon Truck Bodies
  */
 
 get_header(); ?>
 
 <!-- Hero Section -->
-<section class="wt-hero section">
+<section class="dt-hero section">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h1>Spray.<br>Suppress.<br>Supply.</h1>
-                <p class="tagline mt-3">Falcon Water Trucks – Reliable Water Transport and Distribution for Every Operation</p>
+                <h1>Load.<br>Dump.<br>Repeat.</h1>
+                <p class="tagline mt-3">Falcon Dump Trucks – Heavy-Duty Hauling for Construction and Municipal Operations</p>
                 <a href="#product-line" class="btn btn-primary btn-pill mt-3">View Line Up</a>
             </div>
         </div>
@@ -20,16 +20,16 @@ get_header(); ?>
 </section>
 
 <!-- Intro Section -->
-<section class="wt-intro section">
+<section class="dt-intro section">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Engineered for Dust Control, Compaction, and Jobsite Supply</h2>
-                <p class="lead">Falcon Water Trucks deliver high-capacity water transport and precision spray coverage for dust suppression, soil compaction, fire support, and site maintenance. Available in 2,000 and 4,000 gallon configurations.</p>
-                <p>Built on heavy-duty Ford F750 and Class 7/8 commercial chassis, every unit features steel baffled tanks with internal liner coating, PTO-driven pump systems, cab-mounted air-operated spray controls, and 5-head spray systems for comprehensive jobsite coverage.</p>
+                <h2 class="h3 fw-bold mb-4">Built to Move Material, Not Sit in the Shop</h2>
+                <p class="lead">Falcon Dump Trucks are engineered for contractors, municipalities, and heavy hauling operations that need reliable dump platforms for aggregate, soil, debris, and material transport.</p>
+                <p>Built from heavy-gauge carbon steel with hydraulic hoist systems, reinforced tailgates, and commercial-grade subframes, Falcon dump platforms deliver consistent performance under repeated loading and dumping cycles.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-intro.webp" alt="Falcon Water Truck" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-intro.webp" alt="Falcon Dump Truck" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -37,10 +37,10 @@ get_header(); ?>
 <div class="gradient-divider"></div>
 
 <!-- Standard Features Section -->
-<section class="wt-features section surface">
+<section class="dt-features section surface">
 
   <!-- Wide split wrapper (controls overall width) -->
-  <div class="wt-features-split max-w-1500 mx-auto">
+  <div class="dt-features-split max-w-1500 mx-auto">
 
     <div class="row g-0 align-items-start">
 
@@ -48,8 +48,8 @@ get_header(); ?>
       <div class="col-xl-6 col-lg-6">
         <div class="feature-image-wrap">
           <img
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-features.webp"
-            alt="Water Truck Features"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-features.webp"
+            alt="Dump Truck Features"
             class="img-fluid"
           >
         </div>
@@ -61,7 +61,7 @@ get_header(); ?>
 
           <!-- Headings -->
           <h5>Falcon Standard Features</h5>
-          <h2>Every Falcon Water Truck ships job-ready.</h2>
+          <h2>Built for Heavy Loads and Hard Cycles</h2>
 
           <!-- FEATURES GRID -->
           <div class="features-grid">
@@ -69,64 +69,64 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>5-Head Spray System</h4>
-                <p>(2) front, (1) mid, and (2) rear spray heads for comprehensive dust suppression and compaction coverage.</p>
+                <h4>Hydraulic Dump Hoist</h4>
+                <p>Commercial-grade hydraulic lift system for controlled, reliable dumping of heavy payloads.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Cab-Mounted Air Controls</h4>
-                <p>Full cab-mounted, air-operated controls allow the driver to manage all spray functions without leaving the seat.</p>
+                <h4>Heavy-Gauge Steel Body</h4>
+                <p>10-gauge carbon steel floor, sides, and front panel engineered for impact and abrasion resistance.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Baffled Steel Tank</h4>
-                <p>Steel tank construction with 2+ transverse baffles and full internal liner coating for stable transport and longevity.</p>
+                <h4>Reinforced Tailgate</h4>
+                <p>Heavy-duty tailgate with spreader gate and barn door configurations for material control.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>PTO &amp; Pump System</h4>
-                <p>Commercial-grade PTO-driven pump for reliable high-flow water delivery and spray head operation.</p>
+                <h4>Structural Steel Subframe</h4>
+                <p>Channel steel frame with formed crossmembers for load distribution and chassis protection.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Rear Jet Spray Hose Reel</h4>
-                <p>Rear-mounted 50' jet spray hose reel with nozzle for targeted washing, manual watering, and detail work.</p>
+                <h4>Powder-Coat Finish</h4>
+                <p>Full body powder coat for corrosion resistance in wet, abrasive, and outdoor environments.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Hydrant Fill Capability</h4>
-                <p>Standard hydrant fill connection for fast tank refills at municipal water sources.</p>
+                <h4>LED Lighting Package</h4>
+                <p>Integrated LED tail, brake, marker, and clearance lights with sealed wiring harness.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Water Level Sight Gauge</h4>
-                <p>Visual tank level monitoring so operators always know remaining water capacity.</p>
+                <h4>Tarp System Ready</h4>
+                <p>Pre-drilled mounting provisions for manual or electric tarp systems.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>DOT Safety Package</h4>
-                <p>Backup alarm, DOT-compliant roadside triangle kit, 2 lb ABC fire extinguisher, and DOT-compliant mudflaps.</p>
+                <h4>DOT Compliant Platform</h4>
+                <p>Built to meet Department of Transportation requirements for on-road material transport.</p>
               </div>
             </div>
 
@@ -141,43 +141,43 @@ get_header(); ?>
 <div class="gradient-divider"></div>
 
 <!-- Options Section -->
-<section class="wt-options section">
+<section class="dt-options section">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-8">
-                <h5>Water Truck Options</h5>
-                <h2>Two Capacities for Every Operation</h2>
-                <p class="text-muted">Choose the tank size and chassis platform that matches your jobsite water demands.</p>
+                <h5>Dump Truck Options</h5>
+                <h2>Configure for Your Operation</h2>
+                <p class="text-muted">Available platform and tailgate configurations to match your hauling requirements.</p>
             </div>
         </div>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Capacity</p>
-                    <h4>FTB 2,000 Gallon</h4>
-                    <p class="text-muted mb-0">Ford F750 chassis, 33,000 lbs GVWR. Maneuverable platform for dust control and site maintenance.</p>
+                    <p class="option-type">Platform</p>
+                    <h4>Standard Dump Body</h4>
+                    <p class="text-muted mb-0">Heavy-gauge steel dump platform with hydraulic hoist for aggregate, soil, and debris hauling.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Capacity</p>
-                    <h4>FTB 4,000 Gallon</h4>
-                    <p class="text-muted mb-0">Class 7/8 chassis, 54,600+ lbs GVWR. Double capacity for large-scale dust suppression and soil stabilization.</p>
+                    <p class="option-type">Tailgate</p>
+                    <h4>Spreader & Barn Door</h4>
+                    <p class="text-muted mb-0">Dual-mode tailgate for controlled material spreading or full rear access.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Fill System</p>
-                    <h4>Hydrant &amp; Creek Fill</h4>
-                    <p class="text-muted mb-0">Standard hydrant fill on both models. Creek fill capability available on the 4,000 gallon configuration.</p>
+                    <p class="option-type">Accessory</p>
+                    <h4>Tarp Systems</h4>
+                    <p class="text-muted mb-0">Manual or electric tarp systems for load containment during transport.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Spray</p>
-                    <h4>5-Head Spray Coverage</h4>
-                    <p class="text-muted mb-0">Independent front, mid, and rear spray heads with cab-mounted air controls for precision water distribution.</p>
+                    <p class="option-type">Accessory</p>
+                    <h4>Side Extensions</h4>
+                    <p class="text-muted mb-0">Bolt-on side board extensions for increased volume capacity on bulk loads.</p>
                 </div>
             </div>
         </div>
@@ -186,46 +186,46 @@ get_header(); ?>
 
 <!-- Accessories Section -->
 <div class="gradient-divider"></div>
-<section class="wt-accessories section surface">
+<section class="dt-accessories section surface">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h5>Customize Your Water Truck</h5>
-                <h2>Water Truck Accessories</h2>
+                <h5>Customize Your Build</h5>
+                <h2>Dump Truck Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Extended Hose Reel</h4>
-                    <p>Upgraded rear-mounted jet spray hose reel for extended reach on large jobsites and detail work.</p>
+                    <h4>Cab Shield</h4>
+                    <p>Steel cab protector guard to prevent load damage during dumping operations.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Remote Spray Controls</h4>
-                    <p>Enhanced in-cab control systems for independent spray head activation and variable flow adjustment.</p>
+                    <h4>Pintle Hook & Hitch</h4>
+                    <p>Heavy-duty towing provisions for trailer and equipment hauling between jobsites.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Side Spray Bars</h4>
-                    <p>Extended side spray bars for wider coverage on road construction, grading, and large-area dust suppression.</p>
+                    <h4>Underbody Toolboxes</h4>
+                    <p>Lockable underbody storage boxes for tools, chains, and tie-down equipment.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Custom Paint &amp; Fleet Markings</h4>
-                    <p>High-visibility paint, DOT markings, and fleet branding options beyond standard white.</p>
+                    <h4>Custom Paint & Markings</h4>
+                    <p>Fleet branding, DOT markings, and custom color options.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row g-4">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-01.webp" alt="Water Truck Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-01.webp" alt="Dump Truck Accessory 1" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-02.webp" alt="Water Truck Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-02.webp" alt="Dump Truck Accessory 2" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-03.webp" alt="Water Truck Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-03.webp" alt="Dump Truck Accessory 3" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-04.webp" alt="Water Truck Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-04.webp" alt="Dump Truck Accessory 4" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -236,12 +236,12 @@ get_header(); ?>
 <div class="gradient-divider"></div>
 
 <!-- Product List -->
-<section id="product-line" class="wt-products section">
+<section id="product-line" class="dt-products section">
     <div class="container section-title" data-aos="fade-up">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
-                <h2 class="mb-3">Water Truck Line Up</h2>
-                <p class="mb-8">2,000 and 4,000 gallon water transport platforms built for dust control, compaction, and jobsite supply.</p>
+                <h2 class="mb-3">Dump Truck Line Up</h2>
+                <p class="mb-8">Heavy-duty dump platforms engineered for daily loading and hauling operations.</p>
             </div>
         </div>
     </div>
@@ -339,11 +339,11 @@ get_header(); ?>
 </section>
 
 <!-- CTA Section -->
-<section class="wt-cta section">
+<section class="dt-cta section">
     <div class="container">
-        <div class="wt-cta-wrapper surface--subtle">
-            <h3>Ready to spec your water truck?</h3>
-            <p class="mb-4">Contact our team for tank options, spray configurations, and fleet pricing.</p>
+        <div class="dt-cta-wrapper surface--subtle">
+            <h3>Ready to spec your dump truck?</h3>
+            <p class="mb-4">Contact our team for platform options, fleet pricing, and lead times.</p>
             <a href="<?php echo home_url('/quote-request/'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
     </div>

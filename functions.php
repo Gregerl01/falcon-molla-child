@@ -5,6 +5,8 @@
  */
 
 require_once get_stylesheet_directory() . '/inc/sections/about-video-section.php';
+require_once get_stylesheet_directory() . '/inc/customizer-hero.php';
+require_once get_stylesheet_directory() . '/inc/customizer-showcase.php';
 
 // ============================================================================
 // STYLES & SCRIPTS ENQUEUING

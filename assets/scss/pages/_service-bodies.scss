@@ -4,8 +4,12 @@
               url('../images/service-bodies-herov3.webp') center/cover no-repeat;
   color: var(--text-on-image);
 
+  h1, .h1 {
+    color: #fff !important;
+  }
+
   .tagline {
-    color: color-mix(in srgb, var(--text-on-image), transparent 25%);
+    color: color-mix(in srgb, white, transparent 25%);
   }
 }
 

@@ -20,6 +20,12 @@
 // BACKGROUND LAYERS
 // ============================================================================
 
+.hero picture {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 .hero__bg {
   position: absolute;
   inset: 0;
@@ -32,7 +38,7 @@
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.45); // fallback; overridden by inline style from Customizer
   z-index: 1;
   pointer-events: none;
 }

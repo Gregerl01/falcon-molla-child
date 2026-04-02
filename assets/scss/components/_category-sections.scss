@@ -15,7 +15,9 @@
 .chb-features-split,
 .wb-features-split,
 .bt-features-split,
-.wt-features-split {
+.wt-features-split,
+.dt-features-split,
+.lineb-features-split {
   width: 100%;
   max-width: 1500px;
   margin-left: auto;
@@ -36,7 +38,9 @@
 .chb-features,
 .wb-features,
 .bt-features,
-.wt-features {
+.wt-features,
+.dt-features,
+.lineb-features {
   .feature-image-wrap {
     position: relative;
     width: 100%;
@@ -120,7 +124,9 @@
 .chb-options,
 .wb-options,
 .bt-options,
-.wt-options {
+.wt-options,
+.dt-options,
+.lineb-options {
   background: var(--surface);
 
   h5 {
@@ -171,7 +177,9 @@
 .chb-accessories,
 .wb-accessories,
 .bt-accessories,
-.wt-accessories {
+.wt-accessories,
+.dt-accessories,
+.lineb-accessories {
   h5 {
     color: var(--accent-color);
   }
@@ -211,7 +219,9 @@
 .chb-products,
 .wb-products,
 .bt-products,
-.wt-products {
+.wt-products,
+.dt-products,
+.lineb-products {
   padding-bottom: 0;
 
   .product-list-item {
@@ -253,7 +263,9 @@
 .chb-cta,
 .wb-cta,
 .bt-cta,
-.wt-cta {
+.wt-cta,
+.dt-cta,
+.lineb-cta {
   padding-bottom: 40px;
   text-align: center;
 
@@ -272,7 +284,9 @@
 .chb-cta-wrapper,
 .wb-cta-wrapper,
 .bt-cta-wrapper,
-.wt-cta-wrapper {
+.wt-cta-wrapper,
+.dt-cta-wrapper,
+.lineb-cta-wrapper {
   padding: 4rem 3rem;
   border: 1px solid var(--border-color);
 }
