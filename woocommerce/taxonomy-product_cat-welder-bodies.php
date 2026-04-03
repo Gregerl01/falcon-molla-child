@@ -24,9 +24,9 @@ get_header(); ?>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Placeholder Headline for Welder Body Introduction</h2>
-                <p class="lead">Placeholder description highlighting the primary benefits of Falcon Welder Bodies. Emphasize specialized storage for welding equipment, cylinder racks, and organized tool compartments.</p>
-                <p>Placeholder supporting paragraph describing chassis compatibility, industry applications, and overall value proposition. Mention heavy-duty construction, equipment mounting, and professional-grade build quality.</p>
+                <h2 class="h3 fw-bold mb-4">Mobile Welding Platform. Built for the Field.</h2>
+                <p class="lead">Falcon Welder Bodies are engineered for field welding professionals who require durable equipment storage, organized torch compartments, and integrated work surfaces on Class 5 and larger chassis platforms.</p>
+                <p>Built from 14-gauge galvanneal steel with Grade 50 steel subframe, 12-gauge treadplate cargo floor, and oven-baked powder coat finish. Every unit includes six vertical compartments per side, dedicated oxygen and acetylene storage, LED compartment lighting, and an integrated workbench bumper for fabrication tasks in the field.</p>
             </div>
             <div class="col-lg-6">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-intro.webp" alt="Falcon Welder Body" class="img-fluid rounded">
@@ -61,7 +61,7 @@ get_header(); ?>
 
           <!-- Headings -->
           <h5>Falcon Standard Features</h5>
-          <h2>Placeholder Headline for Standard Features Section.</h2>
+          <h2>Every Falcon Welder Body ships field-ready.</h2>
 
           <!-- FEATURES GRID -->
           <div class="features-grid">
@@ -69,64 +69,64 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Placeholder Feature One</h4>
-                <p>Placeholder description for the first standard feature included with Welder Bodies.</p>
+                <h4>14-Gauge Galvanneal Construction</h4>
+                <p>Corrosion-resistant body panels with 12-gauge treadplate cargo floor, compartment tops, and reinforced front bulkhead.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Two</h4>
-                <p>Placeholder description for the second standard feature highlighting cylinder storage or racks.</p>
+                <h4>Integrated Workbench Bumper</h4>
+                <p>Steel workbench platform with diamond plate step surface, 2.5″ receiver hitch rated to 24,000 lbs, and LED lighting.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Three</h4>
-                <p>Placeholder description for the third standard feature related to welder mounting or platforms.</p>
+                <h4>Oxygen &amp; Acetylene Storage</h4>
+                <p>Dedicated bottle compartment for safe, organized storage of welding gases with secure mounting.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Four</h4>
-                <p>Placeholder description for the fourth standard feature such as cable management or lead reels.</p>
+                <h4>Six Compartments Per Side</h4>
+                <p>Twelve total vertical storage compartments with adjustable galvanized shelving, dividers, and gas shock door supports.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Five</h4>
-                <p>Placeholder description for the fifth standard feature like finish or corrosion protection.</p>
+                <h4>Master Locking System</h4>
+                <p>3-point whale-tail compression latches with integrated master lock, double-panel reinforced doors, and automotive-grade weather sealing.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Six</h4>
-                <p>Placeholder description for the sixth standard feature covering lighting or electrical systems.</p>
+                <h4>LED Compartment &amp; Work Lighting</h4>
+                <p>LED strip lighting in all compartments plus LED work lights for cargo area and rear workspace illumination.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Seven</h4>
-                <p>Placeholder description for the seventh standard feature such as bumper or hitch options.</p>
+                <h4>Grade 50 Steel Subframe</h4>
+                <p>Formed channel frame rails with integrated crane reinforcement structure for equipment mounting.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Eight</h4>
-                <p>Placeholder description for the eighth standard feature.</p>
+                <h4>Tiger White Powder Coat + Bedliner</h4>
+                <p>Oven-baked Tiger White powder coat inside and out, plus Patriot bedliner on cargo floor and compartment tops.</p>
               </div>
             </div>
 
@@ -146,38 +146,38 @@ get_header(); ?>
         <div class="row mb-5">
             <div class="col-lg-8">
                 <h5>Welder Body Options</h5>
-                <h2>Placeholder Headline for Configuration Options</h2>
-                <p class="text-muted">Placeholder description explaining the available configurations, body sizes, and optional upgrades for Welder Bodies.</p>
+                <h2>Configure Your Welding Platform</h2>
+                <p class="text-muted">Equipment mounting, storage, and chassis options to match your welding operation.</p>
             </div>
         </div>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option One</h4>
-                    <p class="text-muted mb-0">Placeholder description for the first configuration option available.</p>
+                    <p class="option-type">Platform</p>
+                    <h4>Pro Welder (84CA DRW)</h4>
+                    <p class="text-muted mb-0">134″ body on 19.5″ tire DRW chassis. 44″H × 22″D compartments. Approx. 3,800 lb body weight.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Two</h4>
-                    <p class="text-muted mb-0">Placeholder description for the second configuration option available.</p>
+                    <p class="option-type">Equipment</p>
+                    <h4>Welder &amp; Compressor Mounting</h4>
+                    <p class="text-muted mb-0">Mounting brackets for Miller, Lincoln, Vanair, or other engine-driven welding and air systems.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Three</h4>
-                    <p class="text-muted mb-0">Placeholder description for the third configuration option available.</p>
+                    <p class="option-type">Storage</p>
+                    <h4>Cable &amp; Hose Management</h4>
+                    <p class="text-muted mb-0">Cable storage provisions, hose reel mounting, and 6,000 lb capacity cargo tie-downs.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Four</h4>
-                    <p class="text-muted mb-0">Placeholder description for the fourth configuration option available.</p>
+                    <p class="option-type">Safety</p>
+                    <h4>DOT Lighting &amp; Strobes</h4>
+                    <p class="text-muted mb-0">5-in-1 multifunction DOT LED tail lights with integrated strobe capability and fully pre-wired harness.</p>
                 </div>
             </div>
         </div>
@@ -190,27 +190,27 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h5>Placeholder Tagline for Accessories Section.</h5>
+                <h5>Outfit Your Welder Body</h5>
                 <h2>Welder Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Accessory One</h4>
-                    <p>Placeholder description for the first accessory option such as lead reels or cable hangers.</p>
+                    <h4>Air Compressor Package</h4>
+                    <p>Integrated mounting and plumbing for engine-driven air compressor systems from Vanair and other manufacturers.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Two</h4>
-                    <p>Placeholder description for the second accessory option such as additional cylinder racks.</p>
+                    <h4>Hose Reel System</h4>
+                    <p>Mounted hose reel for welding cable, air hose, or extension cord management in the field.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Three</h4>
-                    <p>Placeholder description for the third accessory option such as vise mounts or work platforms.</p>
+                    <h4>Headache Rack with Reflectors</h4>
+                    <p>Integrated headache rack for cab protection with DOT reflectors for rear visibility.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Four</h4>
-                    <p>Placeholder description for the fourth accessory option.</p>
+                    <h4>Custom Paint &amp; Fleet Markings</h4>
+                    <p>Custom powder coat colors, fleet branding, and DOT markings beyond standard Tiger White finish.</p>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -241,7 +241,7 @@ get_header(); ?>
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <h2 class="mb-3">Welder Body Line Up</h2>
-                <p class="mb-8">Placeholder description for the product lineup section highlighting available models.</p>
+                <p class="mb-8">Pro Welder platform engineered for mobile welding, fabrication, and field repair operations.</p>
             </div>
         </div>
     </div>
@@ -342,9 +342,9 @@ get_header(); ?>
 <section class="wb-cta section">
     <div class="container">
         <div class="wb-cta-wrapper surface--subtle">
-            <h3>Placeholder CTA Headline for Welder Bodies</h3>
-            <p class="mb-4">Placeholder call-to-action description encouraging visitors to request a quote or contact sales.</p>
-            <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
+            <h3>Ready to spec your welder body?</h3>
+            <p class="mb-4">Contact our team for equipment mounting options, compartment configurations, and fleet pricing.</p>
+            <a href="<?php echo home_url('/quote-request/'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
     </div>
 </section>
