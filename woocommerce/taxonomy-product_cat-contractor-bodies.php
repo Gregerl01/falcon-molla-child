@@ -29,7 +29,7 @@ get_header(); ?>
                 <p>Built on a galvanized 10-ga steel subframe with a 1/8″ treadplate deck and modular bolt-on storage, the FCB Series is available in 12FT (84CA) and 14FT (120CA) configurations. Integrated overhead racks, carbon steel hitch assemblies, and reinforced underbody boxes come standard.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-intro.webp" alt="Falcon Contractor Body" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-intro.webp" alt="Falcon Contractor Body" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -49,6 +49,7 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-features.webp"
             alt="Contractor Body Features"
+            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -68,7 +69,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>1/8″ Treadplate Steel Deck</h4>
+                <h3>1/8″ Treadplate Steel Deck</h3>
                 <p>Full-length treadplate floor over formed structural channel supports, engineered for distributed and point loads.</p>
               </div>
             </div>
@@ -76,7 +77,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Galvanized 10ga Subframe</h4>
+                <h3>Galvanized 10ga Subframe</h3>
                 <p>Structural steel subframe with engineered weld bead application and square tube crossmembers for torsional rigidity.</p>
               </div>
             </div>
@@ -84,7 +85,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Modular Bolt-On Storage</h4>
+                <h3>Modular Bolt-On Storage</h3>
                 <p>Heavy-gauge flip-top and underbody boxes with gas assist lids and reinforced drop-down doors. Configurable per fleet.</p>
               </div>
             </div>
@@ -92,7 +93,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Integrated Overhead Rack</h4>
+                <h3>Integrated Overhead Rack</h3>
                 <p>Bolt-on rack system for ladders, conduit, pipe, and jobsite materials. Built for daily loading and unloading.</p>
               </div>
             </div>
@@ -100,7 +101,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Carbon Steel Hitch Assembly</h4>
+                <h3>Carbon Steel Hitch Assembly</h3>
                 <p>Integrated heavy-duty hitch with tow provisions, engineered for trailer and equipment hauling.</p>
               </div>
             </div>
@@ -108,7 +109,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Powder-Coat Finish</h4>
+                <h3>Powder-Coat Finish</h3>
                 <p>Full body powder coat for corrosion resistance and long-term durability in exposed jobsite environments.</p>
               </div>
             </div>
@@ -116,7 +117,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>LED Lighting Package</h4>
+                <h3>LED Lighting Package</h3>
                 <p>Integrated LED tail, brake, and marker lights with sealed wiring harness for reliable visibility.</p>
               </div>
             </div>
@@ -124,7 +125,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Reinforced Crossmembers</h4>
+                <h3>Reinforced Crossmembers</h3>
                 <p>2″ × 1/8″ square steel tube crossmembers with 5th member shortened for tire clearance on 84CA configuration.</p>
               </div>
             </div>
@@ -153,28 +154,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Platform Length</p>
-                    <h4>Contractor 12 (84CA)</h4>
+                    <h3>Contractor 12 (84CA)</h3>
                     <p class="text-muted mb-0">144″ body length on 84CA chassis. Compact footprint with full contractor functionality.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Platform Length</p>
-                    <h4>Contractor 14 (120CA)</h4>
+                    <h3>Contractor 14 (120CA)</h3>
                     <p class="text-muted mb-0">168″ body length on 120CA chassis. Extended deck for larger material loads and equipment.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Storage</p>
-                    <h4>Underbody Box Layout</h4>
+                    <h3>Underbody Box Layout</h3>
                     <p class="text-muted mb-0">Flip-top and drop-down underbody boxes configurable per side. Gas assist lids standard.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Accessories</p>
-                    <h4>Rack & Hitch Packages</h4>
+                    <h3>Rack & Hitch Packages</h3>
                     <p class="text-muted mb-0">Overhead rack system and integrated hitch assembly included. Additional tie-down and stake pocket options available.</p>
                 </div>
             </div>
@@ -192,38 +193,38 @@ get_header(); ?>
                 <h2>Contractor Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Stake Pockets & Tie-Down Rails</h4>
+                    <h3>Stake Pockets & Tie-Down Rails</h3>
                     <p>Standard stake pockets with optional continuous tie-down rail system for securing loads across the full deck.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Additional Underbody Boxes</h4>
+                    <h3>Additional Underbody Boxes</h3>
                     <p>Expand storage capacity with additional flip-top or drop-down underbody box configurations.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Tarp System Integration</h4>
+                    <h3>Tarp System Integration</h3>
                     <p>Manual or automatic tarp systems for weather protection during material transport.</p>
                 </div>
 
                  <div class="accessory-item">
-                    <h4>Custom Powder Coat Colors</h4>
+                    <h3>Custom Powder Coat Colors</h3>
                     <p>Match your fleet branding with custom powder coat color options beyond standard white.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-accessories-01.webp" alt="Contractor Body Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-accessories-01.webp" alt="Contractor Body Accessory 1" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-accessories-02.webp" alt="Contractor Body Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-accessories-02.webp" alt="Contractor Body Accessory 2" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-accessories-03.webp" alt="Contractor Body Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-accessories-03.webp" alt="Contractor Body Accessory 3" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-accessories-04.webp" alt="Contractor Body Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contractor-body-accessories-04.webp" alt="Contractor Body Accessory 4" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -269,7 +270,7 @@ get_header(); ?>
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail('full', ['class' => 'img-fluid w-100']); ?>
                             <?php else : ?>
-                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php the_title(); ?>" class="img-fluid w-100">
+                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" class="img-fluid w-100">
                             <?php endif; ?>
                         </a>
                     </div>
@@ -278,11 +279,11 @@ get_header(); ?>
                 <!-- Product Content -->
                 <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
                     <div class="feature-content-wrap">
-                   <h2 class="mb-3">
+                   <h3 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h2>
+                    </h3>
 
                     <div class="product-description mb-4">
                         <?php
@@ -342,7 +343,7 @@ get_header(); ?>
 <section class="cb-cta section">
     <div class="container">
         <div class="cb-cta-wrapper surface--subtle">
-            <h3>Ready to spec your contractor bed?</h3>
+            <h2>Ready to spec your contractor bed?</h2>
             <p class="mb-4">Contact our team for configuration options, fleet pricing, and lead times.</p>
             <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>

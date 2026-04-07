@@ -29,7 +29,7 @@ get_header(); ?>
                 <p>Designed specifically for bucket truck and digger derrick mounting, these bodies feature deep compartments, heavy-gauge galvanneal construction, and layouts optimized for hot sticks, safety gear, and line crew equipment.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-intro.webp" alt="Falcon Line Body" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-intro.webp" alt="Falcon Line Body" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -50,6 +50,7 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-features.webp"
             alt="Line Body Features"
+            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -69,7 +70,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Aerial Equipment Platform</h4>
+                <h3>Aerial Equipment Platform</h3>
                 <p>Purpose-built body designed for bucket truck and digger derrick equipment mounting.</p>
               </div>
             </div>
@@ -77,7 +78,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Deep Compartment Storage</h4>
+                <h3>Deep Compartment Storage</h3>
                 <p>Extended-depth compartments sized for hot sticks, safety equipment, and linework tools.</p>
               </div>
             </div>
@@ -85,7 +86,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Heavy-Gauge Construction</h4>
+                <h3>Heavy-Gauge Construction</h3>
                 <p>14-ga galvanneal steel body panels with formed 10-ga HR steel understructure.</p>
               </div>
             </div>
@@ -93,7 +94,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Organized Tool Access</h4>
+                <h3>Organized Tool Access</h3>
                 <p>Compartment layouts designed for fast access to line crew equipment and materials.</p>
               </div>
             </div>
@@ -101,7 +102,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Reinforced Subframe</h4>
+                <h3>Reinforced Subframe</h3>
                 <p>Structural steel subframe engineered to support aerial equipment weight and operation loads.</p>
               </div>
             </div>
@@ -109,7 +110,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Powder-Coat Finish</h4>
+                <h3>Powder-Coat Finish</h3>
                 <p>Full body powder coat for corrosion resistance in outdoor utility environments.</p>
               </div>
             </div>
@@ -117,7 +118,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>LED Lighting Package</h4>
+                <h3>LED Lighting Package</h3>
                 <p>Integrated LED compartment, tail, and marker lights with sealed wiring harness.</p>
               </div>
             </div>
@@ -125,7 +126,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Flush-Mount Compartment Doors</h4>
+                <h3>Flush-Mount Compartment Doors</h3>
                 <p>Stainless piano hinges, whale-tail latches, and gas shocks on all compartment doors.</p>
               </div>
             </div>
@@ -155,28 +156,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Platform</p>
-                    <h4>Aerial Equipment Mount</h4>
+                    <h3>Aerial Equipment Mount</h3>
                     <p class="text-muted mb-0">Body platform engineered for bucket truck or digger derrick installation.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Storage</p>
-                    <h4>Deep Compartment Layout</h4>
+                    <h3>Deep Compartment Layout</h3>
                     <p class="text-muted mb-0">Extended-depth compartments for hot sticks, conduit, and oversized linework equipment.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Configuration</p>
-                    <h4>Chassis Options</h4>
+                    <h3>Chassis Options</h3>
                     <p class="text-muted mb-0">Available configurations to match utility fleet chassis specifications.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Accessory</p>
-                    <h4>Custom Shelving Systems</h4>
+                    <h3>Custom Shelving Systems</h3>
                     <p class="text-muted mb-0">Adjustable galvanized shelving and drawer systems for organized tool storage.</p>
                 </div>
             </div>
@@ -194,38 +195,38 @@ get_header(); ?>
                 <h2>Line Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Hot Stick Tubes</h4>
+                    <h3>Hot Stick Tubes</h3>
                     <p>Exterior-mounted storage tubes for safe transport of hot sticks and insulated tools.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Cable Reel Mounts</h4>
+                    <h3>Cable Reel Mounts</h3>
                     <p>Integrated reel mounting for wire, cable, and fiber distribution operations.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Ground Rod Storage</h4>
+                    <h3>Ground Rod Storage</h3>
                     <p>Dedicated compartment or exterior rack for ground rods and safety grounding equipment.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Custom Paint & Fleet Markings</h4>
+                    <h3>Custom Paint & Fleet Markings</h3>
                     <p>Utility fleet branding and custom color matching.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row g-4">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-accessories-01.webp" alt="Line Body Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-accessories-01.webp" alt="Line Body Accessory 1" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-accessories-02.webp" alt="Line Body Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-accessories-02.webp" alt="Line Body Accessory 2" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-accessories-03.webp" alt="Line Body Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-accessories-03.webp" alt="Line Body Accessory 3" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-accessories-04.webp" alt="Line Body Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/line-body-accessories-04.webp" alt="Line Body Accessory 4" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -279,11 +280,11 @@ get_header(); ?>
                 <!-- Product Content -->
                 <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
                     <div class="feature-content-wrap">
-                    <h2 class="mb-3">
+                    <h3 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h2>
+                    </h3>
 
                     <div class="product-description mb-4">
                         <?php
@@ -342,7 +343,7 @@ get_header(); ?>
 <section class="lineb-cta section">
     <div class="container">
         <div class="lineb-cta-wrapper surface--subtle">
-            <h3>Ready to spec your line body?</h3>
+            <h2>Ready to spec your line body?</h2>
             <p class="mb-4">Contact our team for platform options, aerial equipment integration, and fleet pricing.</p>
             <a href="<?php echo home_url('/quote-request/'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>

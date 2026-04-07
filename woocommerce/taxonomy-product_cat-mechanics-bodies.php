@@ -45,7 +45,7 @@ get_header(); ?>
                 </p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-intro.webp" alt="Falcon Mechanics Body" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-intro.webp" alt="Falcon Mechanics Body" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -65,6 +65,7 @@ get_header(); ?>
                     <img
                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-feat-img.webp"
                         alt="Service Body Features"
+                        loading="lazy"
                         class="img-fluid"
                     >
                 </div>
@@ -82,7 +83,7 @@ get_header(); ?>
                         <div class="feature-item">
                             <span class="feature-number">01</span>
                             <div class="feature-content">
-                                <h4>Heavy-Lifting Cranes</h4>
+                                <h3>Heavy-Lifting Cranes</h3>
                                 <p>Factory-installed lifting solutions designed to handle demanding tasks with ease.</p>
                             </div>
                         </div>
@@ -90,7 +91,7 @@ get_header(); ?>
                         <div class="feature-item">
                             <span class="feature-number">02</span>
                             <div class="feature-content">
-                                <h4>Secure Storage Units</h4>
+                                <h3>Secure Storage Units</h3>
                                 <p>Weather-sealed compartments and durable drawer cabinets keep tools protected and organized.</p>
                             </div>
                         </div>
@@ -98,7 +99,7 @@ get_header(); ?>
                         <div class="feature-item">
                             <span class="feature-number">03</span>
                             <div class="feature-content">
-                                <h4>Enhanced Work Surfaces</h4>
+                                <h3>Enhanced Work Surfaces</h3>
                                 <p>Reinforced bumpers, bedliners, and cab guards provide rugged, dependable work areas.</p>
                             </div>
                         </div>
@@ -106,7 +107,7 @@ get_header(); ?>
                         <div class="feature-item">
                             <span class="feature-number">04</span>
                             <div class="feature-content">
-                                <h4>Customizable Options</h4>
+                                <h3>Customizable Options</h3>
                                 <p>Configure your body with accessories and layouts tailored to your workflow.</p>
                             </div>
                         </div>
@@ -115,7 +116,7 @@ get_header(); ?>
                         <div class="feature-item">
                             <span class="feature-number">05</span>
                             <div class="feature-content">
-                                <h4>Integrated Task Lighting</h4>
+                                <h3>Integrated Task Lighting</h3>
                                 <p>High-performance lighting systems deliver clear visibility for precision work in any conditions.</p>
                             </div>
                         </div>
@@ -123,7 +124,7 @@ get_header(); ?>
                         <div class="feature-item">
                             <span class="feature-number">06</span>
                             <div class="feature-content">
-                                <h4>Reinforced Crane Support</h4>
+                                <h3>Reinforced Crane Support</h3>
                                 <p>Engineered substructures distribute lifting forces evenly for stability and long-term durability.</p>
                             </div>
                         </div>
@@ -131,7 +132,7 @@ get_header(); ?>
                         <div class="feature-item">
                             <span class="feature-number">07</span>
                             <div class="feature-content">
-                                <h4>Optimized Crane Body Design</h4>
+                                <h3>Optimized Crane Body Design</h3>
                                 <p>Purpose-built layouts balance lifting performance, storage efficiency, and chassis compatibility.</p>
                             </div>
                         </div>
@@ -139,7 +140,7 @@ get_header(); ?>
                         <div class="feature-item">
                             <span class="feature-number">08</span>
                             <div class="feature-content">
-                                <h4>Field-Ready Durability</h4>
+                                <h3>Field-Ready Durability</h3>
                                 <p>Heavy-gauge steel construction built to withstand daily use in demanding jobsite environments.</p>
                             </div>
                         </div>
@@ -166,6 +167,7 @@ get_header(); ?>
                     <img
                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-sub-frame.webp"
                         alt="Inside the Falcon production facility"
+                        loading="lazy"
                         class="img-fluid rounded"
                         decoding="async"
                     />
@@ -187,7 +189,7 @@ get_header(); ?>
                         <article class="capability-item" data-aos="fade-left" data-aos-delay="100">
                             <div class="capability-header">
                                 <i class="bi bi-check-circle-fill"></i>
-                                <h4>Reinforced Crane Foundation</h4>
+                                <h3>Reinforced Crane Foundation</h3>
                             </div>
                             <p>
                                 A 1¼-inch top plate with an optional crane-mount pattern creates a precision-fit lifting foundation, supported by
@@ -198,7 +200,7 @@ get_header(); ?>
                         <article class="capability-item" data-aos="fade-left" data-aos-delay="150">
                             <div class="capability-header">
                                 <i class="bi bi-check-circle-fill"></i>
-                                <h4>Heavy-Gauge Steel Construction</h4>
+                                <h3>Heavy-Gauge Steel Construction</h3>
                             </div>
                             <p>
                                 The entire understructure is fabricated from ¼-inch carbon-steel plate, providing exceptional durability and resistance
@@ -209,7 +211,7 @@ get_header(); ?>
                         <article class="capability-item" data-aos="fade-left" data-aos-delay="200">
                             <div class="capability-header">
                                 <i class="bi bi-check-circle-fill"></i>
-                                <h4>Grade 50 Subframe Support</h4>
+                                <h3>Grade 50 Subframe Support</h3>
                             </div>
                             <p>
                                 A rugged subframe built from 10-gauge Grade 50 carbon steel and secured with ⅜-inch carbon-steel mounting brackets
@@ -237,22 +239,22 @@ get_header(); ?>
                 <h2>Mechanics Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Electric & Hydraulic Service Cranes</h4>
+                    <h3>Electric & Hydraulic Service Cranes</h3>
                     <p>Powerful, precise lifting solutions built for demanding jobs. Compact, durable, and smooth in operation—ready to perform wherever the work takes you.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Manual & Hydraulic Outriggers</h4>
+                    <h3>Manual & Hydraulic Outriggers</h3>
                     <p>Dependable stability for every lift. Choose manual or hydraulic operation for quick setup, solid support, and lasting safety on any terrain.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Air Compressors & Welders</h4>
+                    <h3>Air Compressors & Welders</h3>
                     <p>All the power of a workshop on wheels. Reliable, high-output systems designed to keep your tools running and your team productive in the field.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>CTECH Drawer Units</h4>
+                    <h3>CTECH Drawer Units</h3>
                     <p>Smart, durable storage for maximum efficiency. Lightweight aluminum drawers keep tools organized, accessible, and secure on every job.</p>
                 </div>
             </div>
@@ -260,16 +262,16 @@ get_header(); ?>
             <div class="col-lg-7">
                 <div class="row g-4">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-accessories-01.webp" alt="Mechanics Body Accessory" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-accessories-01.webp" alt="Mechanics Body Accessory" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-accessories-02.webp" alt="Mechanics Body Accessory" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-accessories-02.webp" alt="Mechanics Body Accessory" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-accessories-03.webp" alt="Mechanics Body Accessory" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-accessories-03.webp" alt="Mechanics Body Accessory" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-accessories-04.webp" alt="Mechanics Body Accessory" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mechanics-body-accessories-04.webp" alt="Mechanics Body Accessory" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -316,7 +318,7 @@ get_header(); ?>
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail('full', ['class' => 'img-fluid w-100']); ?>
                             <?php else : ?>
-                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php the_title(); ?>" class="img-fluid w-100">
+                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" class="img-fluid w-100">
                             <?php endif; ?>
                         </a>
                     </div>
@@ -326,11 +328,11 @@ get_header(); ?>
                 <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
                     <div class="feature-content-wrap">
 
-                        <h2 class="mb-3">
+                        <h3 class="mb-3">
                             <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                                 <?php the_title(); ?>
                             </a>
-                        </h2>
+                        </h3>
 
                         <div class="product-description mb-4">
                             <?php
@@ -387,7 +389,7 @@ get_header(); ?>
 <section class="sb-cta section">
     <div class="container">
         <div class="sb-cta-wrapper surface--subtle">
-            <h3>Ready to Equip Your Fleet?</h3>
+            <h2>Ready to Equip Your Fleet?</h2>
             <p class="mb-4">Contact us for pricing, lead times, and custom configurations.</p>
             <a href="<?php echo home_url('/quote-request/'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>

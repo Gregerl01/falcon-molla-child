@@ -17,6 +17,7 @@ if ( isset( $_POST['ajax_loadmore'] ) && $_POST['ajax_loadmore'] ) {
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 <?php do_action( 'molla_body_after_start' ); ?>
 <?php if ( molla_option( 'loading_overlay' ) ) : ?>
 	<div class="loading-overlay">
@@ -40,7 +41,7 @@ if ( isset( $_POST['ajax_loadmore'] ) && $_POST['ajax_loadmore'] ) {
 			get_template_part( 'template-parts/header/header' );
 		}
 		?>
-		<div class="main">
+		<div class="main" id="content">
 			<?php do_action( 'page_content_before' ); ?>
 			<div class="page-content<?php echo esc_attr( ' ' . apply_filters( 'molla_page_content_class', '' ) ); ?>"<?php echo esc_attr( apply_filters( 'molla_page_content_attrs', '' ) ); ?>>
 				<?php do_action( 'page_container_before', 'top' ); ?>

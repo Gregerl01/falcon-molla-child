@@ -29,7 +29,7 @@ get_header(); ?>
                 <p>Built from heavy-gauge carbon steel with hydraulic hoist systems, reinforced tailgates, and commercial-grade subframes, Falcon dump platforms deliver consistent performance under repeated loading and dumping cycles.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-intro.webp" alt="Falcon Dump Truck" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-intro.webp" alt="Falcon Dump Truck" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -50,6 +50,7 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-features.webp"
             alt="Dump Truck Features"
+            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -69,7 +70,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Hydraulic Dump Hoist</h4>
+                <h3>Hydraulic Dump Hoist</h3>
                 <p>Commercial-grade hydraulic lift system for controlled, reliable dumping of heavy payloads.</p>
               </div>
             </div>
@@ -77,7 +78,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Heavy-Gauge Steel Body</h4>
+                <h3>Heavy-Gauge Steel Body</h3>
                 <p>10-gauge carbon steel floor, sides, and front panel engineered for impact and abrasion resistance.</p>
               </div>
             </div>
@@ -85,7 +86,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Reinforced Tailgate</h4>
+                <h3>Reinforced Tailgate</h3>
                 <p>Heavy-duty tailgate with spreader gate and barn door configurations for material control.</p>
               </div>
             </div>
@@ -93,7 +94,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Structural Steel Subframe</h4>
+                <h3>Structural Steel Subframe</h3>
                 <p>Channel steel frame with formed crossmembers for load distribution and chassis protection.</p>
               </div>
             </div>
@@ -101,7 +102,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Powder-Coat Finish</h4>
+                <h3>Powder-Coat Finish</h3>
                 <p>Full body powder coat for corrosion resistance in wet, abrasive, and outdoor environments.</p>
               </div>
             </div>
@@ -109,7 +110,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>LED Lighting Package</h4>
+                <h3>LED Lighting Package</h3>
                 <p>Integrated LED tail, brake, marker, and clearance lights with sealed wiring harness.</p>
               </div>
             </div>
@@ -117,7 +118,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Tarp System Ready</h4>
+                <h3>Tarp System Ready</h3>
                 <p>Pre-drilled mounting provisions for manual or electric tarp systems.</p>
               </div>
             </div>
@@ -125,7 +126,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>DOT Compliant Platform</h4>
+                <h3>DOT Compliant Platform</h3>
                 <p>Built to meet Department of Transportation requirements for on-road material transport.</p>
               </div>
             </div>
@@ -155,28 +156,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Platform</p>
-                    <h4>Standard Dump Body</h4>
+                    <h3>Standard Dump Body</h3>
                     <p class="text-muted mb-0">Heavy-gauge steel dump platform with hydraulic hoist for aggregate, soil, and debris hauling.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Tailgate</p>
-                    <h4>Spreader & Barn Door</h4>
+                    <h3>Spreader & Barn Door</h3>
                     <p class="text-muted mb-0">Dual-mode tailgate for controlled material spreading or full rear access.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Accessory</p>
-                    <h4>Tarp Systems</h4>
+                    <h3>Tarp Systems</h3>
                     <p class="text-muted mb-0">Manual or electric tarp systems for load containment during transport.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Accessory</p>
-                    <h4>Side Extensions</h4>
+                    <h3>Side Extensions</h3>
                     <p class="text-muted mb-0">Bolt-on side board extensions for increased volume capacity on bulk loads.</p>
                 </div>
             </div>
@@ -194,38 +195,38 @@ get_header(); ?>
                 <h2>Dump Truck Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Cab Shield</h4>
+                    <h3>Cab Shield</h3>
                     <p>Steel cab protector guard to prevent load damage during dumping operations.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Pintle Hook & Hitch</h4>
+                    <h3>Pintle Hook & Hitch</h3>
                     <p>Heavy-duty towing provisions for trailer and equipment hauling between jobsites.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Underbody Toolboxes</h4>
+                    <h3>Underbody Toolboxes</h3>
                     <p>Lockable underbody storage boxes for tools, chains, and tie-down equipment.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Custom Paint & Markings</h4>
+                    <h3>Custom Paint & Markings</h3>
                     <p>Fleet branding, DOT markings, and custom color options.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row g-4">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-01.webp" alt="Dump Truck Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-01.webp" alt="Dump Truck Accessory 1" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-02.webp" alt="Dump Truck Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-02.webp" alt="Dump Truck Accessory 2" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-03.webp" alt="Dump Truck Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-03.webp" alt="Dump Truck Accessory 3" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-04.webp" alt="Dump Truck Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-04.webp" alt="Dump Truck Accessory 4" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -279,11 +280,11 @@ get_header(); ?>
                 <!-- Product Content -->
                 <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
                     <div class="feature-content-wrap">
-                    <h2 class="mb-3">
+                    <h3 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h2>
+                    </h3>
 
                     <div class="product-description mb-4">
                         <?php
@@ -342,7 +343,7 @@ get_header(); ?>
 <section class="dt-cta section">
     <div class="container">
         <div class="dt-cta-wrapper surface--subtle">
-            <h3>Ready to spec your dump truck?</h3>
+            <h2>Ready to spec your dump truck?</h2>
             <p class="mb-4">Contact our team for platform options, fleet pricing, and lead times.</p>
             <a href="<?php echo home_url('/quote-request/'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>

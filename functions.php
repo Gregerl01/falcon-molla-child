@@ -9,6 +9,21 @@ require_once get_stylesheet_directory() . '/inc/customizer-hero.php';
 require_once get_stylesheet_directory() . '/inc/customizer-showcase.php';
 
 // ============================================================================
+// FONT PRECONNECT HINTS
+// ============================================================================
+
+add_action('wp_head', 'falcon_font_preconnect', 1);
+function falcon_font_preconnect() {
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
+}
+
+add_action('wp_head', 'falcon_skip_link_css', 5);
+function falcon_skip_link_css() {
+    echo '<style>.skip-link.screen-reader-text{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.skip-link.screen-reader-text:focus{position:fixed;top:0;left:0;z-index:100000;width:auto;height:auto;padding:12px 24px;margin:0;overflow:visible;clip:auto;background:#2d8fdd;color:#fff;font-size:1rem;text-decoration:none;outline:2px solid #fff;outline-offset:-2px}</style>' . "\n";
+}
+
+// ============================================================================
 // STYLES & SCRIPTS ENQUEUING
 // ============================================================================
 

@@ -29,7 +29,7 @@ get_header(); ?>
                 <p>Placeholder supporting paragraph describing chassis compatibility, industry applications, and overall value proposition. Mention dump functionality, load capacity, and professional-grade construction quality.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-intro.webp" alt="Falcon Chipper Body" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-intro.webp" alt="Falcon Chipper Body" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -50,6 +50,7 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-features.webp"
             alt="Chipper Body Features"
+            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -69,7 +70,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Placeholder Feature One</h4>
+                <h3>Placeholder Feature One</h3>
                 <p>Placeholder description for the first standard feature included with Chipper Bodies.</p>
               </div>
             </div>
@@ -77,7 +78,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Two</h4>
+                <h3>Placeholder Feature Two</h3>
                 <p>Placeholder description for the second standard feature highlighting dump mechanism or hydraulics.</p>
               </div>
             </div>
@@ -85,7 +86,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Three</h4>
+                <h3>Placeholder Feature Three</h3>
                 <p>Placeholder description for the third standard feature related to chip box capacity or construction.</p>
               </div>
             </div>
@@ -93,7 +94,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Four</h4>
+                <h3>Placeholder Feature Four</h3>
                 <p>Placeholder description for the fourth standard feature such as tailgate design or latching.</p>
               </div>
             </div>
@@ -101,7 +102,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Five</h4>
+                <h3>Placeholder Feature Five</h3>
                 <p>Placeholder description for the fifth standard feature like finish or corrosion protection.</p>
               </div>
             </div>
@@ -109,7 +110,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Six</h4>
+                <h3>Placeholder Feature Six</h3>
                 <p>Placeholder description for the sixth standard feature covering lighting or electrical.</p>
               </div>
             </div>
@@ -117,7 +118,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Seven</h4>
+                <h3>Placeholder Feature Seven</h3>
                 <p>Placeholder description for the seventh standard feature such as bumper or hitch options.</p>
               </div>
             </div>
@@ -125,7 +126,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Eight</h4>
+                <h3>Placeholder Feature Eight</h3>
                 <p>Placeholder description for the eighth standard feature.</p>
               </div>
             </div>
@@ -155,28 +156,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Option Category</p>
-                    <h4>Option One</h4>
+                    <h3>Option One</h3>
                     <p class="text-muted mb-0">Placeholder description for the first configuration option available.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Option Category</p>
-                    <h4>Option Two</h4>
+                    <h3>Option Two</h3>
                     <p class="text-muted mb-0">Placeholder description for the second configuration option available.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Option Category</p>
-                    <h4>Option Three</h4>
+                    <h3>Option Three</h3>
                     <p class="text-muted mb-0">Placeholder description for the third configuration option available.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Option Category</p>
-                    <h4>Option Four</h4>
+                    <h3>Option Four</h3>
                     <p class="text-muted mb-0">Placeholder description for the fourth configuration option available.</p>
                 </div>
             </div>
@@ -194,38 +195,38 @@ get_header(); ?>
                 <h2>Chipper Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Accessory One</h4>
+                    <h3>Accessory One</h3>
                     <p>Placeholder description for the first accessory option such as tool compartments or underbody boxes.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Two</h4>
+                    <h3>Accessory Two</h3>
                     <p>Placeholder description for the second accessory option such as cab guards or headache racks.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Three</h4>
+                    <h3>Accessory Three</h3>
                     <p>Placeholder description for the third accessory option such as tarp systems or mesh covers.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Four</h4>
+                    <h3>Accessory Four</h3>
                     <p>Placeholder description for the fourth accessory option.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-01.webp" alt="Chipper Body Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-01.webp" alt="Chipper Body Accessory 1" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-02.webp" alt="Chipper Body Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-02.webp" alt="Chipper Body Accessory 2" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-03.webp" alt="Chipper Body Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-03.webp" alt="Chipper Body Accessory 3" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-04.webp" alt="Chipper Body Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-04.webp" alt="Chipper Body Accessory 4" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -270,7 +271,7 @@ get_header(); ?>
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail('full', ['class' => 'img-fluid w-100']); ?>
                             <?php else : ?>
-                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php the_title(); ?>" class="img-fluid w-100">
+                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" class="img-fluid w-100">
                             <?php endif; ?>
                         </a>
                     </div>
@@ -279,11 +280,11 @@ get_header(); ?>
                 <!-- Product Content -->
                 <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
                     <div class="feature-content-wrap">
-                    <h2 class="mb-3">
+                    <h3 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h2>
+                    </h3>
 
                     <div class="product-description mb-4">
                         <?php
@@ -342,7 +343,7 @@ get_header(); ?>
 <section class="chb-cta section">
     <div class="container">
         <div class="chb-cta-wrapper surface--subtle">
-            <h3>Placeholder CTA Headline for Chipper Bodies</h3>
+            <h2>Placeholder CTA Headline for Chipper Bodies</h2>
             <p class="mb-4">Placeholder call-to-action description encouraging visitors to request a quote or contact sales.</p>
             <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>

@@ -29,7 +29,7 @@ get_header(); ?>
                 <p>Compatible with most major cab chassis, they offer unmatched flexibility across industries—from utilities to construction and beyond. When you choose Falcon, you're equipping your team with a truck body built for efficiency, durability, and everyday performance.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-intro.webp" alt="Falcon Service Body" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-intro.webp" alt="Falcon Service Body" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -49,6 +49,7 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-features.webp"
             alt="Service Body Features"
+            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -68,7 +69,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Undercoating System</h4>
+                <h3>Undercoating System</h3>
                 <p>Full underside protection with heavy-duty liner applied to wheel wells, frame rails, and underbody.</p>
               </div>
             </div>
@@ -76,7 +77,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Tiger® White Powder-Coat Finish</h4>
+                <h3>Tiger® White Powder-Coat Finish</h3>
                 <p>Premium multi-stage powder-coat process for maximum gloss and corrosion resistance.</p>
               </div>
             </div>
@@ -84,7 +85,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Integrated Workbench Bumper</h4>
+                <h3>Integrated Workbench Bumper</h3>
                 <p>Heavy-duty bumper design with integrated steps for added strength.</p>
               </div>
             </div>
@@ -92,7 +93,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Recessed Double-Panel Doors</h4>
+                <h3>Recessed Double-Panel Doors</h3>
                 <p>Compression whale-tail latching system with reinforced door skins.</p>
               </div>
             </div>
@@ -100,7 +101,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Automotive-Grade Seam Sealing</h4>
+                <h3>Automotive-Grade Seam Sealing</h3>
                 <p>Factory-sealed seams across every joint for maximum corrosion resistance.</p>
               </div>
             </div>
@@ -108,7 +109,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Unistrut Shelving System</h4>
+                <h3>Unistrut Shelving System</h3>
                 <p>Adjustable shelving tracks standard in every compartment for true customization.</p>
               </div>
             </div>
@@ -116,7 +117,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>5-in-1 LED DOT Tail Lights</h4>
+                <h3>5-in-1 LED DOT Tail Lights</h3>
                 <p>Combination stop/turn/tail/reverse/strobe lights in a single compact fixture.</p>
               </div>
             </div>
@@ -124,7 +125,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Another feature title</h4>
+                <h3>Another feature title</h3>
                 <p>Another feature description</p>
               </div>
             </div>
@@ -153,28 +154,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Storage Style</p>
-                    <h4>Flip-Top</h4>
+                    <h3>Flip-Top</h3>
                     <p class="text-muted mb-0">Hinged lids provide fast overhead access to long tools while maintaining side compartments.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Storage Style</p>
-                    <h4>Non Flip-Top</h4>
+                    <h3>Non Flip-Top</h3>
                     <p class="text-muted mb-0">Maximize secure storage with taller vertical compartments for equipment and tools.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Trim Level</p>
-                    <h4>Classic</h4>
+                    <h3>Classic</h3>
                     <p class="text-muted mb-0">Delivers Falcon's core durability features and premium standard equipment.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Trim Level</p>
-                    <h4>Signature</h4>
+                    <h3>Signature</h3>
                     <p class="text-muted mb-0">Premium enhancements including LED strip lighting and full sprayed bedliner protection.</p>
                 </div>
             </div>
@@ -192,38 +193,38 @@ get_header(); ?>
                 <h2>Service Body Accessories</h2>
                 
                 <div class="accessory-item">
-                    <h4>Cabinet Lighting</h4>
+                    <h3>Cabinet Lighting</h3>
                     <p>Integrated LED lighting illuminates every compartment, making tools easy to find day or night.</p>
                 </div>
                 
                 <div class="accessory-item">
-                    <h4>Headache Rack</h4>
+                    <h3>Headache Rack</h3>
                     <p>Heavy-duty steel shields your cab and rear window from shifting loads with a clean, professional look.</p>
                 </div>
                 
                 <div class="accessory-item">
-                    <h4>Material Rack</h4>
+                    <h3>Material Rack</h3>
                     <p>Transport ladders, conduit, and oversized materials with adjustable tie points and reinforced crossbars.</p>
                 </div>
 
                  <div class="accessory-item">
-                    <h4>Another one</h4>
+                    <h3>Another one</h3>
                     <p>Description goes here</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row  g-4">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-accessories-01.webp" alt="Cabinet Lighting" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-accessories-01.webp" alt="Cabinet Lighting" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-accessories-02.webp" alt="Headache Rack" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-accessories-02.webp" alt="Headache Rack" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-accessories-03.webp" alt="Material Rack" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-accessories-03.webp" alt="Material Rack" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-accessories-04.webp" alt="Another Accessory" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/service-body-accessories-04.webp" alt="Another Accessory" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -269,7 +270,7 @@ get_header(); ?>
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail('full', ['class' => 'img-fluid w-100']); ?>
                             <?php else : ?>
-                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php the_title(); ?>" class="img-fluid w-100">
+                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" class="img-fluid w-100">
                             <?php endif; ?>
                         </a>
                     </div>
@@ -278,11 +279,11 @@ get_header(); ?>
                 <!-- Product Content -->
                 <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
                     <div class="feature-content-wrap">
-                   <h2 class="mb-3">
+                   <h3 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h2>
+                    </h3>
                     
                     <div class="product-description mb-4">
                         <?php 
@@ -342,7 +343,7 @@ get_header(); ?>
 <section class="sb-cta section">
     <div class="container">
         <div class="sb-cta-wrapper surface--subtle">
-            <h3>Ready to Equip Your Fleet?</h3>
+            <h2>Ready to Equip Your Fleet?</h2>
             <p class="mb-4">Contact us for pricing, lead times, and custom configurations.</p>
             <a href="<?php echo home_url('/quote-request/'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>

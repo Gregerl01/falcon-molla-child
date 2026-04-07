@@ -29,7 +29,7 @@ get_header(); ?>
                 <p>Built from 14-gauge galvanneal steel with Grade 50 steel subframe, 12-gauge treadplate cargo floor, and oven-baked powder coat finish. Every unit includes six vertical compartments per side, dedicated oxygen and acetylene storage, LED compartment lighting, and an integrated workbench bumper for fabrication tasks in the field.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-intro.webp" alt="Falcon Welder Body" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-intro.webp" alt="Falcon Welder Body" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -50,6 +50,7 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-features.webp"
             alt="Welder Body Features"
+            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -69,7 +70,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>14-Gauge Galvanneal Construction</h4>
+                <h3>14-Gauge Galvanneal Construction</h3>
                 <p>Corrosion-resistant body panels with 12-gauge treadplate cargo floor, compartment tops, and reinforced front bulkhead.</p>
               </div>
             </div>
@@ -77,7 +78,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Integrated Workbench Bumper</h4>
+                <h3>Integrated Workbench Bumper</h3>
                 <p>Steel workbench platform with diamond plate step surface, 2.5″ receiver hitch rated to 24,000 lbs, and LED lighting.</p>
               </div>
             </div>
@@ -85,7 +86,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Oxygen &amp; Acetylene Storage</h4>
+                <h3>Oxygen &amp; Acetylene Storage</h3>
                 <p>Dedicated bottle compartment for safe, organized storage of welding gases with secure mounting.</p>
               </div>
             </div>
@@ -93,7 +94,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Six Compartments Per Side</h4>
+                <h3>Six Compartments Per Side</h3>
                 <p>Twelve total vertical storage compartments with adjustable galvanized shelving, dividers, and gas shock door supports.</p>
               </div>
             </div>
@@ -101,7 +102,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Master Locking System</h4>
+                <h3>Master Locking System</h3>
                 <p>3-point whale-tail compression latches with integrated master lock, double-panel reinforced doors, and automotive-grade weather sealing.</p>
               </div>
             </div>
@@ -109,7 +110,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>LED Compartment &amp; Work Lighting</h4>
+                <h3>LED Compartment &amp; Work Lighting</h3>
                 <p>LED strip lighting in all compartments plus LED work lights for cargo area and rear workspace illumination.</p>
               </div>
             </div>
@@ -117,7 +118,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Grade 50 Steel Subframe</h4>
+                <h3>Grade 50 Steel Subframe</h3>
                 <p>Formed channel frame rails with integrated crane reinforcement structure for equipment mounting.</p>
               </div>
             </div>
@@ -125,7 +126,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Tiger White Powder Coat + Bedliner</h4>
+                <h3>Tiger White Powder Coat + Bedliner</h3>
                 <p>Oven-baked Tiger White powder coat inside and out, plus Patriot bedliner on cargo floor and compartment tops.</p>
               </div>
             </div>
@@ -155,28 +156,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Platform</p>
-                    <h4>Pro Welder (84CA DRW)</h4>
+                    <h3>Pro Welder (84CA DRW)</h3>
                     <p class="text-muted mb-0">134″ body on 19.5″ tire DRW chassis. 44″H × 22″D compartments. Approx. 3,800 lb body weight.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Equipment</p>
-                    <h4>Welder &amp; Compressor Mounting</h4>
+                    <h3>Welder &amp; Compressor Mounting</h3>
                     <p class="text-muted mb-0">Mounting brackets for Miller, Lincoln, Vanair, or other engine-driven welding and air systems.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Storage</p>
-                    <h4>Cable &amp; Hose Management</h4>
+                    <h3>Cable &amp; Hose Management</h3>
                     <p class="text-muted mb-0">Cable storage provisions, hose reel mounting, and 6,000 lb capacity cargo tie-downs.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Safety</p>
-                    <h4>DOT Lighting &amp; Strobes</h4>
+                    <h3>DOT Lighting &amp; Strobes</h3>
                     <p class="text-muted mb-0">5-in-1 multifunction DOT LED tail lights with integrated strobe capability and fully pre-wired harness.</p>
                 </div>
             </div>
@@ -194,38 +195,38 @@ get_header(); ?>
                 <h2>Welder Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Air Compressor Package</h4>
+                    <h3>Air Compressor Package</h3>
                     <p>Integrated mounting and plumbing for engine-driven air compressor systems from Vanair and other manufacturers.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Hose Reel System</h4>
+                    <h3>Hose Reel System</h3>
                     <p>Mounted hose reel for welding cable, air hose, or extension cord management in the field.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Headache Rack with Reflectors</h4>
+                    <h3>Headache Rack with Reflectors</h3>
                     <p>Integrated headache rack for cab protection with DOT reflectors for rear visibility.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Custom Paint &amp; Fleet Markings</h4>
+                    <h3>Custom Paint &amp; Fleet Markings</h3>
                     <p>Custom powder coat colors, fleet branding, and DOT markings beyond standard Tiger White finish.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-accessories-01.webp" alt="Welder Body Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-accessories-01.webp" alt="Welder Body Accessory 1" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-accessories-02.webp" alt="Welder Body Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-accessories-02.webp" alt="Welder Body Accessory 2" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-accessories-03.webp" alt="Welder Body Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-accessories-03.webp" alt="Welder Body Accessory 3" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-accessories-04.webp" alt="Welder Body Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/welder-body-accessories-04.webp" alt="Welder Body Accessory 4" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -270,7 +271,7 @@ get_header(); ?>
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail('full', ['class' => 'img-fluid w-100']); ?>
                             <?php else : ?>
-                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php the_title(); ?>" class="img-fluid w-100">
+                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" class="img-fluid w-100">
                             <?php endif; ?>
                         </a>
                     </div>
@@ -279,11 +280,11 @@ get_header(); ?>
                 <!-- Product Content -->
                 <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
                     <div class="feature-content-wrap">
-                    <h2 class="mb-3">
+                    <h3 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h2>
+                    </h3>
 
                     <div class="product-description mb-4">
                         <?php
@@ -342,7 +343,7 @@ get_header(); ?>
 <section class="wb-cta section">
     <div class="container">
         <div class="wb-cta-wrapper surface--subtle">
-            <h3>Ready to spec your welder body?</h3>
+            <h2>Ready to spec your welder body?</h2>
             <p class="mb-4">Contact our team for equipment mounting options, compartment configurations, and fleet pricing.</p>
             <a href="<?php echo home_url('/quote-request/'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>

@@ -64,7 +64,7 @@ foreach ( $categories as $cat ) :
                         <?php if ( $thumbnail_id ) : ?>
                             <?php echo wp_get_attachment_image( $thumbnail_id, 'full', false, array( 'class' => 'img-fluid w-100' ) ); ?>
                         <?php else : ?>
-                            <img src="<?php echo esc_url( wc_placeholder_img_src( 'full' ) ); ?>" alt="<?php echo esc_attr( $term->name ); ?>" class="img-fluid w-100">
+                            <img src="<?php echo esc_url( wc_placeholder_img_src( 'full' ) ); ?>" alt="<?php echo esc_attr( $term->name ); ?>" loading="lazy" class="img-fluid w-100">
                         <?php endif; ?>
                     </a>
                 </div>
@@ -90,7 +90,7 @@ foreach ( $categories as $cat ) :
                                         <i class="bi bi-lightning-fill"></i>
                                     </div>
                                     <div class="benefit-content">
-                                        <h4><?php echo esc_html( $bullet['title'] ); ?></h4>
+                                        <h3><?php echo esc_html( $bullet['title'] ); ?></h3>
                                         <p><?php echo esc_html( $bullet['desc'] ); ?></p>
                                     </div>
                                 </div>
@@ -119,7 +119,7 @@ endforeach;
 <section class="sb-cta section">
     <div class="container">
         <div class="sb-cta-wrapper surface--subtle">
-            <h3>Ready to Upfit Your Fleet?</h3>
+            <h2>Ready to Upfit Your Fleet?</h2>
             <p class="mb-4">Contact us for pricing, lead times, and custom configurations.</p>
             <a href="<?php echo esc_url( home_url( '/quote-request/' ) ); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>

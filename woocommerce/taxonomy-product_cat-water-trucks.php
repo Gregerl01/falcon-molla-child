@@ -29,7 +29,7 @@ get_header(); ?>
                 <p>Built on heavy-duty Ford F750 and Class 7/8 commercial chassis, every unit features steel baffled tanks with internal liner coating, PTO-driven pump systems, cab-mounted air-operated spray controls, and 5-head spray systems for comprehensive jobsite coverage.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-intro.webp" alt="Falcon Water Truck" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-intro.webp" alt="Falcon Water Truck" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -50,6 +50,7 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-features.webp"
             alt="Water Truck Features"
+            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -69,7 +70,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>5-Head Spray System</h4>
+                <h3>5-Head Spray System</h3>
                 <p>(2) front, (1) mid, and (2) rear spray heads for comprehensive dust suppression and compaction coverage.</p>
               </div>
             </div>
@@ -77,7 +78,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Cab-Mounted Air Controls</h4>
+                <h3>Cab-Mounted Air Controls</h3>
                 <p>Full cab-mounted, air-operated controls allow the driver to manage all spray functions without leaving the seat.</p>
               </div>
             </div>
@@ -85,7 +86,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Baffled Steel Tank</h4>
+                <h3>Baffled Steel Tank</h3>
                 <p>Steel tank construction with 2+ transverse baffles and full internal liner coating for stable transport and longevity.</p>
               </div>
             </div>
@@ -93,7 +94,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>PTO &amp; Pump System</h4>
+                <h3>PTO &amp; Pump System</h3>
                 <p>Commercial-grade PTO-driven pump for reliable high-flow water delivery and spray head operation.</p>
               </div>
             </div>
@@ -101,7 +102,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Rear Jet Spray Hose Reel</h4>
+                <h3>Rear Jet Spray Hose Reel</h3>
                 <p>Rear-mounted 50' jet spray hose reel with nozzle for targeted washing, manual watering, and detail work.</p>
               </div>
             </div>
@@ -109,7 +110,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Hydrant Fill Capability</h4>
+                <h3>Hydrant Fill Capability</h3>
                 <p>Standard hydrant fill connection for fast tank refills at municipal water sources.</p>
               </div>
             </div>
@@ -117,7 +118,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Water Level Sight Gauge</h4>
+                <h3>Water Level Sight Gauge</h3>
                 <p>Visual tank level monitoring so operators always know remaining water capacity.</p>
               </div>
             </div>
@@ -125,7 +126,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>DOT Safety Package</h4>
+                <h3>DOT Safety Package</h3>
                 <p>Backup alarm, DOT-compliant roadside triangle kit, 2 lb ABC fire extinguisher, and DOT-compliant mudflaps.</p>
               </div>
             </div>
@@ -155,28 +156,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Capacity</p>
-                    <h4>FTB 2,000 Gallon</h4>
+                    <h3>FTB 2,000 Gallon</h3>
                     <p class="text-muted mb-0">Ford F750 chassis, 33,000 lbs GVWR. Maneuverable platform for dust control and site maintenance.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Capacity</p>
-                    <h4>FTB 4,000 Gallon</h4>
+                    <h3>FTB 4,000 Gallon</h3>
                     <p class="text-muted mb-0">Class 7/8 chassis, 54,600+ lbs GVWR. Double capacity for large-scale dust suppression and soil stabilization.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Fill System</p>
-                    <h4>Hydrant &amp; Creek Fill</h4>
+                    <h3>Hydrant &amp; Creek Fill</h3>
                     <p class="text-muted mb-0">Standard hydrant fill on both models. Creek fill capability available on the 4,000 gallon configuration.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Spray</p>
-                    <h4>5-Head Spray Coverage</h4>
+                    <h3>5-Head Spray Coverage</h3>
                     <p class="text-muted mb-0">Independent front, mid, and rear spray heads with cab-mounted air controls for precision water distribution.</p>
                 </div>
             </div>
@@ -194,38 +195,38 @@ get_header(); ?>
                 <h2>Water Truck Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Extended Hose Reel</h4>
+                    <h3>Extended Hose Reel</h3>
                     <p>Upgraded rear-mounted jet spray hose reel for extended reach on large jobsites and detail work.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Remote Spray Controls</h4>
+                    <h3>Remote Spray Controls</h3>
                     <p>Enhanced in-cab control systems for independent spray head activation and variable flow adjustment.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Side Spray Bars</h4>
+                    <h3>Side Spray Bars</h3>
                     <p>Extended side spray bars for wider coverage on road construction, grading, and large-area dust suppression.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Custom Paint &amp; Fleet Markings</h4>
+                    <h3>Custom Paint &amp; Fleet Markings</h3>
                     <p>High-visibility paint, DOT markings, and fleet branding options beyond standard white.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row g-4">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-01.webp" alt="Water Truck Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-01.webp" alt="Water Truck Accessory 1" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-02.webp" alt="Water Truck Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-02.webp" alt="Water Truck Accessory 2" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-03.webp" alt="Water Truck Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-03.webp" alt="Water Truck Accessory 3" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-04.webp" alt="Water Truck Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/water-truck-accessories-04.webp" alt="Water Truck Accessory 4" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -279,11 +280,11 @@ get_header(); ?>
                 <!-- Product Content -->
                 <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
                     <div class="feature-content-wrap">
-                    <h2 class="mb-3">
+                    <h3 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h2>
+                    </h3>
 
                     <div class="product-description mb-4">
                         <?php
@@ -342,7 +343,7 @@ get_header(); ?>
 <section class="wt-cta section">
     <div class="container">
         <div class="wt-cta-wrapper surface--subtle">
-            <h3>Ready to spec your water truck?</h3>
+            <h2>Ready to spec your water truck?</h2>
             <p class="mb-4">Contact our team for tank options, spray configurations, and fleet pricing.</p>
             <a href="<?php echo home_url('/quote-request/'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
