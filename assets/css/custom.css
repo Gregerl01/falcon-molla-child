@@ -2767,9 +2767,12 @@ body {
 main,
 .site,
 .site-content,
-.page-wrapper,
 .content-area {
   background-color: transparent;
+}
+
+.page-wrapper {
+  background-color: transparent !important;
 }
 
 :root {
@@ -2910,6 +2913,26 @@ main,
   --surface-2: #1d1e1f;
   --surface-hover: #22262a;
   --surface-border: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme=dark] .mobile-menu-container.mobile-menu-light {
+  background-color: #0d1117;
+}
+
+[data-theme=dark] .mobile-menu-container.mobile-menu-light .mobile-menu a,
+[data-theme=dark] .mobile-menu-container.mobile-menu-light .mobile-menu-close,
+[data-theme=dark] .mobile-menu-container.mobile-menu-light .searchform input {
+  color: #e6edf3;
+}
+
+[data-theme=dark] .mobile-menu-container.mobile-menu-light .searchform input {
+  background-color: #161b22;
+  border-color: rgba(45, 143, 221, 0.2);
+}
+
+[data-theme=dark] .mobile-menu-container.mobile-menu-light .social-icon {
+  color: #8b949e;
+  border-color: #8b949e;
 }
 
 .surface {
@@ -4387,6 +4410,7 @@ footer .footer-bottom {
 }
 
 .featured-card .image {
+  width: 100%;
   margin-top: 40px;
   margin-bottom: 24px;
   background-color: white;
@@ -4394,7 +4418,7 @@ footer .footer-bottom {
 .featured-card .image img {
   width: 100%;
   height: 220px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .featured-card .content h4, .featured-card .content .h4 {
@@ -7567,11 +7591,6 @@ a.btn.btn-secondary:focus {
 
 .product-template-default {
   background-color: var(--background-color);
-}
-
-.product-template-default .page-wrapper,
-.single-product .page-wrapper {
-  background-color: transparent !important;
 }
 
 .single-product .woocommerce-product-details__short-description table {
