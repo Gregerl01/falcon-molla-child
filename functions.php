@@ -451,3 +451,9 @@ add_action('wp_footer', function () {
   </script>
   <?php
 });
+
+// ============================================================================
+// MAINTENANCE MODE
+// ============================================================================
+
+require_once get_stylesheet_directory() . '/inc/maintenance/maintenance-mode.php';
