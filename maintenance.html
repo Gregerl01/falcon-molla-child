@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Falcon Truck Bodies — Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Barlow', sans-serif;
+      color: #c9d1d9;
+      background-color: #0d1117;
+      background-image:
+        linear-gradient(rgba(45, 143, 221, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 143, 221, 0.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+      padding: 2rem;
+    }
+
+    /* Top accent line */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #2d8fdd 30%, #2d8fdd 70%, transparent);
+    }
+
+    .container {
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 2.5rem;
+    }
+
+    .logo-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      letter-spacing: 0.25em;
+      color: #ffffff;
+      line-height: 1;
+    }
+
+    .logo-sub {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.35em;
+      color: #2d8fdd;
+      margin-top: 0.25rem;
+    }
+
+    h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.75rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      letter-spacing: 0.03em;
+    }
+
+    .message {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #8b949e;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(45, 143, 221, 0.15);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      display: inline-block;
+    }
+
+    .contact-card p {
+      font-size: 0.85rem;
+      color: #8b949e;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+    }
+
+    .contact-card a {
+      display: block;
+      color: #c9d1d9;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 2;
+      transition: color 0.2s;
+    }
+
+    .contact-card a:hover {
+      color: #2d8fdd;
+    }
+
+    @media (max-width: 480px) {
+      .logo-text { font-size: 2.25rem; }
+      h1 { font-size: 1.4rem; }
+      .contact-card { padding: 1.25rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <div class="logo-text">FALCON</div>
+      <div class="logo-sub">TRUCK BODIES</div>
+    </div>
+    <h1>New Site Coming Soon</h1>
+    <p class="message">
+      We're building something better. Our new site is currently under
+      construction and will be available shortly. In the meantime, feel
+      free to reach out directly.
+    </p>
+    <div class="contact-card">
+      <p>Contact Us</p>
+      <a href="tel:+18884214150">(888) 421-4150</a>
+      <a href="mailto:sales@falcontruckbodies.com">sales@falcontruckbodies.com</a>
+    </div>
+  </div>
+</body>
+</html>

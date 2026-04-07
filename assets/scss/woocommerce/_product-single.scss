@@ -29,8 +29,9 @@
   background-color: var(--background-color);
 }
 
-.wp-singular.product-template-default .page-wrapper {
-  background-color: var(--background-color) !important;
+.product-template-default .page-wrapper,
+.single-product .page-wrapper {
+  background-color: transparent !important;
 }
 
 // Product specification tables
