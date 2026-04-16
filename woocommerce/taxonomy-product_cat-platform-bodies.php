@@ -1,18 +1,18 @@
 <?php
 /**
- * Custom template for Hauler Bodies category
+ * Custom template for Platform Bodies category
  * Falcon Truck Bodies
  */
 
 get_header(); ?>
 
 <!-- Hero Section -->
-<section class="hb-hero section">
+<section class="pb-hero section">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h1>Load.<br>Haul.<br>Repeat.</h1>
-                <p class="tagline mt-3">Falcon Hauler Bodies – Built for Heavy Transport and Maximum Payload</p>
+                <h1>Haul.<br>Secure.<br>Deliver.</h1>
+                <p class="tagline mt-3">Falcon Platform Bodies — Heavy-Duty Hauler &amp; Flatbed Solutions</p>
                 <a href="#product-line" class="btn btn-primary btn-pill mt-3">View Line Up</a>
             </div>
         </div>
@@ -20,16 +20,16 @@ get_header(); ?>
 </section>
 
 <!-- Intro Section -->
-<section class="hb-intro section">
+<section class="pb-intro section">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Gooseneck &amp; Skirted Hauling Solutions — Engineered for Maximum Towing Performance.</h2>
-                <p class="lead">Falcon Hauler Bodies are engineered for high-capacity towing, equipment transport, and commercial hauling applications. Built around integrated gooseneck hitch systems and reinforced structural platforms, they deliver the strength, stability, and reliability required for demanding jobsite and over-the-road use.</p>
-                <p>Available in standard open-deck and skirted configurations for SRW and DRW chassis, Falcon hauler bodies prioritize payload efficiency, structural integrity, and real-world performance for hotshot, contractor, agriculture, and fleet operations.</p>
+                <h2 class="h3 fw-bold mb-4">Heavy-Duty Flatbed Solutions — Engineered for Maximum Hauling Versatility.</h2>
+                <p class="lead">Falcon Platform Bodies are engineered for maximum hauling versatility, structural integrity, and long-term durability across commercial, fleet, and contractor applications. Built on a reinforced steel or aluminum architecture, these bodies provide a fully open deck configuration optimized for transporting equipment, materials, and oversized loads.</p>
+                <p>Designed for seamless integration with Class 2–6 chassis, Falcon Platform Bodies prioritize payload optimization, load securement, and real-world jobsite performance for construction, hotshot, landscaping, utility, and municipal operations.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hauler-body-intro.webp" alt="Falcon Hauler Body" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/platform-body-intro.webp" alt="Falcon Platform Body" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -37,10 +37,10 @@ get_header(); ?>
 <div class="gradient-divider"></div>
 
 <!-- Standard Features Section -->
-<section class="hb-features section surface">
+<section class="pb-features section surface">
 
   <!-- Wide split wrapper (controls overall width) -->
-  <div class="hb-features-split max-w-1500 mx-auto">
+  <div class="pb-features-split max-w-1500 mx-auto">
 
     <div class="row g-0 align-items-start">
 
@@ -48,8 +48,8 @@ get_header(); ?>
       <div class="col-xl-6 col-lg-6">
         <div class="feature-image-wrap">
           <img
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hauler-body-features.webp"
-            alt="Hauler Body Features"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/platform-body-features.webp"
+            alt="Platform Body Features"
             class="img-fluid"
           >
         </div>
@@ -61,7 +61,7 @@ get_header(); ?>
 
           <!-- Headings -->
           <h5>Falcon Standard Features</h5>
-          <h2>Built for Serious Towing.</h2>
+          <h2>Built to Carry Anything.</h2>
 
           <!-- FEATURES GRID -->
           <div class="features-grid">
@@ -69,64 +69,64 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Integrated Gooseneck Hitch</h4>
-                <p>Fully integrated hitch plate tied into the body structure — rated up to 30,000 lbs with engineered load path to reduce frame stress.</p>
+                <h4>Heavy-Duty Steel Platform</h4>
+                <p>4–6 inch structural channel frame rails with engineered crossmember spacing and 1/8-inch treadplate anti-slip deck.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Heavy-Duty Steel Platform</h4>
-                <p>4–6 inch structural channel main rails with 3-inch crossmembers and 1/8-inch treadplate anti-slip deck.</p>
+                <h4>Gooseneck &amp; Bumper Pull Ready</h4>
+                <p>25K–30K rated gooseneck hitch prep or installed systems with receiver hitch and integrated trailer wiring.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Skirted Storage Option</h4>
-                <p>SG Series features integrated side skirting with front vertical, mid horizontal, and rear compartments with 3-point compression latches.</p>
+                <h4>Integrated Headache Rack</h4>
+                <p>Fully welded steel or aluminum bulkhead for cab protection from shifting loads with optional accessory mounts.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>LED Lighting &amp; Trailer Wiring</h4>
-                <p>Sealed LED stop/turn/tail lights with DOT-compliant markers and integrated trailer wiring connections.</p>
+                <h4>Full Tie-Down System</h4>
+                <p>Full-length rub rails with stake pockets, multiple tie-down points, and compatibility with removable sides and racks.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Full-Length Rub Rails</h4>
-                <p>Continuous rub rails with stake pockets and multiple tie-down points for secure load management.</p>
+                <h4>LED Lighting &amp; Trailer Wiring</h4>
+                <p>Sealed LED stop/turn/tail with DOT-compliant markers and integrated trailer plug systems.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Welded Steel Headache Rack</h4>
-                <p>Fully welded steel bulkhead provides cab protection and structural reinforcement behind the cab.</p>
+                <h4>Powder Coat Finish System</h4>
+                <p>Multi-stage surface prep with powder coat finish and optional epoxy primer for long-term exposure resistance.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Powder Coat Finish</h4>
-                <p>Multi-stage surface prep with powder coat finish and optional epoxy primer for severe environments.</p>
+                <h4>Anti-Slip Treadplate Deck</h4>
+                <p>1/8-inch treadplate steel standard designed for forklifts, pallets, and equipment loading.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Anti-Slip Treadplate Deck</h4>
-                <p>1/8-inch treadplate steel standard with 3/16-inch heavy-duty option for safe loading and unloading.</p>
+                <h4>Full-Length Rub Rails</h4>
+                <p>Continuous rub rails with integrated stake pockets for secure load management and side protection.</p>
               </div>
             </div>
 
@@ -141,43 +141,43 @@ get_header(); ?>
 <div class="gradient-divider"></div>
 
 <!-- Options Section -->
-<section class="hb-options section">
+<section class="pb-options section">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-8">
-                <h5>Hauler Body Options</h5>
-                <h2>Configure Your Hauler.</h2>
-                <p class="text-muted">Choose between open-deck and skirted platforms, select your chassis configuration, and add performance upgrades to match your operation.</p>
+                <h5>Platform Body Options</h5>
+                <h2>Configure Your Platform.</h2>
+                <p class="text-muted">Choose your construction material, deck configuration, storage integration, and material handling systems to match your operation.</p>
             </div>
         </div>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Body Style</p>
-                    <h4>Standard or Skirted Design</h4>
-                    <p class="text-muted mb-0">Open deck GN Series for maximum usable space or SG Series with enclosed skirted storage.</p>
+                    <p class="option-type">Construction</p>
+                    <h4>Steel or Aluminum Construction</h4>
+                    <p class="text-muted mb-0">Steel for maximum strength or aluminum for up to 40–50% weight reduction and increased payload.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Chassis</p>
-                    <h4>SRW &amp; DRW Configurations</h4>
-                    <p class="text-muted mb-0">Available for single rear wheel and dual rear wheel chassis from 42CA to 84CA.</p>
+                    <p class="option-type">Configuration</p>
+                    <h4>Standard or HD with Runners</h4>
+                    <p class="text-muted mb-0">Standard flat deck or HD models with 8-foot concentrated load rails for equipment and point loads.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Class</p>
-                    <h4>Medium-Duty Capability</h4>
-                    <p class="text-muted mb-0">GN9MD, GN11MD, SG9MD, and SG11MD models designed for 4500–6500 class chassis.</p>
+                    <p class="option-type">Storage</p>
+                    <h4>Storage Integration</h4>
+                    <p class="text-muted mb-0">Underbody toolboxes, side pack configurations, top-mounted storage, and drawer systems.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Upgrades</p>
-                    <h4>Performance Upgrades</h4>
-                    <p class="text-muted mb-0">3/16-inch heavy-duty deck, reinforced hitch structure, severe-duty subframe, and aluminum deck options.</p>
+                    <p class="option-type">Handling</p>
+                    <h4>Material Handling Systems</h4>
+                    <p class="text-muted mb-0">Overhead racks, pipe carriers, sliding winch tracks, and D-ring tie-down upgrades.</p>
                 </div>
             </div>
         </div>
@@ -186,46 +186,46 @@ get_header(); ?>
 
 <!-- Accessories Section -->
 <div class="gradient-divider"></div>
-<section class="hb-accessories section surface">
+<section class="pb-accessories section surface">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
                 <h5>Add What You Need.</h5>
-                <h2>Hauler Body Accessories</h2>
+                <h2>Platform Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Stake Sides &amp; Removable Rails</h4>
+                    <h4>Removable Side Rails &amp; Stake Sides</h4>
                     <p>Bolt-on stake sides and removable rail systems for securing oversized loads, lumber, and equipment.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Underbody Toolboxes</h4>
-                    <p>Steel or aluminum underbody storage boxes for chains, straps, and towing accessories.</p>
+                    <h4>Underbody &amp; Side Pack Toolboxes</h4>
+                    <p>Steel or aluminum storage boxes in underbody or side-mounted configurations for tools and accessories.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Bumper Pull Hitch</h4>
-                    <p>Integrated receiver hitch option in addition to the gooseneck for dual towing capability.</p>
+                    <h4>Overhead Racks &amp; Pipe Carriers</h4>
+                    <p>Adjustable overhead rack systems and pipe carriers for long materials and conduit transport.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Work Lights &amp; Beacon Prep</h4>
-                    <p>Auxiliary LED work lights, strobe beacon mounts, and additional marker lighting for visibility.</p>
+                    <h4>Winch Tracks &amp; D-Ring Upgrades</h4>
+                    <p>Sliding winch track systems and heavy-duty D-ring tie-down points for equipment securement.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hauler-body-accessories-01.webp" alt="Hauler Body Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/platform-body-accessories-01.webp" alt="Platform Body Accessory 1" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hauler-body-accessories-02.webp" alt="Hauler Body Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/platform-body-accessories-02.webp" alt="Platform Body Accessory 2" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hauler-body-accessories-03.webp" alt="Hauler Body Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/platform-body-accessories-03.webp" alt="Platform Body Accessory 3" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hauler-body-accessories-04.webp" alt="Hauler Body Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/platform-body-accessories-04.webp" alt="Platform Body Accessory 4" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -236,12 +236,12 @@ get_header(); ?>
 <div class="gradient-divider"></div>
 
 <!-- Product List -->
-<section id="product-line" class="hb-products section">
+<section id="product-line" class="pb-products section">
     <div class="container section-title" data-aos="fade-up">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
-                <h2 class="mb-3">Hauler Body Line Up</h2>
-                <p class="mb-8">Open-deck and skirted gooseneck platforms engineered for high-capacity towing across SRW, DRW, and medium-duty chassis.</p>
+                <h2 class="mb-3">Platform Body Line Up</h2>
+                <p class="mb-8">Standard and heavy-duty flatbed platforms engineered for maximum hauling versatility across Class 2–6 chassis.</p>
             </div>
         </div>
     </div>
@@ -339,11 +339,11 @@ get_header(); ?>
 </section>
 
 <!-- CTA Section -->
-<section class="hb-cta section">
+<section class="pb-cta section">
     <div class="container">
-        <div class="hb-cta-wrapper surface--subtle">
-            <h3>Ready to Haul?</h3>
-            <p class="mb-4">Explore the full Falcon Hauler Bodies lineup and find the right configuration for your fleet.</p>
+        <div class="pb-cta-wrapper surface--subtle">
+            <h3>Ready to Build Your Platform?</h3>
+            <p class="mb-4">Explore the full Falcon Platform Bodies lineup and find the right configuration for your operation.</p>
             <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
     </div>

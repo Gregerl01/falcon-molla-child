@@ -78,6 +78,19 @@ function falcon_showcase_categories() {
 			),
 		),
 		array(
+			'key'         => 'platform',
+			'term_slug'   => 'platform-bodies',
+			'label'       => 'Platform Bodies',
+			'headline'    => 'Flat. Fast. Fully Loaded.',
+			'description' => 'Falcon Platform Bodies deliver heavy-duty flatbed solutions engineered for maximum hauling versatility and structural integrity. From standard decks for general hauling to HD models with 8-foot runners for equipment transport, they provide the strength and configurability required for commercial, fleet, and contractor applications.',
+			'bullets'     => array(
+				array( 'title' => 'Standard or HD with 8′ runners',  'desc' => 'Standard flat deck or HD models with 8-foot concentrated load rails for equipment and point loads.' ),
+				array( 'title' => 'Steel or aluminum construction',  'desc' => 'Steel for maximum strength or aluminum for up to 40–50% weight reduction and increased payload.' ),
+				array( 'title' => '25K–30K gooseneck integration',   'desc' => 'Fully integrated gooseneck hitch prep or installed systems with receiver hitch and trailer wiring.' ),
+				array( 'title' => 'Class 2–6 chassis compatibility', 'desc' => 'Designed for seamless integration across popular commercial chassis platforms.' ),
+			),
+		),
+		array(
 			'key'         => 'enclosed',
 			'term_slug'   => 'enclosed-bodies',
 			'label'       => 'Enclosed Bodies',
