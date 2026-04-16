@@ -17,6 +17,7 @@
 .bt-features-split,
 .wt-features-split,
 .dt-features-split,
+.pb-features-split,
 .lineb-features-split {
   width: 100%;
   max-width: 1500px;
@@ -40,6 +41,7 @@
 .bt-features,
 .wt-features,
 .dt-features,
+.pb-features,
 .lineb-features {
   .feature-image-wrap {
     position: relative;
@@ -126,6 +128,7 @@
 .bt-options,
 .wt-options,
 .dt-options,
+.pb-options,
 .lineb-options {
   background: var(--surface);
 
@@ -179,6 +182,7 @@
 .bt-accessories,
 .wt-accessories,
 .dt-accessories,
+.pb-accessories,
 .lineb-accessories {
   h5 {
     color: var(--accent-color);
@@ -221,6 +225,7 @@
 .bt-products,
 .wt-products,
 .dt-products,
+.pb-products,
 .lineb-products {
   padding-bottom: 0;
 
@@ -265,6 +270,7 @@
 .bt-cta,
 .wt-cta,
 .dt-cta,
+.pb-cta,
 .lineb-cta {
   padding-bottom: 40px;
   text-align: center;
@@ -286,6 +292,7 @@
 .bt-cta-wrapper,
 .wt-cta-wrapper,
 .dt-cta-wrapper,
+.pb-cta-wrapper,
 .lineb-cta-wrapper {
   padding: 4rem 3rem;
   border: 1px solid var(--border-color);

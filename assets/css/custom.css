@@ -4933,6 +4933,7 @@ a.btn.btn-secondary:focus {
 .bt-features-split,
 .wt-features-split,
 .dt-features-split,
+.pb-features-split,
 .lineb-features-split {
   width: 100%;
   max-width: 1500px;
@@ -4955,6 +4956,7 @@ a.btn.btn-secondary:focus {
 .bt-features .feature-image-wrap,
 .wt-features .feature-image-wrap,
 .dt-features .feature-image-wrap,
+.pb-features .feature-image-wrap,
 .lineb-features .feature-image-wrap {
   position: relative;
   width: 100%;
@@ -4971,6 +4973,7 @@ a.btn.btn-secondary:focus {
 .bt-features .feature-image-wrap img,
 .wt-features .feature-image-wrap img,
 .dt-features .feature-image-wrap img,
+.pb-features .feature-image-wrap img,
 .lineb-features .feature-image-wrap img {
   width: 100%;
   height: 100%;
@@ -4989,6 +4992,7 @@ a.btn.btn-secondary:focus {
 .bt-features .features-grid,
 .wt-features .features-grid,
 .dt-features .features-grid,
+.pb-features .features-grid,
 .lineb-features .features-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -5006,6 +5010,7 @@ a.btn.btn-secondary:focus {
 .bt-features .feature-item,
 .wt-features .feature-item,
 .dt-features .feature-item,
+.pb-features .feature-item,
 .lineb-features .feature-item {
   display: grid;
   grid-template-columns: 32px 1fr;
@@ -5028,6 +5033,7 @@ a.btn.btn-secondary:focus {
 .bt-features .feature-item:hover,
 .wt-features .feature-item:hover,
 .dt-features .feature-item:hover,
+.pb-features .feature-item:hover,
 .lineb-features .feature-item:hover {
   transform: translateY(-3px);
 }
@@ -5043,6 +5049,7 @@ a.btn.btn-secondary:focus {
 .bt-features .feature-number,
 .wt-features .feature-number,
 .dt-features .feature-number,
+.pb-features .feature-number,
 .lineb-features .feature-number {
   font-size: 2rem;
   font-weight: 700;
@@ -5073,6 +5080,8 @@ a.btn.btn-secondary:focus {
 .wt-features .feature-content .h4,
 .dt-features .feature-content h4,
 .dt-features .feature-content .h4,
+.pb-features .feature-content h4,
+.pb-features .feature-content .h4,
 .lineb-features .feature-content h4,
 .lineb-features .feature-content .h4 {
   margin: 0 0 0.4rem;
@@ -5091,6 +5100,7 @@ a.btn.btn-secondary:focus {
 .bt-features .feature-content p,
 .wt-features .feature-content p,
 .dt-features .feature-content p,
+.pb-features .feature-content p,
 .lineb-features .feature-content p {
   margin: 0;
   font-size: 1.25rem;
@@ -5109,6 +5119,7 @@ a.btn.btn-secondary:focus {
 .bt-features,
 .wt-features,
 .dt-features,
+.pb-features,
 .lineb-features {
   /* Responsive */
 }
@@ -5125,6 +5136,7 @@ a.btn.btn-secondary:focus {
   .bt-features .row,
   .wt-features .row,
   .dt-features .row,
+  .pb-features .row,
   .lineb-features .row {
     row-gap: 3rem;
   }
@@ -5142,6 +5154,7 @@ a.btn.btn-secondary:focus {
   .bt-features .features-grid,
   .wt-features .features-grid,
   .dt-features .features-grid,
+  .pb-features .features-grid,
   .lineb-features .features-grid {
     grid-template-columns: 1fr;
   }
@@ -5162,6 +5175,7 @@ a.btn.btn-secondary:focus {
 .bt-options,
 .wt-options,
 .dt-options,
+.pb-options,
 .lineb-options {
   background: var(--surface);
 }
@@ -5188,6 +5202,8 @@ a.btn.btn-secondary:focus {
 .wt-options .h5,
 .dt-options h5,
 .dt-options .h5,
+.pb-options h5,
+.pb-options .h5,
 .lineb-options h5,
 .lineb-options .h5 {
   color: var(--accent-color);
@@ -5204,6 +5220,7 @@ a.btn.btn-secondary:focus {
 .bt-options .option-card,
 .wt-options .option-card,
 .dt-options .option-card,
+.pb-options .option-card,
 .lineb-options .option-card {
   height: 100%;
   padding: 2rem;
@@ -5222,6 +5239,7 @@ a.btn.btn-secondary:focus {
 .bt-options .option-card:hover,
 .wt-options .option-card:hover,
 .dt-options .option-card:hover,
+.pb-options .option-card:hover,
 .lineb-options .option-card:hover {
   transform: translateY(-4px);
 }
@@ -5237,6 +5255,7 @@ a.btn.btn-secondary:focus {
 .bt-options .option-card .option-type,
 .wt-options .option-card .option-type,
 .dt-options .option-card .option-type,
+.pb-options .option-card .option-type,
 .lineb-options .option-card .option-type {
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -5266,6 +5285,8 @@ a.btn.btn-secondary:focus {
 .wt-options .option-card .h4,
 .dt-options .option-card h4,
 .dt-options .option-card .h4,
+.pb-options .option-card h4,
+.pb-options .option-card .h4,
 .lineb-options .option-card h4,
 .lineb-options .option-card .h4 {
   margin-bottom: 0.75rem;
@@ -5283,6 +5304,7 @@ a.btn.btn-secondary:focus {
 .bt-options .option-card p,
 .wt-options .option-card p,
 .dt-options .option-card p,
+.pb-options .option-card p,
 .lineb-options .option-card p {
   margin: 0;
   font-size: 1.25rem;
@@ -5316,6 +5338,8 @@ a.btn.btn-secondary:focus {
 .wt-accessories .h5,
 .dt-accessories h5,
 .dt-accessories .h5,
+.pb-accessories h5,
+.pb-accessories .h5,
 .lineb-accessories h5,
 .lineb-accessories .h5 {
   color: var(--accent-color);
@@ -5332,6 +5356,7 @@ a.btn.btn-secondary:focus {
 .bt-accessories .accessory-item,
 .wt-accessories .accessory-item,
 .dt-accessories .accessory-item,
+.pb-accessories .accessory-item,
 .lineb-accessories .accessory-item {
   margin-bottom: 1.75rem;
   padding-left: 1rem;
@@ -5360,6 +5385,8 @@ a.btn.btn-secondary:focus {
 .wt-accessories .accessory-item .h4,
 .dt-accessories .accessory-item h4,
 .dt-accessories .accessory-item .h4,
+.pb-accessories .accessory-item h4,
+.pb-accessories .accessory-item .h4,
 .lineb-accessories .accessory-item h4,
 .lineb-accessories .accessory-item .h4 {
   margin-bottom: 0.25rem;
@@ -5376,6 +5403,7 @@ a.btn.btn-secondary:focus {
 .bt-accessories .accessory-item p,
 .wt-accessories .accessory-item p,
 .dt-accessories .accessory-item p,
+.pb-accessories .accessory-item p,
 .lineb-accessories .accessory-item p {
   margin: 0;
   font-size: 1.25rem;
@@ -5393,6 +5421,7 @@ a.btn.btn-secondary:focus {
 .bt-accessories img,
 .wt-accessories img,
 .dt-accessories img,
+.pb-accessories img,
 .lineb-accessories img {
   aspect-ratio: 4/3;
   object-fit: cover;
@@ -5413,6 +5442,7 @@ a.btn.btn-secondary:focus {
 .bt-products,
 .wt-products,
 .dt-products,
+.pb-products,
 .lineb-products {
   padding-bottom: 0;
 }
@@ -5428,6 +5458,7 @@ a.btn.btn-secondary:focus {
 .bt-products .product-list-item.bg-dark-section,
 .wt-products .product-list-item.bg-dark-section,
 .dt-products .product-list-item.bg-dark-section,
+.pb-products .product-list-item.bg-dark-section,
 .lineb-products .product-list-item.bg-dark-section {
   background: var(--surface-1) !important;
 }
@@ -5443,6 +5474,7 @@ a.btn.btn-secondary:focus {
 .bt-products .product-list-item.bg-light,
 .wt-products .product-list-item.bg-light,
 .dt-products .product-list-item.bg-light,
+.pb-products .product-list-item.bg-light,
 .lineb-products .product-list-item.bg-light {
   background: var(--section-primary) !important;
 }
@@ -5469,6 +5501,8 @@ a.btn.btn-secondary:focus {
 .wt-products .product-list-item .h2 a,
 .dt-products .product-list-item h2 a,
 .dt-products .product-list-item .h2 a,
+.pb-products .product-list-item h2 a,
+.pb-products .product-list-item .h2 a,
 .lineb-products .product-list-item h2 a,
 .lineb-products .product-list-item .h2 a {
   color: inherit;
@@ -5497,6 +5531,8 @@ a.btn.btn-secondary:focus {
 .wt-products .product-list-item .h2 a:hover,
 .dt-products .product-list-item h2 a:hover,
 .dt-products .product-list-item .h2 a:hover,
+.pb-products .product-list-item h2 a:hover,
+.pb-products .product-list-item .h2 a:hover,
 .lineb-products .product-list-item h2 a:hover,
 .lineb-products .product-list-item .h2 a:hover {
   color: var(--accent-color);
@@ -5525,6 +5561,8 @@ a.btn.btn-secondary:focus {
 .wt-products .product-list-item .product-description li,
 .dt-products .product-list-item .product-description p,
 .dt-products .product-list-item .product-description li,
+.pb-products .product-list-item .product-description p,
+.pb-products .product-list-item .product-description li,
 .lineb-products .product-list-item .product-description p,
 .lineb-products .product-list-item .product-description li {
   font-size: 1.45rem;
@@ -5546,6 +5584,7 @@ a.btn.btn-secondary:focus {
 .bt-cta,
 .wt-cta,
 .dt-cta,
+.pb-cta,
 .lineb-cta {
   padding-bottom: 40px;
   text-align: center;
@@ -5562,6 +5601,7 @@ a.btn.btn-secondary:focus {
 .bt-cta p,
 .wt-cta p,
 .dt-cta p,
+.pb-cta p,
 .lineb-cta p {
   margin-bottom: 2rem;
 }
@@ -5578,6 +5618,7 @@ a.btn.btn-secondary:focus {
 .bt-cta-wrapper,
 .wt-cta-wrapper,
 .dt-cta-wrapper,
+.pb-cta-wrapper,
 .lineb-cta-wrapper {
   padding: 4rem 3rem;
   border: 1px solid var(--border-color);
@@ -7481,6 +7522,31 @@ a.btn.btn-secondary:focus {
 }
 .lineb-hero .tagline {
   color: color-mix(in srgb, white, transparent 25%);
+}
+
+/* =================================================
+   PLATFORM BODIES – PAGE ONLY
+================================================= */
+/* HERO */
+.pb-hero {
+  padding: 6rem 0;
+  background: linear-gradient(var(--overlay-image), var(--overlay-image)), url("../images/platform-bodies-hero.webp") center/cover no-repeat;
+  color: var(--text-on-image);
+}
+.pb-hero h1, .pb-hero .h1 {
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  color: #fff !important;
+}
+.pb-hero .tagline {
+  font-size: 1.25rem;
+  color: color-mix(in srgb, white, transparent 25%);
+}
+
+.pb-hero .container .row {
+  justify-content: flex-end;
 }
 
 .product-list-item .product-description {
