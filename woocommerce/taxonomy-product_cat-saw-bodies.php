@@ -24,9 +24,9 @@ get_header(); ?>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Placeholder Headline for Saw Bodies Introduction</h2>
-                <p class="lead">Placeholder description highlighting the primary benefits of Falcon Saw Bodies. Emphasize specialized storage for chainsaws, pole saws, and tree care equipment.</p>
-                <p>Placeholder supporting paragraph describing chassis compatibility, industry applications, and overall value proposition. Mention durability, specialized compartments, and professional-grade construction quality.</p>
+                <h2 class="h3 fw-bold mb-4">Purpose-Built for Sawing and Roadwork Applications.</h2>
+                <p class="lead">Falcon Saw Bodies are purpose-built to support crews requiring organized equipment transport, open deck functionality, and durable jobsite performance. Designed for demanding roadwork, utility, and contractor applications, these bodies provide a practical platform for hauling saws, tools, accessories, and support equipment.</p>
+                <p>Available in 15-foot and 17-foot configurations, Falcon Saw Bodies are engineered for Class 4–7 chassis applications — delivering the durability, simplicity, and functionality needed for field service and equipment transport operations.</p>
             </div>
             <div class="col-lg-6">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/saw-truck-intro.webp" alt="Falcon Saw Bodies" class="img-fluid rounded">
@@ -61,7 +61,7 @@ get_header(); ?>
 
           <!-- Headings -->
           <h5>Falcon Standard Features</h5>
-          <h2>Placeholder Headline for Standard Features Section.</h2>
+          <h2>Built for the Cut.</h2>
 
           <!-- FEATURES GRID -->
           <div class="features-grid">
@@ -69,64 +69,64 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Placeholder Feature One</h4>
-                <p>Placeholder description for the first standard feature included with Saw Bodies.</p>
+                <h4>Heavy-Duty Structural Platform</h4>
+                <p>Reinforced steel body construction engineered for equipment hauling and daily vocational use with concentrated equipment loads.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Two</h4>
-                <p>Placeholder description for the second standard feature highlighting saw storage or mounting.</p>
+                <h4>Open Deck Design</h4>
+                <p>Large usable platform area for saws, support tools, and materials with easy multi-side loading and unloading.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Three</h4>
-                <p>Placeholder description for the third standard feature related to fuel can storage or safety.</p>
+                <h4>LED Lighting System</h4>
+                <p>FMVSS-compliant LED lighting package with sealed wiring harness and protected electrical routing for jobsite durability.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Four</h4>
-                <p>Placeholder description for the fourth standard feature such as pole saw tubes or compartments.</p>
+                <h4>Corrosion-Resistant Finish</h4>
+                <p>Surface-prepped steel construction with durable finish system for long-term outdoor and roadwork environments.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Five</h4>
-                <p>Placeholder description for the fifth standard feature like finish or corrosion protection.</p>
+                <h4>Chassis-Specific Integration</h4>
+                <p>Optimized mounting system for Class 4–7 chassis with stable load distribution and reduced frame stress.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Six</h4>
-                <p>Placeholder description for the sixth standard feature covering lighting or electrical.</p>
+                <h4>Commercial-Grade Electrical</h4>
+                <p>Protected wiring harness with sealed connectors and commercial-grade electrical integration for reliable service.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Seven</h4>
-                <p>Placeholder description for the seventh standard feature such as bumper or hitch options.</p>
+                <h4>Multi-Side Access</h4>
+                <p>Open platform design allows loading and unloading from multiple sides for efficient jobsite workflow.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Eight</h4>
-                <p>Placeholder description for the eighth standard feature.</p>
+                <h4>Durable Steel Construction</h4>
+                <p>Heavy-gauge steel body panels built to withstand daily impact, vibration, and demanding field conditions.</p>
               </div>
             </div>
 
@@ -146,38 +146,38 @@ get_header(); ?>
         <div class="row mb-5">
             <div class="col-lg-8">
                 <h5>Saw Bodies Options</h5>
-                <h2>Placeholder Headline for Configuration Options</h2>
-                <p class="text-muted">Placeholder description explaining the available configurations, body lengths, and optional upgrades for Saw Bodies.</p>
+                <h2>Configure Your Saw Body.</h2>
+                <p class="text-muted">Choose your body length, chassis configuration, and optional upgrades to match your crew's requirements.</p>
             </div>
         </div>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option One</h4>
-                    <p class="text-muted mb-0">Placeholder description for the first configuration option available.</p>
+                    <p class="option-type">Body Length</p>
+                    <h4>15' or 17' Body Length</h4>
+                    <p class="text-muted mb-0">Compact SAW 15 for standard operations or expanded SAW 17 for higher-demand crew requirements.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Two</h4>
-                    <p class="text-muted mb-0">Placeholder description for the second configuration option available.</p>
+                    <p class="option-type">Chassis</p>
+                    <h4>Chassis-Specific Mounting</h4>
+                    <p class="text-muted mb-0">Configurations available for Class 4–7 chassis platforms with optimized load distribution.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Three</h4>
-                    <p class="text-muted mb-0">Placeholder description for the third configuration option available.</p>
+                    <p class="option-type">Storage</p>
+                    <h4>Equipment Storage Integration</h4>
+                    <p class="text-muted mb-0">Tool storage, equipment racks, holder systems, and configurable organization solutions.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Four</h4>
-                    <p class="text-muted mb-0">Placeholder description for the fourth configuration option available.</p>
+                    <p class="option-type">Upgrades</p>
+                    <h4>Performance Upgrades</h4>
+                    <p class="text-muted mb-0">Reinforced load zones, heavy-duty tie-down points, severe-duty finish upgrades, and auxiliary lighting.</p>
                 </div>
             </div>
         </div>
@@ -190,27 +190,27 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h5>Placeholder Tagline for Accessories Section.</h5>
+                <h5>Add What You Need.</h5>
                 <h2>Saw Bodies Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Accessory One</h4>
-                    <p>Placeholder description for the first accessory option such as chainsaw mounts or bar holders.</p>
+                    <h4>Equipment Racks &amp; Holders</h4>
+                    <p>Saw blade holders, tool racks, and equipment mounting systems for organized deck storage.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Two</h4>
-                    <p>Placeholder description for the second accessory option such as fuel can racks or oil storage.</p>
+                    <h4>Tie-Down &amp; Securement</h4>
+                    <p>Heavy-duty tie-down points, ratchet strap anchors, and load securement hardware for equipment transport.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Three</h4>
-                    <p>Placeholder description for the third accessory option such as rope bins or rigging storage.</p>
+                    <h4>Auxiliary Lighting</h4>
+                    <p>LED work lights, strobe beacons, and scene lighting for roadwork and low-visibility operations.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Four</h4>
-                    <p>Placeholder description for the fourth accessory option.</p>
+                    <h4>Underbody Storage</h4>
+                    <p>Steel or aluminum underbody toolboxes for blades, consumables, and support equipment.</p>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -241,7 +241,7 @@ get_header(); ?>
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <h2 class="mb-3">Saw Bodies Line Up</h2>
-                <p class="mb-8">Placeholder description for the product lineup section highlighting available models.</p>
+                <p class="mb-8">Open equipment platforms in 15-foot and 17-foot configurations for Class 4–7 chassis applications.</p>
             </div>
         </div>
     </div>
@@ -342,8 +342,8 @@ get_header(); ?>
 <section class="st-cta section">
     <div class="container">
         <div class="st-cta-wrapper surface--subtle">
-            <h3>Placeholder CTA Headline for Saw Bodies</h3>
-            <p class="mb-4">Placeholder call-to-action description encouraging visitors to request a quote or contact sales.</p>
+            <h3>Ready to Equip Your Crew?</h3>
+            <p class="mb-4">Explore the Falcon Saw Bodies lineup and find the right configuration for your operation.</p>
             <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
     </div>
