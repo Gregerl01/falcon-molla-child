@@ -7390,7 +7390,7 @@ a.btn.btn-secondary:focus {
 }
 
 .lb-hero .container .row {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 /* =================================================
@@ -7505,7 +7505,7 @@ a.btn.btn-secondary:focus {
 }
 
 .wt-hero .container .row {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 /* =================================================
