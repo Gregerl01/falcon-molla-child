@@ -12,8 +12,9 @@ function falcon_hero_customizer( $wp_customize ) {
 
 	// ── Panel ────────────────────────────────────────────────────────────
 	$wp_customize->add_panel( 'falcon_hero_panel', array(
-		'title'    => __( 'Homepage Hero', 'molla-child' ),
-		'priority' => 30,
+		'title'       => __( 'Homepage Hero', 'molla-child' ),
+		'description' => __( "Note: Only the Background Image (Desktop) and Background Image (Mobile) fields under 'Images & Overlay' currently affect the homepage hero. Other fields in this panel are stale and not read by the current template.", 'molla-child' ),
+		'priority'    => 30,
 	) );
 
 	// =====================================================================
