@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom template for Dump Trucks category
+ * Custom template for Dump Bodies category
  * Falcon Truck Bodies
  */
 
@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="row">
             <div class="col-lg-5">
                 <h1>Load.<br>Dump.<br>Repeat.</h1>
-                <p class="tagline mt-3">Falcon Dump Trucks – Heavy-Duty Hauling for Construction and Municipal Operations</p>
+                <p class="tagline mt-3">Falcon Dump Bodies – Heavy-Duty Hauling for Construction and Municipal Operations</p>
                 <a href="#product-line" class="btn btn-primary btn-pill mt-3">View Line Up</a>
             </div>
         </div>
@@ -24,12 +24,12 @@ get_header(); ?>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Built to Move Material, Not Sit in the Shop</h2>
-                <p class="lead">Falcon Dump Trucks are engineered for contractors, municipalities, and heavy hauling operations that need reliable dump platforms for aggregate, soil, debris, and material transport.</p>
-                <p>Built from heavy-gauge carbon steel with hydraulic hoist systems, reinforced tailgates, and commercial-grade subframes, Falcon dump platforms deliver consistent performance under repeated loading and dumping cycles.</p>
+                <h2 class="h3 fw-bold mb-4">Utility, Contractor, and Severe-Duty Dump Solutions.</h2>
+                <p class="lead">Falcon Dump Bodies are engineered for commercial hauling, material transport, and high-cycle jobsite applications. Built across multiple duty classifications from light commercial to severe-duty aggregate, these bodies deliver the durability, structural integrity, and performance required for demanding work environments.</p>
+                <p>With configurations ranging from corrugated utility bodies to elliptical and severe-duty AR steel designs, Falcon provides a complete dump body lineup for contractors, municipalities, and fleet operators on Class 3–8 chassis.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-intro.webp" alt="Falcon Dump Truck" loading="lazy" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-intro.webp" alt="Falcon Dump Truck" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -50,7 +50,6 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-features.webp"
             alt="Dump Truck Features"
-            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -62,7 +61,7 @@ get_header(); ?>
 
           <!-- Headings -->
           <h5>Falcon Standard Features</h5>
-          <h2>Built for Heavy Loads and Hard Cycles</h2>
+          <h2>Engineered to Dump Hard.</h2>
 
           <!-- FEATURES GRID -->
           <div class="features-grid">
@@ -70,64 +69,64 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h3>Hydraulic Dump Hoist</h3>
-                <p>Commercial-grade hydraulic lift system for controlled, reliable dumping of heavy payloads.</p>
+                <h3>Heavy-Duty Structural Design</h3>
+                <p>Reinforced long sills and crossmember system engineered for high-cycle loading and unloading with high-strength structural steel.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h3>Heavy-Gauge Steel Body</h3>
-                <p>10-gauge carbon steel floor, sides, and front panel engineered for impact and abrasion resistance.</p>
+                <h3>High-Strength Floor Construction</h3>
+                <p>Steel floor options from 10 ga to AR450 with corrugated or smooth sidewall configurations for durability and material flow.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h3>Reinforced Tailgate</h3>
-                <p>Heavy-duty tailgate with spreader gate and barn door configurations for material control.</p>
+                <h3>Hoist System Integration</h3>
+                <p>PTO-driven hydraulic systems with underbody or telescopic hoist configurations rated to exceed payload capacity.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h3>Structural Steel Subframe</h3>
-                <p>Channel steel frame with formed crossmembers for load distribution and chassis protection.</p>
+                <h3>Double-Acting Tailgate</h3>
+                <p>Top hinge and spreader configurations with heavy-duty hinge pins and chain retention for controlled material discharge.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h3>Powder-Coat Finish</h3>
-                <p>Full body powder coat for corrosion resistance in wet, abrasive, and outdoor environments.</p>
+                <h3>Epoxy + Polyurethane Finish</h3>
+                <p>Commercial blast prep with epoxy primer and polyurethane topcoat for corrosion resistance in abrasive environments.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h3>LED Lighting Package</h3>
-                <p>Integrated LED tail, brake, marker, and clearance lights with sealed wiring harness.</p>
+                <h3>FMVSS LED Lighting</h3>
+                <p>FMVSS-compliant LED lighting with sealed wiring harness for visibility and regulatory compliance.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h3>Tarp System Ready</h3>
-                <p>Pre-drilled mounting provisions for manual or electric tarp systems.</p>
+                <h3>Class 3–8 Chassis Coverage</h3>
+                <p>From light commercial corrugated bodies to severe-duty AR steel platforms across the full commercial chassis range.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h3>DOT Compliant Platform</h3>
-                <p>Built to meet Department of Transportation requirements for on-road material transport.</p>
+                <h3>Tarp &amp; Accessory Ready</h3>
+                <p>Pre-drilled mounting provisions for manual or electric tarp systems, cab shields, and auxiliary equipment.</p>
               </div>
             </div>
 
@@ -146,39 +145,39 @@ get_header(); ?>
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-8">
-                <h5>Dump Truck Options</h5>
-                <h2>Configure for Your Operation</h2>
-                <p class="text-muted">Available platform and tailgate configurations to match your hauling requirements.</p>
+                <h5>Dump Body Options</h5>
+                <h2>Configure Your Dump Body.</h2>
+                <p class="text-muted">Four series covering light-duty utility to severe-duty aggregate — choose your body style, material, and fleet packages.</p>
             </div>
         </div>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Platform</p>
-                    <h3>Standard Dump Body</h3>
-                    <p class="text-muted mb-0">Heavy-gauge steel dump platform with hydraulic hoist for aggregate, soil, and debris hauling.</p>
+                    <p class="option-type">Series</p>
+                    <h3>Four Body Series</h3>
+                    <p class="text-muted mb-0">XC utility, Pro contractor, HD severe-duty, and M-Series municipal — covering light-duty to extreme applications.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Tailgate</p>
-                    <h3>Spreader & Barn Door</h3>
-                    <p class="text-muted mb-0">Dual-mode tailgate for controlled material spreading or full rear access.</p>
+                    <p class="option-type">Material</p>
+                    <h3>Corrugated or AR Steel</h3>
+                    <p class="text-muted mb-0">Corrugated steel for lightweight payload efficiency or AR450 abrasion-resistant steel for aggregate and demolition.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Accessory</p>
-                    <h3>Tarp Systems</h3>
-                    <p class="text-muted mb-0">Manual or electric tarp systems for load containment during transport.</p>
+                    <p class="option-type">Design</p>
+                    <h3>Elliptical or Square Design</h3>
+                    <p class="text-muted mb-0">Elliptical smooth-wall for superior material flow or square-body for maximum capacity and bulky material.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Accessory</p>
-                    <h3>Side Extensions</h3>
-                    <p class="text-muted mb-0">Bolt-on side board extensions for increased volume capacity on bulk loads.</p>
+                    <p class="option-type">Fleet</p>
+                    <h3>Municipal &amp; Fleet Packages</h3>
+                    <p class="text-muted mb-0">Plow and spreader prep, lift axle integration, backup cameras, body-up indicators, and tarp systems.</p>
                 </div>
             </div>
         </div>
@@ -191,8 +190,8 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h5>Customize Your Build</h5>
-                <h2>Dump Truck Accessories</h2>
+                <h5>Customize Your Build.</h5>
+                <h2>Dump Body Accessories</h2>
 
                 <div class="accessory-item">
                     <h3>Cab Shield</h3>
@@ -217,16 +216,16 @@ get_header(); ?>
             <div class="col-lg-7">
                 <div class="row g-4">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-01.webp" alt="Dump Truck Accessory 1" loading="lazy" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-01.webp" alt="Dump Truck Accessory 1" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-02.webp" alt="Dump Truck Accessory 2" loading="lazy" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-02.webp" alt="Dump Truck Accessory 2" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-03.webp" alt="Dump Truck Accessory 3" loading="lazy" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-03.webp" alt="Dump Truck Accessory 3" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-04.webp" alt="Dump Truck Accessory 4" loading="lazy" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/dump-truck-accessories-04.webp" alt="Dump Truck Accessory 4" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -241,8 +240,8 @@ get_header(); ?>
     <div class="container section-title" data-aos="fade-up">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
-                <h2 class="mb-3">Dump Truck Line Up</h2>
-                <p class="mb-8">Heavy-duty dump platforms engineered for daily loading and hauling operations.</p>
+                <h2 class="mb-3">Dump Body Line Up</h2>
+                <p class="mb-8">Corrugated, elliptical, and AR steel dump bodies for Class 3–8 contractor, municipal, and fleet applications.</p>
             </div>
         </div>
     </div>
@@ -280,11 +279,11 @@ get_header(); ?>
                 <!-- Product Content -->
                 <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
                     <div class="feature-content-wrap">
-                    <h3 class="mb-3">
+                    <h2 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h3>
+                    </h2>
 
                     <div class="product-description mb-4">
                         <?php
@@ -343,9 +342,9 @@ get_header(); ?>
 <section class="dt-cta section">
     <div class="container">
         <div class="dt-cta-wrapper surface--subtle">
-            <h2>Ready to spec your dump truck?</h2>
-            <p class="mb-4">Contact our team for platform options, fleet pricing, and lead times.</p>
-            <a href="<?php echo home_url('/quote-request/'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
+            <h3>Ready to Haul?</h3>
+            <p class="mb-4">Explore the full Falcon Dump Bodies lineup and find the right configuration for your fleet.</p>
+            <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
     </div>
 </section>

@@ -1,12 +1,12 @@
 /* =================================================
-   LANDSCAPE BODIES – PAGE ONLY
+   PLATFORM BODIES – PAGE ONLY
 ================================================= */
 
 /* HERO */
-.lb-hero {
+.pb-hero {
   padding: 6rem 0;
   background: linear-gradient(var(--overlay-image), var(--overlay-image)),
-              url('../images/landscape-bodies-hero.webp') center/cover no-repeat;
+              url('../images/platform-bodies-hero.webp') center/cover no-repeat;
   color: var(--text-on-image);
 
   h1, .h1 {
@@ -23,6 +23,6 @@
   }
 }
 
-.lb-hero .container .row {
-  justify-content: flex-start;
+.pb-hero .container .row {
+  justify-content: flex-end;
 }

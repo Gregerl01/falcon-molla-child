@@ -164,6 +164,9 @@ function disable_wpautop_conditionally() {
 // WOOCOMMERCE CUSTOMIZATIONS
 // ============================================================================
 
+// Remove "(0 Reviews)" rating link from product summary
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+
 /**
  * Enable shortcodes in Molla custom product tabs
  * Molla tab keys: "description", "1st" (Configurations/Accessories), "2nd" (Gallery)
@@ -217,6 +220,9 @@ function enable_shortcodes_in_custom_tabs($tabs) {
             };
         }
     }
+
+    // Remove Reviews tab
+    unset($tabs['reviews']);
 
     return $tabs;
 }
