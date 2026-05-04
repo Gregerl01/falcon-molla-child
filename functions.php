@@ -133,6 +133,17 @@ function molla_child_enqueue_assets() {
         true
     );
 
+    // Hero parallax JS (homepage only)
+    if (is_front_page()) {
+        wp_enqueue_script(
+            'falcon-hero-parallax',
+            get_stylesheet_directory_uri() . '/assets/js/hero-parallax.js',
+            array(),
+            '1.0.0',
+            true
+        );
+    }
+
     // Configurations tab JS (single product pages only)
     if (is_singular('product')) {
         wp_enqueue_script(

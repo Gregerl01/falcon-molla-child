@@ -1,279 +1,168 @@
 // ============================================================================
-// HERO — FIXED CONTRAST, IMAGE-DRIVEN
+// HERO — HOMEPAGE (LEFT-ANCHORED)
 // ============================================================================
+//
+// Driven by template-parts/hero/hero-home.php which sets the CSS
+// custom properties --hero-bg-desktop and --hero-bg-mobile via an
+// inline style on the .hero element.
+//
+// Background image is set via CSS rather than an <img>/<picture>
+// element so the mobile media query can swap the photo via
+// var(--hero-bg-mobile) without touching markup.
+//
+// Parallax effect: image scrolls slower than content via a JS scroll
+// listener on .hero--home, which adjusts background-position-y. See
+// assets/js/hero-parallax.js. Disabled on mobile (≤768px) and for
+// users with prefers-reduced-motion.
+//
+// Button styling is intentionally not overridden here. The global
+// .btn.btn-primary.btn-pill rules in components/_buttons.scss already
+// provide accent-color background, white text, pill shape, and hover
+// treatment — all with !important, so any non-important override here
+// would lose anyway. If a hero-specific shadow is wanted later, add it
+// as a single targeted rule rather than re-defining the button.
 
-.hero {
-  position: relative;
-  height: 95vh;
-  width: 100%;
-  overflow: hidden;
-  color: #ffffff;
+.hero--home {
+	position: relative;
+	width: 100%;
+	min-height: 100dvh;
+	overflow: hidden;
+	color: #ffffff;
+	color-scheme: dark;
+
+	// Photo + left-to-right dark gradient for left-column readability.
+	// Tune or remove the gradient stops based on the actual photo.
+	background-image:
+		linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.55) 0%,
+			rgba(0, 0, 0, 0.35) 50%,
+			rgba(0, 0, 0, 0.20) 100%
+		),
+		var(--hero-bg-desktop);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	will-change: background-position;
 }
 
-// Prevent theme overrides inside hero
-.hero,
-.hero * {
-  color-scheme: dark;
+.hero--home .hero__container {
+	position: relative;
+	min-height: 100dvh;
+	display: flex;
+	align-items: center;
 }
 
-// ============================================================================
-// BACKGROUND LAYERS
-// ============================================================================
-
-.hero picture {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.hero__bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45); // fallback; overridden by inline style from Customizer
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero__glow {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    circle at center,
-    rgba(37, 99, 235, 0.35) 0%,
-    rgba(0, 0, 0, 0) 70%
-  );
-  z-index: 2;
-  pointer-events: none;
-}
-
-// ============================================================================
-// LAYOUT
-// ============================================================================
-
-.hero__container {
-  position: relative;
-  z-index: 5;
-  height: 100%;
-  display: flex;
-  align-items: flex-start; // move content up
-  justify-content: center;
-  padding-top: 18vh; // ← THIS controls vertical position
-}
-
-.hero__content {
-  max-width: 820px;
-  text-align: center;
-  padding: 0 1.5rem;
+.hero--home .hero__content {
+	width: 100%;
+	max-width: 45vw;
+	padding: 6rem 0 4rem;
 }
 
 // ============================================================================
-// TYPOGRAPHY
+// EYEBROW — leading horizontal rule via ::before (not in markup)
 // ============================================================================
 
-.hero__eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  // font-size: 0.75rem;
-  font-weight: 600;
-  opacity: 0.85;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
-}
+.hero--home .hero__eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.85rem;
 
-.hero__title {
-  font-weight: 800;
-  line-height: 1.05;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
-}
+	margin: 0 0 1.25rem;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--accent-color);
 
-.hero__lead {
-  // font-size: 1.05rem;
-  font-weight: 300;
-  margin-bottom: 3rem;
-  opacity: 0.9;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 2.5rem;
+		height: 2px;
+		background-color: var(--accent-color);
+	}
 }
 
 // ============================================================================
-// ACTIONS (FIXED STYLE — NOT THEMED)
+// HEADLINE
 // ============================================================================
 
-.hero__actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 2.5rem;
+.hero--home .hero__title {
+	margin: 0 0 1.75rem;
+	font-size: clamp(3rem, 6vw, 5.5rem);
+	font-weight: 900;
+	line-height: 1.02;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+	text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-.hero__actions .btn-primary {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  border: none;
-  padding: 0.85rem 2.25rem;
-  font-weight: 600;
-  border-radius: 999px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+.hero--home .hero__title-muted {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: inherit;
+	text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
-// .hero__actions .btn-outline {
-//   background-color: transparent;
-//   color: #ffffff;
-//   border: 2px solid rgba(255, 255, 255, 0.85);
-//   padding: 0.85rem 2.25rem;
-//   font-weight: 600;
-//   border-radius: 999px;
-// }
+// ============================================================================
+// LEAD
+// ============================================================================
 
-// .hero__actions .btn-outline:hover {
-//   background-color: rgba(255, 255, 255, 0.1);
-//   color: #111111 !important;
-// }
-
-/* ================================
-   HERO BADGES – STACKED TEXT
-================================ */
-
-.hero__badges {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 2.25rem;
-  flex-wrap: wrap;
+.hero--home .hero__lead {
+	max-width: 38rem;
+	margin: 0 0 2.25rem;
+	font-size: 1.05rem;
+	font-weight: 300;
+	line-height: 1.55;
+	color: rgba(255, 255, 255, 0.78);
 }
 
-/* Each badge */
-.badge-item {
-  display: flex;
-  align-items: center; /* centers icon against both lines */
-  gap: 0.75rem;
-  color: #fff;
+// ============================================================================
+// SINGLE CTA — relies on global .btn.btn-primary.btn-pill (see header note)
+// ============================================================================
+
+.hero--home .hero__actions {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
-/* Icon */
-.badge-item i {
-  // font-size: 1.1rem;
-  opacity: 0.9;
-}
-
-/* Text stack */
-.badge-content {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-/* Top line */
-.badge-content span {
-  font-size: inherit;
-  margin-bottom: .5rem;
-  font-weight: 400;
-  opacity: 0.8;
-}
-
-/* Bottom line */
-.badge-content strong {
-  font-size: inherit;
-  font-weight: 600;
-}
 // ============================================================================
 // RESPONSIVE
 // ============================================================================
 
+@media (max-width: 1024px) {
+	.hero--home .hero__content {
+		max-width: 60vw;
+	}
+}
+
 @media (max-width: 768px) {
-  .hero__container {
-    padding-top: 20vh;
-  }
+	.hero--home {
+		// Swap to mobile background image; gradient fades dark at the
+		// top (where content sits) and clears by mid-image so the photo
+		// stays visible below the copy.
+		background-image:
+			linear-gradient(
+				180deg,
+				rgba(0, 0, 0, 0.65) 0%,
+				rgba(0, 0, 0, 0.35) 35%,
+				rgba(0, 0, 0, 0) 70%
+			),
+			var(--hero-bg-mobile);
+		background-position: center;
+	}
 
-  .hero__title {
-    font-size: 2.25rem;
-  }
-  
+	.hero--home .hero__container {
+		align-items: flex-start;
+	}
+
+	.hero--home .hero__content {
+		max-width: 100%;
+		padding: 6rem 1rem 3rem;
+	}
+
+	.hero--home .hero__title {
+		font-size: clamp(2.5rem, 9vw, 3.5rem);
+	}
 }
-
-@media (max-width: 480px) {
-  .hero__badges {
-    gap: 1.5rem;
-  }
-}
-
-
-// -----------------------------------------------------------------------------
-// HARD LOCK HERO TYPOGRAPHY (OVERRIDE MOLLA DYNAMIC STYLE)
-// -----------------------------------------------------------------------------
-
-.hero {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span,
-  a {
-    color: #ffffff !important;
-  }
-}
-
-
-/* ================================
-   HERO BUTTONS – LOCKED STYLES
-================================ */
-
-.hero__actions {
-  display: flex;
-  gap: 1.25rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Base hero button */
-.hero__actions .btn {
-  padding: 0.9rem 2.75rem;
-  font-size: inherit;
-  font-weight: 600;
-  border-radius: 999px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  transition: all 0.25s ease;
-}
-
-/* Primary (Explore Models) */
-.hero__actions .btn-primary {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  border: 2px solid var(--accent-color);
-
-  &:hover {
-    filter: brightness(1.08);
-    transform: translateY(-1px);
-  }
-}
-
-/* Secondary Outline (Contact Sales) */
-.hero__actions .btn.btn-outline {
-  background-color: transparent;
-  color: #ffffff !important;
-  border: 2px solid rgba(255, 255, 255, 0.85) !important;
-
-  &:hover {
-    background-color: #ffffff !important;
-    border-color: #ffffff !important;
-    color: #111111 !important;
-  }
-}
-// .hero__actions .btn.btn-outline {
-  
-// }
