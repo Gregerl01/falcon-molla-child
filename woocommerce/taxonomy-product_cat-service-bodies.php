@@ -207,8 +207,8 @@ get_header(); ?>
                 </div>
 
                  <div class="accessory-item">
-                    <h4>Another one</h4>
-                    <p>Description goes here</p>
+                    <h4>Master Locking System</h4>
+                    <p>Single-key access secures all compartments at once, cutting downtime and eliminating the hassle of juggling multiple keys on the job.</p>
                 </div>
             </div>
             <div class="col-lg-7">
