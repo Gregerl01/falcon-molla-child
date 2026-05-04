@@ -207,9 +207,9 @@ get_header(); ?>
                     <p>Transport ladders, conduit, and oversized materials with adjustable tie points and reinforced crossbars.</p>
                 </div>
 
-                 <div class="accessory-item">
-                    <h3>Another one</h3>
-                    <p>Description goes here</p>
+                <div class="accessory-item">
+                    <h3>Master Locking System</h3>
+                    <p>Single-key access secures all compartments at once, cutting downtime and eliminating the hassle of juggling multiple keys on the job.</p>
                 </div>
             </div>
             <div class="col-lg-7">
