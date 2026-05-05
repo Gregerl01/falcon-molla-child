@@ -69,7 +69,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Heavy-Duty Structural Platform</h4>
+                <h3>Heavy-Duty Structural Platform</h3>
                 <p>Reinforced steel body construction engineered for equipment hauling and daily vocational use with concentrated equipment loads.</p>
               </div>
             </div>
@@ -77,7 +77,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Open Deck Design</h4>
+                <h3>Open Deck Design</h3>
                 <p>Large usable platform area for saws, support tools, and materials with easy multi-side loading and unloading.</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>LED Lighting System</h4>
+                <h3>LED Lighting System</h3>
                 <p>FMVSS-compliant LED lighting package with sealed wiring harness and protected electrical routing for jobsite durability.</p>
               </div>
             </div>
@@ -93,7 +93,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Corrosion-Resistant Finish</h4>
+                <h3>Corrosion-Resistant Finish</h3>
                 <p>Surface-prepped steel construction with durable finish system for long-term outdoor and roadwork environments.</p>
               </div>
             </div>
@@ -101,7 +101,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Chassis-Specific Integration</h4>
+                <h3>Chassis-Specific Integration</h3>
                 <p>Optimized mounting system for Class 4–7 chassis with stable load distribution and reduced frame stress.</p>
               </div>
             </div>
@@ -109,7 +109,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Commercial-Grade Electrical</h4>
+                <h3>Commercial-Grade Electrical</h3>
                 <p>Protected wiring harness with sealed connectors and commercial-grade electrical integration for reliable service.</p>
               </div>
             </div>
@@ -117,7 +117,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Multi-Side Access</h4>
+                <h3>Multi-Side Access</h3>
                 <p>Open platform design allows loading and unloading from multiple sides for efficient jobsite workflow.</p>
               </div>
             </div>
@@ -125,7 +125,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Durable Steel Construction</h4>
+                <h3>Durable Steel Construction</h3>
                 <p>Heavy-gauge steel body panels built to withstand daily impact, vibration, and demanding field conditions.</p>
               </div>
             </div>
@@ -155,28 +155,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Body Length</p>
-                    <h4>15' or 17' Body Length</h4>
+                    <h3>15' or 17' Body Length</h3>
                     <p class="text-muted mb-0">Compact SAW 15 for standard operations or expanded SAW 17 for higher-demand crew requirements.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Chassis</p>
-                    <h4>Chassis-Specific Mounting</h4>
+                    <h3>Chassis-Specific Mounting</h3>
                     <p class="text-muted mb-0">Configurations available for Class 4–7 chassis platforms with optimized load distribution.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Storage</p>
-                    <h4>Equipment Storage Integration</h4>
+                    <h3>Equipment Storage Integration</h3>
                     <p class="text-muted mb-0">Tool storage, equipment racks, holder systems, and configurable organization solutions.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Upgrades</p>
-                    <h4>Performance Upgrades</h4>
+                    <h3>Performance Upgrades</h3>
                     <p class="text-muted mb-0">Reinforced load zones, heavy-duty tie-down points, severe-duty finish upgrades, and auxiliary lighting.</p>
                 </div>
             </div>
@@ -194,22 +194,22 @@ get_header(); ?>
                 <h2>Saw Bodies Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Equipment Racks &amp; Holders</h4>
+                    <h3>Equipment Racks &amp; Holders</h3>
                     <p>Saw blade holders, tool racks, and equipment mounting systems for organized deck storage.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Tie-Down &amp; Securement</h4>
+                    <h3>Tie-Down &amp; Securement</h3>
                     <p>Heavy-duty tie-down points, ratchet strap anchors, and load securement hardware for equipment transport.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Auxiliary Lighting</h4>
+                    <h3>Auxiliary Lighting</h3>
                     <p>LED work lights, strobe beacons, and scene lighting for roadwork and low-visibility operations.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Underbody Storage</h4>
+                    <h3>Underbody Storage</h3>
                     <p>Steel or aluminum underbody toolboxes for blades, consumables, and support equipment.</p>
                 </div>
             </div>

@@ -69,7 +69,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Integrated Gooseneck Hitch</h4>
+                <h3>Integrated Gooseneck Hitch</h3>
                 <p>Fully integrated hitch plate tied into the body structure — rated up to 30,000 lbs with engineered load path to reduce frame stress.</p>
               </div>
             </div>
@@ -77,7 +77,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Heavy-Duty Steel Platform</h4>
+                <h3>Heavy-Duty Steel Platform</h3>
                 <p>4–6 inch structural channel main rails with 3-inch crossmembers and 1/8-inch treadplate anti-slip deck.</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Skirted Storage Option</h4>
+                <h3>Skirted Storage Option</h3>
                 <p>SG Series features integrated side skirting with front vertical, mid horizontal, and rear compartments with 3-point compression latches.</p>
               </div>
             </div>
@@ -93,7 +93,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>LED Lighting &amp; Trailer Wiring</h4>
+                <h3>LED Lighting &amp; Trailer Wiring</h3>
                 <p>Sealed LED stop/turn/tail lights with DOT-compliant markers and integrated trailer wiring connections.</p>
               </div>
             </div>
@@ -101,7 +101,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Full-Length Rub Rails</h4>
+                <h3>Full-Length Rub Rails</h3>
                 <p>Continuous rub rails with stake pockets and multiple tie-down points for secure load management.</p>
               </div>
             </div>
@@ -109,7 +109,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Welded Steel Headache Rack</h4>
+                <h3>Welded Steel Headache Rack</h3>
                 <p>Fully welded steel bulkhead provides cab protection and structural reinforcement behind the cab.</p>
               </div>
             </div>
@@ -117,7 +117,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Powder Coat Finish</h4>
+                <h3>Powder Coat Finish</h3>
                 <p>Multi-stage surface prep with powder coat finish and optional epoxy primer for severe environments.</p>
               </div>
             </div>
@@ -125,7 +125,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Anti-Slip Treadplate Deck</h4>
+                <h3>Anti-Slip Treadplate Deck</h3>
                 <p>1/8-inch treadplate steel standard with 3/16-inch heavy-duty option for safe loading and unloading.</p>
               </div>
             </div>
@@ -155,28 +155,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Body Style</p>
-                    <h4>Standard or Skirted Design</h4>
+                    <h3>Standard or Skirted Design</h3>
                     <p class="text-muted mb-0">Open deck GN Series for maximum usable space or SG Series with enclosed skirted storage.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Chassis</p>
-                    <h4>SRW &amp; DRW Configurations</h4>
+                    <h3>SRW &amp; DRW Configurations</h3>
                     <p class="text-muted mb-0">Available for single rear wheel and dual rear wheel chassis from 42CA to 84CA.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Class</p>
-                    <h4>Medium-Duty Capability</h4>
+                    <h3>Medium-Duty Capability</h3>
                     <p class="text-muted mb-0">GN9MD, GN11MD, SG9MD, and SG11MD models designed for 4500–6500 class chassis.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Upgrades</p>
-                    <h4>Performance Upgrades</h4>
+                    <h3>Performance Upgrades</h3>
                     <p class="text-muted mb-0">3/16-inch heavy-duty deck, reinforced hitch structure, severe-duty subframe, and aluminum deck options.</p>
                 </div>
             </div>
@@ -194,22 +194,22 @@ get_header(); ?>
                 <h2>Hauler Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Stake Sides &amp; Removable Rails</h4>
+                    <h3>Stake Sides &amp; Removable Rails</h3>
                     <p>Bolt-on stake sides and removable rail systems for securing oversized loads, lumber, and equipment.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Underbody Toolboxes</h4>
+                    <h3>Underbody Toolboxes</h3>
                     <p>Steel or aluminum underbody storage boxes for chains, straps, and towing accessories.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Bumper Pull Hitch</h4>
+                    <h3>Bumper Pull Hitch</h3>
                     <p>Integrated receiver hitch option in addition to the gooseneck for dual towing capability.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Work Lights &amp; Beacon Prep</h4>
+                    <h3>Work Lights &amp; Beacon Prep</h3>
                     <p>Auxiliary LED work lights, strobe beacon mounts, and additional marker lighting for visibility.</p>
                 </div>
             </div>

@@ -69,7 +69,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Heavy-Duty Structural Design</h4>
+                <h3>Heavy-Duty Structural Design</h3>
                 <p>Reinforced long sills and crossmember system engineered for high-cycle loading and unloading with high-strength structural steel.</p>
               </div>
             </div>
@@ -77,7 +77,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>High-Strength Floor Construction</h4>
+                <h3>High-Strength Floor Construction</h3>
                 <p>Steel floor options from 10 ga to AR450 with corrugated or smooth sidewall configurations for durability and material flow.</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Hoist System Integration</h4>
+                <h3>Hoist System Integration</h3>
                 <p>PTO-driven hydraulic systems with underbody or telescopic hoist configurations rated to exceed payload capacity.</p>
               </div>
             </div>
@@ -93,7 +93,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Double-Acting Tailgate</h4>
+                <h3>Double-Acting Tailgate</h3>
                 <p>Top hinge and spreader configurations with heavy-duty hinge pins and chain retention for controlled material discharge.</p>
               </div>
             </div>
@@ -101,7 +101,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Epoxy + Polyurethane Finish</h4>
+                <h3>Epoxy + Polyurethane Finish</h3>
                 <p>Commercial blast prep with epoxy primer and polyurethane topcoat for corrosion resistance in abrasive environments.</p>
               </div>
             </div>
@@ -109,7 +109,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>FMVSS LED Lighting</h4>
+                <h3>FMVSS LED Lighting</h3>
                 <p>FMVSS-compliant LED lighting with sealed wiring harness for visibility and regulatory compliance.</p>
               </div>
             </div>
@@ -117,7 +117,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Class 3–8 Chassis Coverage</h4>
+                <h3>Class 3–8 Chassis Coverage</h3>
                 <p>From light commercial corrugated bodies to severe-duty AR steel platforms across the full commercial chassis range.</p>
               </div>
             </div>
@@ -125,7 +125,7 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Tarp &amp; Accessory Ready</h4>
+                <h3>Tarp &amp; Accessory Ready</h3>
                 <p>Pre-drilled mounting provisions for manual or electric tarp systems, cab shields, and auxiliary equipment.</p>
               </div>
             </div>
@@ -155,28 +155,28 @@ get_header(); ?>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Series</p>
-                    <h4>Four Body Series</h4>
+                    <h3>Four Body Series</h3>
                     <p class="text-muted mb-0">XC utility, Pro contractor, HD severe-duty, and M-Series municipal — covering light-duty to extreme applications.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Material</p>
-                    <h4>Corrugated or AR Steel</h4>
+                    <h3>Corrugated or AR Steel</h3>
                     <p class="text-muted mb-0">Corrugated steel for lightweight payload efficiency or AR450 abrasion-resistant steel for aggregate and demolition.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Design</p>
-                    <h4>Elliptical or Square Design</h4>
+                    <h3>Elliptical or Square Design</h3>
                     <p class="text-muted mb-0">Elliptical smooth-wall for superior material flow or square-body for maximum capacity and bulky material.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
                     <p class="option-type">Fleet</p>
-                    <h4>Municipal &amp; Fleet Packages</h4>
+                    <h3>Municipal &amp; Fleet Packages</h3>
                     <p class="text-muted mb-0">Plow and spreader prep, lift axle integration, backup cameras, body-up indicators, and tarp systems.</p>
                 </div>
             </div>
@@ -194,22 +194,22 @@ get_header(); ?>
                 <h2>Dump Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Cab Shield</h4>
+                    <h3>Cab Shield</h3>
                     <p>Steel cab protector guard to prevent load damage during dumping operations.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Pintle Hook & Hitch</h4>
+                    <h3>Pintle Hook & Hitch</h3>
                     <p>Heavy-duty towing provisions for trailer and equipment hauling between jobsites.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Underbody Toolboxes</h4>
+                    <h3>Underbody Toolboxes</h3>
                     <p>Lockable underbody storage boxes for tools, chains, and tie-down equipment.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Custom Paint & Markings</h4>
+                    <h3>Custom Paint & Markings</h3>
                     <p>Fleet branding, DOT markings, and custom color options.</p>
                 </div>
             </div>
