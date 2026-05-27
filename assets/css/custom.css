@@ -7292,7 +7292,7 @@ a.btn.btn-secondary:focus {
 }
 
 .chb-hero .container .row {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 /* =================================================
