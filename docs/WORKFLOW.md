@@ -1,180 +1,35 @@
-# Falcon Truck Bodies – Development & Deployment Workflow
+# Falcon Truck Bodies — Workflow (Authoritative)
 
-This document defines the **official workflow** for developing, staging, and deploying the Falcon Truck Bodies website.  
-It exists to prevent mistakes, reduce friction, and ensure consistency across environments.
+Two environments. Local and Live. Staging is retired; ignore stg.falconbodies.com.
 
-All contributors, tools, and AI assistants must follow this workflow unless explicitly approved otherwise.
+## Where code lives
+- **Local** (your Mac): where you build and test. falconlocaldev2026v2.local
+- **GitHub `dev`**: always-current backup and source of truth for code.
+- **Live** (falconbodies.com): the public site. Changes only on purpose.
 
----
+## The build-and-deploy loop (every change)
+1. Work on `dev`, locally. Test on the local site until it looks right.
+2. If you touched SCSS, run `npm run sass` to rebuild the CSS.
+3. Save it up: `git add <specific files>`, `git commit -m "what changed"`, `git push origin dev`.
+4. To publish to live: merge `dev` into `main` and push. The pipeline deploys the whole theme at once. Then purge LiteSpeed cache and check live in incognito.
 
-## 🎯 Project Goals
+## Hard rules (these prevent the disasters that have already happened)
+- **Never use AIO (All-in-One WP Migration) to move code.** AIO overwrites the hidden `.git` folder and scrambles history. This caused the May reconciliation mess. AIO is content-only, live → local only, and even then see the safe-pull section below.
+- **Deploy to live only by merging to `main`.** Never hand-SCP files to live except a true emergency hotfix, and if you do, immediately commit the same fix to `dev` so they don't drift.
+- **Code lives in Git. Content lives in WordPress.** Pages, products, menus, plugin settings, and page-builder sections (like #about-us) are edited on live and never pushed up from local.
+- **Stage files by name, never `git add -A`.** (The one exception was the one-time full snapshot during reconciliation.)
+- Keep `_save-*.php`, `_fix-*.php`, `_*-meta.json` gitignored. They're import scratch, never committed.
 
-- Maintain a stable production site at all times
-- Use staging as the review and approval environment
-- Use Git for **code**, not database/content
-- Avoid daily full-site migrations
-- Enable fast, safe CSS/JS/template updates
-- Minimize busywork and risk
+## Getting data between environments without breaking things
+Three kinds of data, three different pipes. Using the wrong pipe is what broke things before.
 
----
+1. **Theme code** (PHP, SCSS, CSS, JS, templates) → **Git only.** Never AIO, never SCP-by-hand.
+2. **Simple product content** (titles, prices, basic fields, categories) → **WooCommerce CSV export/import.** On live: Products → Export. On local: Products → Import. Touches only the database, never the theme or git. Note: product images may not come through the CSV; copy any missing image into the local media library by hand.
+3. **Configuration tab JSON / complex structured data** → **never CSV, never spreadsheet.** A spreadsheet import mangles the JSON and destroys the tab data (this is what started the May breakage). Instead use the per-product `.json` files + `_save-all-meta.php` save-script, run once per environment against that environment's post IDs. See falcon-product-import-SKILL.md for the post-ID tables and the exact steps.
 
-## 🌎 Environments
+### Worked example: "I added products on live, I need them on local to style"
+- DO: WooCommerce CSV export on live → CSV import on local for the simple fields. Then run the save-script locally to populate the configuration JSON for those products. Copy any missing product images by hand.
+- DON'T: pull the whole site down with AIO to get a few products. That's what wrecked git.
 
-### 1) Local Development
-- Local WordPress environment
-- VS Code for all code edits
-- NPM used locally for asset compilation
-- No production credentials
-- Used for development and experimentation
-
-### 2) Staging
-- Domain: `stg.falconbodies.com`
-- Hosted on Hostinger
-- Mirrors production structure
-- Used for:
-  - Team review
-  - Client approval
-  - Pre-production validation
-
-### 3) Production
-- Domain: `falconbodies.com`
-- Must remain stable
-- Changes only applied after staging approval
-
----
-
-## 🧱 Code vs Database Separation (Critical Rule)
-
-### A) Code (Git-controlled, auto-deployed)
-
-Stored in the **child theme repository** and deployed automatically:
-
-- PHP templates
-- Template parts
-- functions.php
-- WooCommerce overrides
-- SCSS / CSS
-- JavaScript
-- Theme assets (icons, SVGs, UI images)
-- Compiled build output (`assets/css/`)
-
-Git is the **source of truth** for all of the above.
-
----
-
-### B) Database / Content (NOT in Git)
-
-Handled intentionally via WordPress tools:
-
-- Page/post content
-- Menus
-- Widget placement
-- Plugin settings
-- Media Library uploads
-- Theme options stored in DB
-
-These are **not** deployed via Git.
-
----
-
-## 🔁 Deployment Strategy
-
-### Git Branching
-- `main` → auto-deploys to **production — not yet wired**
-- `staging` → auto-deploys to **staging** (active)
-
-> Note: The `staging` branch upstream was set with `git push --set-upstream origin staging`. This only needs to be done once per clone.
-
-### Deployment Method
-- GitHub Actions
-- SSH + rsync
-- Only the child theme is synced:
-- No WordPress core files, plugins, or uploads directories are deployed via Git
-
-### Exclusions
-- `node_modules/`
-- `.env`
-- logs (e.g. `*.log`, `/logs/`, `/storage/logs/`)
-- OS files (e.g. `.DS_Store`, `Thumbs.db`)
-
-### Build Process
-- `npm run sass` → compiles SCSS to CSS (`assets/scss/custom.scss` → `assets/css/custom.css`)
-- `npm run watch` → watch mode with `sass --watch` and `--load-path`
-- `npm run dev` → BrowserSync proxy to LocalWP for live reload
-- Built assets **are committed** and deployed (`assets/css/`)
-- Hostinger does **not** run NPM builds (server receives compiled output only)
-
----
-
-## 🧩 Plugin Management Workflow
-
-Plugins are **not** deployed via Git.
-
-### Adding a Plugin (Example: Dealer Locator)
-
-Preferred approach:
-- Install/configure on **staging** first (closest to production), unless local is required for development/testing.
-
-Process:
-1. Install and configure on **staging** (or local if needed)
-2. Test functionality on staging
-3. Promote to production after approval:
-   - Install same plugin + version
-   - Reapply settings manually or via plugin export/import (if supported)
-   - Create/import any required pages/shortcodes/widgets
-
-Git is only used for:
-- Theme integration
-- CSS/JS overrides
-- Template wrappers
-- Shortcode helpers
-
----
-
-## 🖼️ Images & Media
-
-### Git should contain (theme assets only):
-- Theme icons
-- SVGs
-- UI graphics
-- Decorative assets referenced by templates/CSS
-
-### Git should NOT contain (content media):
-- Media Library uploads
-- Content images (hero photos, galleries, blog images)
-- Customer/client-provided photos intended for Media Library
-
-Media moves via:
-- All-in-One WP Migration (intentional)
-- WP Export/Import (pages + attachments when needed)
-- Manual Media Library uploads (small changes)
-
----
-
-## 🔄 Migration Strategy
-
-### Used For:
-- Initial environment setup
-- Large content changes
-- Structural DB changes
-- Production cutover
-
-### Not Used For:
-- Daily CSS changes
-- Template updates
-- Small content edits
-
-### Preferred Tools:
-- All-in-One WP Migration
-- WordPress Export/Import (pages only, when applicable)
-- Plugin-specific export tools (when available)
-
----
-
-## 🧪 Release Checklist (Staging → Production)
-
-Before production deploy:
-- [ ] Code merged into `dev`
-- [ ] Staging auto-deploy succeeds (production deploy is manual until GitHub Actions is wired for main)
-- [ ] Cache cleared (LiteSpeed / theme cache)
-- [ ] Smoke test: Home, key category page(s), contact form, mobile navigation
+## If you ever genuinely must use AIO
+Back up the `.git` folder first, run the AIO import, then restore the `.git` folder over the top. Last resort only. Prefer the methods above.
