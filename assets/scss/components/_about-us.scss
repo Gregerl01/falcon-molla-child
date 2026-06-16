@@ -1,0 +1,20 @@
+
+/*--------------------------------------------------------------
+# About Us Section (homepage)
+# Markup lives in the page-builder/DB. These rules override the
+# inline image stretch and add responsive type, scoped to #about-us.
+--------------------------------------------------------------*/
+
+#about-us .image-frame img {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
+
+/* responsive type — shrinks on smaller viewports, holds size on desktop */
+#about-us h2 { font-size: clamp(1.75rem, 1.55rem + 0.87vw, 2.25rem); line-height: 1.1; }
+#about-us h5 { font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem); }
+#about-us .benefit-content h4 { font-size: clamp(1.0625rem, 0.99rem + 0.33vw, 1.25rem); }
+#about-us p { font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem); line-height: 1.6; }

@@ -105,10 +105,28 @@
 }
 
 
+// Override WooCommerce's woocommerce-layout.css legacy float rule.
+// WC ships: .woocommerce #content div.product div.summary { width: 48%; float: right }
+// Molla wraps .summary and .images in Bootstrap .col-md-6, so the 48% computes
+// against the col (586px) instead of .product (1151px), shrinking elements to ~271px.
+// Bootstrap col already handles the columnar layout, so we override WC's rule
+// to make .summary and .images fill their col-md-6 parent.
+// !important is required because WC's selector has specificity (1,3,2) via #content.
+.woocommerce div.product {
+  div.summary,
+  div.images,
+  .woocommerce-product-gallery {
+    width: 100% !important;
+    float: none !important;
+    max-width: 100% !important;
+  }
+}
+
+
 // Product gallery
 .woocommerce-product-gallery {
   a:before {
-    border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important; 
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important;
   }
 }
 
@@ -197,4 +215,12 @@
     margin-bottom: 3px !important;
   }
 
+}
+
+
+// Hide thumbnail strip when there's only one product image.
+// Molla wraps thumbnails in .thumbnails-wrap > .thumbnails-outer > .product-thumb.
+// :has() lets us hide the wrap conditionally without PHP changes.
+.thumbnails-wrap:has(.product-thumb:only-child) {
+  display: none !important;
 }
