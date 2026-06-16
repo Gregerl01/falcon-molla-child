@@ -42,7 +42,7 @@
 					Contact Sales
 				</a>
 			</div> -->
-			<div class="d-flex justify-content-center flex-wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="350">
+			<div class="d-flex justify-content-center flex-wrap" data-aos="fade-up" data-aos-delay="350">
 				<a href="#services" class="btn btn-primary btn-pill px-3 py-3 fw-bold shadow-lg rounded mr-3 mb-3">
 					Explore Models
 				</a>

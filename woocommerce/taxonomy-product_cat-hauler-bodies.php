@@ -24,9 +24,9 @@ get_header(); ?>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Placeholder Headline for Hauler Body Introduction</h2>
-                <p class="lead">Placeholder description highlighting the primary benefits of Falcon Hauler Bodies. Emphasize heavy-duty transport capacity, rugged construction, and versatility for equipment and material hauling.</p>
-                <p>Placeholder supporting paragraph describing chassis compatibility, industry applications, and overall value proposition. Mention payload capacity, tie-down systems, and professional-grade construction quality.</p>
+                <h2 class="h3 fw-bold mb-4">Gooseneck &amp; Skirted Hauling Solutions — Engineered for Maximum Towing Performance.</h2>
+                <p class="lead">Falcon Hauler Bodies are engineered for high-capacity towing, equipment transport, and commercial hauling applications. Built around integrated gooseneck hitch systems and reinforced structural platforms, they deliver the strength, stability, and reliability required for demanding jobsite and over-the-road use.</p>
+                <p>Available in standard open-deck and skirted configurations for SRW and DRW chassis, Falcon hauler bodies prioritize payload efficiency, structural integrity, and real-world performance for hotshot, contractor, agriculture, and fleet operations.</p>
             </div>
             <div class="col-lg-6">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hauler-body-intro.webp" alt="Falcon Hauler Body" class="img-fluid rounded">
@@ -61,7 +61,7 @@ get_header(); ?>
 
           <!-- Headings -->
           <h5>Falcon Standard Features</h5>
-          <h2>Placeholder Headline for Standard Features Section.</h2>
+          <h2>Built for Serious Towing.</h2>
 
           <!-- FEATURES GRID -->
           <div class="features-grid">
@@ -69,64 +69,64 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Placeholder Feature One</h4>
-                <p>Placeholder description for the first standard feature included with Hauler Bodies.</p>
+                <h3>Integrated Gooseneck Hitch</h3>
+                <p>Fully integrated hitch plate tied into the body structure — rated up to 30,000 lbs with engineered load path to reduce frame stress.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Two</h4>
-                <p>Placeholder description for the second standard feature highlighting deck construction or materials.</p>
+                <h3>Heavy-Duty Steel Platform</h3>
+                <p>4–6 inch structural channel main rails with 3-inch crossmembers and 1/8-inch treadplate anti-slip deck.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Three</h4>
-                <p>Placeholder description for the third standard feature related to tie-down points or stake pockets.</p>
+                <h3>Skirted Storage Option</h3>
+                <p>SG Series features integrated side skirting with front vertical, mid horizontal, and rear compartments with 3-point compression latches.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Four</h4>
-                <p>Placeholder description for the fourth standard feature such as side rails or rub rails.</p>
+                <h3>LED Lighting &amp; Trailer Wiring</h3>
+                <p>Sealed LED stop/turn/tail lights with DOT-compliant markers and integrated trailer wiring connections.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Five</h4>
-                <p>Placeholder description for the fifth standard feature like finish or corrosion protection.</p>
+                <h3>Full-Length Rub Rails</h3>
+                <p>Continuous rub rails with stake pockets and multiple tie-down points for secure load management.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Six</h4>
-                <p>Placeholder description for the sixth standard feature covering lighting or electrical.</p>
+                <h3>Welded Steel Headache Rack</h3>
+                <p>Fully welded steel bulkhead provides cab protection and structural reinforcement behind the cab.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Seven</h4>
-                <p>Placeholder description for the seventh standard feature such as bumper or hitch options.</p>
+                <h3>Powder Coat Finish</h3>
+                <p>Multi-stage surface prep with powder coat finish and optional epoxy primer for severe environments.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Eight</h4>
-                <p>Placeholder description for the eighth standard feature.</p>
+                <h3>Anti-Slip Treadplate Deck</h3>
+                <p>1/8-inch treadplate steel standard with 3/16-inch heavy-duty option for safe loading and unloading.</p>
               </div>
             </div>
 
@@ -146,38 +146,38 @@ get_header(); ?>
         <div class="row mb-5">
             <div class="col-lg-8">
                 <h5>Hauler Body Options</h5>
-                <h2>Placeholder Headline for Configuration Options</h2>
-                <p class="text-muted">Placeholder description explaining the available configurations, bed lengths, and optional upgrades for Hauler Bodies.</p>
+                <h2>Configure Your Hauler.</h2>
+                <p class="text-muted">Choose between open-deck and skirted platforms, select your chassis configuration, and add performance upgrades to match your operation.</p>
             </div>
         </div>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option One</h4>
-                    <p class="text-muted mb-0">Placeholder description for the first configuration option available.</p>
+                    <p class="option-type">Body Style</p>
+                    <h3>Standard or Skirted Design</h3>
+                    <p class="text-muted mb-0">Open deck GN Series for maximum usable space or SG Series with enclosed skirted storage.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Two</h4>
-                    <p class="text-muted mb-0">Placeholder description for the second configuration option available.</p>
+                    <p class="option-type">Chassis</p>
+                    <h3>SRW &amp; DRW Configurations</h3>
+                    <p class="text-muted mb-0">Available for single rear wheel and dual rear wheel chassis from 42CA to 84CA.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Three</h4>
-                    <p class="text-muted mb-0">Placeholder description for the third configuration option available.</p>
+                    <p class="option-type">Class</p>
+                    <h3>Medium-Duty Capability</h3>
+                    <p class="text-muted mb-0">GN9MD, GN11MD, SG9MD, and SG11MD models designed for 4500–6500 class chassis.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Four</h4>
-                    <p class="text-muted mb-0">Placeholder description for the fourth configuration option available.</p>
+                    <p class="option-type">Upgrades</p>
+                    <h3>Performance Upgrades</h3>
+                    <p class="text-muted mb-0">3/16-inch heavy-duty deck, reinforced hitch structure, severe-duty subframe, and aluminum deck options.</p>
                 </div>
             </div>
         </div>
@@ -190,27 +190,27 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h5>Placeholder Tagline for Accessories Section.</h5>
+                <h5>Add What You Need.</h5>
                 <h2>Hauler Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Accessory One</h4>
-                    <p>Placeholder description for the first accessory option such as stake sides or removable rails.</p>
+                    <h3>Stake Sides &amp; Removable Rails</h3>
+                    <p>Bolt-on stake sides and removable rail systems for securing oversized loads, lumber, and equipment.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Two</h4>
-                    <p>Placeholder description for the second accessory option such as toolboxes or underbody storage.</p>
+                    <h3>Underbody Toolboxes</h3>
+                    <p>Steel or aluminum underbody storage boxes for chains, straps, and towing accessories.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Three</h4>
-                    <p>Placeholder description for the third accessory option such as gooseneck hitches or towing equipment.</p>
+                    <h3>Bumper Pull Hitch</h3>
+                    <p>Integrated receiver hitch option in addition to the gooseneck for dual towing capability.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Four</h4>
-                    <p>Placeholder description for the fourth accessory option.</p>
+                    <h3>Work Lights &amp; Beacon Prep</h3>
+                    <p>Auxiliary LED work lights, strobe beacon mounts, and additional marker lighting for visibility.</p>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -237,11 +237,11 @@ get_header(); ?>
 
 <!-- Product List -->
 <section id="product-line" class="hb-products section">
-    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <h2 class="mb-3">Hauler Body Line Up</h2>
-                <p class="mb-8">Placeholder description for the product lineup section highlighting available models.</p>
+                <p class="mb-8">Open-deck and skirted gooseneck platforms engineered for high-capacity towing across SRW, DRW, and medium-duty chassis.</p>
             </div>
         </div>
     </div>
@@ -260,22 +260,25 @@ get_header(); ?>
             $bg_class = $is_even ? 'bg-dark-section' : 'bg-light';
     ?>
 
-    <div class="product-list-item section <?php echo $bg_class; ?>">
-        <div class="container">
-            <div class="row align-items-center">
+        <div class="product-list-item section <?php echo esc_attr($bg_class); ?>">
+            <div class="row g-0 align-items-stretch overflow-hidden max-w-1500 mx-auto">
+
                 <!-- Product Image -->
-                <div class="col-lg-6 <?php echo $image_order; ?> mb-4 mb-lg-0">
-                    <a href="<?php the_permalink(); ?>">
-                        <?php if ( has_post_thumbnail() ) : ?>
-                            <?php the_post_thumbnail('large', ['class' => 'img-fluid rounded']); ?>
-                        <?php else : ?>
-                            <img src="<?php echo wc_placeholder_img_src('large'); ?>" alt="<?php the_title(); ?>" class="img-fluid rounded">
-                        <?php endif; ?>
-                    </a>
+                <div class="col-lg-6 p-0 d-flex <?php echo esc_attr($image_order); ?>" data-aos-delay="200" data-aos="fade-right">
+                    <div class="image-frame w-100">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <?php the_post_thumbnail('full', ['class' => 'img-fluid w-100']); ?>
+                            <?php else : ?>
+                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php the_title(); ?>" class="img-fluid w-100">
+                            <?php endif; ?>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Product Content -->
-                <div class="col-lg-6 <?php echo $content_order; ?>">
+                <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
+                    <div class="feature-content-wrap">
                     <h2 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
@@ -314,10 +317,12 @@ get_header(); ?>
                     <?php endif; ?>
 
                     <a href="<?php the_permalink(); ?>" class="btn btn-primary">Learn More</a>
+
+                    </div>
                 </div>
+
             </div>
         </div>
-    </div>
 
     <?php
         endwhile;
@@ -337,8 +342,8 @@ get_header(); ?>
 <section class="hb-cta section">
     <div class="container">
         <div class="hb-cta-wrapper surface--subtle">
-            <h3>Placeholder CTA Headline for Hauler Bodies</h3>
-            <p class="mb-4">Placeholder call-to-action description encouraging visitors to request a quote or contact sales.</p>
+            <h3>Ready to Haul?</h3>
+            <p class="mb-4">Explore the full Falcon Hauler Bodies lineup and find the right configuration for your fleet.</p>
             <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
     </div>

@@ -3,7 +3,7 @@
 // ============================================================================
 
 .product-list-item {
-  
+
   .product-description {
     color: var(--contrast-color) !important;
     font-size: 1.25rem;
@@ -79,5 +79,35 @@
     color: #adb5bd;
     margin-top: 0;
     padding-top: 0;
+  }
+}
+
+// Showcase page only — scoped styles
+.falcon-bodies-showcase .product-list-item.is-reversed .row {
+  flex-direction: row-reverse !important;
+}
+
+.falcon-bodies-showcase .product-list-item {
+  .image-frame img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .feature-content-wrap {
+    padding: 3rem 2.5rem;
+
+    @media (max-width: 991.98px) {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  &.bg-dark-section {
+    background: var(--surface-1) !important;
+  }
+
+  &.bg-light {
+    background: var(--section-primary) !important;
   }
 }

@@ -2,3 +2,8 @@
 node_modules/
 *.log
 .env
+
+# Product import temp files
+_save-*.php
+_fix-*.php
+_*-meta.json

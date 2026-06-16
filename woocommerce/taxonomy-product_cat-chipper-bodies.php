@@ -24,12 +24,12 @@ get_header(); ?>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Placeholder Headline for Chipper Body Introduction</h2>
-                <p class="lead">Placeholder description highlighting the primary benefits of Falcon Chipper Bodies. Emphasize high-capacity chip boxes, rugged construction, and seamless integration with wood chippers.</p>
-                <p>Placeholder supporting paragraph describing chassis compatibility, industry applications, and overall value proposition. Mention dump functionality, load capacity, and professional-grade construction quality.</p>
+                <h2 class="h3 fw-bold mb-4">Built for Tree Care, Storm Response, and Municipal Debris Crews</h2>
+                <p class="lead">Falcon Chipper Bodies are engineered for arborists, landscaping contractors, municipalities, and storm response crews who depend on reliable debris hauling day in and day out. Heavy-duty galvanneal steel construction and reinforced structural framing stand up to the demanding work of tree service, brush hauling, and municipal cleanup.</p>
+                <p>Designed for Class 6–8 commercial chassis, the Falcon chipper platform combines high-capacity debris storage, integrated tool storage, and durable steel construction in one purpose-built package. Whether you're managing forestry contracts, running storm cleanup, or maintaining utility vegetation programs, these bodies deliver the load capacity and operational efficiency professional crews demand.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-intro.webp" alt="Falcon Chipper Body" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-intro.webp" alt="Falcon Chipper Body" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -50,6 +50,7 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-features.webp"
             alt="Chipper Body Features"
+            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -61,7 +62,7 @@ get_header(); ?>
 
           <!-- Headings -->
           <h5>Falcon Standard Features</h5>
-          <h2>Placeholder Headline for Standard Features Section.</h2>
+          <h2>Engineered for the Work, Equipped for the Long Haul.</h2>
 
           <!-- FEATURES GRID -->
           <div class="features-grid">
@@ -69,64 +70,64 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Placeholder Feature One</h4>
-                <p>Placeholder description for the first standard feature included with Chipper Bodies.</p>
+                <h3>Heavy-Duty Galvanneal Steel Body</h3>
+                <p>12-gauge A40 galvanneal steel body structure with a 12-gauge galvanneal floor and 14-gauge top covers — built to take the abuse of daily debris hauling.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Two</h4>
-                <p>Placeholder description for the second standard feature highlighting dump mechanism or hydraulics.</p>
+                <h3>Reinforced Steel Channel Frame</h3>
+                <p>10-gauge formed carbon steel frame with 6" structural channel supports and 4" cross-channel reinforcement, plus weld bead reinforcement throughout the subframe.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Three</h4>
-                <p>Placeholder description for the third standard feature related to chip box capacity or construction.</p>
+                <h3>High-Capacity Debris Containment</h3>
+                <p>144" body length, 97.5" wide, 80" tall — providing 13 to 20 cubic yards of enclosed cargo volume depending on configuration.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Four</h4>
-                <p>Placeholder description for the fourth standard feature such as tailgate design or latching.</p>
+                <h3>Swing-to-Curbside Tailgate</h3>
+                <p>Cam-style latch system with lift-off hinge design provides secure containment during transport and easy maintenance access when service is needed.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Five</h4>
-                <p>Placeholder description for the fifth standard feature like finish or corrosion protection.</p>
+                <h3>Premium Tiger® White Powder Coat</h3>
+                <p>Corrosion-resistant galvanneal steel construction finished in premium Tiger® White powder coat for long-term durability in harsh field conditions.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Six</h4>
-                <p>Placeholder description for the sixth standard feature covering lighting or electrical.</p>
+                <h3>Complete LED Lighting Package</h3>
+                <p>Seven round red stop/turn/tail lights, four amber marker lights, three red LED markers, plus a full LED lighting kit with strobe capability for jobsite and roadside safety.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Seven</h4>
-                <p>Placeholder description for the seventh standard feature such as bumper or hitch options.</p>
+                <h3>Integrated Side Tool Compartments</h3>
+                <p>Forward side-access compartments built into the body — secure storage for chainsaws, climbing ropes, rigging gear, and crew safety equipment without sacrificing cargo space.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Eight</h4>
-                <p>Placeholder description for the eighth standard feature.</p>
+                <h3>Interior Wall Lining</h3>
+                <p>Protective interior lining shields body walls from debris impact and abrasion, extending body life and preserving structural integrity through years of heavy use.</p>
               </div>
             </div>
 
@@ -146,38 +147,38 @@ get_header(); ?>
         <div class="row mb-5">
             <div class="col-lg-8">
                 <h5>Chipper Body Options</h5>
-                <h2>Placeholder Headline for Configuration Options</h2>
-                <p class="text-muted">Placeholder description explaining the available configurations, box sizes, and optional upgrades for Chipper Bodies.</p>
+                <h2>Configuration Specifications</h2>
+                <p class="text-muted">Falcon chipper bodies are spec'd to balance high-capacity debris hauling with safe weight distribution on commercial chassis platforms.</p>
             </div>
         </div>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option One</h4>
-                    <p class="text-muted mb-0">Placeholder description for the first configuration option available.</p>
+                    <p class="option-type">Body Dimensions</p>
+                    <h3>144" Length × 97.5" Wide</h3>
+                    <p class="text-muted mb-0">Twelve feet of debris body length with a 97.5" overall width — a large enclosed cargo footprint engineered for commercial chipper operations.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Two</h4>
-                    <p class="text-muted mb-0">Placeholder description for the second configuration option available.</p>
+                    <p class="option-type">Cargo Volume</p>
+                    <h3>13 to 20 Cubic Yards</h3>
+                    <p class="text-muted mb-0">Load volume scales with height configuration, giving crews capacity to handle full-day chipping operations between dump trips.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Three</h4>
-                    <p class="text-muted mb-0">Placeholder description for the third configuration option available.</p>
+                    <p class="option-type">Tool Storage</p>
+                    <h3>Side-Access Compartments</h3>
+                    <p class="text-muted mb-0">Streetside and curbside compartments with clear door openings up to 46" × 22" — sized for chainsaws, fuel cans, and rigging equipment.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Four</h4>
-                    <p class="text-muted mb-0">Placeholder description for the fourth configuration option available.</p>
+                    <p class="option-type">Chassis Compatibility</p>
+                    <h3>Class 6–8 Cab Chassis</h3>
+                    <p class="text-muted mb-0">Designed for dual rear wheel commercial chassis platforms with a minimum 19,500 GVWR — matched to the demands of heavy debris hauling.</p>
                 </div>
             </div>
         </div>
@@ -190,42 +191,42 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h5>Placeholder Tagline for Accessories Section.</h5>
+                <h5>Outfit Your Body for the Job</h5>
                 <h2>Chipper Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Accessory One</h4>
-                    <p>Placeholder description for the first accessory option such as tool compartments or underbody boxes.</p>
+                    <h3>LED Strobe Lighting Kit</h3>
+                    <p>Full LED lighting package with strobe capability — essential visibility for roadside debris removal, storm cleanup, and night operations.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Two</h4>
-                    <p>Placeholder description for the second accessory option such as cab guards or headache racks.</p>
+                    <h3>Integrated Tool Compartments</h3>
+                    <p>Side-access compartments engineered into the body — secure storage for chainsaws, climbing ropes, rigging gear, and crew safety equipment.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Three</h4>
-                    <p>Placeholder description for the third accessory option such as tarp systems or mesh covers.</p>
+                    <h3>Rear Access Compartment</h3>
+                    <p>Lockable rear-mounted storage compartment with approximately 29" × 21.5" clear door opening — keeps frequently used tools within easy reach.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Four</h4>
-                    <p>Placeholder description for the fourth accessory option.</p>
+                    <h3>Ventilated Radius Panels</h3>
+                    <p>Vent openings built into the radius panels promote airflow and allow fine debris to settle — important for managing wood chip dust during transport.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-01.webp" alt="Chipper Body Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-01.webp" alt="Chipper Body Accessory 1" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-02.webp" alt="Chipper Body Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-02.webp" alt="Chipper Body Accessory 2" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-03.webp" alt="Chipper Body Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-03.webp" alt="Chipper Body Accessory 3" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-04.webp" alt="Chipper Body Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/chipper-body-accessories-04.webp" alt="Chipper Body Accessory 4" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -237,11 +238,11 @@ get_header(); ?>
 
 <!-- Product List -->
 <section id="product-line" class="chb-products section">
-    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <h2 class="mb-3">Chipper Body Line Up</h2>
-                <p class="mb-8">Placeholder description for the product lineup section highlighting available models.</p>
+                <p class="mb-8">Falcon chipper bodies, built tough for the crews that depend on them.</p>
             </div>
         </div>
     </div>
@@ -260,27 +261,30 @@ get_header(); ?>
             $bg_class = $is_even ? 'bg-dark-section' : 'bg-light';
     ?>
 
-    <div class="product-list-item section <?php echo $bg_class; ?>">
-        <div class="container">
-            <div class="row align-items-center">
+        <div class="product-list-item section <?php echo esc_attr($bg_class); ?>">
+            <div class="row g-0 align-items-stretch overflow-hidden max-w-1500 mx-auto">
+
                 <!-- Product Image -->
-                <div class="col-lg-6 <?php echo $image_order; ?> mb-4 mb-lg-0">
-                    <a href="<?php the_permalink(); ?>">
-                        <?php if ( has_post_thumbnail() ) : ?>
-                            <?php the_post_thumbnail('large', ['class' => 'img-fluid rounded']); ?>
-                        <?php else : ?>
-                            <img src="<?php echo wc_placeholder_img_src('large'); ?>" alt="<?php the_title(); ?>" class="img-fluid rounded">
-                        <?php endif; ?>
-                    </a>
+                <div class="col-lg-6 p-0 d-flex <?php echo esc_attr($image_order); ?>" data-aos-delay="200" data-aos="fade-right">
+                    <div class="image-frame w-100">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <?php the_post_thumbnail('full', ['class' => 'img-fluid w-100']); ?>
+                            <?php else : ?>
+                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" class="img-fluid w-100">
+                            <?php endif; ?>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Product Content -->
-                <div class="col-lg-6 <?php echo $content_order; ?>">
-                    <h2 class="mb-3">
+                <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
+                    <div class="feature-content-wrap">
+                    <h3 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h2>
+                    </h3>
 
                     <div class="product-description mb-4">
                         <?php
@@ -314,10 +318,12 @@ get_header(); ?>
                     <?php endif; ?>
 
                     <a href="<?php the_permalink(); ?>" class="btn btn-primary">Learn More</a>
+
+                    </div>
                 </div>
+
             </div>
         </div>
-    </div>
 
     <?php
         endwhile;
@@ -337,8 +343,8 @@ get_header(); ?>
 <section class="chb-cta section">
     <div class="container">
         <div class="chb-cta-wrapper surface--subtle">
-            <h3>Placeholder CTA Headline for Chipper Bodies</h3>
-            <p class="mb-4">Placeholder call-to-action description encouraging visitors to request a quote or contact sales.</p>
+            <h2>Ready to Spec Your Chipper Body?</h2>
+            <p class="mb-4">Tell us about your fleet, your chassis, and how you work. We'll build a chipper body spec that fits your operation.</p>
             <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
     </div>

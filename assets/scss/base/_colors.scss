@@ -6,9 +6,12 @@ body {
 main,
 .site,
 .site-content,
-.page-wrapper,
 .content-area {
   background-color: transparent;
+}
+
+.page-wrapper {
+  background-color: transparent !important;
 }
 // ============================================================================
 // BASE COLOR PALETTE
@@ -214,6 +217,27 @@ $colors: (
   --surface-hover: #22262a;
 
   --surface-border: rgba(255, 255, 255, 0.08);
+}
+
+// Mobile menu dark mode override (Molla adds .mobile-menu-light)
+[data-theme="dark"] .mobile-menu-container.mobile-menu-light {
+  background-color: #0d1117;
+}
+
+[data-theme="dark"] .mobile-menu-container.mobile-menu-light .mobile-menu a,
+[data-theme="dark"] .mobile-menu-container.mobile-menu-light .mobile-menu-close,
+[data-theme="dark"] .mobile-menu-container.mobile-menu-light .searchform input {
+  color: #e6edf3;
+}
+
+[data-theme="dark"] .mobile-menu-container.mobile-menu-light .searchform input {
+  background-color: #161b22;
+  border-color: rgba(45, 143, 221, 0.2);
+}
+
+[data-theme="dark"] .mobile-menu-container.mobile-menu-light .social-icon {
+  color: #8b949e;
+  border-color: #8b949e;
 }
 
 .surface {

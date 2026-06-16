@@ -1,53 +1,52 @@
-<section class="hero hero--fixed-contrast">
-  <div class="hero__overlay"></div>
-  <div class="hero__glow"></div>
+<?php
+/**
+ * Homepage Hero — template part
+ *
+ * Content is hardcoded. Only the background images remain wired to
+ * the Customizer (Appearance → Customize → Homepage Hero → Images
+ * & Overlay) so photography can be swapped without a deploy.
+ *
+ * Other Customizer fields registered in inc/customizer-hero.php
+ * (eyebrow, headline, lead, buttons, contact) are intentionally not
+ * read here. Stale settings are acceptable for now.
+ */
 
-  <img
-    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hero-image-v3.webp"
-    alt="Falcon mechanics body truck in studio lighting"
-    class="hero__bg"
-  >
+// Background image URLs — only Customizer fields still consumed.
+$desktop_id = get_theme_mod( 'falcon_hero_image_desktop', 0 );
+$mobile_id  = get_theme_mod( 'falcon_hero_image_mobile', 0 );
 
-  <div class="container hero__container">
-    <div class="hero__content" data-aos="fade-up">
-      <p class="hero__eyebrow">
-        The New Standard in Work Truck Bodies
-      </p>
+$desktop_url = $desktop_id
+	? wp_get_attachment_url( $desktop_id )
+	: get_stylesheet_directory_uri() . '/assets/images/home-hero-bg.webp';
 
-      <h1 class="hero__title">
-        Built to Endure.<br>Designed for Real Work.
-      </h1>
+$mobile_url = $mobile_id
+	? wp_get_attachment_url( $mobile_id )
+	: get_stylesheet_directory_uri() . '/assets/images/home-hero-bg-mobile.webp';
+?>
 
-      <p class="hero__lead">
-        Premium truck bodies engineered for people who depend on their equipment every day.
-      </p>
+<section
+	class="hero hero--home"
+	style="--hero-bg-desktop: url('<?php echo esc_url( $desktop_url ); ?>'); --hero-bg-mobile: url('<?php echo esc_url( $mobile_url ); ?>');"
+>
+	<div class="container hero__container">
+		<div class="hero__content">
+			<span class="hero__eyebrow">Falcon Bodies Lineup</span>
 
-      <div class="hero__actions">
-        <a href="#services" class="btn btn-primary btn-pill">
-          Explore Models
-        </a>
-        <a href="#contact" class="btn btn-outline btn-pill">
-          Contact Sales
-        </a>
-      </div>
+			<h1 class="hero__title">
+				Outlast.<br>
+				Outwork.<br>
+				<span class="hero__title-muted">Outperform.</span>
+			</h1>
 
-      <div class="hero__badges">
-        <div class="badge-item">
-          <i class="bi bi-telephone-fill"></i>
-          <div class="badge-content">
-            <span>Call Us Today!</span>
-            <strong>(888) 421-4150</strong>
-          </div>
-        </div>
+			<p class="hero__lead">
+				Purpose-Built for Every Service Call. A premium service body lineup engineered for plumbing, HVAC, electrical, and general fleets.
+			</p>
 
-        <div class="badge-item">
-          <i class="bi bi-clock-fill"></i>
-          <div class="badge-content">
-            <span>Working Hours</span>
-            <strong>Mon–Fri: 8am–5pm</strong>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+			<div class="hero__actions">
+				<a href="<?php echo esc_url( home_url( '/falcon-bodies/' ) ); ?>" class="btn btn-primary btn-pill">
+					View Falcon Bodies
+				</a>
+			</div>
+		</div>
+	</div>
 </section>

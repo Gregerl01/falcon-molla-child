@@ -23,7 +23,7 @@
 @import "../../node_modules/bootstrap/scss/modal";
 
 // Vendor libraries
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+// Bootstrap Icons loaded via CDN in functions.php (not compiled into CSS)
 @import "../../node_modules/swiper/swiper";
 
 // 2. CUSTOM BASE
@@ -62,6 +62,9 @@
 @import "./components/parallax";
 @import "./components/buttons";
 @import "./components/category-sections";
+@import "./components/about-video-section";
+@import "./components/configurations";
+@import "./components/about-us";
 // 5. PAGES
 // ============================================================================
 @import "./pages/home";
@@ -80,6 +83,10 @@
 @import "./pages/chipper-bodies";
 @import "./pages/welder-bodies";
 @import "./pages/box-trucks";
+@import "./pages/dump-trucks";
+@import "./pages/water-trucks";
+@import "./pages/line-bodies";
+@import "./pages/platform-bodies";
 
 // 6. WOOCOMMERCE
 // ============================================================================

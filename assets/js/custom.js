@@ -1,3 +1,8 @@
+// Disable browser scroll restoration — refreshing a page should always start at top, not restore the previous scroll position.
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
 /**
  * Molla Child Theme - Custom JavaScript
  * Optimized version with consolidated initialization
@@ -173,6 +178,13 @@ function initThemeToggle() {
         
         // Add improved smooth scroll handler (event delegation)
         $(document).on('click', 'a[href*="#"]:not([href="#"]):not([data-toggle])', function(e) {
+            // Don't interfere with WooCommerce tab clicks — WC core auto-triggers
+            // a click on the first tab on every page load, which would otherwise
+            // cause the page to scroll to the tab section.
+            if ($(this).closest('.wc-tabs-wrapper, .woocommerce-tabs').length) {
+              return;
+            }
+
             // Skip external links
             if (this.hostname !== location.hostname) return;
             

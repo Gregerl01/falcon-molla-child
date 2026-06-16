@@ -24,12 +24,12 @@ get_header(); ?>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="h3 fw-bold mb-4">Placeholder Headline for Landscape Body Introduction</h2>
-                <p class="lead">Placeholder description highlighting the primary benefits of Falcon Landscape Bodies. Emphasize open bed design, dovetail ramps, and versatility for mowers, equipment, and debris hauling.</p>
-                <p>Placeholder supporting paragraph describing chassis compatibility, industry applications, and overall value proposition. Mention durability, low deck height, and professional-grade construction quality.</p>
+                <h2 class="h3 fw-bold mb-4">Purpose-Built Platforms for Landscape Professionals</h2>
+                <p class="lead">Falcon Landscape Bodies are designed for contractors, municipalities, and lawn care professionals who need durable hauling platforms built to handle daily jobsite demands. Two configurations cover the full range of landscape operations.</p>
+                <p>The Landscape Dump Body delivers efficient debris transport with quick-unload capability. The Dovetail Landscape Body simplifies equipment loading with an integrated ramp section and expanded metal deck. Both are built from 10-gauge carbon steel with reinforced frame structures and powder-coat finish.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-intro.webp" alt="Falcon Landscape Body" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-intro.webp" alt="Falcon Landscape Body" loading="lazy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -50,6 +50,7 @@ get_header(); ?>
           <img
             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-features.webp"
             alt="Landscape Body Features"
+            loading="lazy"
             class="img-fluid"
           >
         </div>
@@ -61,7 +62,7 @@ get_header(); ?>
 
           <!-- Headings -->
           <h5>Falcon Standard Features</h5>
-          <h2>Placeholder Headline for Standard Features Section.</h2>
+          <h2>Built to handle what the jobsite throws at it.</h2>
 
           <!-- FEATURES GRID -->
           <div class="features-grid">
@@ -69,64 +70,64 @@ get_header(); ?>
             <div class="feature-item">
               <span class="feature-number">01</span>
               <div class="feature-content">
-                <h4>Placeholder Feature One</h4>
-                <p>Placeholder description for the first standard feature included with Landscape Bodies.</p>
+                <h3>10-Gauge Carbon Steel Construction</h3>
+                <p>Floor, sides, front, rear, and tailgate panels built from heavy-gauge carbon steel for structural durability.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">02</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Two</h4>
-                <p>Placeholder description for the second standard feature highlighting dovetail or ramp systems.</p>
+                <h3>Reinforced Frame Structure</h3>
+                <p>4″ channel steel frame with rectangular tube understructure engineered for distributed and point loads.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">03</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Three</h4>
-                <p>Placeholder description for the third standard feature related to side walls or stake pockets.</p>
+                <h3>Integrated Loading Solutions</h3>
+                <p>Dump body cam-lock tailgate or dovetail folding ramp for fast loading and unloading on every job.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">04</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Four</h4>
-                <p>Placeholder description for the fourth standard feature such as trimmer racks or tool storage.</p>
+                <h3>Expanded Metal Deck Option</h3>
+                <p>Mesh platform with treadplate sections on the Dovetail model for debris drainage and secure footing.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">05</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Five</h4>
-                <p>Placeholder description for the fifth standard feature like finish or corrosion protection.</p>
+                <h3>Powder-Coat Finish</h3>
+                <p>Interior and exterior powder coat for corrosion resistance in harsh outdoor and wet environments.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">06</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Six</h4>
-                <p>Placeholder description for the sixth standard feature covering lighting or electrical.</p>
+                <h3>LED Lighting Package</h3>
+                <p>Amber marker lights, red rear lights, and sealed wiring harness for reliable visibility on the road and jobsite.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">07</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Seven</h4>
-                <p>Placeholder description for the seventh standard feature such as bumper or hitch options.</p>
+                <h3>Equipment Rack & Storage</h3>
+                <p>Integrated front rack, toolbox mounts, and side rail storage for ladders, trimmers, and hand tools.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <span class="feature-number">08</span>
               <div class="feature-content">
-                <h4>Placeholder Feature Eight</h4>
-                <p>Placeholder description for the eighth standard feature.</p>
+                <h3>Lift-Off Tailgate Hinges</h3>
+                <p>Easy-remove hinge design on the Dump Body for full rear access during loading and maintenance.</p>
               </div>
             </div>
 
@@ -146,38 +147,38 @@ get_header(); ?>
         <div class="row mb-5">
             <div class="col-lg-8">
                 <h5>Landscape Body Options</h5>
-                <h2>Placeholder Headline for Configuration Options</h2>
-                <p class="text-muted">Placeholder description explaining the available configurations, bed lengths, and optional upgrades for Landscape Bodies.</p>
+                <h2>Two Platforms, Every Landscape Job Covered</h2>
+                <p class="text-muted">Choose the configuration that matches your crew's daily operations.</p>
             </div>
         </div>
 
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option One</h4>
-                    <p class="text-muted mb-0">Placeholder description for the first configuration option available.</p>
+                    <p class="option-type">Platform</p>
+                    <h3>Landscape Dump Body</h3>
+                    <p class="text-muted mb-0">144″ × 96″ × 52″ carbon steel dump body for debris, mulch, and material transport with quick-unload capability.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Two</h4>
-                    <p class="text-muted mb-0">Placeholder description for the second configuration option available.</p>
+                    <p class="option-type">Platform</p>
+                    <h3>Dovetail Landscape Body</h3>
+                    <p class="text-muted mb-0">226″ overall length with integrated dovetail loading ramp and expanded metal deck for mower and equipment transport.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Three</h4>
-                    <p class="text-muted mb-0">Placeholder description for the third configuration option available.</p>
+                    <p class="option-type">Dump Body</p>
+                    <h3>2-Point Cam Lock Tailgate</h3>
+                    <p class="text-muted mb-0">Secure locking system with lift-off hinges for full rear access during loading and debris dumping.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="option-card surface--subtle">
-                    <p class="option-type">Option Category</p>
-                    <h4>Option Four</h4>
-                    <p class="text-muted mb-0">Placeholder description for the fourth configuration option available.</p>
+                    <p class="option-type">Dovetail</p>
+                    <h3>Rear Folding Loading Ramp</h3>
+                    <p class="text-muted mb-0">Integrated ramp built into the dovetail section for easy mower and compact equipment loading without separate ramps.</p>
                 </div>
             </div>
         </div>
@@ -190,42 +191,42 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h5>Placeholder Tagline for Accessories Section.</h5>
+                <h5>Outfit Your Crew</h5>
                 <h2>Landscape Body Accessories</h2>
 
                 <div class="accessory-item">
-                    <h4>Accessory One</h4>
-                    <p>Placeholder description for the first accessory option such as trimmer racks or blower holders.</p>
+                    <h3>Trimmer Racks & Tool Mounts</h3>
+                    <p>Side-mounted racks for string trimmers, edgers, blowers, and hand tools. Keep equipment organized and accessible.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Two</h4>
-                    <p>Placeholder description for the second accessory option such as mesh side kits or debris screens.</p>
+                    <h3>Mesh Side Panels & Debris Screens</h3>
+                    <p>Expanded metal side extensions for increased cargo containment during debris hauling and leaf removal.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Three</h4>
-                    <p>Placeholder description for the third accessory option such as fuel can racks or cooler mounts.</p>
+                    <h3>Fuel Can Racks & Cooler Mounts</h3>
+                    <p>Dedicated mounting positions for fuel cans, water coolers, and supplies that stay secure during transport.</p>
                 </div>
 
                 <div class="accessory-item">
-                    <h4>Accessory Four</h4>
-                    <p>Placeholder description for the fourth accessory option.</p>
+                    <h3>Custom Powder Coat Colors</h3>
+                    <p>Match your fleet branding with custom color options beyond standard black or white finish.</p>
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="row">
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-accessories-01.webp" alt="Landscape Body Accessory 1" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-accessories-01.webp" alt="Landscape Body Accessory 1" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-accessories-02.webp" alt="Landscape Body Accessory 2" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-accessories-02.webp" alt="Landscape Body Accessory 2" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-accessories-03.webp" alt="Landscape Body Accessory 3" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-accessories-03.webp" alt="Landscape Body Accessory 3" loading="lazy" class="img-fluid rounded">
                     </div>
                     <div class="col-6">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-accessories-04.webp" alt="Landscape Body Accessory 4" class="img-fluid rounded">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/landscape-body-accessories-04.webp" alt="Landscape Body Accessory 4" loading="lazy" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -237,11 +238,11 @@ get_header(); ?>
 
 <!-- Product List -->
 <section id="product-line" class="lb-products section">
-    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <h2 class="mb-3">Landscape Body Line Up</h2>
-                <p class="mb-8">Placeholder description for the product lineup section highlighting available models.</p>
+                <p class="mb-8">Dump body for debris hauling. Dovetail for equipment transport. Both built for daily commercial use.</p>
             </div>
         </div>
     </div>
@@ -260,27 +261,30 @@ get_header(); ?>
             $bg_class = $is_even ? 'bg-dark-section' : 'bg-light';
     ?>
 
-    <div class="product-list-item section <?php echo $bg_class; ?>">
-        <div class="container">
-            <div class="row align-items-center">
+        <div class="product-list-item section <?php echo esc_attr($bg_class); ?>">
+            <div class="row g-0 align-items-stretch overflow-hidden max-w-1500 mx-auto">
+
                 <!-- Product Image -->
-                <div class="col-lg-6 <?php echo $image_order; ?> mb-4 mb-lg-0">
-                    <a href="<?php the_permalink(); ?>">
-                        <?php if ( has_post_thumbnail() ) : ?>
-                            <?php the_post_thumbnail('large', ['class' => 'img-fluid rounded']); ?>
-                        <?php else : ?>
-                            <img src="<?php echo wc_placeholder_img_src('large'); ?>" alt="<?php the_title(); ?>" class="img-fluid rounded">
-                        <?php endif; ?>
-                    </a>
+                <div class="col-lg-6 p-0 d-flex <?php echo esc_attr($image_order); ?>" data-aos-delay="200" data-aos="fade-right">
+                    <div class="image-frame w-100">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <?php the_post_thumbnail('full', ['class' => 'img-fluid w-100']); ?>
+                            <?php else : ?>
+                                <img src="<?php echo wc_placeholder_img_src('full'); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>" class="img-fluid w-100">
+                            <?php endif; ?>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Product Content -->
-                <div class="col-lg-6 <?php echo $content_order; ?>">
-                    <h2 class="mb-3">
+                <div class="col-lg-6 d-flex align-items-center <?php echo esc_attr($content_order); ?>" data-aos-delay="200" data-aos="fade-left">
+                    <div class="feature-content-wrap">
+                    <h3 class="mb-3">
                         <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                             <?php the_title(); ?>
                         </a>
-                    </h2>
+                    </h3>
 
                     <div class="product-description mb-4">
                         <?php
@@ -314,10 +318,12 @@ get_header(); ?>
                     <?php endif; ?>
 
                     <a href="<?php the_permalink(); ?>" class="btn btn-primary">Learn More</a>
+
+                    </div>
                 </div>
+
             </div>
         </div>
-    </div>
 
     <?php
         endwhile;
@@ -337,8 +343,8 @@ get_header(); ?>
 <section class="lb-cta section">
     <div class="container">
         <div class="lb-cta-wrapper surface--subtle">
-            <h3>Placeholder CTA Headline for Landscape Bodies</h3>
-            <p class="mb-4">Placeholder call-to-action description encouraging visitors to request a quote or contact sales.</p>
+            <h2>Ready to outfit your landscape fleet?</h2>
+            <p class="mb-4">Contact our team for platform options, fleet pricing, and lead times.</p>
             <a href="<?php echo home_url('/contact'); ?>" class="btn btn-primary btn-pill">Request a Quote</a>
         </div>
     </div>

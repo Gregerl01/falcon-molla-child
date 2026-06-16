@@ -1,0 +1,40 @@
+# ============================================================
+# MAINTENANCE MODE — 503 redirect
+# ============================================================
+#
+# HOW TO USE:
+#   1. Place maintenance.html in your site's public_html/ root
+#   2. Paste the rules below into public_html/.htaccess
+#      BEFORE the "# BEGIN WordPress" block
+#   3. Replace 123.45.67.89 with your whitelisted IP address
+#      (find yours at https://whatismyip.com)
+#
+# TO DISABLE:
+#   Remove or comment out everything between the
+#   "BEGIN Maintenance" and "END Maintenance" lines
+#
+# ============================================================
+
+# BEGIN Maintenance
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Allow your whitelisted IP to bypass maintenance
+  RewriteCond %{REMOTE_ADDR} !^123\.45\.67\.89$
+
+  # Don't redirect the maintenance page itself (avoid loop)
+  RewriteCond %{REQUEST_URI} !^/maintenance\.html$
+
+  # Don't redirect static assets (images, CSS, JS, fonts)
+  RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|svg|webp|ico|woff2?|ttf|eot)$ [NC]
+
+  # Serve 503 and show maintenance page
+  RewriteRule ^ /maintenance.html [R=503,L]
+</IfModule>
+
+# Required: set 503 error document
+ErrorDocument 503 /maintenance.html
+
+# Tell search engines to retry after 1 hour
+Header Set Retry-After "3600"
+# END Maintenance
