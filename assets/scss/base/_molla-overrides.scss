@@ -26,14 +26,22 @@ body {
    FORCE Molla text colors to use tokens
 ============================================ */
 
-.section,
-.section * {
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--heading-color) !important;
+// Default text colors for generic Molla content inside sections.
+// Narrowed from the old `.section *` + !important force-paint so that scoped
+// Falcon blocks (.falcon-feature-block / .falcon-bodies-showcase, styled in
+// _category-sections.scss) can control their own colors by specificity.
+.section {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--heading-color);
   }
-
-  p, li, span {
-    color: var(--text-secondary) !important;
+  p,
+  li {
+    color: var(--text-secondary);
   }
 }
 

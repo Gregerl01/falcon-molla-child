@@ -85,16 +85,20 @@
   }
 
   .feature-content {
+    h3,
     h4 {
       margin: 0 0 0.4rem;
-      font-size: 1.5rem;
+      font-size: var(--fs-card-title);
+      font-weight: var(--fw-card-title);
+      line-height: var(--lh-card-title);
+      letter-spacing: var(--ls-heading);
       color: var(--heading-color);
     }
 
     p {
       margin: 0;
-      font-size: 1.25rem;
-      line-height: 1.5;
+      font-size: var(--fs-card-body);
+      line-height: var(--lh-body);
       color: var(--text-secondary);
     }
   }
@@ -155,13 +159,13 @@
 
     h4 {
       margin-bottom: 0.75rem;
-      font-size: 1.5rem;
+      font-size: var(--fs-card-title);
     }
 
     p {
       margin: 0;
-      font-size: 1.25rem;
-      line-height: 1.5;
+      font-size: var(--fs-card-body);
+      line-height: var(--lh-body);
       color: var(--text-muted);
     }
   }
@@ -199,8 +203,8 @@
 
     p {
       margin: 0;
-      font-size: 1.25rem;
-      line-height: 1.5;
+      font-size: var(--fs-card-body);
+      line-height: var(--lh-body);
     }
   }
 
@@ -296,4 +300,49 @@
 .lineb-cta-wrapper {
   padding: 4rem 3rem;
   border: 1px solid var(--border-color);
+}
+
+// -----------------------------------------------------------------------------
+// Falcon feature / product / showcase blocks — scoped type scale.
+// Wins by specificity over Molla's bare-tag dynamic_style.css and base typography.
+// Do not add broad bare h2/p selectors here.
+// -----------------------------------------------------------------------------
+.falcon-feature-block,
+.falcon-bodies-showcase {
+  h5,
+  .eyebrow,
+  .text-uppercase {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: var(--ls-eyebrow);
+  }
+  .falcon-headline {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-heading);
+    line-height: 1.15;
+    letter-spacing: var(--ls-heading);
+    color: var(--text-primary);
+  }
+  .falcon-intro {
+    font-size: var(--fs-benefit-body);
+    font-weight: var(--fw-body);
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+  // Scoped through .benefit-item so it ties .benefit-item .benefit-content (0,3,1)
+  // and wins on source order — keeps benefit titles 20px/700 and p 14px without !important.
+  .benefit-item .benefit-content h3,
+  .benefit-item .benefit-content h4 {
+    font-size: var(--fs-benefit-title);
+    font-weight: var(--fw-benefit-title);
+    line-height: var(--lh-card-title);
+    letter-spacing: 0;
+    color: var(--text-primary);
+  }
+  .benefit-item .benefit-content p {
+    font-size: var(--fs-benefit-body);
+    line-height: var(--lh-body);
+    color: var(--text-secondary);
+  }
 }

@@ -1,0 +1,54 @@
+// =============================================================================
+// Design Tokens — Falcon Truck Bodies
+// Single source of truth for type scale, weights, line heights, tracking.
+// Flat px values (Molla root is 10px; px is immune to that, rem would compute
+// wrong). Consistent typography at all breakpoints — no clamp for now.
+// Import this FIRST in custom.scss, before _typography.scss.
+// =============================================================================
+
+:root {
+  // Font family
+  --font-body:    'Inter', sans-serif;
+  --font-heading: 'Inter', sans-serif;
+
+  // Global heading scale
+  --fs-h1: 40px;
+  --fs-h2: 32px;
+  --fs-h3: 24px;
+  --fs-h4: 20px;
+  --fs-h5: 18px;
+  --fs-h6: 16px;
+
+  // Body scale
+  --fs-body:    14px;
+  --fs-lead:    16px;
+  --fs-small:   13px;
+  --fs-caption: 12px;
+
+  // Component text
+  --fs-eyebrow:          18px;
+  --fs-card-title:       18px;
+  --fs-card-title-large: 20px;
+  --fs-card-body:        14px;
+  --fs-benefit-title:    20px;
+  --fs-benefit-body:     14px;
+  --fs-product-title:    24px;
+
+  // Weights
+  --fw-body:           400;
+  --fw-heading:        500;
+  --fw-heading-strong: 700;
+  --fw-display:        700;
+  --fw-card-title:     600;
+  --fw-benefit-title:  700;
+
+  // Line heights
+  --lh-heading:    1.15;
+  --lh-body:       1.6;
+  --lh-card-title: 1.25;
+
+  // Letter spacing
+  --ls-display: -0.02em;
+  --ls-heading: -0.01em;
+  --ls-eyebrow: 0.08em;
+}
