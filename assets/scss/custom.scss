@@ -4,6 +4,8 @@
 // This is the main entry point. All partials are imported here.
 // Compile this file to: /assets/css/custom.css
 
+@import 'base/design-tokens';
+
 // 1. BOOTSTRAP & VENDORS
 // ============================================================================
 @import "../../node_modules/bootstrap/scss/functions";
@@ -64,6 +66,7 @@
 @import "./components/category-sections";
 @import "./components/about-video-section";
 @import "./components/configurations";
+@import "./components/about-us";
 // 5. PAGES
 // ============================================================================
 @import "./pages/home";

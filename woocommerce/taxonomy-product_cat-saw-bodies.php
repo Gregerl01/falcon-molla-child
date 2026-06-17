@@ -29,7 +29,7 @@ get_header(); ?>
                 <p>Available in 15-foot and 17-foot configurations, Falcon Saw Bodies are engineered for Class 4–7 chassis applications — delivering the durability, simplicity, and functionality needed for field service and equipment transport operations.</p>
             </div>
             <div class="col-lg-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/saw-truck-intro.webp" alt="Falcon Saw Bodies" class="img-fluid rounded">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/saw-bodies-intro.webp" alt="Falcon Saw Bodies" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@ get_header(); ?>
       <div class="col-xl-6 col-lg-6">
         <div class="feature-image-wrap">
           <img
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/saw-truck-features.webp"
+            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/saw-bodies-features.webp"
             alt="Saw Bodies Features"
             class="img-fluid"
           >

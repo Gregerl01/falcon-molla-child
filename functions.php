@@ -40,15 +40,15 @@ function molla_child_enqueue_styles() {
         'molla-child-style',
         get_stylesheet_directory_uri() . '/style.css',
         array('molla-parent-style'),
-        '1.0.2'
+        filemtime( get_stylesheet_directory() . '/style.css' )
     );
-    
+
     // Custom compiled SCSS
     wp_enqueue_style(
         'molla-custom-css',
         get_stylesheet_directory_uri() . '/assets/css/custom.css',
         array('molla-child-style'),
-        '1.0.2'
+        filemtime( get_stylesheet_directory() . '/assets/css/custom.css' )
     );
 }
 

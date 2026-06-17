@@ -25,7 +25,7 @@
     var prefix = config.prefix;
 
     if (config.static) {
-      renderTables(prefix, config.data);
+      renderTables(prefix, config.data.default || config.data);
       return;
     }
 
@@ -68,13 +68,23 @@
   }
 
   function renderTables(prefix, data) {
-    var bodyEl = document.getElementById(prefix + '-body-dims');
-    var sideEl = document.getElementById(prefix + '-side-ref');
-    var rearEl = document.getElementById(prefix + '-rear-ref');
+    data = data || {};
+    setTable(prefix + '-body-dims', data.body);
+    setTable(prefix + '-side-ref',  data.side);
+    setTable(prefix + '-rear-ref',  data.rear);
+  }
 
-    if (bodyEl) bodyEl.innerHTML = rowsHTML(data.body);
-    if (sideEl) sideEl.innerHTML = rowsHTML(data.side);
-    if (rearEl) rearEl.innerHTML = rowsHTML(data.rear);
+  function setTable(id, rows) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var section = el.closest('.spec-section');
+    if (!rows || !rows.length) {
+      el.innerHTML = '';
+      if (section) section.style.display = 'none';
+      return;
+    }
+    if (section) section.style.display = '';
+    el.innerHTML = rowsHTML(rows);
   }
 
   function rowsHTML(rows) {
