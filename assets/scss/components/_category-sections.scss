@@ -312,6 +312,7 @@
   h5,
   .eyebrow,
   .text-uppercase {
+    margin-bottom: 0;        // tighten gap to the headline below
     font-size: 18px;
     font-weight: 600;
     line-height: 1.3;
@@ -334,6 +335,7 @@
   // and wins on source order — keeps benefit titles 20px/700 and p 14px without !important.
   .benefit-item .benefit-content h3,
   .benefit-item .benefit-content h4 {
+    margin-bottom: 0;        // tighten gap to the description below
     font-size: var(--fs-benefit-title);
     font-weight: var(--fw-benefit-title);
     line-height: var(--lh-card-title);
@@ -345,4 +347,13 @@
     line-height: var(--lh-body);
     color: var(--text-secondary);
   }
+}
+
+// Product-category archive pages only: hide the per-block .falcon-headline
+// (redundant with the category hero/title). Scoped by the WooCommerce body
+// class so the /falcon-bodies/ showcase page (.falcon-bodies-showcase, not a
+// product_cat archive) keeps its headlines. Specificity (0,3,0) beats the base
+// .falcon-feature-block .falcon-headline (0,2,0) — no !important needed.
+.tax-product_cat .falcon-feature-block .falcon-headline {
+  display: none;
 }
