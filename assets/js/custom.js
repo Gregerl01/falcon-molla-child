@@ -235,11 +235,14 @@ function initThemeToggle() {
         }
 
         // Inject the close button once (avoids overriding the core search form).
-        if (!$wrap.find('.header-search-close').length) {
-            $wrap.append(
-                '<button type="button" class="header-search-close" aria-label="Close search">&times;</button>'
-            );
-        }
+        $wrap.each(function () {
+            var $w = $(this);
+            if (!$w.find('.header-search-close').length) {
+                $w.append(
+                    '<button type="button" class="header-search-close" aria-label="Close search">&times;</button>'
+                );
+            }
+        });
 
         function closeHeaderSearch() {
             $('.header .search-wrapper').removeClass('show');
@@ -247,12 +250,17 @@ function initThemeToggle() {
             $('body').removeClass('is-search-active');
         }
 
-        $(document).on('click', '.header .header-search-close', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            closeHeaderSearch();
-            $('.header .search-toggle').trigger('focus');
-        });
+        // Bind directly on the button (namespaced). Molla's delegated
+        // `.header-search` click handler calls stopPropagation at the body level,
+        // which blocks a document-delegated handler — so attach to the element.
+        $('.header .search-wrapper .header-search-close')
+            .off('click.headerSearch')
+            .on('click.headerSearch', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                closeHeaderSearch();
+                $('.header .search-toggle').trigger('focus');
+            });
 
         $(document).on('keydown', function (e) {
             if ((e.key === 'Escape' || e.keyCode === 27) &&
