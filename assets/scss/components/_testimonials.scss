@@ -227,33 +227,37 @@
 
 // Light mode (default) - Transparent cards with subtle borders
 .testimonial-item {
-  background-color: var(--surface);
-  border: 1px solid var(--border-color);
-  // background-color: #{map-get($colors, 'gray-900')} !important;
-  // background-color: color-mix(in srgb, var(--surface-color), transparent 45%);
-  // border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 95%);
-  // border: 1px solid #{map-get($colors, 'gray-800')};
-  padding: 20px;
-  transition: all 0.3s ease;
+  // .surface--subtle (in markup) supplies the panel background (--surface-2).
+  // Single frame lives here now; .testimonial-content is the inner layout.
+  display: flex;
+  height: 100%;                 // equal-height cards across the row
+  padding: 0;                   // padding lives on .testimonial-content
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;           // sharp / industrial
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  }
 }
 
 .testimonials .testimonial-content {
-  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   position: relative;
-  transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
-  // background: transparent;
-  
-  &:hover {
-    transform: translateY(-5px);
-  }
-  
+  border: 0;                    // single frame is on .testimonial-item
+  border-radius: 0;
+
   p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.7;
-    margin: 1.5rem 0;
-    // color: #{map-get($colors, 'white')} !important;
+    margin: 1.25rem 0 0;
+    color: var(--text-primary);
   }
 }
 
@@ -263,16 +267,17 @@
   left: 2rem;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--section-primary);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border-color);
-  
+  background-color: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;                 // squared, industrial; subtle not decorative
+  color: var(--accent-color);
+
   i {
-    font-size: 1.25rem;
-    // color: #{map-get($colors, 'primary')};
+    font-size: 1.15rem;
+    color: var(--accent-color);
   }
 }
 
@@ -280,19 +285,23 @@
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-color);
+  margin-top: auto;             // pin to card bottom for equal-height rhythm
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--surface-border);
 }
 
 .testimonials .client-details {
   h3 {
-    font-size: 1.125rem;
-    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.15rem;
   }
-  
+
   .position {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
   }
 }
 
@@ -305,10 +314,6 @@
   .testimonials .testimonial-masonry {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-  }
-
-  .testimonials .testimonial-item:nth-child(even) {
-    margin-top: 2rem;
   }
 }
 
