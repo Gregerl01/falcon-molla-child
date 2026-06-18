@@ -69,7 +69,8 @@ $colors: (
 
   /* Text */
   --text-primary: #{map-get($colors, 'gray-900')};
-  --text-secondary: #{map-get($colors, 'gray-600')};
+  /* gray-700 (#52565e) ~7:1 on white — body copy meets WCAG AA (was gray-600 ~4.2:1). */
+  --text-secondary: #{map-get($colors, 'gray-700')};
   --text-muted: #{map-get($colors, 'gray-500')};
 
   /* Headings */

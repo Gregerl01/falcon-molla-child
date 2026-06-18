@@ -2826,7 +2826,8 @@ main,
   --section-secondary: #f4f7f6;
   /* Text */
   --text-primary: #252525;
-  --text-secondary: #777777;
+  /* gray-700 (#52565e) ~7:1 on white — body copy meets WCAG AA (was gray-600 ~4.2:1). */
+  --text-secondary: #52565e;
   --text-muted: #adb5bd;
   /* Headings */
   --heading-color: var(--text-primary);
@@ -3737,6 +3738,35 @@ select:focus-visible {
   border-color: var(--accent-color);
   outline: 2px solid color-mix(in srgb, var(--accent-color), transparent 35%);
   outline-offset: 2px;
+}
+
+/* ============================================================================
+   ACCESSIBILITY — DISTINGUISHABLE IN-CONTENT LINKS (H3)
+   ========================================================================== */
+/* Scoped to body/content contexts only — excludes header/nav, footer, buttons,
+   card/product titles, icon links, and carousel controls. The `color` carries a
+   scoped !important solely to override the global `a { color: inherit !important }`
+   reset above; underline/offset need no !important. Not a site-wide link rule. */
+.entry-content a:not(.btn):not(.button),
+.section p a:not(.btn):not(.button),
+.section li a:not(.btn):not(.button),
+.product-description a:not(.btn):not(.button),
+.woocommerce-product-details__short-description a:not(.btn):not(.button),
+.woocommerce-Tabs-panel a:not(.btn):not(.button) {
+  color: var(--accent-strong) !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.entry-content a:not(.btn):not(.button):hover,
+.section p a:not(.btn):not(.button):hover,
+.section li a:not(.btn):not(.button):hover,
+.product-description a:not(.btn):not(.button):hover,
+.woocommerce-product-details__short-description a:not(.btn):not(.button):hover,
+.woocommerce-Tabs-panel a:not(.btn):not(.button):hover {
+  color: color-mix(in srgb, var(--accent-strong), #000 12%) !important;
+  text-decoration-thickness: 2px;
 }
 
 header.header {
@@ -5231,7 +5261,7 @@ a.btn.btn-primary:focus-visible,
   margin: 0;
   font-size: var(--fs-card-body);
   line-height: var(--lh-body);
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 /* -------------------------------------------------
@@ -6772,7 +6802,7 @@ a.btn.btn-primary:focus-visible,
 }
 
 .contact-section .wpcf7-form-control::placeholder {
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 /* Submit button */
@@ -6787,6 +6817,40 @@ a.btn.btn-primary:focus-visible,
   border: none;
   cursor: pointer;
   width: auto;
+}
+
+/* -------------------------------------
+   LABELS & VALIDATION (H6)
+   Form markup is DB-side (CF7). These standard CF7 selectors style real
+   <label>s, the required marker, inline error tips, and the response output.
+   Add the actual <label> wrappers in the CF7 form editor (see deferred notes).
+------------------------------------- */
+.contact-section .wpcf7-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-section .wpcf7-form .req {
+  color: #dc3545;
+}
+
+.contact-section .wpcf7-not-valid-tip {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #dc3545;
+}
+
+.contact-section .wpcf7-form-control.wpcf7-not-valid {
+  border-color: #dc3545;
+}
+
+.contact-section .wpcf7-response-output {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 /* -------------------------------------
@@ -6817,7 +6881,7 @@ a.btn.btn-primary:focus-visible,
   /* Submit button */
 }
 [data-theme=dark] .contact-section .wpcf7-submit {
-  background: var(--accent-color);
+  background: var(--accent-strong);
   font-weight: 600;
   font-size: 1.1rem;
   border: none;
@@ -7568,7 +7632,7 @@ a.btn.btn-primary:focus-visible,
 }
 .product-list-item .product-features li {
   font-size: 0.95rem;
-  color: #444;
+  color: var(--text-secondary);
   margin-bottom: 8px;
 }
 .product-list-item .btn-primary {
