@@ -4123,22 +4123,8 @@ footer .footer-bottom {
   font-weight: 500 !important;
 }
 
-.faq .faq-list .faq-item h3::after, .faq .faq-list .faq-item .h3::after {
-  content: "+";
-  margin-left: auto;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1;
-  color: var(--accent-color);
-  flex-shrink: 0;
-}
-
 .faq .faq-list .faq-item.faq-active h3, .faq .faq-list .faq-item.faq-active .h3 {
   color: var(--accent-color);
-}
-
-.faq .faq-list .faq-item.faq-active h3::after, .faq .faq-list .faq-item.faq-active .h3::after {
-  content: "–";
 }
 
 .faq .faq-list .faq-item h3 .num, .faq .faq-list .faq-item .h3 .num {
@@ -4161,9 +4147,12 @@ footer .footer-bottom {
 }
 
 .faq .faq-list .faq-item h3 .faq-toggle, .faq .faq-list .faq-item .h3 .faq-toggle {
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  line-height: 1;
   margin-left: 15px;
+  color: var(--accent-color);
+  flex-shrink: 0;
+  transition: transform 0.25s ease, color 0.25s ease;
 }
 
 .faq .faq-list .faq-item .faq-content {
