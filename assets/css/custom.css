@@ -3720,6 +3720,25 @@ select:focus,
   background: var(--section-primary) !important;
 }
 
+/* ============================================================================
+   ACCESSIBILITY — VISIBLE KEYBOARD FOCUS (:focus-visible)
+   ========================================================================== */
+/* Global keyboard focus ring. :where() = 0 specificity so component styles win
+   where needed; pointer focus is unaffected (:focus-visible only). */
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+/* Form fields: keep the accent border, add a softer ring for clarity. */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  border-color: var(--accent-color);
+  outline: 2px solid color-mix(in srgb, var(--accent-color), transparent 35%);
+  outline-offset: 2px;
+}
+
 header.header {
   background-color: var(--header-bg) !important;
   color: var(--header-text);
@@ -4772,6 +4791,19 @@ a.btn.btn-secondary:focus {
 .btn-block {
   display: block;
   width: 100%;
+}
+
+.btn.btn-primary:focus-visible,
+a.btn.btn-primary:focus-visible,
+.woocommerce a.button:focus-visible,
+.woocommerce button.button:focus-visible,
+.add_to_cart_button:focus-visible,
+.single_add_to_cart_button:focus-visible,
+.btn-cart:focus-visible,
+.wpcf7-submit:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(var(--color-primary-rgb), 0.45);
 }
 
 /* =================================================

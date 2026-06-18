@@ -114,3 +114,19 @@ a.btn.btn-secondary {
   display: block;
   width: 100%;
 }
+
+// Visible keyboard focus for filled (blue/dark) CTAs — white inner outline plus
+// a soft brand-blue halo so the ring shows against the fill. Pointer focus keeps
+// the existing subtle treatment (:focus-visible only).
+.btn.btn-primary:focus-visible,
+a.btn.btn-primary:focus-visible,
+.woocommerce a.button:focus-visible,
+.woocommerce button.button:focus-visible,
+.add_to_cart_button:focus-visible,
+.single_add_to_cart_button:focus-visible,
+.btn-cart:focus-visible,
+.wpcf7-submit:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(var(--color-primary-rgb), 0.45);
+}
