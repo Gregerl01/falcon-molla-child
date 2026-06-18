@@ -49,6 +49,9 @@ $colors: (
   /* Brand */
   --color-primary: #{map-get($colors, 'primary')};
   --accent-color: var(--color-primary);
+  /* Text-bearing blue: darker accent for filled UI with white text (WCAG AA, ~5:1).
+     Use only where #fff sits on a blue fill; keep --accent-color for decorative/non-text blue. */
+  --accent-strong: #1A6FCC;
 
   --color-primary-rgb:
     #{red(map-get($colors, 'primary'))},
@@ -66,7 +69,8 @@ $colors: (
 
   /* Text */
   --text-primary: #{map-get($colors, 'gray-900')};
-  --text-secondary: #{map-get($colors, 'gray-600')};
+  /* gray-700 (#52565e) ~7:1 on white — body copy meets WCAG AA (was gray-600 ~4.2:1). */
+  --text-secondary: #{map-get($colors, 'gray-700')};
   --text-muted: #{map-get($colors, 'gray-500')};
 
   /* Headings */
