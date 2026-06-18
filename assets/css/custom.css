@@ -3810,6 +3810,9 @@ footer {
 }
 
 @media (min-width: 992px) {
+  .header .header-search {
+    position: static;
+  }
   .header .header-search .search-wrapper {
     display: none;
   }
@@ -3817,16 +3820,17 @@ footer {
     display: flex;
     align-items: center;
     gap: 12px;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     z-index: 1030;
-    min-height: 80px;
+    min-height: 72px;
     padding: 0 32px;
     background: var(--header-bg);
+    border-top: 1px solid var(--header-border);
     border-bottom: 1px solid var(--header-border);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
     animation: falconSearchIn 0.18s ease-out;
   }
   .header .header-search .search-wrapper.show .live-search {

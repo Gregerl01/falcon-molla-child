@@ -52,6 +52,12 @@ footer {
 // (name="s" GET) is untouched. Scoped to desktop so mobile search is unaffected.
 // ----------------------------------------------------------------------------
 @media (min-width: 992px) {
+  // Neutralize the cluster's own positioning so the bar anchors to the
+  // header row (.header-row / .header), not this small container.
+  .header .header-search {
+    position: static;
+  }
+
   // Collapsed by default (no tiny nav dropdown).
   .header .header-search .search-wrapper {
     display: none;
@@ -61,16 +67,17 @@ footer {
     display: flex;
     align-items: center;
     gap: 12px;
-    position: fixed;
-    top: 0;
+    position: absolute;            // anchors to the header row (its positioned ancestor)
+    top: 100%;                     // drop in as a full-width row just below the header
     left: 0;
     right: 0;
     z-index: 1030;                 // above sticky header, below modal/toast
-    min-height: 80px;
+    min-height: 72px;
     padding: 0 32px;
     background: var(--header-bg);  // locked-dark header surface
+    border-top: 1px solid var(--header-border);
     border-bottom: 1px solid var(--header-border);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
     animation: falconSearchIn 0.18s ease-out;
 
     .live-search {
