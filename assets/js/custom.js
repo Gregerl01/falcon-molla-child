@@ -221,4 +221,54 @@ function initThemeToggle() {
         $('#galleryModal').modal('show');
     });
 
+    // ========================================================================
+    // HEADER SEARCH — full-width expand close affordances
+    // Adds an X close button + Escape-to-close. Open, auto-focus, and
+    // outside-click-close are already handled by Molla's .search-toggle, and
+    // the form submission (name="s" -> WordPress search) is untouched.
+    // Scoped to the desktop header (.header .search-wrapper).
+    // ========================================================================
+    (function () {
+        var $wrap = $('.header .search-wrapper');
+        if (!$wrap.length) {
+            return;
+        }
+
+        // Inject the close button once (avoids overriding the core search form).
+        $wrap.each(function () {
+            var $w = $(this);
+            if (!$w.find('.header-search-close').length) {
+                $w.append(
+                    '<button type="button" class="header-search-close" aria-label="Close search">&times;</button>'
+                );
+            }
+        });
+
+        function closeHeaderSearch() {
+            $('.header .search-wrapper').removeClass('show');
+            $('.header .search-toggle').removeClass('active');
+            $('body').removeClass('is-search-active');
+        }
+
+        // Bind directly on the button (namespaced). Molla's delegated
+        // `.header-search` click handler calls stopPropagation at the body level,
+        // which blocks a document-delegated handler — so attach to the element.
+        $('.header .search-wrapper .header-search-close')
+            .off('click.headerSearch')
+            .on('click.headerSearch', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                closeHeaderSearch();
+                $('.header .search-toggle').trigger('focus');
+            });
+
+        $(document).on('keydown', function (e) {
+            if ((e.key === 'Escape' || e.keyCode === 27) &&
+                $('.header .search-wrapper').hasClass('show')) {
+                closeHeaderSearch();
+                $('.header .search-toggle').trigger('focus');
+            }
+        });
+    })();
+
 })(jQuery);
