@@ -4091,42 +4091,66 @@ footer .footer-bottom {
   }
 }
 .faq .faq-list .faq-item {
-  margin-bottom: 20px;
-  border-radius: 0;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  margin-bottom: 14px;
+  background-color: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;
   overflow: hidden;
-  transition: all 0.3s ease;
-  border-bottom: 3px solid var(--accent-color);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .faq .faq-list .faq-item:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.faq .faq-list .faq-item.faq-active {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 35%);
+  box-shadow: var(--shadow-card);
 }
 
 .faq .faq-list .faq-item h3, .faq .faq-list .faq-item .h3 {
   display: flex;
   align-items: center;
+  gap: 15px;
   padding: 20px 25px;
   margin: 0;
-  font-size: 1.1rem;
-  font-weight: 300;
   cursor: pointer;
-  transition: all 0.3s ease;
   position: relative;
-  font-family: inter !important;
-  font-size: 1.5rem !important;
+  color: var(--text-primary);
+  transition: color 0.25s ease;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.25rem !important;
   font-weight: 500 !important;
+}
+
+.faq .faq-list .faq-item h3::after, .faq .faq-list .faq-item .h3::after {
+  content: "+";
+  margin-left: auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.faq .faq-list .faq-item.faq-active h3, .faq .faq-list .faq-item.faq-active .h3 {
+  color: var(--accent-color);
+}
+
+.faq .faq-list .faq-item.faq-active h3::after, .faq .faq-list .faq-item.faq-active .h3::after {
+  content: "–";
 }
 
 .faq .faq-list .faq-item h3 .num, .faq .faq-list .faq-item .h3 .num {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  margin-right: 15px;
-  border-radius: 0;
+  width: 30px;
+  height: 30px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 4px;
   font-size: 0.9rem;
   font-weight: 700;
   flex-shrink: 0;
@@ -4143,14 +4167,14 @@ footer .footer-bottom {
 }
 
 .faq .faq-list .faq-item .faq-content {
-  padding: 15px;
+  padding: 0 25px 22px;
   display: none;
 }
 
 .faq .faq-list .faq-item .faq-content p {
-  overflow: hidden;
-  padding: 0;
   margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
 }
 
 .faq .faq-list .faq-item .faq-content p:last-child {
@@ -4539,38 +4563,54 @@ footer .footer-bottom {
 .benefit-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--surface-border);
 }
 .benefit-item:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .benefit-item .benefit-icon {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-  margin-top: 4px;
+  margin-top: 2px;
   flex-shrink: 0;
-  background: transparent;
-  border: 1px solid var(--border-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+  border-radius: 4px;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 .benefit-item .benefit-icon i {
   font-size: 24px;
   color: var(--accent-color);
 }
 
-.benefit-item .benefit-content h4, .benefit-item .benefit-content .h4 {
+.benefit-item:hover .benefit-icon {
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 45%);
+}
+
+.benefit-item .benefit-content h3, .benefit-item .benefit-content .h3,
+.benefit-item .benefit-content h4,
+.benefit-item .benefit-content .h4 {
   margin-bottom: 0.5rem;
   font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-primary);
 }
 .benefit-item .benefit-content p {
   margin-bottom: 0;
   font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
 }
 
 @media (max-width: 992px) {
@@ -4612,26 +4652,34 @@ footer .footer-bottom {
 }
 
 .testimonial-item {
-  background-color: var(--surface);
-  border: 1px solid var(--border-color);
-  padding: 20px;
-  transition: all 0.3s ease;
+  display: flex;
+  height: 100%;
+  padding: 0;
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.testimonial-item:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
 .testimonials .testimonial-content {
-  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   position: relative;
-  transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
-}
-.testimonials .testimonial-content:hover {
-  transform: translateY(-5px);
+  border: 0;
+  border-radius: 0;
 }
 .testimonials .testimonial-content p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.7;
-  margin: 1.5rem 0;
+  margin: 1.25rem 0 0;
+  color: var(--text-primary);
 }
 
 .testimonials .quote-pattern {
@@ -4640,41 +4688,44 @@ footer .footer-bottom {
   left: 2rem;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--section-primary);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border-color);
+  background-color: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;
+  color: var(--accent-color);
 }
 .testimonials .quote-pattern i {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  color: var(--accent-color);
 }
 
 .testimonials .client-info {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--surface-border);
 }
 
 .testimonials .client-details h3, .testimonials .client-details .h3 {
-  font-size: 1.125rem;
-  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
 }
 .testimonials .client-details .position {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 1199.98px) {
   .testimonials .testimonial-masonry {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-  }
-  .testimonials .testimonial-item:nth-child(even) {
-    margin-top: 2rem;
   }
 }
 @media (max-width: 767.98px) {

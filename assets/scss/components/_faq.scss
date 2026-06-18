@@ -56,51 +56,67 @@
 }
 
 .faq .faq-list .faq-item {
-  margin-bottom: 20px;
-  border-radius: 0;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  margin-bottom: 14px;
+  background-color: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;
   overflow: hidden;
-  transition: all 0.3s ease;
-  border-bottom: 3px solid var(--accent-color);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .faq .faq-list .faq-item:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.faq .faq-list .faq-item.faq-active {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 35%);
+  box-shadow: var(--shadow-card);
 }
 
 .faq .faq-list .faq-item h3 {
   display: flex;
   align-items: center;
+  gap: 15px;
   padding: 20px 25px;
   margin: 0;
-  font-size: 1.1rem;
-  font-weight: 300;
   cursor: pointer;
-  // background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
-  // border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
-  transition: all 0.3s ease;
   position: relative;
-  font-family: inter !important;
-  font-size: 1.5rem !important;
+  color: var(--text-primary);
+  transition: color 0.25s ease;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.25rem !important;
   font-weight: 500 !important;
 }
 
-.faq .faq-list .faq-item h3:hover {
-  // background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+// CSS-only +/- indicator (rendered markup has no toggle element).
+.faq .faq-list .faq-item h3::after {
+  content: "+";
+  margin-left: auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.faq .faq-list .faq-item.faq-active h3 {
+  color: var(--accent-color);
+}
+
+.faq .faq-list .faq-item.faq-active h3::after {
+  content: "\2013";   // en dash (minus)
 }
 
 .faq .faq-list .faq-item h3 .num {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  margin-right: 15px;
-  // background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-  // color: $white;
-  // border:1px solid var(--accent-color);
-  border-radius: 0;
+  width: 30px;
+  height: 30px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 4px;
   font-size: 0.9rem;
   font-weight: 700;
   flex-shrink: 0;
@@ -119,14 +135,14 @@
 }
 
 .faq .faq-list .faq-item .faq-content {
-  padding: 15px;
+  padding: 0 25px 22px;
   display: none;
 }
 
 .faq .faq-list .faq-item .faq-content p {
-  overflow: hidden;
-  padding: 0;
   margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
 }
 
 .faq .faq-list .faq-item .faq-content p:last-child {
