@@ -3805,11 +3805,93 @@ footer {
   background-color: transparent !important;
 }
 
-.header-search .search-wrapper.show .form-control {
-  background: #111 !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+.header-search-close {
+  display: none;
 }
 
+@media (min-width: 992px) {
+  .header .header-search .search-wrapper {
+    display: none;
+  }
+  .header .header-search .search-wrapper.show {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    min-height: 80px;
+    padding: 0 32px;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--header-border);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    animation: falconSearchIn 0.18s ease-out;
+  }
+  .header .header-search .search-wrapper.show .live-search {
+    flex: 1;
+    min-width: 0;
+  }
+  .header .header-search .search-wrapper.show .form-control {
+    width: 100%;
+    height: 56px;
+    padding: 0 4px;
+    font-size: 1.25rem;
+    color: #fff !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  .header .header-search .search-wrapper.show .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .header .header-search .search-wrapper.show .btn {
+    flex-shrink: 0;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 4px;
+    background: var(--accent-strong) !important;
+    border-color: var(--accent-strong) !important;
+    color: #fff !important;
+  }
+  .header .header-search .search-wrapper.show .header-search-close {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--header-border);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .header .header-search .search-wrapper.show .header-search-close:hover, .header .header-search .search-wrapper.show .header-search-close:focus-visible {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    outline: none;
+  }
+}
+@keyframes falconSearchIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .header .header-search .search-wrapper.show {
+    animation: none;
+  }
+}
 .shop-icons {
   margin-left: 2.4rem;
 }
