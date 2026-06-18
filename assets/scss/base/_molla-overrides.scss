@@ -177,8 +177,8 @@ footer h6,
 .add_to_cart_button,
 .single_add_to_cart_button,
 .btn-cart {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
   color: #ffffff !important;
 
   &:hover {
@@ -228,7 +228,7 @@ select,
   }
 
   .current {
-    background-color: var(--accent-color);
+    background-color: var(--accent-strong);
     color: #ffffff;
   }
 }

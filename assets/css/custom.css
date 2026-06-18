@@ -2813,6 +2813,9 @@ main,
   /* Brand */
   --color-primary: #208bf4;
   --accent-color: var(--color-primary);
+  /* Text-bearing blue: darker accent for filled UI with white text (WCAG AA, ~5:1).
+     Use only where #fff sits on a blue fill; keep --accent-color for decorative/non-text blue. */
+  --accent-strong: #1A6FCC;
   --color-primary-rgb:
     32,
     139,
@@ -3591,8 +3594,8 @@ footer .h6,
 .add_to_cart_button,
 .single_add_to_cart_button,
 .btn-cart {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
   color: #ffffff !important;
 }
 .woocommerce a.button:hover,
@@ -3646,7 +3649,7 @@ select:focus,
 }
 .page-numbers .current,
 .pagination .current {
-  background-color: var(--accent-color);
+  background-color: var(--accent-strong);
   color: #ffffff;
 }
 
@@ -4703,15 +4706,15 @@ footer .footer-bottom {
 
 .btn.btn-primary,
 a.btn.btn-primary {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
   color: white !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus,
 a.btn.btn-primary:hover,
 a.btn.btn-primary:focus {
-  background-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
-  border-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
+  background-color: color-mix(in srgb, var(--accent-strong), black 10%) !important;
+  border-color: color-mix(in srgb, var(--accent-strong), black 10%) !important;
   box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.3);
 }
 
@@ -4739,9 +4742,9 @@ a.btn.btn-secondary {
 .btn.btn-secondary:hover, .btn.btn-secondary:focus,
 a.btn.btn-secondary:hover,
 a.btn.btn-secondary:focus {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
-  color: var(--contrast-color) !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
+  color: #fff !important;
 }
 
 .btn-pill {
@@ -5815,9 +5818,9 @@ a.btn.btn-secondary:focus {
   color: var(--text-primary, inherit);
 }
 .falcon-configurations .toggle-pill.active {
-  background: var(--accent-color);
+  background: var(--accent-strong);
   color: #fff;
-  border-color: var(--accent-color);
+  border-color: var(--accent-strong);
 }
 .falcon-configurations .spec-section {
   margin-bottom: 2rem;
@@ -6064,7 +6067,7 @@ a.btn.btn-secondary:focus {
   margin-top: 10px;
   padding: 14px 26px;
   width: auto;
-  background: var(--accent-color);
+  background: var(--accent-strong);
   color: #ffffff;
   border: none;
   border-radius: 999px;
@@ -6745,7 +6748,7 @@ a.btn.btn-secondary:focus {
   margin-top: 10px;
   padding: 14px 28px;
   border-radius: 999px;
-  background: var(--accent-color);
+  background: var(--accent-strong);
   color: white !important;
   font-weight: 600;
   font-size: 1.1rem;
@@ -7537,7 +7540,7 @@ a.btn.btn-secondary:focus {
   margin-bottom: 8px;
 }
 .product-list-item .btn-primary {
-  background: var(--accent-color, #3aa0ff) !important;
+  background: var(--accent-strong) !important;
   color: #fff !important;
   padding: 14px 26px;
   border: 1px solid color-mix(in srgb, var(--color-primary), transparent 20%) !important;
@@ -7784,13 +7787,13 @@ a.btn.btn-secondary:focus {
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
-  background-color: var(--accent-color) !important;
+  background-color: var(--accent-strong) !important;
   border-radius: 0;
   color: #fff !important;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active a:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 10%) !important;
+  background-color: color-mix(in srgb, var(--accent-strong), #000 10%) !important;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
