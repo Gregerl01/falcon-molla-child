@@ -2813,6 +2813,9 @@ main,
   /* Brand */
   --color-primary: #208bf4;
   --accent-color: var(--color-primary);
+  /* Text-bearing blue: darker accent for filled UI with white text (WCAG AA, ~5:1).
+     Use only where #fff sits on a blue fill; keep --accent-color for decorative/non-text blue. */
+  --accent-strong: #1A6FCC;
   --color-primary-rgb:
     32,
     139,
@@ -2823,7 +2826,8 @@ main,
   --section-secondary: #f4f7f6;
   /* Text */
   --text-primary: #252525;
-  --text-secondary: #777777;
+  /* gray-700 (#52565e) ~7:1 on white — body copy meets WCAG AA (was gray-600 ~4.2:1). */
+  --text-secondary: #52565e;
   --text-muted: #adb5bd;
   /* Headings */
   --heading-color: var(--text-primary);
@@ -3591,8 +3595,8 @@ footer .h6,
 .add_to_cart_button,
 .single_add_to_cart_button,
 .btn-cart {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
   color: #ffffff !important;
 }
 .woocommerce a.button:hover,
@@ -3646,7 +3650,7 @@ select:focus,
 }
 .page-numbers .current,
 .pagination .current {
-  background-color: var(--accent-color);
+  background-color: var(--accent-strong);
   color: #ffffff;
 }
 
@@ -3715,6 +3719,54 @@ select:focus,
 
 .wp-singular .page-content {
   background: var(--section-primary) !important;
+}
+
+/* ============================================================================
+   ACCESSIBILITY — VISIBLE KEYBOARD FOCUS (:focus-visible)
+   ========================================================================== */
+/* Global keyboard focus ring. :where() = 0 specificity so component styles win
+   where needed; pointer focus is unaffected (:focus-visible only). */
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+/* Form fields: keep the accent border, add a softer ring for clarity. */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  border-color: var(--accent-color);
+  outline: 2px solid color-mix(in srgb, var(--accent-color), transparent 35%);
+  outline-offset: 2px;
+}
+
+/* ============================================================================
+   ACCESSIBILITY — DISTINGUISHABLE IN-CONTENT LINKS (H3)
+   ========================================================================== */
+/* Scoped to body/content contexts only — excludes header/nav, footer, buttons,
+   card/product titles, icon links, and carousel controls. The `color` carries a
+   scoped !important solely to override the global `a { color: inherit !important }`
+   reset above; underline/offset need no !important. Not a site-wide link rule. */
+.entry-content a:not(.btn):not(.button),
+.section p a:not(.btn):not(.button),
+.section li a:not(.btn):not(.button),
+.product-description a:not(.btn):not(.button),
+.woocommerce-product-details__short-description a:not(.btn):not(.button),
+.woocommerce-Tabs-panel a:not(.btn):not(.button) {
+  color: var(--accent-strong) !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.entry-content a:not(.btn):not(.button):hover,
+.section p a:not(.btn):not(.button):hover,
+.section li a:not(.btn):not(.button):hover,
+.product-description a:not(.btn):not(.button):hover,
+.woocommerce-product-details__short-description a:not(.btn):not(.button):hover,
+.woocommerce-Tabs-panel a:not(.btn):not(.button):hover {
+  color: color-mix(in srgb, var(--accent-strong), #000 12%) !important;
+  text-decoration-thickness: 2px;
 }
 
 header.header {
@@ -4703,15 +4755,15 @@ footer .footer-bottom {
 
 .btn.btn-primary,
 a.btn.btn-primary {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
   color: white !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus,
 a.btn.btn-primary:hover,
 a.btn.btn-primary:focus {
-  background-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
-  border-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
+  background-color: color-mix(in srgb, var(--accent-strong), black 10%) !important;
+  border-color: color-mix(in srgb, var(--accent-strong), black 10%) !important;
   box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.3);
 }
 
@@ -4739,9 +4791,9 @@ a.btn.btn-secondary {
 .btn.btn-secondary:hover, .btn.btn-secondary:focus,
 a.btn.btn-secondary:hover,
 a.btn.btn-secondary:focus {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
-  color: var(--contrast-color) !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
+  color: #fff !important;
 }
 
 .btn-pill {
@@ -4769,6 +4821,19 @@ a.btn.btn-secondary:focus {
 .btn-block {
   display: block;
   width: 100%;
+}
+
+.btn.btn-primary:focus-visible,
+a.btn.btn-primary:focus-visible,
+.woocommerce a.button:focus-visible,
+.woocommerce button.button:focus-visible,
+.add_to_cart_button:focus-visible,
+.single_add_to_cart_button:focus-visible,
+.btn-cart:focus-visible,
+.wpcf7-submit:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(var(--color-primary-rgb), 0.45);
 }
 
 /* =================================================
@@ -5196,7 +5261,7 @@ a.btn.btn-secondary:focus {
   margin: 0;
   font-size: var(--fs-card-body);
   line-height: var(--lh-body);
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 /* -------------------------------------------------
@@ -5815,9 +5880,9 @@ a.btn.btn-secondary:focus {
   color: var(--text-primary, inherit);
 }
 .falcon-configurations .toggle-pill.active {
-  background: var(--accent-color);
+  background: var(--accent-strong);
   color: #fff;
-  border-color: var(--accent-color);
+  border-color: var(--accent-strong);
 }
 .falcon-configurations .spec-section {
   margin-bottom: 2rem;
@@ -6064,7 +6129,7 @@ a.btn.btn-secondary:focus {
   margin-top: 10px;
   padding: 14px 26px;
   width: auto;
-  background: var(--accent-color);
+  background: var(--accent-strong);
   color: #ffffff;
   border: none;
   border-radius: 999px;
@@ -6737,7 +6802,7 @@ a.btn.btn-secondary:focus {
 }
 
 .contact-section .wpcf7-form-control::placeholder {
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 /* Submit button */
@@ -6745,13 +6810,47 @@ a.btn.btn-secondary:focus {
   margin-top: 10px;
   padding: 14px 28px;
   border-radius: 999px;
-  background: var(--accent-color);
+  background: var(--accent-strong);
   color: white !important;
   font-weight: 600;
   font-size: 1.1rem;
   border: none;
   cursor: pointer;
   width: auto;
+}
+
+/* -------------------------------------
+   LABELS & VALIDATION (H6)
+   Form markup is DB-side (CF7). These standard CF7 selectors style real
+   <label>s, the required marker, inline error tips, and the response output.
+   Add the actual <label> wrappers in the CF7 form editor (see deferred notes).
+------------------------------------- */
+.contact-section .wpcf7-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-section .wpcf7-form .req {
+  color: #dc3545;
+}
+
+.contact-section .wpcf7-not-valid-tip {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #dc3545;
+}
+
+.contact-section .wpcf7-form-control.wpcf7-not-valid {
+  border-color: #dc3545;
+}
+
+.contact-section .wpcf7-response-output {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 /* -------------------------------------
@@ -6782,7 +6881,7 @@ a.btn.btn-secondary:focus {
   /* Submit button */
 }
 [data-theme=dark] .contact-section .wpcf7-submit {
-  background: var(--accent-color);
+  background: var(--accent-strong);
   font-weight: 600;
   font-size: 1.1rem;
   border: none;
@@ -7533,11 +7632,11 @@ a.btn.btn-secondary:focus {
 }
 .product-list-item .product-features li {
   font-size: 0.95rem;
-  color: #444;
+  color: var(--text-secondary);
   margin-bottom: 8px;
 }
 .product-list-item .btn-primary {
-  background: var(--accent-color, #3aa0ff) !important;
+  background: var(--accent-strong) !important;
   color: #fff !important;
   padding: 14px 26px;
   border: 1px solid color-mix(in srgb, var(--color-primary), transparent 20%) !important;
@@ -7784,13 +7883,13 @@ a.btn.btn-secondary:focus {
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
-  background-color: var(--accent-color) !important;
+  background-color: var(--accent-strong) !important;
   border-radius: 0;
   color: #fff !important;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active a:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 10%) !important;
+  background-color: color-mix(in srgb, var(--accent-strong), #000 10%) !important;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {

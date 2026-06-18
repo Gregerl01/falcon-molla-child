@@ -177,8 +177,8 @@ footer h6,
 .add_to_cart_button,
 .single_add_to_cart_button,
 .btn-cart {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
   color: #ffffff !important;
 
   &:hover {
@@ -228,7 +228,7 @@ select,
   }
 
   .current {
-    background-color: var(--accent-color);
+    background-color: var(--accent-strong);
     color: #ffffff;
   }
 }
@@ -310,5 +310,55 @@ select,
 .wp-singular .page-content {
   background: var(--section-primary) !important;
   // padding-top: 80px;
+}
+
+/* ============================================================================
+   ACCESSIBILITY — VISIBLE KEYBOARD FOCUS (:focus-visible)
+   ========================================================================== */
+
+/* Global keyboard focus ring. :where() = 0 specificity so component styles win
+   where needed; pointer focus is unaffected (:focus-visible only). */
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+/* Form fields: keep the accent border, add a softer ring for clarity. */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  border-color: var(--accent-color);
+  outline: 2px solid color-mix(in srgb, var(--accent-color), transparent 35%);
+  outline-offset: 2px;
+}
+
+/* ============================================================================
+   ACCESSIBILITY — DISTINGUISHABLE IN-CONTENT LINKS (H3)
+   ========================================================================== */
+
+/* Scoped to body/content contexts only — excludes header/nav, footer, buttons,
+   card/product titles, icon links, and carousel controls. The `color` carries a
+   scoped !important solely to override the global `a { color: inherit !important }`
+   reset above; underline/offset need no !important. Not a site-wide link rule. */
+.entry-content a:not(.btn):not(.button),
+.section p a:not(.btn):not(.button),
+.section li a:not(.btn):not(.button),
+.product-description a:not(.btn):not(.button),
+.woocommerce-product-details__short-description a:not(.btn):not(.button),
+.woocommerce-Tabs-panel a:not(.btn):not(.button) {
+  color: var(--accent-strong) !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.entry-content a:not(.btn):not(.button):hover,
+.section p a:not(.btn):not(.button):hover,
+.section li a:not(.btn):not(.button):hover,
+.product-description a:not(.btn):not(.button):hover,
+.woocommerce-product-details__short-description a:not(.btn):not(.button):hover,
+.woocommerce-Tabs-panel a:not(.btn):not(.button):hover {
+  color: color-mix(in srgb, var(--accent-strong), #000 12%) !important;
+  text-decoration-thickness: 2px;
 }
 

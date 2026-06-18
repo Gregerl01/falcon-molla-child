@@ -25,14 +25,14 @@
 // Primary button (always blue)
 .btn.btn-primary,
 a.btn.btn-primary {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
+  background-color: var(--accent-strong) !important;
+  border-color: var(--accent-strong) !important;
   color: white !important;
 
   &:hover,
   &:focus {
-    background-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
-    border-color: color-mix(in srgb, var(--accent-color), black 10%) !important;
+    background-color: color-mix(in srgb, var(--accent-strong), black 10%) !important;
+    border-color: color-mix(in srgb, var(--accent-strong), black 10%) !important;
     box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.3);
   }
 }
@@ -79,9 +79,9 @@ a.btn.btn-secondary {
   
   &:hover,
   &:focus {
-    background-color: var(--accent-color) !important;
-    border-color: var(--accent-color) !important;
-    color: var(--contrast-color) !important;
+    background-color: var(--accent-strong) !important;
+    border-color: var(--accent-strong) !important;
+    color: #fff !important;
   }
 }
 
@@ -113,4 +113,20 @@ a.btn.btn-secondary {
 .btn-block {
   display: block;
   width: 100%;
+}
+
+// Visible keyboard focus for filled (blue/dark) CTAs — white inner outline plus
+// a soft brand-blue halo so the ring shows against the fill. Pointer focus keeps
+// the existing subtle treatment (:focus-visible only).
+.btn.btn-primary:focus-visible,
+a.btn.btn-primary:focus-visible,
+.woocommerce a.button:focus-visible,
+.woocommerce button.button:focus-visible,
+.add_to_cart_button:focus-visible,
+.single_add_to_cart_button:focus-visible,
+.btn-cart:focus-visible,
+.wpcf7-submit:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(var(--color-primary-rgb), 0.45);
 }

@@ -177,7 +177,7 @@
 }
 
 .contact-section .wpcf7-form-control::placeholder {
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 /* Submit button */
@@ -185,7 +185,7 @@
   margin-top: 10px;
   padding: 14px 28px;
   border-radius: 999px;
-  background: var(--accent-color);
+  background: var(--accent-strong);
   // color: var(--bg-page) !important;
   color: white !important;
   font-weight: 600;
@@ -193,6 +193,40 @@
   border: none;
   cursor: pointer;
   width:auto;
+}
+
+/* -------------------------------------
+   LABELS & VALIDATION (H6)
+   Form markup is DB-side (CF7). These standard CF7 selectors style real
+   <label>s, the required marker, inline error tips, and the response output.
+   Add the actual <label> wrappers in the CF7 form editor (see deferred notes).
+------------------------------------- */
+.contact-section .wpcf7-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-section .wpcf7-form .req {
+  color: #{map-get($colors, 'danger')};
+}
+
+.contact-section .wpcf7-not-valid-tip {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #{map-get($colors, 'danger')};
+}
+
+.contact-section .wpcf7-form-control.wpcf7-not-valid {
+  border-color: #{map-get($colors, 'danger')};
+}
+
+.contact-section .wpcf7-response-output {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 /* -------------------------------------
@@ -229,7 +263,7 @@
 
   /* Submit button */
   .contact-section .wpcf7-submit {
-    background: var(--accent-color);
+    background: var(--accent-strong);
     // color: var(--bg-page) !important;
     font-weight: 600;
     font-size: 1.1rem;

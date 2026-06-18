@@ -116,13 +116,13 @@
 
 
  .woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
-  background-color: var(--accent-color)  !important;
+  background-color: var(--accent-strong)  !important;
   border-radius: 0;
   color:#fff !important;
  }
 
   .woocommerce div.product .woocommerce-tabs ul.tabs li.active a:hover {
-    background-color: color-mix(in srgb, var(--accent-color), transparent 10%) !important;
+    background-color: color-mix(in srgb, var(--accent-strong), #000 10%) !important;
   }
 
  .woocommerce div.product .woocommerce-tabs ul.tabs li a {
