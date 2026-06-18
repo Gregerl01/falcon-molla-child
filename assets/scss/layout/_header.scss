@@ -80,6 +80,19 @@ footer {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
     animation: falconSearchIn 0.18s ease-out;
 
+    // Dim the rest of the page so the open search reads as a focused mode.
+    // Sits inside the bar's stacking context (z-index:-1 => above the page,
+    // behind the bar). pointer-events:none lets clicks fall through to Molla's
+    // outside-click handler, which closes the search.
+    &::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+      pointer-events: none;
+    }
+
     .live-search {
       flex: 1;
       min-width: 0;
@@ -107,23 +120,29 @@ footer {
       color: rgba(255, 255, 255, 0.5);
     }
 
-    // Submit — accent-blue, squared, sits before the close button.
+    // Submit — accent-blue square. inline-flex + padding:0 use !important to beat
+    // _buttons.scss `.btn { display:inline-block !important; padding:1.2rem 3rem !important }`,
+    // which was breaking the icon centering/size.
     .btn {
       flex-shrink: 0;
-      display: inline-flex;
+      display: inline-flex !important;
       align-items: center;
       justify-content: center;
+      width: 56px;
       height: 52px;
-      padding: 0 22px;
+      padding: 0 !important;
       border-radius: 4px;
       background: var(--accent-strong) !important;
       border-color: var(--accent-strong) !important;
       color: #fff !important;
 
-      // Molla hides .icon-search inside .search-wrapper; restore it for this button.
+      // Molla hides .icon-search inside .search-wrapper; restore + size + center it.
       .icon-search {
-        display: inline-block !important;
-        font-size: 1.1rem;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.45rem;
+        line-height: 1;
       }
     }
 
