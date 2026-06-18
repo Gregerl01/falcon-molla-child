@@ -229,6 +229,157 @@
   font-size: 0.9rem;
 }
 
+/* =============================================================================
+   FALCON PREMIUM QUOTE FORM (.falcon-quote-form)
+   Shared CF7 form (ID 483) used on the contact page AND homepage. Structure +
+   input surfaces are grouped for both sections; text/label COLORS are set per
+   section (contact = theme-adaptive --text tokens here; homepage = light, in
+   _home.scss, because that section is a fixed dark image). Submit is excluded
+   from the input styling via :not(.wpcf7-submit) so it keeps its accent button.
+   ============================================================================ */
+.contact-section .falcon-quote-form,
+.homepage-contact-section .falcon-quote-form {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.contact-section .falcon-quote-form .form-row,
+.homepage-contact-section .falcon-quote-form .form-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 22px;
+  align-items: flex-start;
+}
+
+/* Neutralize any CF7-autop <p> wrapper so the <label>s are the flex items
+   regardless of how wpcf7_autop wraps the markup. */
+.contact-section .falcon-quote-form .form-row > p,
+.homepage-contact-section .falcon-quote-form .form-row > p {
+  display: contents;
+}
+
+.contact-section .falcon-quote-form .form-row label,
+.homepage-contact-section .falcon-quote-form .form-row label {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.contact-section .falcon-quote-form label,
+.homepage-contact-section .falcon-quote-form label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 0;
+}
+
+.contact-section .falcon-quote-form .req,
+.homepage-contact-section .falcon-quote-form .req {
+  color: #{map-get($colors, 'danger')};
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+/* CF7 wraps each field in an inline <span class="wpcf7-form-control-wrap">.
+   Make it block so the width:100% input fills the label column. */
+.contact-section .falcon-quote-form .wpcf7-form-control-wrap,
+.homepage-contact-section .falcon-quote-form .wpcf7-form-control-wrap {
+  display: block;
+  width: 100%;
+}
+
+/* Inputs (NOT the submit). Dark translucent surface + blue-tinted border —
+   reads dark on dark sections, subtle on the light contact surface; never the
+   cheap light-gray box. */
+.contact-section .falcon-quote-form .wpcf7-form-control:not(.wpcf7-submit),
+.homepage-contact-section .falcon-quote-form .wpcf7-form-control:not(.wpcf7-submit) {
+  display: block;
+  width: 100%;
+  margin-top: 9px;
+  min-height: 48px;
+  padding: 13px 15px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.32);
+  border-radius: 6px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 0 0 1px rgba(255, 255, 255, 0.015);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-section .falcon-quote-form .wpcf7-form-control:not(.wpcf7-submit):focus,
+.contact-section .falcon-quote-form .wpcf7-form-control:not(.wpcf7-submit):focus-visible,
+.homepage-contact-section .falcon-quote-form .wpcf7-form-control:not(.wpcf7-submit):focus,
+.homepage-contact-section .falcon-quote-form .wpcf7-form-control:not(.wpcf7-submit):focus-visible {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--accent-color);
+  /* transparent outline (not none) keeps a focus indicator in forced-colors mode;
+     the blue glow is the visible indicator for everyone else. */
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow:
+    0 0 0 3px rgba(var(--color-primary-rgb), 0.18),
+    0 0 24px rgba(var(--color-primary-rgb), 0.14);
+}
+
+.contact-section .falcon-quote-form textarea.wpcf7-form-control,
+.homepage-contact-section .falcon-quote-form textarea.wpcf7-form-control {
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* Selects: drop the native arrow and draw an on-brand blue chevron that reads on
+   both the light contact surface and the dark homepage. :not(.wpcf7-submit) keeps
+   specificity above the input base so the custom background-image wins. */
+.contact-section .falcon-quote-form select.wpcf7-form-control:not(.wpcf7-submit),
+.homepage-contact-section .falcon-quote-form select.wpcf7-form-control:not(.wpcf7-submit) {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 42px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23208BF4' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 14px;
+  cursor: pointer;
+}
+
+.contact-section .falcon-quote-form .form-full,
+.homepage-contact-section .falcon-quote-form .form-full {
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.contact-section .falcon-quote-form .form-submit-row,
+.homepage-contact-section .falcon-quote-form .form-submit-row {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Contact page text: theme-adaptive (dark on the light surface, white in dark mode). */
+.contact-section .falcon-quote-form label,
+.contact-section .falcon-quote-form .wpcf7-form-control:not(.wpcf7-submit) {
+  color: var(--text-primary);
+}
+.contact-section .falcon-quote-form .wpcf7-form-control:not(.wpcf7-submit)::placeholder {
+  color: color-mix(in srgb, var(--text-secondary), transparent 18%);
+}
+
+@media (max-width: 767px) {
+  .contact-section .falcon-quote-form .form-row,
+  .homepage-contact-section .falcon-quote-form .form-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .contact-section .falcon-quote-form .form-row label,
+  .homepage-contact-section .falcon-quote-form .form-row label {
+    width: 100%;
+  }
+}
+
 /* -------------------------------------
    DARK MODE – CONTEXTUAL ONLY
 ------------------------------------- */
