@@ -4515,6 +4515,7 @@ footer .footer-bottom {
 .feature-split {
   display: flex;
   gap: var(--spacing-xl);
+  align-items: center;
 }
 .feature-split__media {
   flex: 1;
@@ -4527,6 +4528,12 @@ footer .footer-bottom {
 }
 .feature-split--img-right {
   flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .feature-split {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
 }
 
 .benefit-item {

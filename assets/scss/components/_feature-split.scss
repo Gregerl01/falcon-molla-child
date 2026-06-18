@@ -6,6 +6,7 @@
 .feature-split {
   display: flex;
   gap: var(--spacing-xl);
+  align-items: center;
 
   &__media { flex: 1; }
   &__content { flex: 1; }
@@ -16,6 +17,12 @@
 
   &--img-right {
     flex-direction: row-reverse;
+  }
+
+  // Stack image and content on mobile (no responsive rule existed before).
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: var(--spacing-lg);
   }
 }
 
