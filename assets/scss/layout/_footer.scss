@@ -60,5 +60,72 @@ footer {
 }
 
 #gutenberg-block-5 p.icon-box-desc {
-  color: var(--footer-text) !important;
+  color: rgba(255, 255, 255, 0.6) !important;   // muted description for clearer hierarchy
+}
+
+// ============================================================================
+// FOOTER-TOP TRUST STRIP — refined trust bar
+// Scoped to .footer-top (widget-driven Molla .icon-box items). SCSS only; the
+// footer is locked-dark, so values are tuned for the dark surface.
+// ============================================================================
+.footer-top {
+  padding-top: 52px;
+  padding-bottom: 52px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  .icon-box {
+    align-items: center;
+  }
+
+  // Subtle Falcon-blue accent glyph with a refined hairline ring — not a bright,
+  // filled badge. Keeps the strip industrial and quiet.
+  .icon-box-icon {
+    color: var(--accent-color);
+  }
+
+  .icon-circle {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    i {
+      color: var(--accent-color);
+      font-size: 1.5rem;
+    }
+  }
+
+  // Title (white) over muted description — clearer hierarchy.
+  .icon-box-title {
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .icon-box-desc {
+    margin-bottom: 0;
+  }
+
+  // Thin vertical dividers between the four items on desktop.
+  .inner-wrap .row > div + div {
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-top {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    // No dividers when stacked; add breathing room between items instead.
+    .inner-wrap .row > div + div {
+      border-left: 0;
+    }
+
+    .inner-wrap .row > div {
+      margin-bottom: 24px;
+    }
+
+    .inner-wrap .row > div:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
