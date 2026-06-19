@@ -1074,3 +1074,80 @@
 //   }
 // }
 
+// ============================================================================
+// ABOUT US — scoped polish pass (refinements only; About-specific selectors).
+// Additive overrides — does NOT restyle bare/shared classes globally.
+// ============================================================================
+
+// Hero: stronger vertical rhythm, brand-aligned accent glow, card-consistent image.
+.surface--hero {
+  padding-block: 48px;
+
+  background:
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(var(--color-primary-rgb), 0.12),
+      transparent 55%
+    ),
+    var(--bg-page);
+
+  .hero-title {
+    text-wrap: balance;
+  }
+
+  img {
+    border-radius: 4px;
+    border: 1px solid var(--surface-border);
+  }
+
+  @media (min-width: 992px) {
+    padding-block: 72px;
+  }
+
+  @media (max-width: 991px) {
+    padding-block: 32px;
+  }
+}
+
+// Stat cards ("The Rise"): 4px radius, squared accent icon, stronger stat label,
+// subtle accent border on hover. Scoped under .features-01 (never bare .feature-item).
+.features-01 {
+  .feature-item {
+    border-radius: 4px;
+
+    &:hover {
+      border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+    }
+  }
+
+  .feature-icon {
+    border-radius: 4px;
+  }
+
+  .feature-header h3 {
+    font-weight: 700;
+  }
+}
+
+// Process cards ("Where Durability Is Engineered"): 4px radius, calmer lift,
+// subtle accent border on hover, stronger title.
+.manufacturing-process {
+  .process-card {
+    border-radius: 4px;
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+    }
+  }
+
+  .process-content h4 {
+    font-weight: 700;
+  }
+}
+
+// CTA: light consistency — match the 4px card radius.
+.cta-01__box {
+  border-radius: 4px;
+}
+

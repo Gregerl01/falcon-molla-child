@@ -6941,6 +6941,56 @@ a.btn.btn-primary:focus-visible,
   color: color-mix(in srgb, var(--background-color), var(--contrast-color) 80%);
 }
 
+.surface--hero {
+  padding-block: 48px;
+  background: radial-gradient(circle at 80% 50%, rgba(var(--color-primary-rgb), 0.12), transparent 55%), var(--bg-page);
+}
+.surface--hero .hero-title {
+  text-wrap: balance;
+}
+.surface--hero img {
+  border-radius: 4px;
+  border: 1px solid var(--surface-border);
+}
+@media (min-width: 992px) {
+  .surface--hero {
+    padding-block: 72px;
+  }
+}
+@media (max-width: 991px) {
+  .surface--hero {
+    padding-block: 32px;
+  }
+}
+
+.features-01 .feature-item {
+  border-radius: 4px;
+}
+.features-01 .feature-item:hover {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+}
+.features-01 .feature-icon {
+  border-radius: 4px;
+}
+.features-01 .feature-header h3, .features-01 .feature-header .h3 {
+  font-weight: 700;
+}
+
+.manufacturing-process .process-card {
+  border-radius: 4px;
+}
+.manufacturing-process .process-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+}
+.manufacturing-process .process-content h4, .manufacturing-process .process-content .h4 {
+  font-weight: 700;
+}
+
+.cta-01__box {
+  border-radius: 4px;
+}
+
 /* ============================================================================
    CONTACT PAGE – CONTACT-2
    Theme-safe, light-first, dark contextual
