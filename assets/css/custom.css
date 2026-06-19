@@ -3424,12 +3424,34 @@ body p {
 }
 
 #scroll-top {
-  background: color-mix(in srgb, var(--color-primary), transparent 10%) !important;
-  border: 1px solid white !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  right: 16px !important;
+  bottom: 16px !important;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  background: rgba(17, 17, 17, 0.55) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 4px !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 #scroll-top i {
-  color: white;
-  font-size: 24px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+}
+#scroll-top:hover {
+  background: rgba(17, 17, 17, 0.85) !important;
+  border-color: var(--accent-color) !important;
+}
+#scroll-top:hover i {
+  color: #fff;
+}
+#scroll-top:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
 }
 
 /**
@@ -4159,6 +4181,68 @@ footer .footer-bottom {
     margin-bottom: 0;
   }
 }
+.footer-main .widget-title {
+  font-size: 15px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.footer-main .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-main .menu li {
+  margin-bottom: 10px;
+}
+.footer-main .menu li:last-child {
+  margin-bottom: 0;
+}
+.footer-main .menu a {
+  position: relative;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.footer-main .menu a::before {
+  content: "›";
+  position: absolute;
+  left: -14px;
+  color: var(--accent-color);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.footer-main .menu a:hover, .footer-main .menu a:focus-visible {
+  color: var(--accent-color) !important;
+  transform: translateX(6px);
+}
+.footer-main .menu a:hover::before, .footer-main .menu a:focus-visible::before {
+  opacity: 1;
+}
+
+footer .footer-main .textwidget a {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.7) !important;
+  line-height: 1.6;
+  transition: color 0.2s ease;
+}
+footer .footer-main .textwidget a:last-child {
+  margin-bottom: 0;
+}
+footer .footer-main .textwidget a:hover, footer .footer-main .textwidget a:focus-visible {
+  color: var(--accent-color) !important;
+}
+
+.footer-main .inner-wrap .row {
+  row-gap: 2rem;
+}
+
 .section {
   padding: 80px 0;
   background-color: var(--section-primary);
