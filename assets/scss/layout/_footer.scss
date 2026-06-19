@@ -140,3 +140,88 @@ footer {
     }
   }
 }
+
+// ============================================================================
+// FOOTER-MAIN — column titles, link lists, contact (SCSS only; widget markup
+// unchanged). Scoped to .footer-main. Footer is locked-dark.
+// ============================================================================
+
+// Deliberate footer-heading style: small, tracked, uppercase — clear hierarchy
+// above the links (was the global h3 size).
+.footer-main .widget-title {
+  font-size: 15px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+// Link lists — even vertical rhythm.
+.footer-main .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Restrained premium hover: chevron fades in, text nudges right, accent color.
+  a {
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.7) !important;   // beats global `a{color:inherit!important}`
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+
+    &::before {
+      content: "\203A";              // ›
+      position: absolute;
+      left: -14px;
+      color: var(--accent-color);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--accent-color) !important;
+      transform: translateX(6px);
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Contact (address / phone / email) — clean stacked spacing + same hover.
+// `footer` prefix matches the existing !important rule's specificity so this wins
+// on source order. Text content unchanged.
+footer .footer-main .textwidget a {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.7) !important;
+  line-height: 1.6;
+  transition: color 0.2s ease;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent-color) !important;
+  }
+}
+
+// A little more breathing room between columns when they wrap.
+.footer-main .inner-wrap .row {
+  row-gap: 2rem;
+}
