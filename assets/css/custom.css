@@ -4113,16 +4113,25 @@ footer .footer-bottom {
 .footer-top .icon-box {
   align-items: center;
 }
-.footer-top .icon-box-icon {
-  color: var(--accent-color);
-}
+.footer-top .icon-box-icon,
 .footer-top .icon-circle {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-right: 18px;
+  padding: 0;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  color: var(--accent-color);
 }
+.footer-top .icon-box-icon i,
 .footer-top .icon-circle i {
   color: var(--accent-color);
   font-size: 1.5rem;
+  line-height: 1;
 }
 .footer-top .icon-box-title {
   letter-spacing: 0.06em;

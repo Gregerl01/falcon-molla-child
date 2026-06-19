@@ -79,17 +79,26 @@ footer {
 
   // Subtle Falcon-blue accent glyph with a refined hairline ring — not a bright,
   // filled badge. Keeps the strip industrial and quiet.
-  .icon-box-icon {
-    color: var(--accent-color);
-  }
-
+  // Same element carries .icon-box-icon + .icon-circle; flex-center the glyph in
+  // a fixed square tile so it sits centered with internal padding (was top-left).
+  .icon-box-icon,
   .icon-circle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-right: 18px;
+    padding: 0;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 4px;
+    color: var(--accent-color);
 
     i {
       color: var(--accent-color);
       font-size: 1.5rem;
+      line-height: 1;
     }
   }
 
