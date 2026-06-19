@@ -1074,3 +1074,223 @@
 //   }
 // }
 
+// ============================================================================
+// ABOUT US — scoped visual polish (pass 2). All rules prefixed with
+// body.page-id-1845 so nothing leaks to other pages. No markup/content/H1/image
+// changes; scaled type is page-scoped only (not the global type system).
+// ============================================================================
+
+// --- Page rhythm: more deliberate, consistent vertical spacing (About only). ---
+body.page-id-1845 .section {
+  padding-block: 72px;
+
+  @media (min-width: 992px) { padding-block: 104px; }
+  @media (max-width: 767px) { padding-block: 56px; }
+}
+
+// Subtle separator between stacked sections so the page reads as composed.
+body.page-id-1845 .section + .section {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+// --- Hero: cinematic-but-controlled (~66vh), scaled headline, framed image. ---
+body.page-id-1845 .surface--hero {
+  display: flex;
+  align-items: center;
+  min-height: 66vh;
+  padding-block: 64px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 78% 38%, rgba(var(--color-primary-rgb), 0.16), transparent 55%),
+    linear-gradient(180deg, transparent 65%, rgba(0, 0, 0, 0.22) 100%),
+    var(--bg-page);
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    &::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--accent-color);
+    }
+  }
+
+  .hero-title {
+    font-size: clamp(3.2rem, 4.6vw, 5.2rem);   // ~32px → 52px (page-scoped)
+    line-height: 1.08;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-lead {
+    font-size: 1.05rem;
+    max-width: 540px;
+  }
+
+  img {
+    border-radius: 6px;
+    border: 1px solid var(--surface-border);
+    box-shadow: 0 28px 64px rgba(0, 0, 0, 0.42);
+  }
+
+  @media (max-width: 991px) {
+    min-height: 0;
+    padding-block: 44px;
+  }
+}
+
+// --- Stat cards ("The Rise"): big proof-point numbers + refined hierarchy. ---
+body.page-id-1845 .features-01 {
+  .feature-item {
+    border-radius: 6px;
+    padding: 30px 32px;
+
+    &:hover {
+      border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+    }
+  }
+
+  .feature-header {
+    align-items: center;
+    gap: 16px;
+
+    // Match the site-wide h3 size/weight (was over-scaled). Uses the global
+    // heading tokens so these stat headings are consistent with every other h3.
+    h3 {
+      font-size: var(--fs-h3);
+      font-weight: var(--fw-heading);
+      line-height: var(--lh-heading);
+      letter-spacing: var(--ls-heading);
+      color: var(--text-primary);
+    }
+  }
+
+  .feature-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 6px;
+
+    i { font-size: 22px; }
+  }
+
+  .feature-item p {
+    margin-left: 0;   // align description under the stat (was indented)
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+}
+
+// --- Process cards: CSS-counter step badges + media framing + scrim. ---
+body.page-id-1845 .manufacturing-process {
+  counter-reset: process;
+
+  .process-card {
+    counter-increment: process;
+    border-radius: 6px;
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+    }
+  }
+
+  .process-media {
+    img { height: 240px; }
+
+    // Numbered step badge (01–04) — generated, no markup change.
+    &::before {
+      content: counter(process, decimal-leading-zero);
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 34px;
+      padding: 0 8px;
+      background: var(--accent-strong);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    }
+
+    // Light top scrim so the badge reads cleanly; image stays bright (not muddy).
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, transparent 32%);
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+
+  .process-content {
+    h4 { font-weight: 700; }
+    p { color: var(--text-secondary); }
+  }
+}
+
+// --- Consistent premium image framing across About content images. ---
+body.page-id-1845 .capabilities img {
+  border-radius: 6px;
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+}
+
+// --- CTA: a real elevated conversion panel (not just a radius). ---
+body.page-id-1845 .cta-01__box {
+  position: relative;
+  background: var(--surface-1);          // real token (was undefined --surface-color)
+  border: 1px solid var(--surface-border);
+  border-radius: 6px;
+  box-shadow: var(--shadow-card);
+  padding: 2.75rem;
+  overflow: hidden;
+
+  // Accent top rule.
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent-color);
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+// Accent icon tiles inside the CTA grid.
+body.page-id-1845 .cta-01__item i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  font-size: 1.4rem;
+}
+
+// --- Mobile rhythm for the stat/process collections. ---
+@media (max-width: 991px) {
+  body.page-id-1845 .features-01-collection {
+    gap: 18px;
+  }
+
+  body.page-id-1845 .manufacturing-process .row {
+    row-gap: 24px;
+  }
+}
+
