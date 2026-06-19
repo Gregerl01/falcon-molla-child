@@ -95,9 +95,11 @@ footer {
     border-radius: 4px;
     color: var(--accent-color);
 
+    // The per-block inline widget CSS sets `.icon-box-icon i { margin:0 2rem 0 0 }`,
+    // which offset the glyph left of center inside this flex tile. Override it
+    // (inline <style> isn't !important, so this wins) so the glyph truly centers.
     i {
-      color: var(--accent-color);
-      font-size: 1.5rem;
+      margin: 0 !important;
       line-height: 1;
     }
   }

@@ -4129,8 +4129,7 @@ footer .footer-bottom {
 }
 .footer-top .icon-box-icon i,
 .footer-top .icon-circle i {
-  color: var(--accent-color);
-  font-size: 1.5rem;
+  margin: 0 !important;
   line-height: 1;
 }
 .footer-top .icon-box-title {
