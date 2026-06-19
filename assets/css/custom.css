@@ -7011,12 +7011,11 @@ body.page-id-1845 .features-01 .feature-header {
   gap: 16px;
 }
 body.page-id-1845 .features-01 .feature-header h3, body.page-id-1845 .features-01 .feature-header .h3 {
-  font-size: clamp(2.6rem, 3.2vw, 3.4rem);
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.5px;
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
   color: var(--text-primary);
-  text-wrap: balance;
 }
 body.page-id-1845 .features-01 .feature-icon {
   width: 46px;

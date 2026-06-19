@@ -1157,14 +1157,14 @@ body.page-id-1845 .features-01 {
     align-items: center;
     gap: 16px;
 
-    // The stat itself — scaled up so it reads as real proof.
+    // Match the site-wide h3 size/weight (was over-scaled). Uses the global
+    // heading tokens so these stat headings are consistent with every other h3.
     h3 {
-      font-size: clamp(2.6rem, 3.2vw, 3.4rem);   // ~26px → 34px
-      font-weight: 800;
-      line-height: 1.05;
-      letter-spacing: -0.5px;
+      font-size: var(--fs-h3);
+      font-weight: var(--fw-heading);
+      line-height: var(--lh-heading);
+      letter-spacing: var(--ls-heading);
       color: var(--text-primary);
-      text-wrap: balance;   // keeps "Nationwide Footprint" from wrapping awkwardly
     }
   }
 
