@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FieldPins — Investor / Partnership Pitch Deck</title>
+</head>
+<body>
+<style>
+/* ==========================================================================
+   FieldPins — Investor / Partnership Pitch Deck
+   14 slides · 16:9 · near-black + gold design system (per fieldpins.io)
+   Self-contained: no external fonts, scripts, or assets.
+   Navigate: → / ← / Space · click edges · dot rail · press N for speaker notes
+   ========================================================================== */
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#0B0B0C;
+  --ink:#F4F1EA;
+  --muted:#9A958A;      /* warm-biased grey */
+  --faint:#6E695E;
+  --card:#151517;
+  --card-2:#1B1B1E;
+  --line:rgba(244,241,234,.09);
+  --line-2:rgba(244,241,234,.16);
+  --gold:#E9B44C;
+  --gold-hi:#F6CB6B;
+  --gold-dim:rgba(233,180,76,.15);
+  --warn:#B5635C;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+html,body{height:100%;background:#000;color:var(--ink);font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;overflow:hidden}
+
+.deck{position:fixed;inset:0;display:grid;place-items:center;background:
+  radial-gradient(120% 90% at 50% 0%, #131315 0%, #0B0B0C 55%, #060607 100%);overflow:hidden}
+
+.stage{position:relative;width:1280px;height:720px;transform-origin:center center;
+  background:var(--bg);overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.6)}
+
+/* ---- slides ---- */
+.slide{position:absolute;inset:0;padding:60px 76px 58px;opacity:0;visibility:hidden;
+  transition:opacity .45s ease;display:flex;flex-direction:column}
+.slide.active{opacity:1;visibility:visible}
+@media (prefers-reduced-motion:no-preference){
+  .slide.active .rise{animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+  .slide.active .rise:nth-child(2){animation-delay:.05s}
+  .slide.active .rise:nth-child(3){animation-delay:.10s}
+}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ---- furniture ---- */
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);display:flex;align-items:center;gap:16px}
+.eyebrow::after{content:"";height:1px;width:54px;background:linear-gradient(90deg,var(--gold),transparent)}
+.foot{position:absolute;left:76px;right:76px;bottom:26px;display:flex;justify-content:space-between;
+  align-items:center;font-size:12.5px;letter-spacing:.04em;color:var(--faint)}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.02em;color:var(--muted)}
+.brand .pin{width:13px;height:13px;position:relative}
+.brand .pin svg{display:block}
+.pageno{font-variant-numeric:tabular-nums;color:var(--faint)}
+.pageno b{color:var(--ink);font-weight:700}
+
+/* ---- type ---- */
+h1{font-weight:800;letter-spacing:-.022em;line-height:.99;color:var(--ink);text-wrap:balance}
+.sub{color:var(--muted);font-size:21px;line-height:1.5;max-width:60ch;font-weight:400}
+.lead{color:var(--ink);font-size:22px;line-height:1.5;max-width:58ch}
+.gold{color:var(--gold)}
+.hl{color:var(--gold-hi);font-weight:600}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;padding:7px 14px;border-radius:100px}
+.tag.pill{border:1px solid var(--gold);color:var(--gold);background:var(--gold-dim)}
+.tag.soft{border:1px solid var(--line-2);color:var(--muted)}
+
+.head-lg{font-size:98px}
+.head-md{font-size:56px}
+.head-sm{font-size:44px}
+
+.finesse{font-size:13.5px;color:var(--faint);line-height:1.5;max-width:70ch}
+
+/* ---- cards ---- */
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.numeral{font-size:52px;font-weight:800;letter-spacing:-.02em;color:var(--gold);
+  line-height:1;font-variant-numeric:tabular-nums}
+.numeral .of{color:var(--faint);font-size:24px;font-weight:700}
+
+/* ---- reusable bits ---- */
+.check,.cross{width:22px;height:22px;flex:0 0 22px;border-radius:6px;display:grid;place-items:center;margin-top:2px}
+.check{background:var(--gold-dim);color:var(--gold)}
+.cross{background:rgba(181,99,92,.14);color:var(--warn)}
+.list{list-style:none;display:flex;flex-direction:column;gap:15px}
+.list li{display:flex;gap:13px;font-size:18px;line-height:1.4;color:var(--ink)}
+.list li span.k{color:var(--muted)}
+
+/* generic grid helpers */
+.row{display:flex;gap:22px}
+.grow{flex:1}
+
+/* code panel */
+.code{background:#0E0E10;border:1px solid var(--line-2);border-radius:14px;padding:22px 24px;
+  font-family:var(--mono);font-size:14.5px;line-height:1.65;position:relative;overflow:auto}
+.code .u{color:var(--faint)}
+.code .key{color:var(--gold)}
+.code .str{color:#CFE3B8}
+.code .pun{color:var(--muted)}
+.livepill{position:absolute;top:14px;right:14px;font-size:10.5px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:#0B0B0C;background:var(--gold);padding:5px 10px;border-radius:100px}
+
+/* dotted pin texture */
+.pintex{position:absolute;inset:0;opacity:.05;pointer-events:none;
+  background-image:radial-gradient(var(--ink) 1.1px, transparent 1.1px);
+  background-size:26px 26px}
+
+/* nav */
+.nav{position:fixed;z-index:40;bottom:20px;left:50%;transform:translateX(-50%);
+  display:flex;align-items:center;gap:14px;padding:9px 14px;border-radius:100px;
+  background:rgba(20,20,22,.72);border:1px solid var(--line-2);backdrop-filter:blur(10px)}
+.dots{display:flex;gap:7px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--faint);border:none;cursor:pointer;padding:0;
+  transition:transform .2s,background .2s}
+.dot:hover{background:var(--muted)}
+.dot.on{background:var(--gold);transform:scale(1.35)}
+.nbtn{background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px;line-height:1;
+  padding:4px 8px;border-radius:8px}
+.nbtn:hover{color:var(--ink)}
+.nav .count{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:52px;text-align:center}
+.edge{position:fixed;top:0;bottom:0;width:14%;z-index:30;cursor:pointer;background:transparent}
+.edge.l{left:0}.edge.r{right:0}
+.hint{position:fixed;top:16px;right:18px;z-index:40;font-size:11.5px;color:var(--faint);
+  letter-spacing:.03em;background:rgba(20,20,22,.6);border:1px solid var(--line);padding:6px 11px;border-radius:100px}
+.hint b{color:var(--muted);font-weight:600}
+
+/* speaker notes */
+.notes{position:fixed;left:0;right:0;bottom:0;z-index:50;transform:translateY(101%);
+  transition:transform .35s cubic-bezier(.2,.7,.2,1);
+  background:linear-gradient(0deg,#111114,#141417);border-top:1px solid var(--gold);
+  padding:20px 30px 22px;max-height:42vh;overflow:auto}
+.notes.show{transform:none}
+.notes h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.notes p{font-size:15.5px;line-height:1.62;color:var(--ink);max-width:100ch}
+.notes .close{position:absolute;top:14px;right:20px;color:var(--muted);cursor:pointer;font-size:13px}
+
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ================= PRINT → PDF ================= */
+@media print{
+  html,body{overflow:visible;background:#0B0B0C;height:auto}
+  .deck{position:static;display:block;background:none;overflow:visible}
+  .stage{transform:none!important;box-shadow:none;page-break-after:always;margin:0}
+  .slide{position:relative;inset:auto;opacity:1!important;visibility:visible!important;height:720px}
+  .slide.active .rise{animation:none}
+  .nav,.edge,.hint,.notes{display:none!important}
+  @page{size:1280px 720px;margin:0}
+}
+</style>
+
+<div class="deck" id="deck">
+  <div class="stage" id="stage">
+
+    <!-- ============ SLIDE 1 · COVER ============ -->
+    <section class="slide active" data-notes="FieldPins does one thing: it takes the jobs a service business is already finishing every day and turns them into published, city-tagged proof on their website. That proof is what local search and homeowners actually respond to. Let me show you the gap we're closing.">
+      <div class="pintex"></div>
+      <div class="eyebrow rise">Local SEO Proof for Service Businesses</div>
+      <div style="display:flex;flex:1;align-items:center;gap:40px;margin-top:6px">
+        <div style="flex:1.35">
+          <h1 class="head-lg rise" style="margin-bottom:26px">Turn Completed Jobs<br>Into Local SEO Proof.</h1>
+          <p class="sub rise" style="max-width:44ch">FieldPins turns everyday completed work into crawlable, city-tagged proof that strengthens rankings, trust, and lead generation.</p>
+          <div class="tag pill rise" style="margin-top:30px">● Private Beta · Built for Local Service Businesses</div>
+        </div>
+        <!-- floating job card -->
+        <div class="rise" style="flex:.9;display:flex;justify-content:center">
+          <div class="card" style="width:330px;padding:0;overflow:hidden">
+            <div style="height:150px;background:
+                linear-gradient(135deg,#23201a,#14130f);position:relative;display:grid;place-items:center">
+              <svg width="86" height="86" viewBox="0 0 24 24" fill="none" stroke="#6E695E" stroke-width="1.1">
+                <rect x="3" y="8" width="18" height="12" rx="1.5"/><path d="M7 8V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/>
+                <path d="M7 12h2m6 0h2M9 16h6"/></svg>
+              <span style="position:absolute;top:12px;left:12px;font-size:10.5px;font-weight:700;letter-spacing:.1em;
+                color:#0B0B0C;background:var(--gold);padding:4px 9px;border-radius:100px">APPROVED</span>
+            </div>
+            <div style="padding:18px 20px 20px">
+              <div style="font-size:12px;letter-spacing:.06em;color:var(--faint);font-weight:600">JOB #1042</div>
+              <div style="font-size:19px;font-weight:700;margin:6px 0 3px">Tankless Water Heater Install</div>
+              <div style="font-size:14px;color:var(--muted)">Your Service Area · This week</div>
+              <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--line);display:flex;
+                justify-content:space-between;font-size:12.5px;color:var(--faint)">
+                <span>Published proof</span><span class="gold" style="font-weight:600">8 assets →</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno">fieldpins.io</span></div>
+    </section>
+
+    <!-- ============ SLIDE 2 · THE PROBLEM ============ -->
+    <section class="slide" data-notes="Every service business I work with has this exact problem. The crews do great work daily, and the proof dies in a camera roll. The owner knows it, the agency chases photos, and the website tells Google nothing new is happening. Nobody's failing at their job here — there's just no system connecting the field to the website.">
+      <div class="eyebrow rise">The Gap</div>
+      <h1 class="head-md rise" style="margin:16px 0 26px;max-width:20ch">Your Best Local SEO Is Already Happening. It Just Never Leaves the Truck.</h1>
+      <div class="row rise" style="flex:1;align-items:stretch">
+        <div class="card grow" style="padding:26px 28px;display:flex;flex-direction:column">
+          <div style="font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:20px">Where the proof lives today</div>
+          <ul class="list" style="gap:18px">
+            <li><span class="check">●</span><b>Technicians' camera rolls</b></li>
+            <li><span class="check">●</span><b>Group-text photo threads</b></li>
+            <li><span class="check">●</span><b>Job sites no customer sees</b></li>
+          </ul>
+          <div style="margin-top:auto;padding:14px 16px;border:1px dashed var(--line-2);border-radius:12px;
+            font-family:var(--mono);font-size:13px;color:var(--muted)">“send me pics from the Hernandez job” <span style="color:var(--faint)">— 4:52 PM</span></div>
+        </div>
+        <div style="width:1px;background:linear-gradient(var(--gold),transparent);flex:0 0 1px"></div>
+        <div class="grow" style="padding:26px 28px;border:1px solid var(--line);border-radius:16px;background:#101011;
+          display:flex;flex-direction:column;filter:grayscale(.4)">
+          <div style="font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:20px">What the market sees</div>
+          <ul class="list" style="gap:18px">
+            <li><span class="cross">×</span><span class="k">A website with two-year-old photos</span></li>
+            <li><span class="cross">×</span><span class="k">Thin, generic city pages</span></li>
+            <li><span class="cross">×</span><span class="k">No fresh signal for Google or homeowners</span></li>
+          </ul>
+          <div style="margin-top:auto;display:inline-flex;align-self:flex-start;font-size:12px;color:var(--faint);
+            border:1px solid var(--line);padding:6px 12px;border-radius:100px">Last updated · 2024</div>
+        </div>
+      </div>
+      <p class="rise" style="margin-top:22px;font-size:20px;font-weight:600;color:var(--gold-hi)">The work is the marketing. It just never makes it past the job site.</p>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>02</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 3 · WHY THIS MATTERS ============ -->
+    <section class="slide" data-notes="The why-now is that local search — and increasingly AI search — rewards evidence. Dated, city-tagged, structured proof of real work is exactly the signal these systems read. Most businesses have the raw material and no way to publish it. That's the wedge.">
+      <div class="eyebrow rise">Why Now</div>
+      <h1 class="head-md rise" style="margin:16px 0 18px;max-width:22ch">Local Search Rewards Proof, Not Just Promises.</h1>
+      <p class="sub rise" style="max-width:74ch">Generic city pages don't earn rankings or trust. Fresh, dated, city-specific proof gives homeowners and search engines evidence a business actually works there — and AI search now cites that same proof.</p>
+      <div style="flex:1;position:relative;margin-top:14px">
+        <!-- diagonal stepping panels -->
+        <div class="card" style="position:absolute;left:0;top:38px;width:360px;padding:18px 20px">
+          <div style="font-size:12px;color:var(--faint);margin-bottom:12px">Google · local pack + organic</div>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="height:34px;border-radius:8px;border:1px solid var(--gold);background:var(--gold-dim);display:flex;align-items:center;padding:0 12px;font-size:13px"><span class="gold" style="font-weight:700;margin-right:8px">1</span>Proof-rich service page</div>
+            <div style="height:26px;border-radius:8px;background:#1d1d20"></div>
+            <div style="height:26px;border-radius:8px;background:#1d1d20"></div>
+          </div>
+        </div>
+        <div class="card" style="position:absolute;left:400px;top:110px;width:360px;padding:18px 20px;z-index:2">
+          <div style="font-size:12px;color:var(--faint);margin-bottom:12px">City page · dated proof</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;justify-content:space-between;font-size:13px"><span>Hydro Jetting · Temecula</span><span class="gold">Jun 2026</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px"><span>Drain Cleaning · Murrieta</span><span class="gold">Jun 2026</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px"><span>Water Heater · Temecula</span><span class="gold">May 2026</span></div>
+          </div>
+        </div>
+        <div class="card" style="position:absolute;left:800px;top:24px;width:340px;padding:18px 20px">
+          <div style="font-size:12px;color:var(--faint);margin-bottom:10px">AI answer</div>
+          <p style="font-size:13.5px;line-height:1.5;color:var(--muted)">“For hydro jetting in Temecula, <span class="hl">RD Hydrojet</span> is a well-reviewed local option…”</p>
+          <div class="tag soft" style="margin-top:12px;font-size:10px;padding:5px 10px">Cited by AI answers</div>
+        </div>
+        <!-- gold connectors -->
+        <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none" viewBox="0 0 1128 430" fill="none">
+          <path d="M360 78 C 392 78 380 150 400 150" stroke="var(--gold)" stroke-width="1.2" opacity=".6"/>
+          <path d="M760 150 C 792 150 780 70 800 70" stroke="var(--gold)" stroke-width="1.2" opacity=".6"/>
+        </svg>
+      </div>
+      <p class="finesse rise" style="margin-top:6px">FieldPins supports stronger local relevance and content freshness. Rankings depend on many factors.</p>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>03</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 4 · THE SOLUTION (money slide) ============ -->
+    <section class="slide" data-notes="Here's the core mechanic. One job, captured once in the field, fans out into up to eight assets. That leverage is the product. Nobody hires a content team — the content is the work they already did, structured and published automatically.">
+      <div class="eyebrow rise">The Thesis</div>
+      <h1 class="head-md rise" style="margin:14px 0 4px;max-width:24ch">One Job Becomes Local Proof Everywhere It Counts.</h1>
+      <p class="sub rise" style="max-width:66ch">One real job, captured once, becomes proof across every surface that helps a business rank and convert.</p>
+      <div style="flex:1;position:relative;margin-top:4px">
+        <!-- branch diagram -->
+        <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 1128 470" fill="none">
+          <!-- branches from origin (350,235) to endpoints x=690 -->
+          <g stroke="var(--gold)" stroke-width="1.1" opacity=".55" fill="none">
+            <path d="M350 235 C 500 235 560 40  690 40"/>
+            <path d="M350 235 C 500 235 560 95  690 95"/>
+            <path d="M350 235 C 500 235 560 150 690 150"/>
+            <path d="M350 235 C 500 235 560 205 690 205"/>
+            <path d="M350 235 C 500 235 560 265 690 265"/>
+            <path d="M350 235 C 500 235 560 320 690 320"/>
+            <path d="M350 235 C 500 235 560 375 690 375"/>
+            <path d="M350 235 C 500 235 560 430 690 430"/>
+          </g>
+          <g fill="var(--gold)">
+            <circle cx="690" cy="40" r="4.5"/><circle cx="690" cy="95" r="4.5"/><circle cx="690" cy="150" r="4.5"/>
+            <circle cx="690" cy="205" r="4.5"/><circle cx="690" cy="265" r="4.5"/><circle cx="690" cy="320" r="4.5"/>
+            <circle cx="690" cy="375" r="4.5"/><circle cx="690" cy="430" r="4.5"/>
+          </g>
+          <g font-family="-apple-system,Segoe UI,sans-serif" font-size="17">
+            <text x="710" y="45"  fill="#F4F1EA"><tspan fill="#E9B44C" font-weight="800">01</tspan>  Project Gallery</text>
+            <text x="710" y="100" fill="#F4F1EA"><tspan fill="#E9B44C" font-weight="800">02</tspan>  Service Page</text>
+            <text x="710" y="155" fill="#F4F1EA"><tspan fill="#E9B44C" font-weight="800">03</tspan>  City Page</text>
+            <text x="710" y="210" fill="#F4F1EA"><tspan fill="#E9B44C" font-weight="800">04</tspan>  Homepage</text>
+            <text x="710" y="270" fill="#F4F1EA"><tspan fill="#E9B44C" font-weight="800">05</tspan>  GBP Post</text>
+            <text x="710" y="325" fill="#F4F1EA"><tspan fill="#E9B44C" font-weight="800">06</tspan>  Social Post</text>
+            <text x="710" y="380" fill="#F4F1EA"><tspan fill="#E9B44C" font-weight="800">07</tspan>  Sales Proof</text>
+            <text x="710" y="435" fill="#F4F1EA"><tspan fill="#E9B44C" font-weight="800">08</tspan>  Structured Data / Schema</text>
+          </g>
+        </svg>
+        <!-- center job card -->
+        <div class="card" style="position:absolute;left:0;top:150px;width:330px;padding:18px 20px;box-shadow:0 24px 60px rgba(0,0,0,.5)">
+          <div style="display:flex;gap:14px;align-items:center">
+            <div style="width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,#26221a,#14130f);
+              display:grid;place-items:center;flex:0 0 64px">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8a8375" stroke-width="1.2"><rect x="3" y="8" width="18" height="12" rx="1.5"/><path d="M7 8V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>
+            </div>
+            <div>
+              <div style="font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.06em">1 COMPLETED JOB</div>
+              <div style="font-size:17px;font-weight:700;margin-top:3px">JOB #1042</div>
+              <div style="font-size:13px;color:var(--muted)">Approved</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>04</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 5 · HOW IT WORKS ============ -->
+    <section class="slide" data-notes="The workflow has to survive contact with a real crew, so it's brutally simple. Tech takes a photo, picks the service and city, hits submit — under a minute. The owner approves it, and FieldPins handles publishing. The approval gate matters: owners will not adopt anything that posts to their website without their yes.">
+      <div class="eyebrow rise">How It Works</div>
+      <h1 class="head-md rise" style="margin:14px 0 26px;max-width:22ch">From the Field to Ranked Proof in Three Steps.</h1>
+      <div class="row rise" style="flex:1;align-items:stretch;gap:20px">
+        <div class="card grow" style="padding:26px 26px;display:flex;flex-direction:column;position:relative">
+          <div class="numeral" style="margin-bottom:18px">01 <span class="of">/ Capture</span></div>
+          <p class="lead" style="font-size:18px;margin-bottom:20px">A photo, the service, and the city — captured on site in under a minute. Nothing new to learn.</p>
+          <div style="margin-top:auto;background:#101012;border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:9px">
+            <div style="height:44px;border-radius:8px;background:#1d1d20;display:flex;align-items:center;padding:0 12px;font-size:12px;color:var(--muted)">📷 Add job photo</div>
+            <div style="height:32px;border-radius:8px;background:#1d1d20"></div>
+            <div style="height:32px;border-radius:8px;background:#1d1d20"></div>
+          </div>
+        </div>
+        <div class="card grow" style="padding:26px 26px;display:flex;flex-direction:column">
+          <div class="numeral" style="margin-bottom:18px">02 <span class="of">/ Approve</span></div>
+          <p class="lead" style="font-size:18px;margin-bottom:20px">Owner, manager, or agency reviews in one click. Nothing goes public without a yes.</p>
+          <div style="margin-top:auto;background:#101012;border:1px solid var(--line);border-radius:12px;padding:14px">
+            <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:12px"><span>1 pending job</span><span>#1042</span></div>
+            <div style="height:40px;border-radius:8px;background:var(--gold);color:#0B0B0C;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px">Approve ✓</div>
+          </div>
+        </div>
+        <div class="card grow" style="padding:26px 26px;display:flex;flex-direction:column">
+          <div class="numeral" style="margin-bottom:18px">03 <span class="of">/ Publish</span></div>
+          <p class="lead" style="font-size:18px;margin-bottom:20px">The job publishes as crawlable, schema-tagged proof across the website and city pages.</p>
+          <div style="margin-top:auto;background:#101012;border:1px solid var(--line);border-radius:12px;padding:14px">
+            <div style="font-size:12px;color:var(--gold);margin-bottom:8px">● Live on /hydrojetting-temecula</div>
+            <div style="height:10px;border-radius:5px;background:#26251f;width:90%;margin-bottom:7px"></div>
+            <div style="height:10px;border-radius:5px;background:#1d1d20;width:70%"></div>
+          </div>
+        </div>
+      </div>
+      <p class="rise" style="margin-top:20px;font-size:16px;color:var(--muted)">Your team only touches it once.</p>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>05</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 6 · BUILT FOR LOCAL SEO ============ -->
+    <section class="slide" data-notes="This is where FieldPins is different from photo-posting tools. Every approved job renders as crawlable HTML with geo-tagged Service schema — this exact block is live and passing Google's Rich Results Test on a real client page right now. I'm careful with the claim: schema is a clarifier, not a magic ranking lever. But structured, fresh, city-tagged content is the signal local search actually reads.">
+      <div class="eyebrow rise">The SEO Engine</div>
+      <h1 class="head-md rise" style="margin:14px 0 24px;max-width:20ch">Built to Rank, Not Just to Look Good.</h1>
+      <div class="row rise" style="flex:1;align-items:stretch;gap:34px">
+        <div style="flex:1;display:flex;flex-direction:column;justify-content:center">
+          <ul class="list" style="gap:20px">
+            <li><span class="check">✓</span>Crawlable, server-rendered HTML — not a JavaScript-only widget</li>
+            <li><span class="check">✓</span>Geo-tagged Service schema, validated on live client pages</li>
+            <li><span class="check">✓</span>Fresh, dated, city-specific proof feeding service and city pages</li>
+            <li><span class="check">✓</span>Internal links tying local pages together</li>
+            <li><span class="check">✓</span>Privacy-safe publishing</li>
+          </ul>
+          <p class="finesse" style="margin-top:26px">Schema clarifies real work — it is not a standalone ranking lever.</p>
+        </div>
+        <div style="flex:1.05;display:flex;flex-direction:column">
+          <div class="code" style="flex:1">
+            <span class="livepill">Live on a real client page</span>
+            <div class="u">rdhydrojet.com/hydrojetting-temecula</div><br>
+{ <span class="pun">&nbsp;</span><br>
+&nbsp;&nbsp;<span class="key">"@type"</span><span class="pun">:</span> <span class="str">"Service"</span><span class="pun">,</span><br>
+&nbsp;&nbsp;<span class="key">"name"</span><span class="pun">:</span> <span class="str">"Hydro Jetting in Temecula, CA"</span><span class="pun">,</span><br>
+&nbsp;&nbsp;<span class="key">"serviceType"</span><span class="pun">:</span> <span class="str">"Hydro Jetting"</span><span class="pun">,</span><br>
+&nbsp;&nbsp;<span class="key">"provider"</span><span class="pun">:</span> { <span class="key">"@type"</span><span class="pun">:</span> <span class="str">"LocalBusiness"</span><span class="pun">,</span> <span class="key">"name"</span><span class="pun">:</span> <span class="str">"RD Hydrojet"</span> }<span class="pun">,</span><br>
+&nbsp;&nbsp;<span class="key">"areaServed"</span><span class="pun">:</span> {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"@type"</span><span class="pun">:</span> <span class="str">"City"</span><span class="pun">,</span> <span class="key">"name"</span><span class="pun">:</span> <span class="str">"Temecula"</span><span class="pun">,</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"containedInPlace"</span><span class="pun">:</span> { <span class="key">"@type"</span><span class="pun">:</span> <span class="str">"State"</span><span class="pun">,</span> <span class="key">"name"</span><span class="pun">:</span> <span class="str">"California"</span> }<br>
+&nbsp;&nbsp;}<br>
+}
+          </div>
+          <div style="margin-top:12px;font-size:12.5px;color:var(--muted)">Valid Service schema. <span class="gold">Rich Results Test, passing.</span> Live on a real client page.</div>
+        </div>
+      </div>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>06</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 7 · PRIVACY AND TRUST ============ -->
+    <section class="slide" data-notes="This slide closes the first objection every owner raises: 'are you putting my customers on the internet?' No. Service, city, date, approved photo, plain description — public. Everything identifying — never. It's a hard line in the product, not a setting someone can fumble. For agencies, this is also what makes FieldPins safe to deploy across a client portfolio.">
+      <div class="eyebrow rise">Privacy First</div>
+      <h1 class="head-md rise" style="margin:14px 0 26px;max-width:20ch">Show the Work. Protect the Customer.</h1>
+      <div class="row rise" style="flex:1;align-items:stretch;gap:0">
+        <div class="card grow" style="padding:28px 30px;border-color:var(--line-2);
+          box-shadow:0 0 0 1px var(--gold-dim),0 18px 40px rgba(0,0,0,.35)">
+          <div style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:22px">Published Publicly</div>
+          <ul class="list">
+            <li><span class="check">✓</span>Service type</li>
+            <li><span class="check">✓</span>City and state</li>
+            <li><span class="check">✓</span>Completion date</li>
+            <li><span class="check">✓</span>Approved job photo</li>
+            <li><span class="check">✓</span>Plain-language description</li>
+          </ul>
+        </div>
+        <div style="width:1px;background:var(--line-2);margin:0 30px"></div>
+        <div class="grow" style="padding:28px 30px;border:1px solid var(--line);border-radius:16px;background:#0E0E0F;position:relative">
+          <svg style="position:absolute;top:26px;right:28px" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--faint)" stroke-width="1.4"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          <div style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:22px">Never Published</div>
+          <ul class="list">
+            <li><span class="cross">×</span><span class="k">Street address or unit</span></li>
+            <li><span class="cross">×</span><span class="k">Customer name, phone, email</span></li>
+            <li><span class="cross">×</span><span class="k">GPS or exact location</span></li>
+            <li><span class="cross">×</span><span class="k">Technician notes</span></li>
+            <li><span class="cross">×</span><span class="k">Faces, plates, paperwork in photos</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rise" style="margin-top:22px;font-size:19px;font-weight:600;color:var(--gold-hi)">Proof of activity never comes at the customer's expense.</p>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>07</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 8 · CUSTOMER VALUE ============ -->
+    <section class="slide" data-notes="Note what's not on this slide: no promise of leads-per-month, no guaranteed rankings. The value proposition is operational — the marketing runs on work they're already doing, with less chasing and more surface area. Owners feel every one of these six pains today.">
+      <div class="eyebrow rise">The Payoff</div>
+      <h1 class="head-md rise" style="margin:14px 0 22px;max-width:22ch">The Jobs You Already Do Start Working Harder.</h1>
+      <div class="rise" style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:16px">
+        <div class="card" style="padding:20px 22px">
+          <div class="gold" style="margin-bottom:12px">◈</div>
+          <div style="font-size:19px;font-weight:700;margin-bottom:6px">More trust</div>
+          <div style="font-size:14.5px;color:var(--muted);line-height:1.45">Recent, real jobs answer “are they any good?” before the call.</div>
+        </div>
+        <div class="card" style="padding:20px 22px">
+          <div class="gold" style="margin-bottom:12px">↻</div>
+          <div style="font-size:19px;font-weight:700;margin-bottom:6px">Fresher website</div>
+          <div style="font-size:14.5px;color:var(--muted);line-height:1.45">Pages update from real work weekly. No content retainer.</div>
+        </div>
+        <div class="card" style="padding:20px 22px">
+          <div class="gold" style="margin-bottom:12px">◎</div>
+          <div style="font-size:19px;font-weight:700;margin-bottom:6px">Real local SEO</div>
+          <div style="font-size:14.5px;color:var(--muted);line-height:1.45">Dated, city-tagged proof is what local search rewards.</div>
+        </div>
+        <div class="card" style="padding:20px 22px">
+          <div class="gold" style="margin-bottom:12px">⚑</div>
+          <div style="font-size:19px;font-weight:700;margin-bottom:6px">Less chasing crews</div>
+          <div style="font-size:14.5px;color:var(--muted);line-height:1.45">A quick field submit replaces the end-of-day photo hunt.</div>
+        </div>
+        <div class="card" style="padding:20px 22px">
+          <div class="gold" style="margin-bottom:12px">◱</div>
+          <div style="font-size:19px;font-weight:700;margin-bottom:6px">GBP-ready updates</div>
+          <div style="font-size:14.5px;color:var(--muted);line-height:1.45">Every approved job yields a ready-to-publish GBP post.</div>
+        </div>
+        <div class="card" style="padding:20px 22px">
+          <div class="gold" style="margin-bottom:12px">✦</div>
+          <div style="font-size:19px;font-weight:700;margin-bottom:6px">Proof you can sell with</div>
+          <div style="font-size:14.5px;color:var(--muted);line-height:1.45">Local job history to point to on every estimate.</div>
+        </div>
+      </div>
+      <p class="rise" style="margin-top:18px;font-size:15.5px;color:var(--muted)">No new content team. No photo chasing. Just real jobs turned into useful proof.</p>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>08</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 9 · TARGET MARKET ============ -->
+    <section class="slide" data-notes="Launch focus is high-frequency, route-based trades — plumbing, HVAC, drain cleaning — because job volume is the fuel and these businesses generate proof daily. The agency segment is the multiplier: one agency relationship can bring ten to fifty client sites. I've deliberately left the market rings unnumbered — I'd rather show you a validated number in ninety days than an invented one today. Directionally: hundreds of thousands of US service businesses fit the profile, and I'll stand behind specific figures once the sizing work is done.">
+      <div class="eyebrow rise">Built for the Field</div>
+      <h1 class="head-sm rise" style="margin:14px 0 22px;max-width:24ch">Built for the Trades That Live in Real Cities.</h1>
+      <div class="row rise" style="flex:1;gap:30px;align-items:stretch">
+        <div style="flex:1.7;display:flex;flex-direction:column">
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:11px">
+            <!-- launch verticals highlighted -->
+            <div class="tile on">Plumbing</div>
+            <div class="tile on">HVAC</div>
+            <div class="tile">Pest Control</div>
+            <div class="tile">Pool Service</div>
+            <div class="tile">Landscaping</div>
+            <div class="tile">Roofing</div>
+            <div class="tile">Restoration</div>
+            <div class="tile">Electrical</div>
+            <div class="tile">Tree Service</div>
+            <div class="tile on">Drain Cleaning</div>
+          </div>
+          <div style="margin-top:22px;display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px">
+              <span class="numeral" style="font-size:26px">1</span><div><b>Local service businesses</b> <span style="color:var(--muted)">— core buyer</span></div></div>
+            <div style="display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px">
+              <span class="numeral" style="font-size:26px">2</span><div><b>SEO / marketing agencies</b> <span style="color:var(--muted)">— multiplier channel</span></div></div>
+            <div style="display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px">
+              <span class="numeral" style="font-size:26px">3</span><div><b>Multi-location operators</b> <span style="color:var(--muted)">— expansion revenue</span></div></div>
+          </div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start">
+          <div style="position:relative;width:280px;height:280px">
+            <svg viewBox="0 0 280 280" width="280" height="280" fill="none">
+              <circle cx="140" cy="140" r="132" stroke="var(--line-2)" stroke-width="1.2"/>
+              <circle cx="140" cy="140" r="96"  stroke="rgba(233,180,76,.45)" stroke-width="1.4"/>
+              <circle cx="140" cy="140" r="56"  stroke="var(--gold)" stroke-width="1.8"/>
+            </svg>
+            <div style="position:absolute;top:12px;left:50%;transform:translateX(-50%);font-size:12px;color:var(--muted);font-weight:700">TAM</div>
+            <div style="position:absolute;top:58px;left:50%;transform:translateX(-50%);font-size:12px;color:var(--gold);font-weight:700">SAM</div>
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:14px;color:var(--gold-hi);font-weight:800">SOM</div>
+          </div>
+          <div style="margin-top:8px;display:flex;flex-direction:column;gap:9px;font-size:12px;color:var(--muted)">
+            <div><b class="gold">TAM</b> · US local home-service businesses with sites + crews <span style="color:var(--faint)">· illustrative</span></div>
+            <div><b class="gold">SAM</b> · high-frequency trades in competitive metros <span style="color:var(--faint)">· illustrative</span></div>
+            <div><b class="gold">SOM (24 mo)</b> · founder-network + agency-channel accounts <span style="color:var(--faint)">· illustrative</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>09</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 10 · BUSINESS MODEL ============ -->
+    <section class="slide" data-notes="Pricing is live and published: 79, 149, 299. Growth is the anchor tier. The interesting economics are in expansion — a business adds locations, or an agency brings a portfolio, and revenue scales without new acquisition cost. Agency and enterprise tiers are the next pricing work, and that's honest on the slide: they're outlined, not filled in.">
+      <div class="eyebrow rise">The Model</div>
+      <h1 class="head-sm rise" style="margin:12px 0 22px;max-width:30ch">Simple SaaS Pricing. Scalable Across Crews, Locations, and Agencies.</h1>
+      <div class="row rise" style="gap:16px;align-items:stretch;flex:1">
+        <div class="card grow" style="padding:22px 22px;display:flex;flex-direction:column">
+          <div style="font-size:15px;color:var(--muted);font-weight:600">Starter</div>
+          <div style="font-size:38px;font-weight:800;margin:6px 0 2px">$79<span style="font-size:15px;color:var(--muted);font-weight:500">/mo</span></div>
+          <div style="font-size:13px;color:var(--faint);margin-bottom:14px">Small service teams</div>
+          <div style="font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:auto">1 location, up to 5 technicians</div>
+        </div>
+        <div class="card grow" style="padding:22px 22px;display:flex;flex-direction:column;border-color:var(--gold);
+          box-shadow:0 0 0 1px var(--gold),0 22px 46px rgba(0,0,0,.45);transform:translateY(-8px)">
+          <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:15px;color:var(--ink);font-weight:600">Growth</span><span class="tag pill" style="font-size:9.5px;padding:4px 9px">Most Popular</span></div>
+          <div style="font-size:38px;font-weight:800;margin:6px 0 2px">$149<span style="font-size:15px;color:var(--muted);font-weight:500">/mo</span></div>
+          <div style="font-size:13px;color:var(--faint);margin-bottom:14px">Growing companies</div>
+          <div style="font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:auto">Up to 3 locations, unlimited technicians, GBP workflow, reporting</div>
+        </div>
+        <div class="card grow" style="padding:22px 22px;display:flex;flex-direction:column">
+          <div style="font-size:15px;color:var(--muted);font-weight:600">Pro</div>
+          <div style="font-size:38px;font-weight:800;margin:6px 0 2px">$299<span style="font-size:15px;color:var(--muted);font-weight:500">/mo</span></div>
+          <div style="font-size:13px;color:var(--faint);margin-bottom:14px">Multi-location companies</div>
+          <div style="font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:auto">Unlimited locations, API access, dedicated onboarding</div>
+        </div>
+        <div class="grow" style="padding:22px 22px;display:flex;flex-direction:column;border:1px dashed var(--line-2);border-radius:16px;background:transparent">
+          <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:14px">In development</div>
+          <div style="font-size:16px;font-weight:700">Agency</div>
+          <div style="font-size:12.5px;color:var(--muted);line-height:1.45;margin-bottom:14px">Multi-client dashboard, white-label, portfolio pricing</div>
+          <div style="font-size:16px;font-weight:700">Enterprise</div>
+          <div style="font-size:12.5px;color:var(--muted);line-height:1.45">Franchise / multi-brand, custom</div>
+        </div>
+      </div>
+      <!-- expansion path -->
+      <div class="rise" style="margin-top:18px;display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)">
+        <span style="padding:8px 14px;border:1px solid var(--line-2);border-radius:100px">Single business</span>
+        <span class="gold">→</span>
+        <span style="padding:8px 14px;border:1px solid var(--line-2);border-radius:100px">Multiple crews</span>
+        <span class="gold">→</span>
+        <span style="padding:8px 14px;border:1px solid var(--line-2);border-radius:100px">Multiple locations</span>
+        <span class="gold">→</span>
+        <span style="padding:8px 14px;border:1px solid var(--gold);border-radius:100px;color:var(--gold)">Agency portfolio</span>
+      </div>
+      <p class="finesse rise" style="margin-top:12px">No setup fees. Cancel anytime. Expansion revenue comes from locations and portfolios, not per-photo fees.</p>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>10</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 11 · GO-TO-MARKET ============ -->
+    <section class="slide" data-notes="The unfair advantage in phase one is that I already run local SEO and web builds for exactly these businesses. FieldPins came out of that work — RD Hydrojet was a client before it was a pilot. Phase two focuses trades where job frequency is highest, because more jobs means more proof means faster visible results. Phase three is the leverage point: agencies chase client photos for a living, and FieldPins turns that chore into a billable deliverable.">
+      <div class="eyebrow rise">Go-to-Market</div>
+      <h1 class="head-md rise" style="margin:14px 0 30px;max-width:22ch">Start Where the Pain Is Already Obvious.</h1>
+      <div class="rise" style="position:relative;flex:1">
+        <!-- timeline line -->
+        <div style="position:absolute;top:10px;left:2%;right:2%;height:1px;background:var(--line-2)"></div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative">
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><span class="node on"></span><span style="font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.08em">PHASE 1</span></div>
+            <div style="font-size:19px;font-weight:700;margin-bottom:8px">Founder network</div>
+            <div style="font-size:14px;color:var(--muted);line-height:1.5">Founder-led sales through an existing local SEO and web design client base.</div>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><span class="node"></span><span style="font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.08em">PHASE 2</span></div>
+            <div style="font-size:19px;font-weight:700;margin-bottom:8px">Trade focus</div>
+            <div style="font-size:14px;color:var(--muted);line-height:1.5">Direct outreach to plumbing, HVAC, and drain cleaning — high job frequency, high proof volume.</div>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><span class="node"></span><span style="font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.08em">PHASE 3</span></div>
+            <div style="font-size:19px;font-weight:700;margin-bottom:8px">Agency channel</div>
+            <div style="font-size:14px;color:var(--muted);line-height:1.5">SEO agency partnerships, multi-client workflows, white-label.</div>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><span class="node"></span><span style="font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.08em">PHASE 4</span></div>
+            <div style="font-size:19px;font-weight:700;margin-bottom:8px">Vertical scale</div>
+            <div style="font-size:14px;color:var(--muted);line-height:1.5">Industry-specific acquisition, integrations, strategic partnerships.</div>
+          </div>
+        </div>
+      </div>
+      <div class="rise" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px">
+        <span class="chip">Existing agency clients</span><span class="chip">Founder-led demos</span><span class="chip">Local business outreach</span>
+        <span class="chip">Agency partnerships</span><span class="chip">Case studies</span><span class="chip">Industry landing pages</span>
+        <span class="chip">Short-form education</span><span class="chip">Referral partners</span>
+      </div>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>11</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 12 · EARLY VALIDATION ============ -->
+    <section class="slide" data-notes="RD Hydrojet is the live pilot. Their proof pages run on FieldPins, and as of June they rank number one organically for hydrojetting Temecula and Murrieta, and come up first in ChatGPT for the same query. Now — I want to be straight about what this is and isn't. It's one client, in one market, and rankings have many inputs including the broader SEO work on that site. What it proves is that the mechanism works end to end on a real business: field capture, approval, schema-tagged publishing, live visibility. Repeating it across the next five to ten clients is exactly what this raise or partnership accelerates.">
+      <div class="eyebrow rise">Proof, Not Promises</div>
+      <h1 class="head-md rise" style="margin:14px 0 22px;max-width:22ch">Built on a Real Local SEO Use Case.</h1>
+      <div class="row rise" style="flex:1;gap:30px;align-items:stretch">
+        <div style="flex:1;display:flex;flex-direction:column">
+          <div class="card" style="padding:0;overflow:hidden;flex:1;display:flex;flex-direction:column">
+            <div style="padding:14px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px">
+              <span style="font-size:12px;color:var(--faint)">🔍</span>
+              <span style="font-size:13px;color:var(--muted);font-family:var(--mono)">hydrojetting temecula</span>
+              <span class="tag pill" style="margin-left:auto;font-size:9px;padding:4px 9px">Runs on FieldPins</span>
+            </div>
+            <div style="padding:16px 18px;display:flex;flex-direction:column;gap:10px">
+              <div style="border:1px solid var(--gold);background:var(--gold-dim);border-radius:10px;padding:12px 14px">
+                <div style="display:flex;align-items:center;gap:8px"><span class="gold" style="font-weight:800">1</span><b style="font-size:15px">RD Hydrojet</b></div>
+                <div style="font-size:12px;color:var(--muted);margin-top:4px">rdhydrojet.com/hydrojetting-temecula</div>
+              </div>
+              <div style="border:1px solid var(--line);border-radius:10px;padding:12px 14px;opacity:.6">
+                <div style="display:flex;align-items:center;gap:8px"><span style="color:var(--faint);font-weight:700">2</span>Big B's Plumbing</div></div>
+              <div style="border:1px solid var(--line);border-radius:10px;padding:12px 14px;opacity:.5">
+                <div style="display:flex;align-items:center;gap:8px"><span style="color:var(--faint);font-weight:700">3</span>Zoom Drain</div></div>
+            </div>
+          </div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;gap:14px">
+            <div class="card" style="flex:1;padding:18px 20px">
+              <div style="font-size:46px;font-weight:800;color:var(--gold);line-height:1">#1</div>
+              <div style="font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4">Organic for “hydrojetting Temecula” and “hydrojetting Murrieta” <span style="color:var(--faint)">(as of June 2026)</span></div>
+            </div>
+            <div class="card" style="flex:1;padding:18px 20px">
+              <div style="font-size:46px;font-weight:800;color:var(--gold);line-height:1">1st</div>
+              <div style="font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4">Recommended in ChatGPT for the same search; cited in Perplexity</div>
+            </div>
+          </div>
+          <div class="card" style="padding:16px 20px;flex:1">
+            <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px">What's live</div>
+            <ul class="list" style="gap:9px">
+              <li style="font-size:14px"><span class="check" style="width:18px;height:18px;flex-basis:18px">✓</span>Real completed jobs published as schema-tagged proof</li>
+              <li style="font-size:14px"><span class="check" style="width:18px;height:18px;flex-basis:18px">✓</span>Service &amp; city page content with dated entries</li>
+              <li style="font-size:14px"><span class="check" style="width:18px;height:18px;flex-basis:18px">✓</span>Valid Service schema passing Google's Rich Results Test</li>
+              <li style="font-size:14px"><span class="check" style="width:18px;height:18px;flex-basis:18px">✓</span>Fresh proof feeding live service-area pages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;margin-top:14px">
+        <div class="card" style="padding:8px 14px;font-size:13px;color:var(--muted)"><b class="gold">RD Hydrojet</b> · SoCal plumbing &amp; drain · live FieldPins deployment, Temecula / Murrieta</div>
+      </div>
+      <p class="finesse rise" style="margin-top:10px">Early ranking visibility and live schema-supported pages provide encouraging validation. One pilot client today — broader customer proof is the next priority.</p>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>12</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 13 · PRODUCT ROADMAP ============ -->
+    <section class="slide" data-notes="The sequencing logic: phase one proves the mechanism — done and live. Phase two makes it repeatable without me in the loop for every install. Phase three is the agency multiplier, which is where distribution compounds. Phase four is where FieldPins stops being a capture tool and becomes the proof layer local businesses and agencies build on — that's the category-defining position.">
+      <div class="eyebrow rise">Roadmap</div>
+      <h1 class="head-md rise" style="margin:14px 0 28px;max-width:26ch">From Job Capture Tool to Local Visibility Infrastructure.</h1>
+      <div class="rise" style="position:relative;flex:1">
+        <div style="position:absolute;top:10px;left:2%;right:2%;height:1px;background:var(--line-2)"></div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative">
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><span class="node on"></span><span style="font-size:11px;color:var(--gold);font-weight:700">You are here</span></div>
+            <div style="font-size:17px;font-weight:700;margin-bottom:12px">MVP / Pilot <span style="color:var(--muted);font-weight:400;font-size:13px">· now</span></div>
+            <ul class="rl"><li>Technician submission</li><li>Service + city tagging</li><li>Approval workflow</li><li>Website publishing</li><li>Service schema</li></ul>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><span class="node"></span><span style="font-size:11px;color:var(--muted);font-weight:700">PHASE 2</span></div>
+            <div style="font-size:17px;font-weight:700;margin-bottom:12px">Repeatable SaaS</div>
+            <ul class="rl"><li>Self-serve onboarding</li><li>Templates</li><li>Reporting</li><li>GBP post drafts</li><li>Before/after workflows</li></ul>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><span class="node"></span><span style="font-size:11px;color:var(--muted);font-weight:700">PHASE 3</span></div>
+            <div style="font-size:17px;font-weight:700;margin-bottom:12px">Agency Scale</div>
+            <ul class="rl"><li>Multi-client dashboard</li><li>Permissions</li><li>White-label</li><li>Portfolio reporting</li><li>Bulk workflows</li></ul>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><span class="node"></span><span style="font-size:11px;color:var(--muted);font-weight:700">PHASE 4</span></div>
+            <div style="font-size:17px;font-weight:700;margin-bottom:12px">Platform</div>
+            <ul class="rl"><li>CRM integrations</li><li>Zapier</li><li>AI-assisted content</li><li>API access</li><li>Local SEO audit intelligence</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno"><b>13</b> / 14</span></div>
+    </section>
+
+    <!-- ============ SLIDE 14 · CLOSING / ASK ============ -->
+    <section class="slide" data-notes="To close: the proof local businesses need already exists — it's sitting in their crews' camera rolls. FieldPins is the system that publishes it. The mechanism is validated live, pricing is in market, and the agency channel is a distribution model I already operate in daily. What I'm looking for from this conversation is advisors, early partners, or capital to take one working pilot and make it ten.">
+      <div class="pintex"></div>
+      <div class="eyebrow rise">The Ask</div>
+      <div style="display:flex;flex:1;align-items:center;gap:40px;margin-top:6px">
+        <div style="flex:1.5">
+          <h1 class="rise" style="font-size:52px;margin-bottom:20px;max-width:20ch">Every Completed Job Is a Chance to Rank, Build Trust, and Win the Next Call.</h1>
+          <p class="sub rise" style="max-width:46ch">FieldPins turns that opportunity into a repeatable system.</p>
+          <p class="rise" style="font-size:13px;color:var(--faint);margin-top:14px">Built for local service businesses · Currently validating with live service-business pilots</p>
+
+          <!-- CTA variant switcher -->
+          <div class="rise" id="cta" style="margin-top:26px;border:1px solid var(--gold);border-radius:14px;padding:20px 22px;background:var(--gold-dim);max-width:52ch">
+            <div style="display:flex;gap:8px;margin-bottom:14px">
+              <button class="ctaBtn on" data-cta="0">Investors</button>
+              <button class="ctaBtn" data-cta="1">Agencies</button>
+              <button class="ctaBtn" data-cta="2">Service businesses</button>
+            </div>
+            <p id="ctaText" style="font-size:17px;line-height:1.5;color:var(--ink)">Seeking strategic advisors, early partners, and capital to accelerate product validation and agency distribution.</p>
+          </div>
+        </div>
+        <div class="rise" style="flex:.85;display:flex;justify-content:center">
+          <div class="card" style="width:290px;padding:0;overflow:hidden">
+            <div style="height:130px;background:linear-gradient(135deg,#23201a,#14130f);display:grid;place-items:center;position:relative">
+              <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#6E695E" stroke-width="1.1"><rect x="3" y="8" width="18" height="12" rx="1.5"/><path d="M7 8V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>
+              <span style="position:absolute;top:12px;left:12px;font-size:10px;font-weight:700;letter-spacing:.1em;color:#0B0B0C;background:var(--gold);padding:4px 9px;border-radius:100px">APPROVED</span>
+            </div>
+            <div style="padding:16px 18px">
+              <div style="font-size:11px;color:var(--faint);font-weight:600">JOB #1042</div>
+              <div style="font-size:17px;font-weight:700;margin:5px 0 3px">Tankless Water Heater Install</div>
+              <div style="font-size:13px;color:var(--muted)">Your Service Area · This week</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foot"><span class="brand">◆ FieldPins</span><span class="pageno">fieldpins.io · hello@fieldpins.io</span></div>
+    </section>
+
+  </div><!-- /stage -->
+</div><!-- /deck -->
+
+<!-- tile / node / chip / roadmap-list styles that need the classes above -->
+<style>
+.tile{border:1px solid var(--line);border-radius:10px;padding:14px 10px;text-align:center;font-size:13.5px;
+  color:var(--muted);background:var(--card);display:flex;align-items:center;justify-content:center;min-height:52px}
+.tile.on{border-color:var(--gold);color:var(--gold);background:var(--gold-dim);font-weight:600}
+.node{width:14px;height:14px;border-radius:50%;border:1.5px solid var(--faint);background:var(--bg);position:relative;z-index:2}
+.node.on{border-color:var(--gold);background:var(--gold);box-shadow:0 0 0 5px var(--gold-dim)}
+.chip{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:100px;padding:7px 13px}
+.rl{list-style:none;display:flex;flex-direction:column;gap:8px}
+.rl li{font-size:13.5px;color:var(--muted);padding-left:16px;position:relative}
+.rl li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--gold);opacity:.7}
+.ctaBtn{font-size:12.5px;font-weight:600;color:var(--muted);background:transparent;border:1px solid var(--line-2);
+  border-radius:100px;padding:7px 13px;cursor:pointer}
+.ctaBtn.on{color:#0B0B0C;background:var(--gold);border-color:var(--gold)}
+</style>
+
+<!-- nav furniture -->
+<div class="hint">Use <b>← →</b> to navigate · <b>N</b> speaker notes · <b>F</b> fullscreen</div>
+<div class="edge l" id="edgeL" aria-label="Previous slide"></div>
+<div class="edge r" id="edgeR" aria-label="Next slide"></div>
+<div class="nav">
+  <button class="nbtn" id="prev" aria-label="Previous">‹</button>
+  <div class="dots" id="dots"></div>
+  <span class="count" id="count">01 / 14</span>
+  <button class="nbtn" id="next" aria-label="Next">›</button>
+</div>
+<div class="notes" id="notes"><span class="close" id="notesClose">✕ close (N)</span><h4>Speaker Notes</h4><p id="notesText"></p></div>
+
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var stage=document.getElementById('stage');
+  var dotsWrap=document.getElementById('dots');
+  var count=document.getElementById('count');
+  var notes=document.getElementById('notes');
+  var notesText=document.getElementById('notesText');
+  var i=0, notesOpen=false;
+
+  // build dot rail
+  slides.forEach(function(s,idx){
+    var b=document.createElement('button');
+    b.className='dot'+(idx===0?' on':'');
+    b.setAttribute('aria-label','Go to slide '+(idx+1));
+    b.addEventListener('click',function(){go(idx);});
+    dotsWrap.appendChild(b);
+  });
+  var dots=[].slice.call(dotsWrap.children);
+
+  function pad(n){return (n<10?'0':'')+n;}
+  function go(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach(function(s,idx){s.classList.toggle('active',idx===i);});
+    dots.forEach(function(d,idx){d.classList.toggle('on',idx===i);});
+    count.textContent=pad(i+1)+' / '+slides.length;
+    if(notesOpen) notesText.textContent=slides[i].getAttribute('data-notes')||'';
+  }
+  function next(){go(i+1);} function prev(){go(i-1);}
+
+  // scale stage to fit viewport (16:9)
+  function fit(){
+    var pad=48;
+    var s=Math.min((window.innerWidth-pad)/1280,(window.innerHeight-pad)/720);
+    stage.style.transform='scale('+s+')';
+  }
+  window.addEventListener('resize',fit); fit();
+
+  document.getElementById('next').addEventListener('click',next);
+  document.getElementById('prev').addEventListener('click',prev);
+  document.getElementById('edgeR').addEventListener('click',next);
+  document.getElementById('edgeL').addEventListener('click',prev);
+
+  function toggleNotes(){
+    notesOpen=!notesOpen;
+    notes.classList.toggle('show',notesOpen);
+    if(notesOpen) notesText.textContent=slides[i].getAttribute('data-notes')||'';
+  }
+  document.getElementById('notesClose').addEventListener('click',toggleNotes);
+
+  document.addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();next();}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev();}
+    else if(e.key==='Home'){go(0);} else if(e.key==='End'){go(slides.length-1);}
+    else if(e.key==='n'||e.key==='N'){toggleNotes();}
+    else if(e.key==='f'||e.key==='F'){ if(!document.fullscreenElement){document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();} else {document.exitFullscreen&&document.exitFullscreen();} }
+  });
+
+  // CTA variant switcher (slide 14)
+  var ctaCopy=[
+    "Seeking strategic advisors, early partners, and capital to accelerate product validation and agency distribution.",
+    "Bring FieldPins into your local SEO stack and turn client job proof into a scalable deliverable.",
+    "See your next completed job become proof in a 15-minute walkthrough."
+  ];
+  var ctaBtns=[].slice.call(document.querySelectorAll('.ctaBtn'));
+  var ctaText=document.getElementById('ctaText');
+  ctaBtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      ctaBtns.forEach(function(x){x.classList.remove('on');});
+      b.classList.add('on');
+      ctaText.textContent=ctaCopy[+b.getAttribute('data-cta')];
+    });
+  });
+})();
+</script>
+</body>
+</html>
