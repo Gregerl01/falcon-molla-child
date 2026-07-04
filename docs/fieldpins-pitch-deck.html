@@ -102,7 +102,7 @@ h1{font-weight:800;letter-spacing:-.022em;line-height:.99;color:var(--ink);text-
 .grow{flex:1}
 
 /* code panel */
-.code{background:#0E0E10;border:1px solid var(--line-2);border-radius:14px;padding:22px 24px;
+.code{background:#0E0E10;border:1px solid var(--line-2);border-radius:14px;padding:54px 24px 22px;
   font-family:var(--mono);font-size:14.5px;line-height:1.65;position:relative;overflow:auto}
 .code .u{color:var(--faint)}
 .code .key{color:var(--gold)}
@@ -150,10 +150,12 @@ h1{font-weight:800;letter-spacing:-.022em;line-height:.99;color:var(--ink);text-
 /* ================= PRINT → PDF ================= */
 @media print{
   html,body{overflow:visible;background:#0B0B0C;height:auto}
-  .deck{position:static;display:block;background:none;overflow:visible}
-  .stage{transform:none!important;box-shadow:none;page-break-after:always;margin:0}
-  .slide{position:relative;inset:auto;opacity:1!important;visibility:visible!important;height:720px}
-  .slide.active .rise{animation:none}
+  .deck{position:static;display:block;background:none;overflow:visible;place-items:start}
+  .stage{transform:none!important;box-shadow:none;margin:0;width:1280px;height:auto;overflow:visible}
+  .slide{position:relative;inset:auto;opacity:1!important;visibility:visible!important;
+    width:1280px;height:720px;overflow:hidden;break-after:page;page-break-after:always}
+  .slide:last-child{break-after:auto;page-break-after:auto}
+  .slide .rise{animation:none!important;opacity:1!important;transform:none!important}
   .nav,.edge,.hint,.notes{display:none!important}
   @page{size:1280px 720px;margin:0}
 }
