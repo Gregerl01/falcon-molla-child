@@ -7,3 +7,10 @@ node_modules/
 _save-*.php
 _fix-*.php
 _*-meta.json
+
+# Claude Code tooling
+.claude/
+.github/skills/
+
+# Compiled source maps (not needed on server)
+*.css.map
