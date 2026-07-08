@@ -66,3 +66,17 @@
 .menu-skin1 > li.current-menu-ancestor > a {
   color: color-mix(in srgb, var(--background-color), var(--contrast-color) 50%) !important;
 }
+
+// ============================================================================
+// MOBILE MENU
+// ============================================================================
+
+// Darker divider between top-level links. Equal specificity (0,2,2) to the
+// parent .mobile-menu-light #efefef rule, BUT the child custom.css enqueues at
+// wp_enqueue_scripts priority 10 while the parent frontend theme.css enqueues at
+// priority 22 — so the parent rule loads LATER and would win the tie on source
+// order. !important is required to override it. If #262626 still reads too
+// visible live, bump to #2a2a2a (don't return to a white-alpha value).
+.mobile-menu-container .mobile-menu li a {
+  border-bottom: 1px solid #262626 !important;
+}

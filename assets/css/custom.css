@@ -4085,6 +4085,10 @@ footer {
   color: color-mix(in srgb, var(--background-color), var(--contrast-color) 50%) !important;
 }
 
+.mobile-menu-container .mobile-menu li a {
+  border-bottom: 1px solid #262626 !important;
+}
+
 footer {
   border-top: none !important;
 }
