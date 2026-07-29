@@ -261,6 +261,15 @@
     background-color: var(--surface-color);
     border-color: var(--border-color);
   }
+
+  // Single post title. Molla's Customizer CSS (uploads/molla_css/dynamic_style.css)
+  // hardcodes .post-single >.post .entry-title to #333 with no dark-mode variant,
+  // and the .wp-singular.post-template override above never matches (the real body
+  // class is post-template-default). !important guards against regenerated
+  // Customizer CSS, which loads after custom.css (L-006).
+  .post-single > .post h1.entry-title {
+    color: var(--heading-color) !important;
+  }
 }
 
 
