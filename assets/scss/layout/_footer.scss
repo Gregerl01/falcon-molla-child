@@ -69,8 +69,8 @@ footer {
 // footer is locked-dark, so values are tuned for the dark surface.
 // ============================================================================
 .footer-top {
-  padding-top: 52px;
-  padding-bottom: 52px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 
   .icon-box {
@@ -123,8 +123,8 @@ footer {
 
 @media (max-width: 991px) {
   .footer-top {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 
     // No dividers when stacked; add breathing room between items instead.
     .inner-wrap .row > div + div {

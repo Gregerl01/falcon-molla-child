@@ -4132,8 +4132,8 @@ footer .footer-bottom {
 }
 
 .footer-top {
-  padding-top: 52px;
-  padding-bottom: 52px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .footer-top .icon-box {
@@ -4172,8 +4172,8 @@ footer .footer-bottom {
 
 @media (max-width: 991px) {
   .footer-top {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
   .footer-top .inner-wrap .row > div + div {
     border-left: 0;
